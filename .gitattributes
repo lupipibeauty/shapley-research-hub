@@ -1,0 +1,2 @@
+# Preserve byte-level archive hashes; do not apply platform line-ending conversion.
+* -text

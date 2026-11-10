@@ -1,0 +1,28 @@
+schema_version: 1
+archive_role: research-index-and-evidence
+baseline_status: local_git_baseline_created_2026_11
+source_workspace: <SOURCE_WORKSPACE>
+history:
+  root_git_repository: false
+  external_nested_repositories: recorded_as_provenance_only
+  old_project_commits_recoverable: false
+experiment_index:
+  immutable_snapshot: research/experiment_index_round1.csv
+  current_view: research/EXPERIMENT_INDEX_CURRENT.csv
+  snapshot_rows: 62
+  shared_fields_compared: 15
+  shared_field_differences: 0
+  mutation_policy: preserve_snapshot_and_record_current_corrections_separately
+confirmed_archive_facts:
+  M3: design_only_not_executed
+  P3_task_relation: distinct_tasks_not_parameter_versions
+  LexaShap_91: 90_integer_digit_limit_and_1_empty_divisor_not_fully_fixed
+  GNN_mapping: embedded_in_frozen_jsonl
+  GNN_edges: forward_only_no_reverse_edges_found
+ideas:
+  IDEA01: candidate_ledger
+  IDEA02: evidence_backed_method_coverage
+  IDEA03: candidate_controlled_2x2_validation
+  IDEA04: course_experiment_with_known_graph_limitations
+  IDEA05: candidate_ledger
+next_gate: user_review_then_optional_github_private_remote_and_issue_design

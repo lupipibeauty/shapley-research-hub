@@ -1,0 +1,27 @@
+# This repository is a research archive, not an experiment-data repository.
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+*.duckdb
+*.db
+*.sqlite
+*.pt
+*.pth
+*.ckpt
+*.jsonl
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+.venv/
+.venv-*/
+__pycache__/
+.uv-cache/
+target/
+runs/
+data/
+external/
+sources/

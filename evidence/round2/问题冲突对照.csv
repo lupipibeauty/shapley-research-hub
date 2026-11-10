@@ -1,0 +1,8 @@
+问题编号,原断言,原断言来源,原始相反或补强证据,最终能否判断,本轮判断,尚缺什么
+P0-01,"工作区没有可用 .git","第一轮研究总览","BRBD_v1/sources/luo_2024/official_checkout/.git 与 adapters/luo_dnf_adapter/official_fork/.git 均存在；两者 HEAD=2a514fb4a0e3d45365d6dffe6435f93499afd7e3","可以部分判断","主体项目无可恢复 Git 历史；存在两个外部 Luo 源码 checkout，不能恢复项目历史","原项目 .git、bundle、远端 URL 或迁移备份"
+P0-02,"GNN 玩家—物理事实绑定清单缺失","第一轮证据缺口","course_paper_gnn/data/final/tpch_g1000_v2.jsonl 的 players/relation_key/links/metadata；src/course_paper_gnn/tpch.py:198-410","可以部分判断","映射嵌入冻结 JSONL，订单、订单行、供应商、国家为不同 player_id；缺独立导出表","数据生成时的输入数据库哈希、每游戏独立映射清单"
+P0-03,"需确认是否添加反向边","第一轮证据缺口","graph.py:170-299 只建正向边；data.py:112-140 原样写 edge_index；model.py:40-59 source 到 target 聚合","可以判断","未发现反向边；玩家局部隐藏状态不能接收下游消息，图级池化仍提供全图 context","可选的运行时 edge_index trace；不会改变当前源码结论"
+P0-04,"标签到 checkpoint 缺完整 lineage","第一轮证据缺口","三个 final_rpv_v2_seed*/run_config.json 的 data=tpch_g1000_v2.jsonl；数据 summary/validation 与 current SHA-256","只能部分判断","训练路径可追；训练时未记录数据哈希、生成命令快照和代码提交","训练时 manifest、输入 DB 哈希、代码版本"
+P0-05,"P3-1C R1/R2/C2 版本差异不清","第一轮证据缺口","P3_1B_manifest.json；P3_1C_manifest.json；r1/r1_summary.json；r2/r2_summary.json；c2/c2_summary.json","可以判断","R1=最小 Boolean 复现，R2=同目标 H1/H2 适配，C2=语义控制；不是连续参数版本","若需跨项目比较，仍需未来统一控制实验"
+P1-01,"LexaShap 91 个未完成实例未分类","第一轮证据缺口","R1_abramovich/raw_metrics/formal/academic_lexashap_repeat1.csv；同目录 summary JSON；compatibility_smoke summary","可以判断","90 个 Python 位数限制 ValueError；1 个空 divisor 参数错误；未证明已修复","90 项在受控环境下的重跑及有限数值正确性"
+P1-02,"M3 可能与 BDD 变量顺序测量混名","第一轮审计摘要","aggregate_report_shapley/docs/experiment_log.md:33-43；config/d1p_design.yaml；P3_1C/run_p3_1c.py:210-220","可以判断","M3 是未实现的设计修订；P3 MTBDD 是另一实验，不是 M3","若另有未归档 M3 运行目录，需提供其 manifest/log"
