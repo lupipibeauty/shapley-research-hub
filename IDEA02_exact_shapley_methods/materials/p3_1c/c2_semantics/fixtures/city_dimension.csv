@@ -1,0 +1,9 @@
+database_id,city_id,province_id
+A,city_1,province_p
+A,city_2,province_p
+A,city_empty,province_p
+B,city_1,province_p
+B,city_2,province_p
+B,city_empty,province_p
+NULL_CASE,city_1,province_p
+NULL_CASE,city_empty,province_p

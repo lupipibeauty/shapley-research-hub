@@ -1,0 +1,424 @@
+\documentclass{coursepaper}
+
+\graphicspath{{figures/}}
+\setcounter{tocdepth}{2}
+
+\coursename{深度学习理论与方法}
+\papertitle{基于图神经网络的关系数据贡献估算方法研究}
+\studentid{202511200042}
+\studentname{陆梦飞}
+\classname{25学硕一班}
+\completiondate{2026年11月8日}
+\documenttype{实验与研究框架报告}
+
+\begin{document}
+
+\makecoverpage
+\maketocpage
+
+\begin{cnabstract}{数据库收益分配；Shapley 值；图神经网络；关系结构；安全路由；实验报告}
+本报告系统整理“基于图神经网络的关系数据贡献估算方法研究”的研究场景、研究对象、
+理论框架和已完成的正式实验。研究场景为数据库查询生成报表型数据产品后的收益分配；
+研究对象为固定数据库实例、报表查询、玩家集合和整表价值函数后形成的合作博弈，以及
+其归一化 Shapley 贡献向量。方法上，本报告采用来源—价值异构图表示数据库事实、
+连接见证、报表坐标和价值因子，以 RPV-GNN 学习玩家级非可加残差，并联合可加解析锚点、
+结构可达性遮罩和值条件安全路由。实验覆盖 TPC-H 分布内、组合 OOD、SF1 规模外推、
+同预算 Monte Carlo、特征 MLP、回归强基线、图边消融、结构扰动、外部图适配、哑玩家
+控制、种子不确定性、模型复杂度及 DuckDB 端到端成本。报告同时列出负结果、结论边界和
+尚未完成的实验，供后续论文写作和审稿风险检查使用。
+\end{cnabstract}
+
+\beginmainmatter
+
+\section{研究场景与研究对象}
+
+\subsection{数据库收益分配场景}
+
+本文研究数据库查询结果驱动的收益分配，而不是脱离数据来源的抽象数据定价。给定数据库
+实例 \(D\)、报表查询 \(Q\) 和玩家集合 \(N\)，联盟 \(S\subseteq N\) 表示当前启用的
+数据事实或事实包。查询在只启用 \(S\) 时生成报表 \(Q(D_S)\)，整表价值函数 \(v(S)\)
+表示该报表相对于空报表所增加的效用。一个完整上下文对应一个合作博弈 \((N,v)\)，
+玩家贡献以该博弈的 Shapley 值衡量，并按数据所有者进行事后汇总。
+
+在 TPC-H 派生实验中，玩家包括订单、客户、订单行、供应商和国家等数据事实；同一逻辑
+玩家的绑定关系、连接见证、报表坐标和价值因子被显式保留。收益分配的目标不是重新定义
+支付规则，而是在给定数据库、查询、玩家和价值口径后，估计与精确 Shapley 份额一致的
+贡献向量。
+
+\subsection{形式化定义与研究问题}
+
+对玩家 \(i\in N\)，标准 Shapley 值为
+\begin{equation}
+  \phi_i(v)=
+  \sum_{S\subseteq N\setminus\{i\}}
+  \frac{|S|!(|N|-|S|-1)!}{|N|!}
+  \left[v(S\cup\{i\})-v(S)\right].
+  \label{eq:shapley}
+\end{equation}
+本文学习归一化贡献
+\[
+  y_i=\frac{\phi_i(v)}{\sum_{j\in N}\phi_j(v)},
+\]
+并保持 \(\sum_i y_i=1\)。若 owner \(o\) 拥有玩家集合 \(N_o\)，则 owner 收益份额为
+\(Y_o=\sum_{i\in N_o}y_i\)。
+
+报告围绕四个问题展开：
+\begin{enumerate}
+  \item 关系图结构相对于仅使用玩家特征或可加基线，能否改善联合价值上的贡献估计？
+  \item 可加解析锚点能否降低神经网络对可加份额的破坏，并在非可加价值上提供稳定残差？
+  \item 神经估计与相同联盟查询预算的 Monte Carlo 相比，精度、尾部和成本处于什么位置？
+  \item 方法对图结构扰动是否稳健，能否迁移到其他数据库来源模式？
+\end{enumerate}
+
+\section{研究思路与理论框架}
+
+\subsection{总体研究思路}
+
+研究思路如图\ref{fig:framework}所示。首先从数据库和报表查询中抽取玩家、连接见证、
+报表坐标和价值因子，构造来源—价值异构图；然后用 RPV-GNN 对玩家级非可加残差建模；
+最后以可加解析份额为锚点，通过结构零遮罩和值条件安全路由输出贡献向量。
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\textwidth]{fig01_research_framework.pdf}
+  \caption{研究流程与理论关系}
+  \label{fig:framework}
+\end{figure}
+
+\subsection{来源—价值异构图}
+
+图中包含五类节点和四类关系，如表\ref{tab:graph-schema}所示。节点数值特征统一为
+8 维，节点类型和子类型使用离散嵌入表示；整图另有一个 14 维价值描述符。
+
+\begin{table}[htbp]
+  \centering
+  \caption{来源—价值异构图结构}
+  \label{tab:graph-schema}
+  \small
+  \begin{tabularx}{\textwidth}{@{}p{0.16\textwidth}p{0.34\textwidth}X@{}}
+    \hline
+    层级 & 对象 & 作用 \\
+    \hline
+    节点 & player & 数据事实或绑定后的事实包，是贡献估计对象 \\
+    节点 & witness & 表示 JOIN、记录包或最小来源组合 \\
+    节点 & coordinate & 表示报表层次与统计坐标 \\
+    节点 & value factor & 表示可加、阈值或联合价值机制 \\
+    节点 & report & 表示最终报表输出 \\
+    边 & player-in-witness & 玩家参与某个来源见证 \\
+    边 & witness-coordinate & 来源见证支撑某报表坐标 \\
+    边 & coordinate-value & 报表坐标进入价值因子 \\
+    边 & value-report & 价值因子形成最终报表价值 \\
+    \hline
+  \end{tabularx}
+\end{table}
+
+\subsection{RPV-GNN 模型}
+
+节点初始表示由 8 维数值特征、节点类型嵌入和节点子类型嵌入相加得到。每一层按关系类型
+分别进行线性变换和邻接聚合，再与节点自身变换相加，经过 ReLU、Dropout 和 LayerNorm。
+图级上下文由注意力池化得到，玩家表示、图上下文、价值描述符投影和可加基础份额共同进入
+贡献残差头。可加锚点的初始权重设为 1，使模型在训练开始时接近解析可加份额。
+
+贡献头输出经过图内 softmax，保证每个完整游戏的预测份额非负且和为 1。结构不可达玩家
+在 softmax 前被赋予极小值，从而得到严格零支付。训练目标由预测份额的 Huber 损失、
+玩家排序损失和零支付惩罚组成：
+\[
+  \mathcal{L}
+  =
+  \mathcal{L}_{\mathrm{Huber}}
+  +0.3\mathcal{L}_{\mathrm{rank}}
+  +0.1\mathcal{L}_{\mathrm{zero}}.
+\]
+
+\subsection{理论框架}
+
+理论框架由四个相互支持的部分组成。
+
+\paragraph{Shapley 线性性与残差分解}
+将整表价值写成 \(v=v_{\mathrm{add}}+v_{\mathrm{res}}\)。由 Shapley 线性性，
+\[
+  \phi(v)=\phi(v_{\mathrm{add}})+\phi(v_{\mathrm{res}}).
+\]
+因此，可加部分可以使用解析份额 \(b\)，神经模型只需估计非可加残差的 Shapley 值。
+这避免让网络从头学习可加结构，也降低了联合价值条件下残差头的建模难度。
+
+\paragraph{可加价值精确性}
+当 \(v\) 为可加价值时，解析份额本身就是精确 Shapley 解。值条件安全路由在该条件下
+直接返回可加份额，因此不会引入神经近似误差。该性质由路由规则保证，不需要依赖模型
+训练是否收敛。
+
+\paragraph{结构零支付}
+若玩家在来源—价值图中不存在通往最终报表的任何路径，则该玩家不进入报表价值计算。
+对应该类玩家的 Shapley 值应为零。实现中通过图可达性构造零遮罩，使该性质成为输出
+约束，而不是依靠训练样本学习。
+
+\paragraph{游戏级统计}
+一个完整游戏是独立实验单位。三个模型种子、三个图扰动种子以及同一游戏内的多个玩家
+不作为独立重复。种子先在游戏内平均，再在测试游戏上计算均值、Bootstrap 置信区间和
+游戏级配对检验。
+
+\section{数据与实验设计}
+
+\subsection{数据规模}
+
+正式数据来自 TPC-H SF0.1 和 SF1，规模如表\ref{tab:data}所示。SF0.1 提供分布内与
+组合 OOD；SF1 只作为规模外推数据，不参与训练或调参。
+
+\begin{table}[htbp]
+  \centering
+  \caption{正式数据与切分}
+  \label{tab:data}
+  \small
+  \begin{tabularx}{\textwidth}{@{}lrrX@{}}
+    \hline
+    数据集 & 游戏数 & 玩家数 & 切分与联盟值 \\
+    \hline
+    TPC-H SF0.1 & 1,000 & 11,582 & 3,451,392 个精确联盟值；
+    700 训练、105 验证、70 分布内、125 组合 OOD \\
+    TPC-H SF1 & 200 & 2,328 & 708,608 个精确联盟值，全部为规模 OOD \\
+    哑玩家控制 & 100 & 199 个新增哑玩家 & 分层覆盖八种价值条件 \\
+    \hline
+  \end{tabularx}
+\end{table}
+
+八种条件来自来源共享、层次结构和价值类型的 \(2\times2\times2\) 组合。组合 OOD
+固定为 shared/cross/joint，分布内与 SF1 均保留完整的可加、阈值和联合价值结构。
+
+\subsection{模型与基线}
+
+正式比较包括：可加解析基线、Feature-MLP、RPV-GNN、RPV-GNN 去图边、RPV-GNN
+去可加锚点、置换 Monte Carlo、回归控制变量 MSR 和值条件安全路由。所有 Monte Carlo
+使用同一游戏内联盟缓存；RPV-GNN 和 MLP 在每个游戏上输出完整玩家份额向量。
+
+\subsection{评价指标}
+
+主指标为 Share-L1：
+\[
+  \mathrm{ShareL1}
+  =
+  \frac{1}{2}\sum_{i\in N}
+  \left|\hat y_i-y_i\right|.
+\]
+补充指标包括 Owner-L1、MAE、玩家绝对误差 P95、最大绝对误差、高贡献玩家 MAE、
+Spearman 相关、Top-3 重合率、NDCG@3、零支付和效率误差。计算成本同时记录参数量、
+批次推理时间、SQL 单次求值时间及端到端阶段耗时。
+
+\subsection{正确性与 SQL 审计}
+
+数据完整性和 SQL 语义经过两层检查。一个游戏的 4,096 个联盟全部执行 DuckDB SQL，
+结果与 Python 来源状态一致；另从 20 个分层游戏各抽取 128 个联盟，共 2,560 个联盟
+完成同样核验。两组审计均无 mismatch，最大绝对误差为 \(1.78\times10^{-15}\)。
+
+\section{正式实验结果}
+
+\subsection{主结果}
+
+表\ref{tab:main-results}给出三种子、游戏级均值。安全路由在分布内和 SF1 上优于
+MC-64，并接近 MC-256；组合 OOD 全为联合价值，因此安全路由与 RPV-GNN 完全相同。
+MC-1024 仍取得最低误差。
+
+\begin{table}[htbp]
+  \centering
+  \caption{三种测试场景下的 Share-L1}
+  \label{tab:main-results}
+  \scriptsize
+  \begin{tabular}{@{}lrrr@{}}
+    \hline
+    方法 & 分布内 & 组合 OOD & SF1 外推 \\
+    \hline
+    可加代理 & 0.1443 & 0.3250 & 0.1629 \\
+    Feature-MLP & 0.1447 & 0.3248 & 0.1631 \\
+    RPV-GNN & 0.0754 & 0.1086 & 0.0806 \\
+    RPV-GNN 去图边 & 0.0943 & 0.1768 & 0.1045 \\
+    RPV-GNN 去锚点 & 0.1276 & 0.1123 & 0.1287 \\
+    \textbf{安全路由} & \textbf{0.0464} & \textbf{0.1086} & \textbf{0.0555} \\
+    MC-64 & 0.0799 & 0.1847 & 0.0980 \\
+    MC-256 & 0.0465 & 0.1108 & 0.0553 \\
+    MC-1024 & 0.0206 & 0.0505 & 0.0244 \\
+    回归 MSR-64 & 0.1514 & 0.3542 & 0.1834 \\
+    回归 MSR-256 & 0.1369 & 0.3209 & 0.1603 \\
+    回归 MSR-1024 & 0.1353 & 0.3141 & 0.1566 \\
+    \hline
+  \end{tabular}
+\end{table}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\textwidth]{fig02_main_results.pdf}
+  \caption{主结果与 Monte Carlo 预算比较}
+  \label{fig:main}
+\end{figure}
+
+安全路由相对 MC-64 的配对改善分别为 0.0336、0.0761 和 0.0426，Holm 校正后
+\(p=0.0007\)。它与 MC-256 的总体 Share-L1 差异统计上不可区分；MC-1024 显著更优。
+
+\subsection{扩展评价}
+
+安全路由的尾部、高贡献排序和 owner 汇总结果如表\ref{tab:safe-metrics}所示。
+三模型种子的均值在游戏内合并后计算 95\% Bootstrap 区间。
+
+\begin{table}[htbp]
+  \centering
+  \caption{安全路由的主要补充指标}
+  \label{tab:safe-metrics}
+  \small
+  \begin{tabular}{@{}lrrr@{}}
+    \hline
+    指标 & 分布内 & 组合 OOD & SF1 外推 \\
+    \hline
+    Share-L1 & 0.0464 & 0.1086 & 0.0555 \\
+    Owner-L1 & 0.0409 & 0.0975 & 0.0499 \\
+    P95 绝对误差 & 0.0172 & 0.0422 & 0.0218 \\
+    高贡献玩家 MAE & 0.0139 & 0.0330 & 0.0170 \\
+    Spearman & 0.9428 & 0.8527 & 0.9327 \\
+    NDCG@3 & 0.9993 & 0.9990 & 0.9992 \\
+    \hline
+  \end{tabular}
+\end{table}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\textwidth]{fig03_extended_metrics.pdf}
+  \caption{尾部误差、高贡献误差、NDCG@3 与 owner 汇总}
+  \label{fig:extended}
+\end{figure}
+
+\subsection{同预算回归强基线}
+
+回归 MSR 使用可加代理拟合采样联盟值，并对残差执行置换采样。该基线保留了实际联盟查询，
+但在阈值和联合价值上均未超过普通缓存 MC。原因是可加代理与真实价值失配后，残差方差
+反而增大。该负结果说明，简单的可加代理残差校正不足以处理当前非可加价值。
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\textwidth]{fig04_regression_baseline.pdf}
+  \caption{回归 MSR 与缓存置换 Monte Carlo 的同预算比较}
+  \label{fig:regression}
+\end{figure}
+
+\subsection{图消融与图结构扰动}
+
+完整模型去掉图边后，组合 OOD 的 Share-L1 由 0.1086 升至 0.1768，SF1 由 0.0806
+升至 0.1045；去掉可加锚点后，分布内和 SF1 分别升至 0.1276 和 0.1287。该结果说明
+关系结构与解析先验分别承担外推和稳定性作用。
+
+图扰动实验随机删除 witness/coordinate 边。删除 5\% 或 10\% 时，Share-L1 基本不变；
+删除 20\% 后开始轻微恶化；删除 30\% 后，分布内、组合 OOD 和 SF1 分别升至 0.0905、
+0.1180 和 0.0962。模型依赖一组关键可达路径，并不要求每条边都保持完整。
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\textwidth]{fig05_graph_perturbation.pdf}
+  \caption{来源图边随机删除的鲁棒性}
+  \label{fig:perturb}
+\end{figure}
+
+\subsection{外部图零样本适配}
+
+外部适配器保持 D1-P 和 P3 的玩家与精确 Shapley 目标，只映射来源、见证、坐标和价值
+节点，不重新训练。四次外部游戏的结果显示，RPV-GNN 仅在 P3-0 G1 上略优于均匀基线；
+D1-P 和 P3-0 G0 均未优于基线，排序相关接近零或方向不稳定。该实验说明当前模型没有
+表现出可靠的跨数据库模式迁移能力。
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\textwidth]{fig06_external_zero_shot.pdf}
+  \caption{D1-P 与 P3 外部图零样本适配}
+  \label{fig:external}
+\end{figure}
+
+\subsection{哑玩家、不确定性与模型规模}
+
+哑玩家控制加入 199 个与报表依赖图完全断开的玩家。完整 RPV-GNN 的零支付为 0；
+关闭结构遮罩后，零支付均值约为 \(8.35\times10^{-9}\)，连接玩家的 Share-L1 基本不变。
+这说明严格零支付来自结构遮罩，而不是模型恰好学到接近零的输出。
+
+三种子预测标准差与误差呈弱到中等相关，RPV-GNN 的 Spearman 相关为 0.16--0.29。
+名义 95\% 种子区间覆盖率仅约 14\%--59\%，因此只能解释为诊断分歧，不能视为校准置信
+区间。RPV-GNN 参数量为 69,188，Feature-MLP 为 27,075。
+
+\subsection{数据库端到端成本}
+
+10 个分布内游戏的 DuckDB 端到端基准如表\ref{tab:sql-cost}所示。模型路径包含 SQL
+绑定与规划、来源抽取、图构造、图张量化、模型前向和 owner 汇总；MC 路径使用实际置换
+路径，对重复联盟掩码去重后逐次执行 SQL。
+
+\begin{table}[htbp]
+  \centering
+  \caption{DuckDB 端到端每游戏中位耗时}
+  \label{tab:sql-cost}
+  \small
+  \begin{tabular}{@{}lr@{}}
+    \hline
+    阶段或方法 & 中位耗时/ms \\
+    \hline
+    SQL 绑定与规划 & 3.87 \\
+    来源与 lineage 抽取 & 18.61 \\
+    来源图构造 & 0.21 \\
+    图张量化 & 0.28 \\
+    RPV-GNN 前向 & 3.95 \\
+    owner 汇总 & 0.016 \\
+    \textbf{RPV-GNN 端到端} & \textbf{27.12} \\
+    \textbf{MC-64 端到端} & \textbf{796.75} \\
+    \textbf{MC-256 端到端} & \textbf{2,581.18} \\
+    \textbf{MC-1024 端到端} & \textbf{7,328.36} \\
+    \hline
+  \end{tabular}
+\end{table}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\textwidth]{fig07_sql_end_to_end.pdf}
+  \caption{数据库来源抽取、图模型与采样成本}
+  \label{fig:sql}
+\end{figure}
+
+该实验排除训练标签生成、模型训练、数据库连接建立和磁盘缓存影响。因此，“27.12 ms”
+描述的是已训练模型的摊销推理成本，而不是贡献估计全生命周期的零成本。
+
+\section{实验结论}
+
+第一，关系图结构对联合价值的分布外估计具有实质作用。图边消融在两个外推场景均造成
+明显性能下降，结构扰动在删除比例达到 30\% 后才出现显著退化。
+
+第二，解析锚点与值条件安全路由是当前方法成立的关键。单一 RPV-GNN 在联合价值上明显
+优于 MLP，但会破坏可加价值的解析精确性；安全路由将两者结合后，在分布内和 SF1 上优于
+低预算采样。
+
+第三，神经方法不能替代高预算采样或精确计算。MC-256 与安全路由的总体 Share-L1 接近，
+MC-1024 在所有场景显著更准确。神经模型的优势主要体现在重复游戏上的摊销推理成本。
+
+第四，跨模式泛化尚未成立。D1-P/P3 只有四个外部游戏，且适配器依赖人为字段映射；
+当前证据只能支持 TPC-H 同模式与 SF1 规模外推。
+
+\section{实验边界与后续工作}
+
+现有正式实验的主要边界如下：
+\begin{itemize}
+  \item 精确 Shapley 标签适用于 9--12 玩家游戏，更大规模仍依赖采样或近似；
+  \item SQL 审计覆盖一个完整游戏和 20 个分层游戏的抽样联盟，不是 1,000 个游戏的全联盟审计；
+  \item 外部零样本测试只有四个游戏，结果只能作描述性判断；
+  \item 端到端成本只在单一 CPU/DuckDB 环境、单一模型检查点和十个游戏上测量；
+  \item 多种子区间未校准，不能作为置信区间使用；
+  \item RSS/ARSS 关系分层采样尚未实现，仍缺少一个更强的结构感知采样基线。
+\end{itemize}
+
+下一轮实验应优先补训练标签规模曲线和更强的关系分层采样基线；如果继续扩展应用范围，
+应增加真实多模式数据库与统一来源图适配器，而不应把当前外部适配结果外推为通用迁移能力。
+
+\section{复现材料与工具说明}
+
+本报告对应的数据生成、模型训练、统计比较、图件和结果汇总代码均保存在
+\texttt{course\_paper\_gnn} 工程中；原始结果表、审计记录和运行配置保存在
+\texttt{runs/} 下。图件同时提供 PDF 与 PNG，并在
+\texttt{figures/final\_zh\_v12/figure\_manifest.json} 中记录来源哈希。报告的证据一致性
+与科学图件检查使用了 Scientific Agent Skills 中的写作和可视化流程\cite{kassis2026}。
+
+\referencesection
+\fontsize{10pt}{12pt}\selectfont
+\nocite{shapley1953,kipf2017,hamilton2017,ghorbani2019,livshits2021,deutch2022,kara2024,standke2025,luo2022,luo2024,alizad2025,abramovich2025,badewitz2020,dawande2023,kassis2026}
+\bibliographystyle{gbt7714-numerical}
+\bibliography{references}
+\finishreferencesection
+
+\end{document}

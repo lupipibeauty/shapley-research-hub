@@ -1,0 +1,384 @@
+{
+  "H1": {
+    "values": {
+      "E1": 0.1475940725940726,
+      "E2": 0.06866189366189365,
+      "E3": 0.1475940725940726,
+      "E4": 0.06866189366189365,
+      "L1": 0.04474414474414474,
+      "L2": 0.04279609279609279,
+      "L3": 0.06866189366189365,
+      "L4": 0.04279609279609279,
+      "L5": 0.04474414474414474,
+      "L6": 0.06866189366189365,
+      "A1": 0.09322899322899322,
+      "A2": 0.06862581862581862,
+      "A3": 0.09322899322899322
+    },
+    "raw": {
+      "A3": {
+        "gradient": [
+          76435.3125,
+          141733.125
+        ],
+        "probability_vector": [
+          0.0,
+          0.5
+        ],
+        "active_variable_count": 13,
+        "normalization_scale": 1.3155568711124266e-06,
+        "scalar": 0.09322899322899322
+      },
+      "E3": {
+        "gradient": [
+          114442.03125,
+          224382.65625
+        ],
+        "probability_vector": [
+          0.0,
+          0.5
+        ],
+        "active_variable_count": 13,
+        "normalization_scale": 1.3155568711124266e-06,
+        "scalar": 0.1475940725940726
+      },
+      "A1": {
+        "gradient": [
+          76435.3125,
+          141733.125
+        ],
+        "probability_vector": [
+          0.0,
+          0.5
+        ],
+        "active_variable_count": 13,
+        "normalization_scale": 1.3155568711124266e-06,
+        "scalar": 0.09322899322899322
+      },
+      "L1": {
+        "gradient": [
+          42816.09375,
+          68023.125
+        ],
+        "probability_vector": [
+          0.0,
+          0.5
+        ],
+        "active_variable_count": 13,
+        "normalization_scale": 1.3155568711124266e-06,
+        "scalar": 0.04474414474414474
+      },
+      "A2": {
+        "gradient": [
+          62559.84375,
+          104329.6875
+        ],
+        "probability_vector": [
+          0.0,
+          0.5
+        ],
+        "active_variable_count": 13,
+        "normalization_scale": 1.3155568711124266e-06,
+        "scalar": 0.06862581862581862
+      },
+      "E4": {
+        "gradient": [
+          55868.90625,
+          104384.53125
+        ],
+        "probability_vector": [
+          0.0,
+          0.5
+        ],
+        "active_variable_count": 13,
+        "normalization_scale": 1.3155568711124266e-06,
+        "scalar": 0.06866189366189365
+      },
+      "L2": {
+        "gradient": [
+          40951.40625,
+          65061.5625
+        ],
+        "probability_vector": [
+          0.0,
+          0.5
+        ],
+        "active_variable_count": 13,
+        "normalization_scale": 1.3155568711124266e-06,
+        "scalar": 0.04279609279609279
+      },
+      "E1": {
+        "gradient": [
+          114442.03125,
+          224382.65625
+        ],
+        "probability_vector": [
+          0.0,
+          0.5
+        ],
+        "active_variable_count": 13,
+        "normalization_scale": 1.3155568711124266e-06,
+        "scalar": 0.1475940725940726
+      },
+      "L6": {
+        "gradient": [
+          55868.90625,
+          104384.53125
+        ],
+        "probability_vector": [
+          0.0,
+          0.5
+        ],
+        "active_variable_count": 13,
+        "normalization_scale": 1.3155568711124266e-06,
+        "scalar": 0.06866189366189365
+      },
+      "L3": {
+        "gradient": [
+          55868.90625,
+          104384.53125
+        ],
+        "probability_vector": [
+          0.0,
+          0.5
+        ],
+        "active_variable_count": 13,
+        "normalization_scale": 1.3155568711124266e-06,
+        "scalar": 0.06866189366189365
+      },
+      "L5": {
+        "gradient": [
+          42816.09375,
+          68023.125
+        ],
+        "probability_vector": [
+          0.0,
+          0.5
+        ],
+        "active_variable_count": 13,
+        "normalization_scale": 1.3155568711124266e-06,
+        "scalar": 0.04474414474414474
+      },
+      "L4": {
+        "gradient": [
+          40951.40625,
+          65061.5625
+        ],
+        "probability_vector": [
+          0.0,
+          0.5
+        ],
+        "active_variable_count": 13,
+        "normalization_scale": 1.3155568711124266e-06,
+        "scalar": 0.04279609279609279
+      },
+      "E2": {
+        "gradient": [
+          55868.90625,
+          104384.53125
+        ],
+        "probability_vector": [
+          0.0,
+          0.5
+        ],
+        "active_variable_count": 13,
+        "normalization_scale": 1.3155568711124266e-06,
+        "scalar": 0.06866189366189365
+      }
+    },
+    "active_variables": 13,
+    "dtree_nodes": 21,
+    "value_graph_nodes": 60
+  },
+  "H2": {
+    "values": {
+      "E1": 0.11631701631701631,
+      "E2": 0.11631701631701631,
+      "E3": 0.11631701631701631,
+      "E4": 0.11631701631701631,
+      "L1": 0.01783216783216783,
+      "L2": 0.00874125874125874,
+      "L3": 0.11631701631701631,
+      "L4": 0.00874125874125874,
+      "L5": 0.01783216783216783,
+      "L6": 0.11631701631701631,
+      "A1": 0.11631701631701631,
+      "A2": 0.016317016317016316,
+      "A3": 0.11631701631701631
+    },
+    "raw": {
+      "A3": {
+        "gradient": [
+          22030.3125,
+          176833.125
+        ],
+        "probability_vector": [
+          0.0,
+          0.5
+        ],
+        "active_variable_count": 13,
+        "normalization_scale": 1.3155568711124266e-06,
+        "scalar": 0.11631701631701631
+      },
+      "E3": {
+        "gradient": [
+          22030.3125,
+          176833.125
+        ],
+        "probability_vector": [
+          0.0,
+          0.5
+        ],
+        "active_variable_count": 13,
+        "normalization_scale": 1.3155568711124266e-06,
+        "scalar": 0.11631701631701631
+      },
+      "A1": {
+        "gradient": [
+          22030.3125,
+          176833.125
+        ],
+        "probability_vector": [
+          0.0,
+          0.5
+        ],
+        "active_variable_count": 13,
+        "normalization_scale": 1.3155568711124266e-06,
+        "scalar": 0.11631701631701631
+      },
+      "L1": {
+        "gradient": [
+          5906.25,
+          27109.6875
+        ],
+        "probability_vector": [
+          0.0,
+          0.5
+        ],
+        "active_variable_count": 13,
+        "normalization_scale": 1.3155568711124266e-06,
+        "scalar": 0.01783216783216783
+      },
+      "A2": {
+        "gradient": [
+          5138.4375,
+          24806.25
+        ],
+        "probability_vector": [
+          0.0,
+          0.5
+        ],
+        "active_variable_count": 13,
+        "normalization_scale": 1.3155568711124266e-06,
+        "scalar": 0.016317016317016316
+      },
+      "E4": {
+        "gradient": [
+          22030.3125,
+          176833.125
+        ],
+        "probability_vector": [
+          0.0,
+          0.5
+        ],
+        "active_variable_count": 13,
+        "normalization_scale": 1.3155568711124266e-06,
+        "scalar": 0.11631701631701631
+      },
+      "L2": {
+        "gradient": [
+          2835.0,
+          13289.0625
+        ],
+        "probability_vector": [
+          0.0,
+          0.5
+        ],
+        "active_variable_count": 13,
+        "normalization_scale": 1.3155568711124266e-06,
+        "scalar": 0.00874125874125874
+      },
+      "E1": {
+        "gradient": [
+          22030.3125,
+          176833.125
+        ],
+        "probability_vector": [
+          0.0,
+          0.5
+        ],
+        "active_variable_count": 13,
+        "normalization_scale": 1.3155568711124266e-06,
+        "scalar": 0.11631701631701631
+      },
+      "L6": {
+        "gradient": [
+          22030.3125,
+          176833.125
+        ],
+        "probability_vector": [
+          0.0,
+          0.5
+        ],
+        "active_variable_count": 13,
+        "normalization_scale": 1.3155568711124266e-06,
+        "scalar": 0.11631701631701631
+      },
+      "L3": {
+        "gradient": [
+          22030.3125,
+          176833.125
+        ],
+        "probability_vector": [
+          0.0,
+          0.5
+        ],
+        "active_variable_count": 13,
+        "normalization_scale": 1.3155568711124266e-06,
+        "scalar": 0.11631701631701631
+      },
+      "L5": {
+        "gradient": [
+          5906.25,
+          27109.6875
+        ],
+        "probability_vector": [
+          0.0,
+          0.5
+        ],
+        "active_variable_count": 13,
+        "normalization_scale": 1.3155568711124266e-06,
+        "scalar": 0.01783216783216783
+      },
+      "L4": {
+        "gradient": [
+          2835.0,
+          13289.0625
+        ],
+        "probability_vector": [
+          0.0,
+          0.5
+        ],
+        "active_variable_count": 13,
+        "normalization_scale": 1.3155568711124266e-06,
+        "scalar": 0.00874125874125874
+      },
+      "E2": {
+        "gradient": [
+          22030.3125,
+          176833.125
+        ],
+        "probability_vector": [
+          0.0,
+          0.5
+        ],
+        "active_variable_count": 13,
+        "normalization_scale": 1.3155568711124266e-06,
+        "scalar": 0.11631701631701631
+      }
+    },
+    "active_variables": 13,
+    "dtree_nodes": 5,
+    "value_graph_nodes": 21
+  }
+}

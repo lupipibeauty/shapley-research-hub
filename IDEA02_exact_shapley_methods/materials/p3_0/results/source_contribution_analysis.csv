@@ -1,0 +1,14 @@
+﻿player_id,relation_name,witness_count,witness_ids,groups_affected,cross_group_source,G0_shapley_fraction,G1_shapley_fraction,G0_revenue_fraction,G1_revenue_fraction,warning
+E1,EntityFact,2,E1:L1:A1;E1:L2:A2,A,False,7/15,10567/40040,350/3,264175/2002,witness count is descriptive and is not the payment rule
+E2,EntityFact,1,E2:L3:A3,A,False,1/3,66659/360360,250/3,1666475/18018,witness count is descriptive and is not the payment rule
+E3,EntityFact,2,E3:L4:A2;E3:L5:A3,B,False,7/15,10567/40040,350/3,264175/2002,witness count is descriptive and is not the payment rule
+E4,EntityFact,1,E4:L6:A1,B,False,1/3,66659/360360,250/3,1666475/18018,witness count is descriptive and is not the payment rule
+L1,LinkFact,1,E1:L1:A1,A,False,2/15,205/3276,100/3,25625/819,witness count is descriptive and is not the payment rule
+L2,LinkFact,1,E1:L2:A2,A,False,2/15,4643/90090,100/3,232150/9009,witness count is descriptive and is not the payment rule
+L3,LinkFact,1,E2:L3:A3,A,False,1/3,66659/360360,250/3,1666475/18018,witness count is descriptive and is not the payment rule
+L4,LinkFact,1,E3:L4:A2,B,False,2/15,4643/90090,100/3,232150/9009,witness count is descriptive and is not the payment rule
+L5,LinkFact,1,E3:L5:A3,B,False,2/15,205/3276,100/3,25625/819,witness count is descriptive and is not the payment rule
+L6,LinkFact,1,E4:L6:A1,B,False,1/3,66659/360360,250/3,1666475/18018,witness count is descriptive and is not the payment rule
+A1,AttributeFact,2,E1:L1:A1;E4:L6:A1,A;B,True,7/15,9439/45045,350/3,943900/9009,witness count is descriptive and is not the payment rule
+A2,AttributeFact,2,E1:L2:A2;E3:L4:A2,A;B,True,4/15,3061/36036,200/3,382625/9009,witness count is descriptive and is not the payment rule
+A3,AttributeFact,2,E2:L3:A3;E3:L5:A3,A;B,True,7/15,9439/45045,350/3,943900/9009,witness count is descriptive and is not the payment rule

@@ -1,0 +1,7 @@
+{
+  "status": "ENV_BLOCKED",
+  "docker_path": null,
+  "psql_path": null,
+  "provsql_executed": false,
+  "note": "DuckDB SQL success is not treated as ProvSQL provenance verification."
+}

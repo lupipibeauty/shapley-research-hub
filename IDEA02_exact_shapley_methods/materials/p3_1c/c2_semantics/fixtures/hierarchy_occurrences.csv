@@ -1,0 +1,6 @@
+database_id,record_id,entity_id,city_id
+A,A_r1,entity_alpha,city_1
+A,A_r2,entity_alpha,city_2
+B,B_r1,entity_alpha,city_1
+B,B_r2,entity_beta,city_2
+NULL_CASE,N_r1,,city_1

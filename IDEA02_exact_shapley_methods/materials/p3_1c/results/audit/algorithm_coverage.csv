@@ -1,0 +1,9 @@
+method,target,status,correctness_or_blocker,scope_boundary
+P3_native_MTBDD,P3 G1,DIRECTLY_COVERED,exact 13-player vector; 367 nonterminal/9 terminal nodes,classical MTBDD/WMC adaptation; no scale theorem established
+Abramovich_LExaShap,P3 H1/H2 then G1,REDUCTION_COVERED,maximum player error 1.3877787807814457e-17; budget 1000,Boolean threshold reduction; H1/H2 compiled separately; official public interface is not direct multi-output G1
+Abramovich_Theorem_3_6,given d-tree all-variable Shapley,DIRECTLY_COVERED,paper states O(|T|*n^2),does not include SQL-to-DNF or d-tree compilation cost
+Abramovich_Proposition_4_1_4_2,MIN/MAX semimodule theory,THEORETICALLY_COVERED_INTERFACE_UNVERIFIED,paper gives value-count formula and PTIME on given d-tree,public repository does not expose a confirmed full MIN Shapley runner used here
+Luo_2022_independent_utility,P3 G1,THEOREM_EXCLUDES,threshold/MIN coupling is not independent additive output utility,G0-like additive targets only unless a same-game reduction is proved
+Luo_2024_simple_game,H1/H2,ENV_BLOCKED,official archive obtained but Cargo dependencies unavailable,no numerical result; not a performance failure
+ProvSQL,C2 provenance,ENV_BLOCKED,Docker and psql absent,DuckDB SQL correctness is not ProvSQL provenance support
+C2_local_counts,parent/cross DISTINCT,REPRESENTATION_COST,local marginal counts are insufficient; identity/source relation restores semantics,known provenance/data-cube issue; not a new hardness result

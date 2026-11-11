@@ -1,0 +1,30 @@
+{
+  "completed_at": "2026-11-04T02:41:53+0800",
+  "status": "P2_COMPLETED",
+  "p3_started": false,
+  "families": [
+    "F0-DISJOINT",
+    "F1-STAR",
+    "F2-PATH-HIGH",
+    "F5-OUTPUT-MATCHED-LOW"
+  ],
+  "full_report_pair_match": {
+    "H1-TREE": true,
+    "H2-CROSS": true
+  },
+  "sql_oracle_all_pass": true,
+  "max_shapley_oracle_error": 2.1316282072803006e-14,
+  "max_efficiency_error": 7.105427357601002e-14,
+  "factorial_cases": 8,
+  "environment": {
+    "python": "3.11.6 (tags/v3.11.6:8b6ee5b, Oct  2 2023, 14:57:12) [MSC v.1935 64 bit (AMD64)]",
+    "duckdb": "1.5.6",
+    "platform": "Windows-10-10.0.26200-SP0"
+  },
+  "skills_citation": "Kassis et al. (2026), Scientific Agent Skills, arXiv:2609.00065, doi:10.48550/arXiv.2609.00065",
+  "input_hashes": {
+    "config\\p2_config.json": "6fe513816c11305cbb12795d8fe00501f3bb1b2e8df60faa880fe6bdd5c2b545",
+    "schema\\relations.sql": "98fbfc6365936fe357a229e5381a958c45397a3d1588ef04cc518d6e71798232",
+    "queries\\q2_nh.sql": "0861004d6ce84500c424913bd8386de896d999d0d3aeac7497a570348505a92e"
+  }
+}

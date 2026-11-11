@@ -1,0 +1,39 @@
+{
+  "stage": "P3_1B_PREPARATION_COMPLETED_AND_PAUSED",
+  "new_algorithm_developed": false,
+  "method": "fixture JOIN-witness minimal winners + exact subset Shapley",
+  "truth_input_used_for_generation": false,
+  "oracle_used_after_generation": true,
+  "n_players": 13,
+  "coalitions_for_validation": 8192,
+  "minimal_winner_counts": {
+    "H1": 9,
+    "H2": 4
+  },
+  "oracle_alliance_match": true,
+  "shapley_decomposition_match": true,
+  "source_inputs": {
+    "fixture": {
+      "path": "D:\\python项目\\shapley\\projects\\aggregate_report_shapley_structure_v12\\P3_0\\fixtures\\anchor_13_players.json",
+      "sha256": "f61bd90a823692e3eefbae9cd3b537a0388e910328ce0f116ba7957e88b94ffc"
+    },
+    "oracle": {
+      "path": "D:\\python项目\\shapley\\projects\\aggregate_report_shapley_structure_v12\\P3_0\\results\\anchor_truth.csv",
+      "sha256": "053777d37b77a4be4d835fc8b525a38cdf15cc642ff33e4acce1970887c1e326"
+    },
+    "g1": {
+      "path": "D:\\python项目\\shapley\\projects\\aggregate_report_shapley_structure_v12\\P3_0\\results\\record_shapley.csv",
+      "sha256": "4d2067bf06b7c9a144b02aaf5af5198b9c28af6c0b22b6b37e2669d0b66628da"
+    }
+  },
+  "environment": {
+    "python": "3.11.6 (tags/v3.11.6:8b6ee5b, Oct  2 2023, 14:57:12) [MSC v.1935 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.26200-SP0"
+  },
+  "outputs": {
+    "g1_shapley_decomposition.csv": "b5177f04f6ef6bf67c5d630e6c7f7ad4ab31f23df7a46c664f9d87b30266c405",
+    "minimal_winning_coalitions.csv": "596895417014c077a323bc048eb70b70c1e3c327efa53b743a47018232955cc3",
+    "oracle_validation.csv": "3d70684018298220b5a040507d5b5578f3c0675d342366c4dcd41435a1c9b8a2",
+    "threshold_shapley.csv": "4244dc6eb138e15165c4305834d786e20a6247c8a59e9066515db7d5feb58a9c"
+  }
+}

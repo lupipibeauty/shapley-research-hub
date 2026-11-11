@@ -1,0 +1,8 @@
+experiment,overlap,missing_for_current,evidence,status
+D1-P/S0/S1,"multi-source report, record players, 7 nodes/35 coordinates",true cross-player Entity-Link-Attribute DISTINCT lineage,<SOURCE_WORKSPACE>\aggregate_report_shapley\outputs\v4_0\S1\verification_summary.json,SOURCE_VERIFIED
+AB-J1/J2,"JOIN, DISTINCT, alternative Boolean lineage, HAVING",two-group MIN utility and native all-player joint distribution,<SOURCE_WORKSPACE>\aggregate_report_shapley\outputs\v4_0\AB_J2_2026_10_31\manifest.json,SOURCE_VERIFIED
+AB-N4-DP,classic count-state exact DP,JOIN OR-of-AND evidence and shared attributes across groups,<SOURCE_WORKSPACE>\aggregate_report_shapley\outputs\v4_0\AB_N3_L_N4_DP_2026_10_31\manifest.json,SOURCE_VERIFIED
+H3-CONTROL,"cross-player JOIN, DISTINCT/HAVING, state/factor baselines",fixed two-group COUNT DISTINCT plus MIN revenue game,<SOURCE_WORKSPACE>\aggregate_report_shapley\outputs\v4_0\H3_CONTROL\summary.json,SOURCE_VERIFIED
+H5/H5-R,"native record-increment state DP, factors, shared all-player computation","record increments are additive statistics, not current JOIN lineage",<SOURCE_WORKSPACE>\aggregate_report_shapley\outputs\v4_0\H5_R_2026_11_01\summary.json,SOURCE_VERIFIED
+P2,"same Q2-NH pattern, cross-player sharing, exact Shapley",P2 state compiler consumes all coalition reports; utility is not current G1=min,<SOURCE_WORKSPACE>\projects\aggregate_report_shapley_structure_v12\P2\results\P2_manifest.json,SOURCE_VERIFIED
+P3-0 anchor,"13 physical record players, two-group DISTINCT and MIN",none for correctness anchor,<SOURCE_WORKSPACE>\projects\aggregate_report_shapley_structure_v12\P3_0\results\P3_0_manifest.json,REPRODUCED

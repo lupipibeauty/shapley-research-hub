@@ -1,0 +1,9 @@
+layer,current_P3_1C_level,verified_evidence,not_yet_covered
+physical_data,3 endogenous fact relations; 13 physical fact players; 4 entities; 6 links; 3 shared attributes,P3-0 fixture and 6 JOIN witnesses,large data; more relations; changing source widths
+SQL_query,three-table Entity-Link-Attribute JOIN; COUNT DISTINCT entity by two groups,P3-0 SQL and all 8192 coalition SQL checks,multiple hierarchy levels in the main game; HAVING; general query families
+report_product,2 group coordinates qA/qB; G0=sum; G1=min; H1/H2 threshold decomposition,P3-1B and P3-1C R2,many groups; many thresholds; general nonlinear report utilities
+game,13 record players; 8192 coalitions; owner maps only post-hoc aggregation,exact oracle plus exact efficiency/payment checks,owner-as-player games; large n
+native_representation,layered MTBDD with 367 nonterminal and 9 terminal nodes,P3 native rerun and manifest,variable-order scaling and width families
+author_algorithm,LExaShap H1 9 clauses/21 d-tree nodes; H2 4 clauses/5 d-tree nodes,R1/R2 official-core execution,general shared multi-output compilation; aggregate MIN public Shapley interface
+C2_semantics,2 city levels plus province DISTINCT; 2x2 region-industry cross counterexample,DuckDB SQL actual results,ProvSQL provenance execution and scalable compositional state
+complexity_claim,fixed small-instance cost decomposition only,3 repeat medians/IQR and process peak RSS,no asymptotic or general performance superiority claim

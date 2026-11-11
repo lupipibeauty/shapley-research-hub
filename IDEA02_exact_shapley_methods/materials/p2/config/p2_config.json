@@ -1,0 +1,15 @@
+{
+  "protocol": "P2_revised",
+  "seed": 20261104,
+  "player_rule": "one endogenous physical fact is one record player; owner is post-hoc only",
+  "query": "Q2-NH: Entity(x), Link(x,y), Attribute(y)",
+  "repetitions": 7,
+  "floating_tolerance": 1e-10,
+  "families": ["F0-DISJOINT", "F1-STAR", "F2-PATH-HIGH", "F5-OUTPUT-MATCHED-LOW"],
+  "factorial_low": "F5-OUTPUT-MATCHED-LOW",
+  "factorial_high": "F2-PATH-HIGH",
+  "hierarchies": ["H0-ONE", "H1-TREE", "H2-CROSS", "H2-MATCH7"],
+  "factorial_hierarchies": ["H1-TREE", "H2-CROSS"],
+  "factorial_utilities": ["G0-ADD-COMMON", "G2-JOINT-TASK-COMMON"],
+  "status": "PREREGISTERED_BEFORE_P2_RUN"
+}

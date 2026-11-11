@@ -1,0 +1,41 @@
+{
+  "status": "P3_0_COMPLETED_AND_PAUSED",
+  "later_scale_hierarchy_dynamic_started": false,
+  "data_version": "anchor13_v1",
+  "player_version": "physical_fact_13_v1",
+  "sql_version": "two_group_distinct_v1",
+  "utility_version": "G0_sum_G1_min_v1",
+  "n_players": 13,
+  "coalitions": 8192,
+  "lineage": {
+    "entities": 4,
+    "groundings": 6,
+    "alternative_entities": 2,
+    "cross_entity_shared_players": 3
+  },
+  "full_report": {
+    "q_A": 2,
+    "q_B": 2,
+    "G0": 4,
+    "G1": 2
+  },
+  "native_method": "layered MTBDD cardinality WMC",
+  "native_truth_input": false,
+  "native_completed_before_oracle": true,
+  "sql_python_all_equal": true,
+  "native_subset_mobius_all_exact": true,
+  "revenue_pool": 1000,
+  "budget_all_exact": true,
+  "physical_partition_invariant": true,
+  "environment": {
+    "python": "3.11.6 (tags/v3.11.6:8b6ee5b, Oct  2 2023, 14:57:12) [MSC v.1935 64 bit (AMD64)]",
+    "duckdb": "1.5.6",
+    "platform": "Windows-10-10.0.26200-SP0"
+  },
+  "hashes": {
+    "fixtures\\anchor_13_players.json": "f61bd90a823692e3eefbae9cd3b537a0388e910328ce0f116ba7957e88b94ffc",
+    "schema\\complete_schema.sql": "8eeb7a9d4e82da8da93bb862bf5fbaebfa1be5a1306243241d2e028f0df6bed8",
+    "queries\\two_group_distinct.sql": "c8e45a171c9d3d16e4a2280e255be179efc15825c3320d121db8e3bd7cc0874a"
+  },
+  "skills_citation": "Kassis et al. (2026), Scientific Agent Skills, arXiv:2609.00065, doi:10.48550/arXiv.2609.00065"
+}

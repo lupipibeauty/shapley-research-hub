@@ -1,0 +1,19 @@
+{
+  "status": "DESIGNED_NOT_RUN",
+  "scale": {
+    "fixed": ["Entity-Link-Attribute SQL", "A/B groups", "G0/G1", "physical-fact players"],
+    "axes": ["entity count", "attribute count", "evidence sharing pattern", "lineage/factor width"],
+    "patterns": ["independent", "star sharing", "chain", "local grid", "higher crossing width"],
+    "gates": ["anchor remains exact", "no coalition truth as method input", "small instances cross-checked by SQL"]
+  },
+  "hierarchy": {
+    "first_test": "disjoint-leaf parent COUNT DISTINCT equals the sum of leaf counts",
+    "counterexample_needed": "same entity belongs to multiple leaves, so leaf counts do not determine parent DISTINCT",
+    "new_experiment_gate": "a parent statistic is not recoverable from the current sufficient state, or a new player dependency is introduced"
+  },
+  "cross_dimensions_and_metrics": {
+    "entry_order": ["COUNT DISTINCT", "COUNT(*)", "SUM", "AVG", "ratio"],
+    "required_audit": ["statistical unit", "bag-duplicate effect", "NULL rule", "recoverability from existing state", "new sufficient statistic", "lineage-algorithm support"],
+    "rule": "an output column that does not enter utility G is not evidence of harder Shapley computation"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "data_version": "anchor13_v1",
+  "player_version": "physical_fact_13_v1",
+  "sql_version": "two_group_distinct_v1",
+  "utility_version": "G0_sum_G1_min_v1",
+  "revenue_pool": 1000,
+  "groups": [{"group_id":"A","group_name":"Group A"},{"group_id":"B","group_name":"Group B"}],
+  "entities": [
+    {"player_index":0,"player_id":"E1","record_id":"E1","entity_id":"e1","group_id":"A","source_id":"Source_A"},
+    {"player_index":1,"player_id":"E2","record_id":"E2","entity_id":"e2","group_id":"A","source_id":"Source_A"},
+    {"player_index":2,"player_id":"E3","record_id":"E3","entity_id":"e3","group_id":"B","source_id":"Source_A"},
+    {"player_index":3,"player_id":"E4","record_id":"E4","entity_id":"e4","group_id":"B","source_id":"Source_A"}
+  ],
+  "links": [
+    {"player_index":4,"player_id":"L1","record_id":"L1","link_id":"l1","entity_id":"e1","attribute_id":"a1","source_id":"Source_B"},
+    {"player_index":5,"player_id":"L2","record_id":"L2","link_id":"l2","entity_id":"e1","attribute_id":"a2","source_id":"Source_B"},
+    {"player_index":6,"player_id":"L3","record_id":"L3","link_id":"l3","entity_id":"e2","attribute_id":"a3","source_id":"Source_B"},
+    {"player_index":7,"player_id":"L4","record_id":"L4","link_id":"l4","entity_id":"e3","attribute_id":"a2","source_id":"Source_B"},
+    {"player_index":8,"player_id":"L5","record_id":"L5","link_id":"l5","entity_id":"e3","attribute_id":"a3","source_id":"Source_B"},
+    {"player_index":9,"player_id":"L6","record_id":"L6","link_id":"l6","entity_id":"e4","attribute_id":"a1","source_id":"Source_B"}
+  ],
+  "attributes": [
+    {"player_index":10,"player_id":"A1","record_id":"A1","attribute_id":"a1","attribute_type":"shared","valid":true,"value":1.0,"source_id":"Source_C"},
+    {"player_index":11,"player_id":"A2","record_id":"A2","attribute_id":"a2","attribute_type":"shared","valid":true,"value":1.0,"source_id":"Source_C"},
+    {"player_index":12,"player_id":"A3","record_id":"A3","attribute_id":"a3","attribute_type":"shared","valid":true,"value":1.0,"source_id":"Source_C"}
+  ],
+  "owner_maps": {
+    "OwnerMap-A": {"E1":"O_E","E2":"O_E","E3":"O_E","E4":"O_E","L1":"O_L","L2":"O_L","L3":"O_L","L4":"O_L","L5":"O_L","L6":"O_L","A1":"O_A","A2":"O_A","A3":"O_A"},
+    "OwnerMap-B": {"E1":"O1","L4":"O1","A1":"O1","E2":"O2","L1":"O2","A2":"O2","E3":"O3","L2":"O3","L5":"O3","A3":"O3","E4":"O4","L3":"O4","L6":"O4"}
+  }
+}

@@ -1,0 +1,4 @@
+﻿query,n_players,facts,groundings,hierarchical,same_business_semantics,status,evidence
+Q0,3,P1 Q0_F0,3,True,False,HISTORICAL_REPRODUCED_NOT_RERUN,P1_small_truth.csv
+Q1-H,8,P1 Q1_F1_STAR,4,True,False,HISTORICAL_REPRODUCED_NOT_RERUN,P1_small_truth.csv
+Q2-NH,12,P2 4 Entity+4 Link+4 Attribute,4,False,False,P2_MEASURED_MAIN,P2_A1/P2_exact_shapley

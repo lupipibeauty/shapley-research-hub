@@ -1,0 +1,15 @@
+{
+  "status": "R1_ENV_BLOCKED",
+  "repository": "https://github.com/IDEAL-Lab/shapley-value-simple-game",
+  "main_commit": "2a514fb4a0e3d45365d6dffe6435f93499afd7e3",
+  "archive_sha256": "4A35F6F7C33E1D08B2E6FA8B036449484513CF975526F92C46420AAE2DD34866",
+  "source_downloaded": true,
+  "source_modified": false,
+  "official_environment": "Ubuntu 20.04 LTS + Rust",
+  "local_toolchain": "isolated historical Windows GNU Rust toolchain",
+  "offline_failure": "bit-set absent from local Cargo cache; bundled vendor directory empty",
+  "online_failure": "crates.io unreachable through configured local proxy",
+  "official_example_executed": false,
+  "P3_H1_H2_adaptation_executed": false,
+  "interpretation": "environment/dependency blockage only; no theory or algorithm failure conclusion"
+}

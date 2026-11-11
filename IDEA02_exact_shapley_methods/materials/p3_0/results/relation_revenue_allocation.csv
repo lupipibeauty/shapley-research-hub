@@ -1,0 +1,7 @@
+﻿game_id,relation_name,revenue_fraction,revenue_decimal
+G0,AttributeFact,300,300
+G0,EntityFact,400,400
+G0,LinkFact,300,300
+G1,AttributeFact,2270425/9009,252.01742701742702
+G1,EntityFact,4044050/9009,448.88999888999888
+G1,LinkFact,898175/3003,299.09257409257407

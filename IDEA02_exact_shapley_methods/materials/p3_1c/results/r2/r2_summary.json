@@ -1,0 +1,32 @@
+{
+  "status": "R2_SAME_TARGET_REPRODUCED",
+  "players": 13,
+  "H1_clauses": 9,
+  "H2_clauses": 4,
+  "H1_sum": 1.0,
+  "H2_sum": 0.9999999999999999,
+  "G1_sum": 2.0,
+  "maximum_absolute_error": 1.3877787807814457e-17,
+  "revenue_sum": 1000.0,
+  "owner_map_budget_sums": {
+    "OwnerMap-A": 1000.0,
+    "OwnerMap-B": 1000.0
+  },
+  "oracle_used_to_construct_input": false,
+  "H1_H2_compiled_separately": true,
+  "official_cross_game_subexpression_sharing": false,
+  "MTBDD_structure": {
+    "nonterminal_nodes": 367,
+    "terminal_nodes": 9
+  },
+  "LExaShap_structure": {
+    "H1": {
+      "dtree_nodes": 21,
+      "value_graph_nodes": 60
+    },
+    "H2": {
+      "dtree_nodes": 5,
+      "value_graph_nodes": 21
+    }
+  }
+}

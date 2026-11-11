@@ -1,0 +1,5 @@
+﻿game_id,owner_map_version,grand_minus_empty,sum_shapley_fraction,sum_record_revenue_fraction,sum_owner_revenue_fraction,revenue_pool,shapley_efficiency_exact,record_budget_exact,owner_budget_exact,negative_shapley_count,payment_rule_applicable
+G0,OwnerMap-A,4,4,1000,1000,1000,True,True,True,0,True
+G0,OwnerMap-B,4,4,1000,1000,1000,True,True,True,0,True
+G1,OwnerMap-A,2,2,1000,1000,1000,True,True,True,0,True
+G1,OwnerMap-B,2,2,1000,1000,1000,True,True,True,0,True

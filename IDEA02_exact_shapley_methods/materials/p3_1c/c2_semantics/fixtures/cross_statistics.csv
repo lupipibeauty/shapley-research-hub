@@ -1,0 +1,5 @@
+database_id,record_id,entity_id,region_id,industry_id
+CROSS_A,CA_r1,e1,region_1,industry_x
+CROSS_A,CA_r2,e2,region_2,industry_y
+CROSS_B,CB_r1,e1,region_1,industry_y
+CROSS_B,CB_r2,e2,region_2,industry_x

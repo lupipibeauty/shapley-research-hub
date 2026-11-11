@@ -1,0 +1,28 @@
+{
+  "method": "layered multi-terminal decision diagram + cardinality weighted model counting",
+  "input": "raw fact lineage only",
+  "coalition_truth_used_as_input": false,
+  "n_players": 13,
+  "nonterminal_nodes": 367,
+  "terminal_nodes": 9,
+  "layer_widths": {
+    "0": 1,
+    "1": 2,
+    "2": 4,
+    "3": 8,
+    "4": 16,
+    "5": 24,
+    "6": 32,
+    "7": 32,
+    "8": 48,
+    "9": 64,
+    "10": 64,
+    "11": 48,
+    "12": 24
+  },
+  "root_id": 375,
+  "global_distribution_total": 8192,
+  "expected_coalitions": 8192,
+  "conditional_distributions_each": 4096,
+  "native_completed_before_oracle": true
+}

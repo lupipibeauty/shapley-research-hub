@@ -1,0 +1,19 @@
+{
+  "status": "C2_MINIMAL_SEMANTICS_VERIFIED",
+  "checks": {
+    "city_local_counts_equal": true,
+    "province_distinct_differs": true,
+    "null_count_star_semantics": true,
+    "empty_group_preserved": true,
+    "grouping_sets_executed": true,
+    "cross_margins_equal_but_cells_differ": true
+  },
+  "provsql": {
+    "status": "ENV_BLOCKED",
+    "docker_path": null,
+    "psql_path": null,
+    "provsql_executed": false,
+    "note": "DuckDB SQL success is not treated as ProvSQL provenance verification."
+  },
+  "interpretation": "Leaf DISTINCT counts alone do not recover parent or cross-cell identity; entity identity/source relation is additionally required. This is a semantic counterexample, not a new hardness result."
+}

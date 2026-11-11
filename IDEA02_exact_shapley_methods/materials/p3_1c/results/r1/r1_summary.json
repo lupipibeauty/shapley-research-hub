@@ -1,0 +1,31 @@
+{
+  "status": "R1_REPRODUCED",
+  "author_core_modified": false,
+  "official_output_semantics": "gradient vectors by coalition size",
+  "local_adapter": "dot(gradient, leaf probability vector) * 2^n / n!; independently checked, not fitted to P3 oracle",
+  "official_readme_has_expected_numeric_output": false,
+  "snapshot": {
+    "archive": "D:\\python项目\\shapley\\aggregate_report_shapley\\external\\abramovich\\archive\\LExaBan-LExaShap-main.zip",
+    "archive_sha256": "7e28ba907c2d1af830d49b89d8647f4ecd4d14dc6817ed73cabc791d2c31ef3c",
+    "archive_file_count": 329,
+    "missing_archive_files": [],
+    "source_content_mismatches": [],
+    "ignored_runtime_cache_mismatches": [
+      "Algorithms/LExaShap/__pycache__/Helper_functions.cpython-311.pyc",
+      "Algorithms/LExaShap/__pycache__/ShapleyCircuit.cpython-311.pyc",
+      "Algorithms/LExaShap/__pycache__/ShapleyEngine.cpython-311.pyc"
+    ],
+    "official_source_exact_excluding_runtime_cache": true,
+    "git_commit": "UNVERIFIED_ZIP_HAS_NO_GIT_METADATA",
+    "relevant_hashes": {
+      "README.md": "4759a12e69f07a789fe45d606a3a7f73d3d1f3efa68007ce6121c6bbbc43254c",
+      "Algorithms\\LExaShap\\ShapleyEngine.py": "6d45813c1b89e65e70a71d56a14f65f0f7ba883264d72b2c6dc3d837306d16b2",
+      "Algorithms\\LExaShap\\ShapleyCircuit.py": "63855c5b1b7997b79cef9731a63eae9aa81e64f4987a4ae9c731c994f41d68fe",
+      "Advancing_Fact_Attribution_for_Query_Answering.pdf": "d4a035106da8551505860357d622003f1e9afc6e34e7684cbbc6d8b3908e11f0"
+    }
+  },
+  "python": "3.11.6 (tags/v3.11.6:8b6ee5b, Oct  2 2023, 14:57:12) [MSC v.1935 64 bit (AMD64)]",
+  "numpy": "2.4.6",
+  "scipy": "1.17.1",
+  "maximum_absolute_error": 0.0
+}

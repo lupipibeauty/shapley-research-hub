@@ -1,0 +1,22 @@
+version: p3_0_active_v1
+active_endogenous:
+  - EntityFact
+  - LinkFact
+  - AttributeFact
+inactive_endogenous:
+  - EvidenceFact
+  - GroupMembership
+  - MeasureFact
+fixed_exogenous:
+  - GroupDimension
+  - RegionDimension
+  - CategoryDimension
+  - HierarchyClosure
+metadata_only:
+  - PlayerRegistry
+  - OwnerMapping
+player_rule: each active physical fact is one record player
+grounding_is_player: false
+owner_is_player: false
+coalition_fk_rule: missing player facts naturally remove JOIN paths; do not repair a coalition
+

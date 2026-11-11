@@ -1,0 +1,39 @@
+{
+  "manifest": {
+    "stage": "P3_1C_COMPLETED_AND_PAUSED",
+    "started_at": "2026-11-04T16:48:40+0800",
+    "completed_at": "2026-11-04T16:48:44+0800",
+    "P3_0_or_P3_1B_modified": false,
+    "R1": "R1_REPRODUCED",
+    "R2": "R2_SAME_TARGET_REPRODUCED",
+    "C2": "C2_MINIMAL_SEMANTICS_VERIFIED",
+    "Luo2024": "R1_ENV_BLOCKED",
+    "ProvSQL": "ENV_BLOCKED",
+    "large_scale_experiment_started": false,
+    "new_algorithm_claimed": false,
+    "artifact_hashes": {
+      "results\\audit\\algorithm_coverage.csv": "0d0b5c1ab5281c5d2e71a90864a219a85b3165db167ff745874daf86977613e1",
+      "results\\audit\\historical_reproduction_search.csv": "1e26b7234aaf133ce83f7fbb07baab3342438490138e397634837cb6d294e3e8",
+      "results\\audit\\luo2024_status.json": "82da1bc84bbcd1047f8b08ac5b0935b4f24f053abc65726df56d95afffcdb157",
+      "results\\audit\\research_layer_complexity.csv": "f67969ee5c580ecd4e10f5c75bf0c09d401ac52749b975eebd74e4d924ac9a23",
+      "results\\c2\\c2_summary.json": "5a07ef2f5ac511e165af2a54b8bd070e9c7933f60566778eae0e0d508003a1ca",
+      "results\\c2\\sql_results.csv": "c9e34587415c8543b324e1c39569fa1f0b99b8c865c4396692934a966960c72a",
+      "results\\r1\\boolean_case_validation.csv": "2ec82b21824ae5b1e20ec306193a6e1bbd51fe84719aede64ee0331c0239f0d2",
+      "results\\r1\\official_raw_outputs.json": "29089eac70699d62573930913b9d8c8f7002d6365e40d9dc03581d8d7df4ca62",
+      "results\\r1\\r1_summary.json": "c32a0ff01a776655d347a119154a6ea822bb5695e00f03e577e8a7697debe617",
+      "results\\r2\\official_raw_h1_h2.json": "ffbbdfabf6cff914bce99730aa21ac7e8df72df25a3c7c3ceb87fb787c798964",
+      "results\\r2\\owner_revenue.csv": "ba9c91ecb86896246f5e1c08d32a3b3cee363d8184f9eb58f80cef59b0121a73",
+      "results\\r2\\player_correctness_and_payment.csv": "730424870c1b4c14423a8c81080b5996ce16d0bac24dc030f971bec4d8e97924",
+      "results\\r2\\r2_summary.json": "1ab11d68d70b80df2f0bc4cd09dac28f1e27e663873ede6183945ff2a980cafe",
+      "results\\timing\\cost_breakdown.csv": "fc48826e01804c16072d7923507a093a065e3164302c47a478576e2132f46546"
+    }
+  },
+  "environment": {
+    "python": "3.11.6 (tags/v3.11.6:8b6ee5b, Oct  2 2023, 14:57:12) [MSC v.1935 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "duckdb": "1.5.6",
+    "numpy": "2.4.6",
+    "official_source": "D:\\python项目\\shapley\\aggregate_report_shapley\\external\\abramovich\\source\\LExaBan-LExaShap-main",
+    "official_source_modified_by_P3_1C": false
+  }
+}

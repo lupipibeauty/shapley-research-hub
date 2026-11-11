@@ -1,0 +1,6 @@
+method,prior_material_found,prior_status,prior_scope,P3_1C_action,P3_1C_status
+Abramovich_2025,aggregate_report_shapley/outputs/v4_0/R0/abramovich_official_zip_run.json,REPRODUCED_ORIGINAL_WITH_EXPLICIT_POSTPROCESS,Boolean examples plus D1-P historical adapters,rerun official Boolean cases and adapt fixture-derived P3 H1/H2,R1_REPRODUCED;R2_SAME_TARGET_REPRODUCED
+Luo_2022,aggregate_report_shapley/outputs/v4_0/R0/luo_official_reproduction_windows_gnu.json,REPRODUCED_ORIGINAL,D1-P V-count partial same-game coverage,retain audit only; do not disguise threshold games as independent utility,HISTORICAL_ONLY
+Luo_2024,No earlier local source or execution log,UNVERIFIED,simple-game author method,download official main archive and attempt locked build,R1_ENV_BLOCKED
+ProvSQL,aggregate_report_shapley/outputs/v4_0/RAPID_GAP/provsql_environment_check.json,ENV_BLOCKED,documentation/theory audit only,recheck docker and psql; preserve DuckDB/ProvSQL distinction,ENV_BLOCKED
+P3_native_MTBDD,projects/aggregate_report_shapley_structure_v12/P3_0/results/P3_0_manifest.json,REPRODUCED_CLASSIC_ADAPTATION,13 record players; three-table JOIN; two DISTINCT counts; G0/G1,re-run limited same-target cost pipeline,DIRECTLY_COVERED

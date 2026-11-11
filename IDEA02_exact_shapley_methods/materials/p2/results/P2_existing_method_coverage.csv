@@ -1,0 +1,10 @@
+﻿method,scope,status,boundary
+full coalition + subset formula,all P2 small games,MEASURED_EXACT,exponential oracle
+Möbius/Harsanyi independent oracle,all P2 small games,MEASURED_EXACT,exponential independent check
+coordinate linearity,G0 and G1,MEASURED_EXACT,not valid for max-coupled G2
+compiled sufficient-state transitions,all P2 small games,MEASURED_EXACT_AFTER_COALITION_COMPILATION,current compiler enumerates coalitions; not a native scaling result
+AB-N4-DP/H5 state methods,low-dimensional count or frozen V2 states,ADAPTER_REQUIRED,P2 JOIN evidence state differs
+classical variable elimination/model counting,bounded source/value factor width,STRUCTURALLY_APPLICABLE_NOT_MEASURED,requires native joint factor adapter
+Abramovich/LExaShap,Boolean output provenance after d-tree compilation,ADAPTER_REQUIRED,not direct arbitrary G2 report utility interface
+Livshits/Standke-Kimelfeld,matching CQ/aggregate theorem classes,THEORETICAL_BOUNDARY_ONLY,"query output, fact-player and localized-value assumptions must match"
+Luo independent utility,additive independent output utility,APPLICABLE_TO_RESTRICTED_G0,G2 violates independent utility
