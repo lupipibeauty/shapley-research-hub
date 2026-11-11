@@ -1,0 +1,18 @@
+[
+  {
+    "budget": 64,
+    "split": "in_distribution",
+    "games": 5,
+    "median_ms_per_sql_evaluation": 17.4156406246766,
+    "p95_ms_per_sql_evaluation": 18.803245311573846,
+    "median_context_prepare_ms": 20.95879998523742
+  },
+  {
+    "budget": 256,
+    "split": "in_distribution",
+    "games": 5,
+    "median_ms_per_sql_evaluation": 17.35959726602232,
+    "p95_ms_per_sql_evaluation": 18.738425781521073,
+    "median_context_prepare_ms": 20.95879998523742
+  }
+]

@@ -26,3 +26,10 @@
 5. 每批材料单独提交，提交信息不伪造过去的实验历史。
 
 当前状态：**仅完成迁移计划与研究说明，第一批原始材料尚未复制。**
+## 当前迁移进度（2026-11-12）
+
+- IDEA02 的 P2/P3、aggregate_report_shapley 与 BRBD 小型代码、配置、日志和结果摘要已完成第一批归档。
+- IDEA04 的 `course_paper_gnn/runs` 已筛选归档 308 个小型配置、指标、汇总和日志文件，目标为 `IDEA04_gnn_amortized_estimation/materials/results/`。
+- IDEA01 未发现独立实验原始证据，已建立明确的材料说明，不以其他方向材料替代。
+- 各 Idea 已补齐设计、代码、结果、证据导航页；大型数据库、模型权重、JSONL、缓存、外部源码和虚拟环境仍不复制。
+- 所有复制材料的来源与目标哈希继续记录在 `research/MATERIAL_MANIFEST.csv`；敏感路径在文本副本中统一替换为 `<SOURCE_WORKSPACE>`。

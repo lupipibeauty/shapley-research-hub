@@ -1,0 +1,112 @@
+{
+  "metadata": {
+    "data": "data\\final\\tpch_g1000_v2.jsonl",
+    "database": "..\\tmp\\researchlab_v2\\workspace\\BRBD_v1\\runs\\R1_luo\\tpch_sf01\\tpch_sf01.duckdb",
+    "checkpoint": "runs\\final_rpv_v2_seed20261107\\best_model.pt",
+    "split": "in_distribution",
+    "games": 10,
+    "budgets": [
+      64,
+      256,
+      1024
+    ],
+    "repeats": 3,
+    "seed": 20261114,
+    "timing_scope": "single Windows CPU/DuckDB process; median per game; sql_bind_plan is EXPLAIN only, not a pure parser microbenchmark",
+    "cache_policy": "MC de-duplicates coalition masks before executing SQL; model path performs no utility queries at inference",
+    "excluded_from_timing": "training labels, model training, disk cache effects, and network/database connection setup"
+  },
+  "stages": [
+    {
+      "stage": "sql_bind_plan",
+      "games": 10,
+      "median_ms": 3.874900000027992,
+      "mean_ms": 3.9681000000200584,
+      "p95_ms": 4.6741999999539985
+    },
+    {
+      "stage": "lineage_extract",
+      "games": 10,
+      "median_ms": 18.608450000101584,
+      "mean_ms": 19.061650000003283,
+      "p95_ms": 21.73359999983404
+    },
+    {
+      "stage": "graph_construct",
+      "games": 10,
+      "median_ms": 0.21110000000135187,
+      "mean_ms": 0.21973999998863292,
+      "p95_ms": 0.35100000013699173
+    },
+    {
+      "stage": "graph_tensorize",
+      "games": 10,
+      "median_ms": 0.27740000018638966,
+      "mean_ms": 0.2902700000049663,
+      "p95_ms": 0.36449999993237725
+    },
+    {
+      "stage": "model_forward",
+      "games": 10,
+      "median_ms": 3.9470000000392247,
+      "mean_ms": 3.8879099999576283,
+      "p95_ms": 4.521599999861792
+    },
+    {
+      "stage": "owner_aggregate",
+      "games": 10,
+      "median_ms": 0.015950000033626566,
+      "mean_ms": 0.015490000032514217,
+      "p95_ms": 0.019699999938893598
+    },
+    {
+      "stage": "model_end_to_end",
+      "games": 10,
+      "median_ms": 27.121900000111054,
+      "mean_ms": 27.443160000007083,
+      "p95_ms": 30.704999999898064
+    },
+    {
+      "stage": "mc_64_end_to_end",
+      "games": 10,
+      "median_ms": 796.7506500001491,
+      "mean_ms": 745.9008500000664,
+      "p95_ms": 890.7693999999537
+    },
+    {
+      "stage": "mc_64_unique_sql_query",
+      "games": 10,
+      "median_ms": 14.666713305322954,
+      "mean_ms": 13.274689780112267,
+      "p95_ms": 15.486303571427536
+    },
+    {
+      "stage": "mc_256_end_to_end",
+      "games": 10,
+      "median_ms": 2581.178550000004,
+      "mean_ms": 2585.979300000099,
+      "p95_ms": 3125.6757999999536
+    },
+    {
+      "stage": "mc_256_unique_sql_query",
+      "games": 10,
+      "median_ms": 14.719595462159301,
+      "mean_ms": 13.293951534186094,
+      "p95_ms": 15.667370707070413
+    },
+    {
+      "stage": "mc_1024_end_to_end",
+      "games": 10,
+      "median_ms": 7328.3624500001,
+      "mean_ms": 8170.310000000109,
+      "p95_ms": 10483.109499999955
+    },
+    {
+      "stage": "mc_1024_unique_sql_query",
+      "games": 10,
+      "median_ms": 14.915984282298961,
+      "mean_ms": 13.422224297203684,
+      "p95_ms": 15.681518890554637
+    }
+  ]
+}

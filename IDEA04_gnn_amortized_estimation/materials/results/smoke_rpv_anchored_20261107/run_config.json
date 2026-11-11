@@ -1,0 +1,23 @@
+{
+  "data": "data\\smoke\\tpch_g80.jsonl",
+  "output": "runs\\smoke_rpv_anchored_20261107",
+  "model": "rpv_gnn",
+  "seed": 20261107,
+  "epochs": 30,
+  "patience": 8,
+  "batch_size": 8,
+  "hidden_dim": 64,
+  "num_layers": 2,
+  "dropout": 0.1,
+  "learning_rate": 0.0003,
+  "weight_decay": 0.0001,
+  "ranking_weight": 0.3,
+  "zero_weight": 0.1,
+  "no_edges": false,
+  "no_anchor": false,
+  "no_zero_mask": false,
+  "no_simplex": false,
+  "best_epoch": 13,
+  "best_validation_share_l1": 0.19343380768051638,
+  "device": "cpu"
+}

@@ -1,0 +1,12 @@
+{
+  "checkpoint": "runs\\smoke_rpv_20261107\\best_model.pt",
+  "split": "in_distribution",
+  "games": 14,
+  "share_l1": 0.20572652305210276,
+  "owner_l1": 0.18892267968372575,
+  "mae_share": 0.03459338580058622,
+  "spearman": 0.8284364526868001,
+  "top3_overlap": 0.7857142857142857,
+  "zero_pay": 0.0,
+  "efficiency_error": 3.206410578319005e-08
+}

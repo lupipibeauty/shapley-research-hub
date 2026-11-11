@@ -1,0 +1,35 @@
+{
+  "data": "data\\final\\tpch_g1000_v2.jsonl",
+  "external_data": "data\\external\\tpch_sf1_e200.jsonl",
+  "checkpoints": [
+    "runs\\final_rpv_v2_seed20261107\\best_model.pt",
+    "runs\\final_rpv_v2_seed20261108\\best_model.pt",
+    "runs\\final_rpv_v2_seed20261109\\best_model.pt",
+    "runs\\final_mlp_v2_seed20261107\\best_model.pt",
+    "runs\\final_mlp_v2_seed20261108\\best_model.pt",
+    "runs\\final_mlp_v2_seed20261109\\best_model.pt"
+  ],
+  "splits": [
+    "in_distribution",
+    "ood",
+    "scale_ood"
+  ],
+  "fractions": [
+    0.0,
+    0.05,
+    0.1,
+    0.2,
+    0.3
+  ],
+  "perturb_seeds": [
+    20261120,
+    20261121,
+    20261122
+  ],
+  "perturbed_edge_types": [
+    "coordinate_to_value_factor",
+    "witness_supports_coordinate"
+  ],
+  "analysis_unit": "game within split; training seeds averaged in summarize.py",
+  "removal_semantics": "random removal of witness-to-coordinate and coordinate-to-value-factor edges; player and report nodes retained"
+}

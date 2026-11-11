@@ -1,0 +1,62 @@
+[
+  {
+    "method": "base_share",
+    "budget": 0,
+    "games": 70,
+    "share_l1": 0.1443315794347742,
+    "owner_l1": 0.1442906072087769,
+    "mae_share": 0.02434697036788512,
+    "spearman": 0.9268240393198263,
+    "top3_overlap": 0.8857142857142857,
+    "zero_pay": 0.0,
+    "efficiency_error": 2.0459824310949312e-16
+  },
+  {
+    "method": "permutation_mc",
+    "budget": 64,
+    "games": 70,
+    "share_l1": 0.05687405126465068,
+    "owner_l1": 0.04133410060105906,
+    "mae_share": 0.009929710342395844,
+    "spearman": 0.9074950590821682,
+    "top3_overlap": 0.8666666666666665,
+    "zero_pay": 0.0,
+    "efficiency_error": 8.405974329304756e-17
+  },
+  {
+    "method": "permutation_mc",
+    "budget": 256,
+    "games": 70,
+    "share_l1": 0.04035447523310481,
+    "owner_l1": 0.025495745752133314,
+    "mae_share": 0.006882026003603488,
+    "spearman": 0.9680471737696579,
+    "top3_overlap": 0.9285714285714286,
+    "zero_pay": 0.0,
+    "efficiency_error": 1.3005469717037549e-16
+  },
+  {
+    "method": "permutation_mc",
+    "budget": 1024,
+    "games": 70,
+    "share_l1": 0.016014142730837507,
+    "owner_l1": 0.007984491688566825,
+    "mae_share": 0.0027111144361770157,
+    "spearman": 0.9886637393559173,
+    "top3_overlap": 0.9761904761904763,
+    "zero_pay": 0.0,
+    "efficiency_error": 1.5225915766287861e-16
+  },
+  {
+    "method": "permutation_mc",
+    "budget": 4096,
+    "games": 70,
+    "share_l1": 0.017850937847190072,
+    "owner_l1": 0.006276955810806008,
+    "mae_share": 0.00300234168608507,
+    "spearman": 0.9920228083531506,
+    "top3_overlap": 0.9857142857142858,
+    "zero_pay": 0.0,
+    "efficiency_error": 1.3164073006269713e-16
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "data": "data\\external\\tpch_sf1_e200.jsonl",
+  "split": "scale_ood",
+  "budgets": [
+    64,
+    256,
+    1024
+  ],
+  "seeds": [
+    20261107,
+    20261108,
+    20261109
+  ],
+  "games": 200,
+  "rows": 4200,
+  "regression_msr_definition": "affine additive control variate fitted from sampled coalition values; residual estimated by permutation MC; same cached coalition budget"
+}

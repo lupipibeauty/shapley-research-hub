@@ -1,0 +1,23 @@
+[
+  {
+    "budget": 64,
+    "n": 200,
+    "mean_ms_per_game": 0.5794499948387966,
+    "median_ms_per_game": 0.5033999914303422,
+    "p95_ms_per_game": 0.9967000223696232
+  },
+  {
+    "budget": 256,
+    "n": 200,
+    "mean_ms_per_game": 2.3446994967525825,
+    "median_ms_per_game": 2.0044500124640763,
+    "p95_ms_per_game": 3.885700018145144
+  },
+  {
+    "budget": 1024,
+    "n": 200,
+    "mean_ms_per_game": 9.310618001618423,
+    "median_ms_per_game": 8.757999981753528,
+    "p95_ms_per_game": 13.908399967476726
+  }
+]

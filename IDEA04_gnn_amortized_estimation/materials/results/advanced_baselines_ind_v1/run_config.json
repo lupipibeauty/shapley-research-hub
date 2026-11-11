@@ -1,0 +1,17 @@
+{
+  "data": "data\\final\\tpch_g1000_v2.jsonl",
+  "split": "in_distribution",
+  "budgets": [
+    64,
+    256,
+    1024
+  ],
+  "seeds": [
+    20261107,
+    20261108,
+    20261109
+  ],
+  "games": 70,
+  "rows": 1470,
+  "regression_msr_definition": "affine additive control variate fitted from sampled coalition values; residual estimated by permutation MC; same cached coalition budget"
+}

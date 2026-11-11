@@ -1,0 +1,12 @@
+{
+  "checkpoint": "runs\\final_rpv_no_edges_v2_seed20261109\\best_model.pt",
+  "split": "scale_ood",
+  "games": 200,
+  "share_l1": 0.07217717612860725,
+  "owner_l1": 0.06300662843277678,
+  "mae_share": 0.012518238044499115,
+  "spearman": 0.9184105672596012,
+  "top3_overlap": 0.8983333333333329,
+  "zero_pay": 0.0,
+  "efficiency_error": 5.1618553698062894e-08
+}

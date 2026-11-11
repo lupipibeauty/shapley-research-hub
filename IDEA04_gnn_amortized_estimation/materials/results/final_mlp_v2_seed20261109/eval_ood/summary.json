@@ -1,0 +1,12 @@
+{
+  "checkpoint": "runs\\final_mlp_v2_seed20261109\\best_model.pt",
+  "split": "ood",
+  "games": 125,
+  "share_l1": 0.32479589445702733,
+  "owner_l1": 0.324591933099553,
+  "mae_share": 0.054836397007790715,
+  "spearman": 0.7980291772027431,
+  "top3_overlap": 0.7226666666666667,
+  "zero_pay": 0.0,
+  "efficiency_error": 4.89652156829834e-08
+}

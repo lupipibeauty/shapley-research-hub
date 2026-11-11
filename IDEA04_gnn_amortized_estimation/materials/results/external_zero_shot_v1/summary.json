@@ -1,0 +1,180 @@
+{
+  "metadata": {
+    "games": [
+      "d1p_v1",
+      "d1p_v2",
+      "p3_g0",
+      "p3_g1"
+    ],
+    "checkpoints": [
+      "runs\\final_rpv_v2_seed20261107\\best_model.pt",
+      "runs\\final_rpv_v2_seed20261108\\best_model.pt",
+      "runs\\final_rpv_v2_seed20261109\\best_model.pt",
+      "runs\\final_mlp_v2_seed20261107\\best_model.pt",
+      "runs\\final_mlp_v2_seed20261108\\best_model.pt",
+      "runs\\final_mlp_v2_seed20261109\\best_model.pt"
+    ],
+    "seeds": [
+      "20261107",
+      "20261108",
+      "20261109",
+      "20261107",
+      "20261108",
+      "20261109"
+    ],
+    "mapping_status": "FROZEN_SEMANTIC_ADAPTER",
+    "warning": "Only four external games; results are descriptive and do not support a population-level generalization claim.",
+    "target_semantics": {
+      "d1p_v1": "exact A0 standard Shapley",
+      "d1p_v2": "exact A0 standard Shapley",
+      "p3_g0": "exact physical-fact Shapley",
+      "p3_g1": "exact physical-fact Shapley"
+    }
+  },
+  "summary": [
+    {
+      "method": "rpv_gnn_zero_shot",
+      "game_id": "d1p_v1",
+      "runs": 6,
+      "share_l1": 0.10635368107921549,
+      "owner_l1": 0.10635368107921546,
+      "p95_abs_share": 0.029656216998895008,
+      "high_value_mae": 0.02566304786337748,
+      "spearman": 0.051209155649918923,
+      "ndcg3": 0.7386122341936207,
+      "efficiency_error": 2.8560558954874676e-08
+    },
+    {
+      "method": "rpv_gnn_zero_shot",
+      "game_id": "d1p_v2",
+      "runs": 6,
+      "share_l1": 0.09729805312599199,
+      "owner_l1": 0.097298053125992,
+      "p95_abs_share": 0.02763988907740572,
+      "high_value_mae": 0.023087290287619865,
+      "spearman": 0.051209155649918923,
+      "ndcg3": 0.759832826451063,
+      "efficiency_error": 2.8560558954874676e-08
+    },
+    {
+      "method": "rpv_gnn_zero_shot",
+      "game_id": "p3_g0",
+      "runs": 6,
+      "share_l1": 0.18776779021653867,
+      "owner_l1": 1.862645149230957e-08,
+      "p95_abs_share": 0.05069927001992861,
+      "high_value_mae": 0.041648677674432595,
+      "spearman": 0.0,
+      "ndcg3": 0.8942564603693337,
+      "efficiency_error": 3.725290298461914e-08
+    },
+    {
+      "method": "rpv_gnn_zero_shot",
+      "game_id": "p3_g1",
+      "runs": 6,
+      "share_l1": 0.21844726944731022,
+      "owner_l1": 2.9802322387695312e-08,
+      "p95_abs_share": 0.05967127915543328,
+      "high_value_mae": 0.039597842801051726,
+      "spearman": 9.25185853854297e-18,
+      "ndcg3": 0.8225878926980407,
+      "efficiency_error": 5.960464477539063e-08
+    },
+    {
+      "method": "safe_route_zero_shot",
+      "game_id": "d1p_v1",
+      "runs": 6,
+      "share_l1": 0.10635368107921549,
+      "owner_l1": 0.10635368107921546,
+      "p95_abs_share": 0.029656216998895008,
+      "high_value_mae": 0.02566304786337748,
+      "spearman": 0.051209155649918923,
+      "ndcg3": 0.7386122341936207,
+      "efficiency_error": 2.8560558954874676e-08
+    },
+    {
+      "method": "safe_route_zero_shot",
+      "game_id": "d1p_v2",
+      "runs": 6,
+      "share_l1": 0.09729805312599199,
+      "owner_l1": 0.097298053125992,
+      "p95_abs_share": 0.02763988907740572,
+      "high_value_mae": 0.023087290287619865,
+      "spearman": 0.051209155649918923,
+      "ndcg3": 0.759832826451063,
+      "efficiency_error": 2.8560558954874676e-08
+    },
+    {
+      "method": "safe_route_zero_shot",
+      "game_id": "p3_g0",
+      "runs": 6,
+      "share_l1": 0.1846153846153846,
+      "owner_l1": 1.1102230246251565e-16,
+      "p95_abs_share": 0.043589743589743594,
+      "high_value_mae": 0.03974358974358974,
+      "spearman": 0.0,
+      "ndcg3": 0.915405168295467,
+      "efficiency_error": 2.220446049250313e-16
+    },
+    {
+      "method": "safe_route_zero_shot",
+      "game_id": "p3_g1",
+      "runs": 6,
+      "share_l1": 0.21844726944731022,
+      "owner_l1": 2.9802322387695312e-08,
+      "p95_abs_share": 0.05967127915543328,
+      "high_value_mae": 0.039597842801051726,
+      "spearman": 9.25185853854297e-18,
+      "ndcg3": 0.8225878926980407,
+      "efficiency_error": 5.960464477539063e-08
+    },
+    {
+      "method": "uniform_base",
+      "game_id": "d1p_v1",
+      "runs": 1,
+      "share_l1": 0.09999999999999998,
+      "owner_l1": 0.09999999999999998,
+      "p95_abs_share": 0.025000000000000022,
+      "high_value_mae": 0.025000000000000022,
+      "spearman": 0.0,
+      "ndcg3": 1.0,
+      "efficiency_error": 0.0
+    },
+    {
+      "method": "uniform_base",
+      "game_id": "d1p_v2",
+      "runs": 1,
+      "share_l1": 0.08969696969696972,
+      "owner_l1": 0.08969696969696972,
+      "p95_abs_share": 0.022424242424242402,
+      "high_value_mae": 0.022424242424242402,
+      "spearman": 0.0,
+      "ndcg3": 1.0,
+      "efficiency_error": 0.0
+    },
+    {
+      "method": "uniform_base",
+      "game_id": "p3_g0",
+      "runs": 1,
+      "share_l1": 0.1846153846153846,
+      "owner_l1": 1.1102230246251565e-16,
+      "p95_abs_share": 0.043589743589743594,
+      "high_value_mae": 0.03974358974358974,
+      "spearman": 0.0,
+      "ndcg3": 0.915405168295467,
+      "efficiency_error": 2.220446049250313e-16
+    },
+    {
+      "method": "uniform_base",
+      "game_id": "p3_g1",
+      "runs": 1,
+      "share_l1": 0.22803030303030303,
+      "owner_l1": 1.1102230246251565e-16,
+      "p95_abs_share": 0.055032467532467516,
+      "high_value_mae": 0.04144119769119768,
+      "spearman": 0.0,
+      "ndcg3": 0.957738420684131,
+      "efficiency_error": 2.220446049250313e-16
+    }
+  ]
+}

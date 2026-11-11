@@ -1,0 +1,82 @@
+{
+  "metadata": {
+    "data": "data\\final\\tpch_g1000_v2.jsonl",
+    "database": "..\\tmp\\researchlab_v2\\workspace\\BRBD_v1\\runs\\R1_luo\\tpch_sf01\\tpch_sf01.duckdb",
+    "checkpoint": "runs\\final_rpv_v2_seed20261107\\best_model.pt",
+    "split": "in_distribution",
+    "games": 1,
+    "budgets": [
+      64
+    ],
+    "repeats": 1,
+    "seed": 20261114,
+    "timing_scope": "single Windows CPU/DuckDB process; median per game; sql_bind_plan is EXPLAIN only, not a pure parser microbenchmark",
+    "cache_policy": "MC de-duplicates coalition masks before executing SQL; model path performs no utility queries at inference",
+    "excluded_from_timing": "training labels, model training, disk cache effects, and network/database connection setup"
+  },
+  "stages": [
+    {
+      "stage": "sql_bind_plan",
+      "games": 1,
+      "median_ms": 18.34379998035729,
+      "mean_ms": 18.34379998035729,
+      "p95_ms": 18.34379998035729
+    },
+    {
+      "stage": "lineage_extract",
+      "games": 1,
+      "median_ms": 48.53439994622022,
+      "mean_ms": 48.53439994622022,
+      "p95_ms": 48.53439994622022
+    },
+    {
+      "stage": "graph_construct",
+      "games": 1,
+      "median_ms": 0.367600005120039,
+      "mean_ms": 0.367600005120039,
+      "p95_ms": 0.367600005120039
+    },
+    {
+      "stage": "graph_tensorize",
+      "games": 1,
+      "median_ms": 1.0701999999582767,
+      "mean_ms": 1.0701999999582767,
+      "p95_ms": 1.0701999999582767
+    },
+    {
+      "stage": "model_forward",
+      "games": 1,
+      "median_ms": 5.2284999983385205,
+      "mean_ms": 5.2284999983385205,
+      "p95_ms": 5.2284999983385205
+    },
+    {
+      "stage": "owner_aggregate",
+      "games": 1,
+      "median_ms": 0.0817000400274992,
+      "mean_ms": 0.0817000400274992,
+      "p95_ms": 0.0817000400274992
+    },
+    {
+      "stage": "model_end_to_end",
+      "games": 1,
+      "median_ms": 73.62619997002184,
+      "mean_ms": 73.62619997002184,
+      "p95_ms": 73.62619997002184
+    },
+    {
+      "stage": "mc_64_end_to_end",
+      "games": 1,
+      "median_ms": 1096.7305998783559,
+      "mean_ms": 1096.7305998783559,
+      "p95_ms": 1096.7305998783559
+    },
+    {
+      "stage": "mc_64_unique_sql_query",
+      "games": 1,
+      "median_ms": 18.38876249842412,
+      "mean_ms": 18.38876249842412,
+      "p95_ms": 18.38876249842412
+    }
+  ]
+}

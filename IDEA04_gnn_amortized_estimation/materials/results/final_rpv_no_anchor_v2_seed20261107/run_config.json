@@ -1,0 +1,23 @@
+{
+  "data": "data\\final\\tpch_g1000_v2.jsonl",
+  "output": "runs\\final_rpv_no_anchor_v2_seed20261107",
+  "model": "rpv_gnn",
+  "seed": 20261107,
+  "epochs": 20,
+  "patience": 6,
+  "batch_size": 32,
+  "hidden_dim": 64,
+  "num_layers": 2,
+  "dropout": 0.1,
+  "learning_rate": 0.0002,
+  "weight_decay": 0.0001,
+  "ranking_weight": 0.05,
+  "zero_weight": 0.0,
+  "no_edges": false,
+  "no_anchor": true,
+  "no_zero_mask": false,
+  "no_simplex": false,
+  "best_epoch": 20,
+  "best_validation_share_l1": 0.110510926418716,
+  "device": "cpu"
+}

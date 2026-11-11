@@ -1,0 +1,23 @@
+[
+  {
+    "batch_size": 1,
+    "n": 5,
+    "mean_ms_per_game": 1.6951711415978414,
+    "median_ms_per_game": 1.6544485680891998,
+    "p95_ms_per_game": 1.8826814301844155
+  },
+  {
+    "batch_size": 8,
+    "n": 5,
+    "mean_ms_per_game": 0.6448517157696187,
+    "median_ms_per_game": 0.6257214300733592,
+    "p95_ms_per_game": 0.7125800026447645
+  },
+  {
+    "batch_size": 32,
+    "n": 5,
+    "mean_ms_per_game": 0.462834285239556,
+    "median_ms_per_game": 0.45266571354919244,
+    "p95_ms_per_game": 0.5059557135349938
+  }
+]

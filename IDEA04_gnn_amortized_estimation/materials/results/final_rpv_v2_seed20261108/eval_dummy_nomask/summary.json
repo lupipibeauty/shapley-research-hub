@@ -1,0 +1,12 @@
+{
+  "checkpoint": "runs\\final_rpv_v2_seed20261108\\best_model.pt",
+  "split": "all",
+  "games": 100,
+  "share_l1": 0.08028599291007545,
+  "owner_l1": 0.07151987257778225,
+  "mae_share": 0.011925079509104082,
+  "spearman": 0.9492524881585896,
+  "top3_overlap": 0.886666666666667,
+  "zero_pay": 8.5708042063537e-09,
+  "efficiency_error": 6.179356057289809e-08
+}

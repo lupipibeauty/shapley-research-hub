@@ -1,0 +1,35 @@
+[
+  {
+    "method": "rpv_gnn",
+    "split": "in_distribution",
+    "players": 805,
+    "mean_seed_sd": 0.002583421087105944,
+    "median_seed_sd": 0.001737846661382653,
+    "uncertainty_error_spearman": 0.2837327973816457,
+    "interval_coverage_95": 0.1639751552795031,
+    "low_uncertainty_quartile_mae": 0.010439614836778337,
+    "high_uncertainty_quartile_mae": 0.01990350112813227
+  },
+  {
+    "method": "rpv_gnn",
+    "split": "ood",
+    "players": 1478,
+    "mean_seed_sd": 0.00219109020387218,
+    "median_seed_sd": 0.0017219037020164,
+    "uncertainty_error_spearman": 0.16308164893136073,
+    "interval_coverage_95": 0.13870094722598106,
+    "low_uncertainty_quartile_mae": 0.016998206505883406,
+    "high_uncertainty_quartile_mae": 0.032842441837622194
+  },
+  {
+    "method": "rpv_gnn",
+    "split": "scale_ood",
+    "players": 2328,
+    "mean_seed_sd": 0.0024540549397290582,
+    "median_seed_sd": 0.001713895838514176,
+    "uncertainty_error_spearman": 0.292743627878877,
+    "interval_coverage_95": 0.17396907216494845,
+    "low_uncertainty_quartile_mae": 0.010636635896251596,
+    "high_uncertainty_quartile_mae": 0.020939198491149683
+  }
+]

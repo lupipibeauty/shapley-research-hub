@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "games": 20,
+  "masks_checked": 2560,
+  "max_absolute_error": 1.7763568394002505e-15,
+  "mismatches": 0,
+  "tolerance": 1e-10
+}
