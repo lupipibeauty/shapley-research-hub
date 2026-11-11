@@ -1,0 +1,82 @@
+version: value_spec_v3_2
+status: DESIGNED
+revenue: 1000
+player_version: record_bundle_v3_2
+report_version: report35_v3_2
+values:
+  V0:
+    formula: revenue_times_coalition_size_over_12
+  V_count:
+    node_weights:
+      COUNTRY: 1/3
+      A: 1/6
+      B: 1/6
+      A1: 1/12
+      A2: 1/12
+      B1: 1/12
+      B2: 1/12
+  V1_default_v3_2:
+    family_weights: {P: 1/4, E: 1/4, J: 1/4, M: 1/4}
+    level_weights: {root: 1/3, parent: 1/3, leaf: 1/3}
+    e_family_metric_weights:
+      category_a_target_count: 1/2
+      category_a_target_share: 1/2
+    coordinate_weights:
+      COUNTRY:
+        record_count: 1/12
+        category_a_target_count: 1/24
+        category_a_target_share: 1/24
+        attribute_present_count: 1/12
+        category_b_target_share: 1/12
+      A:
+        record_count: 1/24
+        category_a_target_count: 1/48
+        category_a_target_share: 1/48
+        attribute_present_count: 1/24
+        category_b_target_share: 1/24
+      B:
+        record_count: 1/24
+        category_a_target_count: 1/48
+        category_a_target_share: 1/48
+        attribute_present_count: 1/24
+        category_b_target_share: 1/24
+      A1:
+        record_count: 1/48
+        category_a_target_count: 1/96
+        category_a_target_share: 1/96
+        attribute_present_count: 1/48
+        category_b_target_share: 1/48
+      A2:
+        record_count: 1/48
+        category_a_target_count: 1/96
+        category_a_target_share: 1/96
+        attribute_present_count: 1/48
+        category_b_target_share: 1/48
+      B1:
+        record_count: 1/48
+        category_a_target_count: 1/96
+        category_a_target_share: 1/96
+        attribute_present_count: 1/48
+        category_b_target_share: 1/48
+      B2:
+        record_count: 1/48
+        category_a_target_count: 1/96
+        category_a_target_share: 1/96
+        attribute_present_count: 1/48
+        category_b_target_share: 1/48
+    invalid_baseline_rule: remove_coordinate_and_renormalize_within_family_and_level
+    zero_current_denominator_score: 0
+    preserve_negative_marginals: true
+    preserve_negative_shapley: true
+  V2:
+    base_value: V1_default_v3_2
+    lambda_values_first_round: [0.0, 0.5]
+    zero_family_score_product: 0
+assertions:
+  - V0_empty_equals_0
+  - V0_full_equals_revenue
+  - V_count_empty_equals_0
+  - V_count_full_equals_revenue
+  - V1_empty_equals_0
+  - V1_full_equals_revenue
+  - V2_lambda_0_equals_V1

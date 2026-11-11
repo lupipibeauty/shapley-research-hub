@@ -1,0 +1,47 @@
+version: reproduction_matrix_v3_3
+status: DESIGNED
+algorithms:
+  exact_enumeration:
+    source: local
+    applicability: DIRECT
+    reproduction: NOT_STARTED
+    required: true
+  standard_permutation_mc:
+    source: local_to_implement
+    applicability: DIRECT
+    reproduction: NOT_STARTED
+    required: true
+  abramovich_lexashap_lexaban:
+    source: https://github.com/Omer-Abramovich/LExaBan-LExaShap
+    source_verified_date: 2026-10-30
+    language: Python
+    applicability: UNVERIFIED
+    reproduction: NOT_STARTED
+    required: true
+  luo_independent_utility:
+    source: https://github.com/IDEAL-Lab/shapley-value-independent-utility
+    source_verified_date: 2026-10-30
+    language: Rust
+    applicability: UNVERIFIED
+    reproduction: NOT_STARTED
+    required: true
+  livshits_query_answering:
+    source: paper_reimplementation
+    applicability: THEORY_ONLY
+    reproduction: NOT_STARTED
+    required_for_applicable_cases: true
+  standke_kimelfeld_aggregate_cq:
+    source: theorem_guided_reimplementation
+    applicability: THEORY_ONLY
+    reproduction: NOT_STARTED
+    required_for_applicable_cases: true
+  besner_levels:
+    source: reference_only
+    applicability: THEORY_ONLY
+    reproduction: NOT_APPLICABLE
+    reason: different_allocation_rule
+  jiang_ensemble_shapley:
+    source: reference_only
+    applicability: ASSUMPTION_NOT_MET
+    reproduction: NOT_APPLICABLE
+    reason: different_target_and_computation_environment

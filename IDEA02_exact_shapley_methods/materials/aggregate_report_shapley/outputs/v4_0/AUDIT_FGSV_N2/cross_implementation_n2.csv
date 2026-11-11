@@ -1,0 +1,5 @@
+case,weights,group,n,threshold,implementation,estimate,exact_truth,absolute_error,linear_base,s1_0_direct,s1_1_direct,released_direct_sum,released_total,equation_8_multiplier,equation_8_total,exact_group_shapley
+R2_3_history_input,"[1.0, 0.0]",[0],2,10,OFFICIAL_FGSV,0.75,1.0,0.25,0.5,-0.0,0.25,0.25,0.75,2.0,1.0,1.0
+R2_3_history_input,"[1.0, 0.0]",[0],2,10,A0_RELEASE_LOGIC_CAPPED,0.75,1.0,0.25,0.5,-0.0,0.25,0.25,0.75,2.0,1.0,1.0
+R2_4_history_input,"[1.0, 4.0]",[0],2,10,OFFICIAL_FGSV,1.75,1.0,0.75,2.5,-1.0,0.25,-0.75,1.75,2.0,1.0,1.0
+R2_4_history_input,"[1.0, 4.0]",[0],2,10,A0_RELEASE_LOGIC_CAPPED,1.75,1.0,0.75,2.5,-1.0,0.25,-0.75,1.75,2.0,1.0,1.0

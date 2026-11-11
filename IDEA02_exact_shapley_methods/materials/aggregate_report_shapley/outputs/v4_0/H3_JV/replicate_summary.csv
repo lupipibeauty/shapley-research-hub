@@ -1,0 +1,10 @@
+join_id,game_id,metric,independent_instances,median,q1,q3,iqr,sampling_unit
+J0,G2,sql_seconds,5,0.1313411999726668,0.12500299996463582,0.1424604000058025,0.017457400041166693,independently generated seed instance
+J0,G2,s6_end_to_end_seconds,5,2.6335324000101537,2.6308688999852166,2.652062500012107,0.021193600026890635,independently generated seed instance
+J0,G2,python_peak_bytes,5,3111788.0,3111788.0,3111788.0,0.0,independently generated seed instance
+J1,G2,sql_seconds,5,0.11087470001075417,0.09258580004097894,0.11991489998763427,0.027329099946655333,independently generated seed instance
+J1,G2,s6_end_to_end_seconds,5,2.79098479996901,2.5710339000215754,2.819795300019905,0.24876139999832958,independently generated seed instance
+J1,G2,python_peak_bytes,5,3376404.0,3376404.0,3376404.0,0.0,independently generated seed instance
+J2,G2,sql_seconds,5,0.10060559998964891,0.08799810003256425,0.10246480000205338,0.014466699969489127,independently generated seed instance
+J2,G2,s6_end_to_end_seconds,5,1.068173100007698,0.9919623000314459,1.072305299981963,0.08034299995051697,independently generated seed instance
+J2,G2,python_peak_bytes,5,1134276.0,1134276.0,1134276.0,0.0,independently generated seed instance

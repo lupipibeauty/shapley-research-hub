@@ -1,0 +1,7 @@
+relation,record_id,player_index,join_key,distinct_key_raw,distinct_key_is_null
+JLeft,p1,0,a,K1,False
+JLeft,p2,1,a,K1,False
+JLeft,p3,2,b,K2,False
+JRight,p4,3,a,,True
+JRight,p5,4,a,,True
+JRight,p6,5,b,,True

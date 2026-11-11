@@ -1,0 +1,17 @@
+config_id,group,n,leaf_count_L,base_statistic_dimension_d,profile,family_map,score_modes,independent_instances,timing_repeats_on_representative_instance,state_cap,historical_D1P_modified
+G1_N12_L4_D4_ORIGINAL_FAMILIES,G1_PLAYER_SCALE,12,4,4,balanced_templates,0|1|2|3,v2,5,3,5000,False
+G1_N16_L4_D4_ORIGINAL_FAMILIES,G1_PLAYER_SCALE,16,4,4,balanced_templates,0|1|2|3,v2,5,3,5000,False
+G1_N18_L4_D4_ORIGINAL_FAMILIES,G1_PLAYER_SCALE,18,4,4,balanced_templates,0|1|2|3,v2,5,3,5000,False
+G1_N100_L4_D4_ORIGINAL_FAMILIES,G1_PLAYER_SCALE,100,4,4,balanced_templates,0|1|2|3,v2,5,3,5000,False
+G1_N1000_L4_D4_ORIGINAL_FAMILIES,G1_PLAYER_SCALE,1000,4,4,balanced_templates,0|1|2|3,v2,5,3,5000,False
+G2_LEAF_L2_N16_D4,G2_LEAF_SCALE,16,2,4,diverse_effective,0|1|2|3,v2,5,3,5000,False
+G2_LEAF_L4_N16_D4,G2_LEAF_SCALE,16,4,4,diverse_effective,0|1|2|3,v2,5,3,5000,False
+G2_LEAF_L8_N16_D4,G2_LEAF_SCALE,16,8,4,diverse_effective,0|1|2|3,v2,5,3,5000,False
+G2_ATTRIBUTE_D2_N16_L4,G2_ATTRIBUTE_SCALE,16,4,2,diverse_effective,0|1,v2,5,3,5000,False
+G2_ATTRIBUTE_D4_N16_L4,G2_ATTRIBUTE_SCALE,16,4,4,diverse_effective,0|1|2|3,v2,5,3,5000,False
+G2_ATTRIBUTE_D6_N16_L4,G2_ATTRIBUTE_SCALE,16,4,6,diverse_effective,0|1|2|3|4|5,v2,5,3,5000,False
+G3_SHARE_INDEPENDENT_N16_L4_D4,G3_SHARING_AND_SCORE,16,4,4,balanced_templates,0|1|2|3,additive|geometric,5,3,5000,False
+G3_SHARE_PARTIAL_N16_L4_D4,G3_SHARING_AND_SCORE,16,4,4,balanced_templates,0|0|2|3,additive|geometric,5,3,5000,False
+G3_SHARE_FULL_N16_L4_D4,G3_SHARING_AND_SCORE,16,4,4,balanced_templates,0|0|0|0,additive|geometric,5,3,5000,False
+G3_SHARE_FULL_N100_L4_D4,G3_SHARED_LARGE_CONTROL,100,4,4,balanced_templates,0|0|0|0,additive|geometric,5,3,5000,False
+G3_SHARE_FULL_N1000_L4_D4,G3_SHARED_LARGE_CONTROL,1000,4,4,balanced_templates,0|0|0|0,additive|geometric,5,3,5000,False

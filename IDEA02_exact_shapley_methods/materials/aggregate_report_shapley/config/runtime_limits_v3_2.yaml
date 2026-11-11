@@ -1,0 +1,19 @@
+version: runtime_limits_v3_2
+status: DESIGNED
+timing:
+  warmup_runs: 1
+  measured_runs_minimum: 3
+  summary: [median, minimum, maximum]
+  components:
+    - T_prepare
+    - T_eval
+    - T_shapley
+    - T_total
+later_scale_stage:
+  per_condition_timeout_minutes: 15
+  timeout_status: TIMEOUT
+memory_limit: environment_budget_not_yet_recorded
+first_round_scope:
+  run_S0: false
+  run_S1: false
+  run_S2_to_S5: false

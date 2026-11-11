@@ -1,0 +1,157 @@
+{
+  "status": "COMPLETED_R2_3_ONLY",
+  "official_source_modified": false,
+  "historical_r2_modified": false,
+  "official_source_sha256": "b5f86e99241bc85cdc15d68ed96895575d5f1ad30df280d14ff547fe56baec8f",
+  "official_archive_sha256": "763c9cad2689f87b5e7a891cea4c3707aefc72d186edf97ab53bd3eb879e9fb0",
+  "paper_sha256": "a6ca75691e0f4f379894b9a3ca7c76d793c984df3163aac48575288c3944f910",
+  "historical_r2_hashes_before": {
+    "outputs\\v4_0\\R2\\d1p\\raw_runs.csv": "4fb52516cea726145dabf57027252853a5db0f0c090d0d7d85344655c9a992c4",
+    "outputs\\v4_0\\R2\\d1p\\summary.json": "de223aa7975ad80edfc12e7c7425d904a30d0f15f72d20387dff43b341a38b0b",
+    "outputs\\v4_0\\R2\\minimal_counterexample.json": "e5b4e6b9e4d9ef410d6e27390ab5ee794b93481d94d4c9e99791636c9fe4835e"
+  },
+  "historical_r2_hashes_after": {
+    "outputs\\v4_0\\R2\\d1p\\raw_runs.csv": "4fb52516cea726145dabf57027252853a5db0f0c090d0d7d85344655c9a992c4",
+    "outputs\\v4_0\\R2\\d1p\\summary.json": "de223aa7975ad80edfc12e7c7425d904a30d0f15f72d20387dff43b341a38b0b",
+    "outputs\\v4_0\\R2\\minimal_counterexample.json": "e5b4e6b9e4d9ef410d6e27390ab5ee794b93481d94d4c9e99791636c9fe4835e"
+  },
+  "formula_implementation_sha256": "6c3d6c49892ca94760493aa027189f2b7ba617e505e8ac52bad1f702917415fd",
+  "runner_sha256": "c3c4e60270fcff6e611fa75de884a357dc8a1b6a61bfd0a878c33c78f8ef0d8f",
+  "model": {
+    "records": 12,
+    "report_coordinates": 35,
+    "coalitions": 4096,
+    "values": [
+      "V_count",
+      "V1",
+      "V2_lambda_0_5"
+    ],
+    "owner_maps": {
+      "G-equal": {
+        "A": [
+          "p1",
+          "p2",
+          "p3",
+          "p4"
+        ],
+        "B": [
+          "p5",
+          "p6",
+          "p7",
+          "p8"
+        ],
+        "C": [
+          "p9",
+          "p10",
+          "p11",
+          "p12"
+        ]
+      },
+      "G-skew": {
+        "A": [
+          "p1",
+          "p2"
+        ],
+        "B": [
+          "p3",
+          "p4",
+          "p5"
+        ],
+        "C": [
+          "p6",
+          "p7",
+          "p8",
+          "p9",
+          "p10",
+          "p11",
+          "p12"
+        ]
+      }
+    }
+  },
+  "methods": [
+    "A_OFFICIAL_CODE_DERIVED",
+    "B_PAPER_FORMULA_CONSISTENT",
+    "C_COMPLETE_PERMUTATION_MC",
+    "D_EXACT_SHAPLEY_TRUTH"
+  ],
+  "formula_interpretation": {
+    "equation_8": "includes n/[s(n-s)] after algebraic rewrite",
+    "equation_9": "includes n/(n-1)",
+    "equation_11_issue": "printed |S|=s plus one added element targets size s+1, inconsistent with Eq.9",
+    "equation_11_repair": "use base |S|=s-1, then add one in-group or out-group element so both targets have size s",
+    "large_branch_index": "floor(s*s0/n), not Python round"
+  },
+  "budgets": {
+    "500": 494,
+    "1000": 988,
+    "2000": 1976,
+    "5000": 4992
+  },
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29
+  ],
+  "threshold": 10,
+  "accuracy_mode": "verified read-only 4096-coalition lookup table",
+  "table_preprocessing_seconds": 4.623870300012641,
+  "online_evaluator_full_table_benchmark": {
+    "V_count": {
+      "max_abs_error": 0.0,
+      "calls": 4096,
+      "cumulative_seconds": 0.2450723999645561,
+      "seconds_per_call": 5.9832128897596704e-05
+    },
+    "V1": {
+      "max_abs_error": 0.0,
+      "calls": 4096,
+      "cumulative_seconds": 1.4215862000128254,
+      "seconds_per_call": 0.0003470669433625062
+    },
+    "V2_lambda_0_5": {
+      "max_abs_error": 2.2737367544323206e-13,
+      "calls": 4096,
+      "cumulative_seconds": 1.6106328000314534,
+      "seconds_per_call": 0.00039322089844517905
+    }
+  },
+  "exact_truth_seconds": 0.45676200004527345,
+  "raw_run_rows": 2160,
+  "raw_owner_rows": 6480,
+  "total_r2_3_seconds": 477.34719150001183,
+  "environment": {
+    "python": "3.11.6 (tags/v3.11.6:8b6ee5b, Oct  2 2023, 14:57:12) [MSC v.1935 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "numpy": "2.4.6",
+    "pandas": "3.1.0",
+    "scipy": "1.17.1"
+  }
+}

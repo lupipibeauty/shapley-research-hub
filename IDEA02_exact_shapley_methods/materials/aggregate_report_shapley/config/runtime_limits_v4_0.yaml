@@ -1,0 +1,31 @@
+version: runtime_limits_v4_0
+status: DESIGNED
+execution_authorized: true
+timing_components:
+  - T_load
+  - T_sql_or_witness
+  - T_lineage_build
+  - T_compile
+  - T_value_eval
+  - T_shapley_compute
+  - T_postprocess
+  - T_total
+measurement:
+  first_round_warmup_runs: 1
+  first_round_measured_runs_minimum: 3
+  S2_measured_runs_minimum: 5
+  first_round_summary: [median, minimum, maximum]
+  S2_summary: [median, IQR]
+  separate_cold_and_reused: true
+resources:
+  record_peak_rss: true
+  record_temporary_disk: true
+  record_intermediate_representation_size: true
+  unavailable_metric_value: NA
+limits:
+  per_condition_timeout_minutes: 15
+  memory_limit: environment_budget_not_yet_recorded
+policy:
+  no_automatic_retry: true
+  preserve_stdout_stderr_exit_code: true
+  no_automatic_S2_to_S5: true

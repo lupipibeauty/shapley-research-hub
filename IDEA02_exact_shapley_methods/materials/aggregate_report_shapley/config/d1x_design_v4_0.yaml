@@ -1,0 +1,38 @@
+dataset_family: D1-X
+version: d1x_design_v4_0
+status: DESIGNED
+execution_status: NOT_RUN
+base_dataset: config/d1p_design.yaml
+overwrite_base_forbidden: true
+player_default: logical_record_bundle
+dimensions_default: exogenous
+variants:
+  X1_cross_grouping:
+    added_structure: cross_grouping
+    counting_units: [record_id]
+    record_output_and_state_counts: true
+  X2_many_to_many:
+    added_structure: many_to_many_mapping
+    products:
+      - label_occurrence_count
+      - distinct_record_count
+    separate_game_ids_required: true
+  X3_repeated_join_paths:
+    added_structure: repeated_join_witnesses
+    record_set_and_bag_semantics: true
+    record_variable_reuse: true
+    self_join_audit: true
+  X4_cross_source_dependency:
+    added_structure: cross_source_dependency
+    games:
+      X4_R: same_record_bundle_binding
+      X4_S: new_multisource_supply_game
+    new_game_spec_for_X4_S: true
+required_metrics:
+  - m_output
+  - m_state
+  - join_witnesses
+  - lineage_variables
+  - lineage_terms
+  - peak_rss_mb
+first_round_execution: false

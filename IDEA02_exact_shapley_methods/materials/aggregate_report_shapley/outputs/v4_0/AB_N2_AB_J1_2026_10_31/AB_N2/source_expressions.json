@@ -1,0 +1,716 @@
+{
+  "COUNTRY|record_count": [
+    {
+      "dnf": [
+        [
+          "p1"
+        ]
+      ],
+      "coefficient": "1/1"
+    },
+    {
+      "dnf": [
+        [
+          "p2"
+        ]
+      ],
+      "coefficient": "1/1"
+    },
+    {
+      "dnf": [
+        [
+          "p3"
+        ]
+      ],
+      "coefficient": "1/1"
+    },
+    {
+      "dnf": [
+        [
+          "p4"
+        ]
+      ],
+      "coefficient": "1/1"
+    },
+    {
+      "dnf": [
+        [
+          "p5"
+        ]
+      ],
+      "coefficient": "1/1"
+    },
+    {
+      "dnf": [
+        [
+          "p6"
+        ]
+      ],
+      "coefficient": "1/1"
+    },
+    {
+      "dnf": [
+        [
+          "p7"
+        ]
+      ],
+      "coefficient": "1/1"
+    },
+    {
+      "dnf": [
+        [
+          "p8"
+        ]
+      ],
+      "coefficient": "1/1"
+    },
+    {
+      "dnf": [
+        [
+          "p9"
+        ]
+      ],
+      "coefficient": "1/1"
+    },
+    {
+      "dnf": [
+        [
+          "p10"
+        ]
+      ],
+      "coefficient": "1/1"
+    },
+    {
+      "dnf": [
+        [
+          "p11"
+        ]
+      ],
+      "coefficient": "1/1"
+    },
+    {
+      "dnf": [
+        [
+          "p12"
+        ]
+      ],
+      "coefficient": "1/1"
+    }
+  ],
+  "COUNTRY|category_a_target_count": [
+    {
+      "dnf": [
+        [
+          "p2"
+        ]
+      ],
+      "coefficient": "1/1"
+    },
+    {
+      "dnf": [
+        [
+          "p4"
+        ]
+      ],
+      "coefficient": "1/1"
+    },
+    {
+      "dnf": [
+        [
+          "p7"
+        ]
+      ],
+      "coefficient": "1/1"
+    },
+    {
+      "dnf": [
+        [
+          "p8"
+        ]
+      ],
+      "coefficient": "1/1"
+    },
+    {
+      "dnf": [
+        [
+          "p11"
+        ]
+      ],
+      "coefficient": "1/1"
+    },
+    {
+      "dnf": [
+        [
+          "p12"
+        ]
+      ],
+      "coefficient": "1/1"
+    }
+  ],
+  "COUNTRY|attribute_present_count": [
+    {
+      "dnf": [
+        [
+          "p1"
+        ]
+      ],
+      "coefficient": "1/1"
+    },
+    {
+      "dnf": [
+        [
+          "p2"
+        ]
+      ],
+      "coefficient": "1/1"
+    },
+    {
+      "dnf": [
+        [
+          "p3"
+        ]
+      ],
+      "coefficient": "1/1"
+    },
+    {
+      "dnf": [
+        [
+          "p5"
+        ]
+      ],
+      "coefficient": "1/1"
+    },
+    {
+      "dnf": [
+        [
+          "p6"
+        ]
+      ],
+      "coefficient": "1/1"
+    },
+    {
+      "dnf": [
+        [
+          "p7"
+        ]
+      ],
+      "coefficient": "1/1"
+    },
+    {
+      "dnf": [
+        [
+          "p9"
+        ]
+      ],
+      "coefficient": "1/1"
+    },
+    {
+      "dnf": [
+        [
+          "p10"
+        ]
+      ],
+      "coefficient": "1/1"
+    },
+    {
+      "dnf": [
+        [
+          "p11"
+        ]
+      ],
+      "coefficient": "1/1"
+    },
+    {
+      "dnf": [
+        [
+          "p12"
+        ]
+      ],
+      "coefficient": "1/1"
+    }
+  ],
+  "A|record_count": [
+    {
+      "dnf": [
+        [
+          "p1"
+        ]
+      ],
+      "coefficient": "1/1"
+    },
+    {
+      "dnf": [
+        [
+          "p2"
+        ]
+      ],
+      "coefficient": "1/1"
+    },
+    {
+      "dnf": [
+        [
+          "p3"
+        ]
+      ],
+      "coefficient": "1/1"
+    },
+    {
+      "dnf": [
+        [
+          "p4"
+        ]
+      ],
+      "coefficient": "1/1"
+    }
+  ],
+  "A|category_a_target_count": [
+    {
+      "dnf": [
+        [
+          "p2"
+        ]
+      ],
+      "coefficient": "1/1"
+    },
+    {
+      "dnf": [
+        [
+          "p4"
+        ]
+      ],
+      "coefficient": "1/1"
+    }
+  ],
+  "A|attribute_present_count": [
+    {
+      "dnf": [
+        [
+          "p1"
+        ]
+      ],
+      "coefficient": "1/1"
+    },
+    {
+      "dnf": [
+        [
+          "p2"
+        ]
+      ],
+      "coefficient": "1/1"
+    },
+    {
+      "dnf": [
+        [
+          "p3"
+        ]
+      ],
+      "coefficient": "1/1"
+    }
+  ],
+  "B|record_count": [
+    {
+      "dnf": [
+        [
+          "p5"
+        ]
+      ],
+      "coefficient": "1/1"
+    },
+    {
+      "dnf": [
+        [
+          "p6"
+        ]
+      ],
+      "coefficient": "1/1"
+    },
+    {
+      "dnf": [
+        [
+          "p7"
+        ]
+      ],
+      "coefficient": "1/1"
+    },
+    {
+      "dnf": [
+        [
+          "p8"
+        ]
+      ],
+      "coefficient": "1/1"
+    },
+    {
+      "dnf": [
+        [
+          "p9"
+        ]
+      ],
+      "coefficient": "1/1"
+    },
+    {
+      "dnf": [
+        [
+          "p10"
+        ]
+      ],
+      "coefficient": "1/1"
+    },
+    {
+      "dnf": [
+        [
+          "p11"
+        ]
+      ],
+      "coefficient": "1/1"
+    },
+    {
+      "dnf": [
+        [
+          "p12"
+        ]
+      ],
+      "coefficient": "1/1"
+    }
+  ],
+  "B|category_a_target_count": [
+    {
+      "dnf": [
+        [
+          "p7"
+        ]
+      ],
+      "coefficient": "1/1"
+    },
+    {
+      "dnf": [
+        [
+          "p8"
+        ]
+      ],
+      "coefficient": "1/1"
+    },
+    {
+      "dnf": [
+        [
+          "p11"
+        ]
+      ],
+      "coefficient": "1/1"
+    },
+    {
+      "dnf": [
+        [
+          "p12"
+        ]
+      ],
+      "coefficient": "1/1"
+    }
+  ],
+  "B|attribute_present_count": [
+    {
+      "dnf": [
+        [
+          "p5"
+        ]
+      ],
+      "coefficient": "1/1"
+    },
+    {
+      "dnf": [
+        [
+          "p6"
+        ]
+      ],
+      "coefficient": "1/1"
+    },
+    {
+      "dnf": [
+        [
+          "p7"
+        ]
+      ],
+      "coefficient": "1/1"
+    },
+    {
+      "dnf": [
+        [
+          "p9"
+        ]
+      ],
+      "coefficient": "1/1"
+    },
+    {
+      "dnf": [
+        [
+          "p10"
+        ]
+      ],
+      "coefficient": "1/1"
+    },
+    {
+      "dnf": [
+        [
+          "p11"
+        ]
+      ],
+      "coefficient": "1/1"
+    },
+    {
+      "dnf": [
+        [
+          "p12"
+        ]
+      ],
+      "coefficient": "1/1"
+    }
+  ],
+  "A1|record_count": [
+    {
+      "dnf": [
+        [
+          "p1"
+        ]
+      ],
+      "coefficient": "1/1"
+    },
+    {
+      "dnf": [
+        [
+          "p2"
+        ]
+      ],
+      "coefficient": "1/1"
+    }
+  ],
+  "A1|category_a_target_count": [
+    {
+      "dnf": [
+        [
+          "p2"
+        ]
+      ],
+      "coefficient": "1/1"
+    }
+  ],
+  "A1|attribute_present_count": [
+    {
+      "dnf": [
+        [
+          "p1"
+        ]
+      ],
+      "coefficient": "1/1"
+    },
+    {
+      "dnf": [
+        [
+          "p2"
+        ]
+      ],
+      "coefficient": "1/1"
+    }
+  ],
+  "A2|record_count": [
+    {
+      "dnf": [
+        [
+          "p3"
+        ]
+      ],
+      "coefficient": "1/1"
+    },
+    {
+      "dnf": [
+        [
+          "p4"
+        ]
+      ],
+      "coefficient": "1/1"
+    }
+  ],
+  "A2|category_a_target_count": [
+    {
+      "dnf": [
+        [
+          "p4"
+        ]
+      ],
+      "coefficient": "1/1"
+    }
+  ],
+  "A2|attribute_present_count": [
+    {
+      "dnf": [
+        [
+          "p3"
+        ]
+      ],
+      "coefficient": "1/1"
+    }
+  ],
+  "B1|record_count": [
+    {
+      "dnf": [
+        [
+          "p5"
+        ]
+      ],
+      "coefficient": "1/1"
+    },
+    {
+      "dnf": [
+        [
+          "p6"
+        ]
+      ],
+      "coefficient": "1/1"
+    },
+    {
+      "dnf": [
+        [
+          "p7"
+        ]
+      ],
+      "coefficient": "1/1"
+    },
+    {
+      "dnf": [
+        [
+          "p8"
+        ]
+      ],
+      "coefficient": "1/1"
+    }
+  ],
+  "B1|category_a_target_count": [
+    {
+      "dnf": [
+        [
+          "p7"
+        ]
+      ],
+      "coefficient": "1/1"
+    },
+    {
+      "dnf": [
+        [
+          "p8"
+        ]
+      ],
+      "coefficient": "1/1"
+    }
+  ],
+  "B1|attribute_present_count": [
+    {
+      "dnf": [
+        [
+          "p5"
+        ]
+      ],
+      "coefficient": "1/1"
+    },
+    {
+      "dnf": [
+        [
+          "p6"
+        ]
+      ],
+      "coefficient": "1/1"
+    },
+    {
+      "dnf": [
+        [
+          "p7"
+        ]
+      ],
+      "coefficient": "1/1"
+    }
+  ],
+  "B2|record_count": [
+    {
+      "dnf": [
+        [
+          "p9"
+        ]
+      ],
+      "coefficient": "1/1"
+    },
+    {
+      "dnf": [
+        [
+          "p10"
+        ]
+      ],
+      "coefficient": "1/1"
+    },
+    {
+      "dnf": [
+        [
+          "p11"
+        ]
+      ],
+      "coefficient": "1/1"
+    },
+    {
+      "dnf": [
+        [
+          "p12"
+        ]
+      ],
+      "coefficient": "1/1"
+    }
+  ],
+  "B2|category_a_target_count": [
+    {
+      "dnf": [
+        [
+          "p11"
+        ]
+      ],
+      "coefficient": "1/1"
+    },
+    {
+      "dnf": [
+        [
+          "p12"
+        ]
+      ],
+      "coefficient": "1/1"
+    }
+  ],
+  "B2|attribute_present_count": [
+    {
+      "dnf": [
+        [
+          "p9"
+        ]
+      ],
+      "coefficient": "1/1"
+    },
+    {
+      "dnf": [
+        [
+          "p10"
+        ]
+      ],
+      "coefficient": "1/1"
+    },
+    {
+      "dnf": [
+        [
+          "p11"
+        ]
+      ],
+      "coefficient": "1/1"
+    },
+    {
+      "dnf": [
+        [
+          "p12"
+        ]
+      ],
+      "coefficient": "1/1"
+    }
+  ]
+}

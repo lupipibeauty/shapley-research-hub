@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "unique_edge_hash_gate": true,
+  "main_instances": 90,
+  "all_source_errors_zero": true,
+  "all_algorithm_errors_below_1e_9": true,
+  "figure_files": 8,
+  "selection_feasibility": "INSUFFICIENT_EVIDENCE_FOR_NEW_ALGORITHM_TOPIC"
+}

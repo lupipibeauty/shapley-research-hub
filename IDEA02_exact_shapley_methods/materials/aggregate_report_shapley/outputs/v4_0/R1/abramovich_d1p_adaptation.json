@@ -1,0 +1,300 @@
+{
+  "stage": "R1",
+  "same_game_contract": {
+    "players": [
+      "p1",
+      "p2",
+      "p3",
+      "p4",
+      "p5",
+      "p6",
+      "p7",
+      "p8",
+      "p9",
+      "p10",
+      "p11",
+      "p12"
+    ],
+    "coalitions": 4096,
+    "report": "D1-P 35 坐标整表",
+    "source_binding": "一个 record_id 对应一个来源变量；Basic 与 Optional 物理行共同激活"
+  },
+  "AB-1_AB-2_AB-3": {
+    "construction": "每条记录使用单变量单子句 DNF，系数等于该记录对归一化 COUNT 线性组合的贡献",
+    "vcount_coefficients": {
+      "p1": "1000/9",
+      "p2": "1000/9",
+      "p3": "1000/9",
+      "p4": "1000/9",
+      "p5": "625/9",
+      "p6": "625/9",
+      "p7": "625/9",
+      "p8": "625/9",
+      "p9": "625/9",
+      "p10": "625/9",
+      "p11": "625/9",
+      "p12": "625/9"
+    },
+    "official_payments": {
+      "p1": 111.11111111111111,
+      "p2": 111.11111111111111,
+      "p3": 111.11111111111111,
+      "p4": 111.11111111111111,
+      "p5": 69.44444444444444,
+      "p6": 69.44444444444444,
+      "p7": 69.44444444444444,
+      "p8": 69.44444444444444,
+      "p9": 69.44444444444444,
+      "p10": 69.44444444444444,
+      "p11": 69.44444444444444,
+      "p12": 69.44444444444444
+    },
+    "exact_payments": {
+      "p1": "1000/9",
+      "p2": "1000/9",
+      "p3": "1000/9",
+      "p4": "1000/9",
+      "p5": "625/9",
+      "p6": "625/9",
+      "p7": "625/9",
+      "p8": "625/9",
+      "p9": "625/9",
+      "p10": "625/9",
+      "p11": "625/9",
+      "p12": "625/9"
+    },
+    "maximum_payment_error": 0.0,
+    "maximum_coalition_value_error": 1.1368683772161603e-13,
+    "duration_seconds": 0.0007935999892652035,
+    "status": "FULL_SAME_GAME"
+  },
+  "official_unanimity_basis": {
+    "sizes_1_to_12": {
+      "1": {
+        "expected": 1.0,
+        "official": 1.0,
+        "maximum_absolute_error": 0.0,
+        "raw_example": {
+          "grad": [
+            0.0,
+            1.0
+          ],
+          "prob": [
+            0.0,
+            0.5
+          ],
+          "scale": 2.0,
+          "scalar": 1.0
+        }
+      },
+      "2": {
+        "expected": 0.5,
+        "official": 0.5,
+        "maximum_absolute_error": 0.0,
+        "raw_example": {
+          "grad": [
+            0.5,
+            0.5
+          ],
+          "prob": [
+            0.0,
+            0.5
+          ],
+          "scale": 2.0,
+          "scalar": 0.5
+        }
+      },
+      "3": {
+        "expected": 0.3333333333333333,
+        "official": 0.3333333333333333,
+        "maximum_absolute_error": 0.0,
+        "raw_example": {
+          "grad": [
+            0.25,
+            0.5
+          ],
+          "prob": [
+            0.0,
+            0.5
+          ],
+          "scale": 1.3333333333333333,
+          "scalar": 0.3333333333333333
+        }
+      },
+      "4": {
+        "expected": 0.25,
+        "official": 0.25,
+        "maximum_absolute_error": 0.0,
+        "raw_example": {
+          "grad": [
+            0.25,
+            0.75
+          ],
+          "prob": [
+            0.0,
+            0.5
+          ],
+          "scale": 0.6666666666666666,
+          "scalar": 0.25
+        }
+      },
+      "5": {
+        "expected": 0.2,
+        "official": 0.2,
+        "maximum_absolute_error": 0.0,
+        "raw_example": {
+          "grad": [
+            0.375,
+            1.5
+          ],
+          "prob": [
+            0.0,
+            0.5
+          ],
+          "scale": 0.26666666666666666,
+          "scalar": 0.2
+        }
+      },
+      "6": {
+        "expected": 0.16666666666666666,
+        "official": 0.16666666666666666,
+        "maximum_absolute_error": 2.7755575615628914e-17,
+        "raw_example": {
+          "grad": [
+            0.75,
+            3.75
+          ],
+          "prob": [
+            0.0,
+            0.5
+          ],
+          "scale": 0.08888888888888889,
+          "scalar": 0.16666666666666669
+        }
+      },
+      "7": {
+        "expected": 0.14285714285714285,
+        "official": 0.14285714285714285,
+        "maximum_absolute_error": 0.0,
+        "raw_example": {
+          "grad": [
+            1.875,
+            11.25
+          ],
+          "prob": [
+            0.0,
+            0.5
+          ],
+          "scale": 0.025396825396825397,
+          "scalar": 0.14285714285714285
+        }
+      },
+      "8": {
+        "expected": 0.125,
+        "official": 0.125,
+        "maximum_absolute_error": 0.0,
+        "raw_example": {
+          "grad": [
+            5.625,
+            39.375
+          ],
+          "prob": [
+            0.0,
+            0.5
+          ],
+          "scale": 0.006349206349206349,
+          "scalar": 0.125
+        }
+      },
+      "9": {
+        "expected": 0.1111111111111111,
+        "official": 0.1111111111111111,
+        "maximum_absolute_error": 1.3877787807814457e-17,
+        "raw_example": {
+          "grad": [
+            19.6875,
+            157.5
+          ],
+          "prob": [
+            0.0,
+            0.5
+          ],
+          "scale": 0.0014109347442680777,
+          "scalar": 0.11111111111111112
+        }
+      },
+      "10": {
+        "expected": 0.1,
+        "official": 0.09999999999999999,
+        "maximum_absolute_error": 1.3877787807814457e-17,
+        "raw_example": {
+          "grad": [
+            78.75,
+            708.75
+          ],
+          "prob": [
+            0.0,
+            0.5
+          ],
+          "scale": 0.0002821869488536155,
+          "scalar": 0.09999999999999999
+        }
+      },
+      "11": {
+        "expected": 0.09090909090909091,
+        "official": 0.09090909090909091,
+        "maximum_absolute_error": 0.0,
+        "raw_example": {
+          "grad": [
+            354.375,
+            3543.75
+          ],
+          "prob": [
+            0.0,
+            0.5
+          ],
+          "scale": 5.130671797338464e-05,
+          "scalar": 0.09090909090909091
+        }
+      },
+      "12": {
+        "expected": 0.08333333333333333,
+        "official": 0.08333333333333333,
+        "maximum_absolute_error": 1.3877787807814457e-17,
+        "raw_example": {
+          "grad": [
+            1771.875,
+            19490.625
+          ],
+          "prob": [
+            0.0,
+            0.5
+          ],
+          "scale": 8.551119662230774e-06,
+          "scalar": 0.08333333333333334
+        }
+      }
+    },
+    "duration_seconds": 0.04675619999761693
+  },
+  "AB-4_V1": {
+    "construction": "先精确枚举 4096 联盟，再用 Harsanyi/Mobius 变换为带系数的一致游戏 DNF 之和",
+    "nonzero_terms": 4023,
+    "total_possible_terms": 4095,
+    "coalition_reconstruction_error": "0/1",
+    "maximum_payment_error": 9.29389898374211e-12,
+    "compile_seconds": 0.11983700000564568,
+    "status": "FULL_SAME_GAME_BUT_EXPONENTIAL_PRECOMPILATION"
+  },
+  "AB-5_V2_lambda_0_5": {
+    "construction": "先高精度枚举 4096 联盟，再用 Harsanyi/Mobius 变换为带实系数的一致游戏 DNF 之和",
+    "nonzero_terms": 4094,
+    "total_possible_terms": 4095,
+    "coalition_reconstruction_max_error": "0.000",
+    "maximum_payment_error": "0.0000000000001739581299236668477784607219",
+    "compile_seconds": 0.01922230000491254,
+    "status": "FULL_SAME_GAME_BUT_EXPONENTIAL_PRECOMPILATION_AND_NUMERICAL"
+  },
+  "interpretation": "V1/V2 可在固定 12 玩家上通过完整联盟真值的指数展开输入官方一致基，但该转换先支付了精确枚举成本，不能作为高效适配或新算法。",
+  "total_seconds": 7.252037099999143
+}

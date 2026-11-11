@@ -1,0 +1,3 @@
+method,status,reason_category,evidence
+Abramovich official Boolean d-tree gradient,NOT_DIRECTLY_IMPLEMENTED_FOR_V2,MATHEMATICAL_INPUT_AND_INTERFACE_MISMATCH,"Frozen V2 is a nonlinear numeric terminal function over joint count states, not the official Boolean d-tree input."
+S6 reverse multilinear expectation circuit,INDEPENDENT_CLASSIC_AD_IMPLEMENTATION,NOT_AN_OFFICIAL_ABRAMOVICH_ADAPTER,Reverse differentiation is applied to coalition-probability arithmetic layers; terminal V2 values are constants and are not differentiated.

@@ -1,0 +1,19 @@
+{
+  "status": "H5_SCALE_COMPLETED_AND_PAUSED",
+  "config_count": 16,
+  "instances_per_config": 5,
+  "total_generated_instances": 80,
+  "timing_repeats": 3,
+  "state_cap": 5000,
+  "correctness_tolerance": 1e-09,
+  "correctness_rows": 48,
+  "all_reported_payments_verified": true,
+  "failure_rows": 48,
+  "historical_files_unchanged": true,
+  "total_wall_seconds": 511.0992185000214,
+  "environment": {
+    "python": "3.11.6 (tags/v3.11.6:8b6ee5b, Oct  2 2023, 14:57:12) [MSC v.1935 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.26200-SP0"
+  },
+  "statistical_scope": "five independent generated instances summarize structural variability; three timing repeats on the prespecified first seed summarize runtime noise; no significance tests"
+}

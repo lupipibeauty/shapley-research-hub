@@ -1,0 +1,100 @@
+protocol_version: multisource_report_v4_0
+status: DESIGNED
+current_date: 2026-10-30
+language: zh-CN
+execution_authorized: true
+active_game:
+  name: R-game
+  player: logical_record_bundle
+  allocation: standard_record_shapley
+  owner_role: aggregate_record_payments_only
+frozen_assets:
+  data_spec: config/d1p_design.yaml
+  report_spec: config/report_spec_v3_2.yaml
+  value_spec: config/value_spec_v3_2.yaml
+  preserve_history: true
+supplemental_specs:
+  value_audit: config/value_audit_v4_0.yaml
+  d1x_design: config/d1x_design_v4_0.yaml
+  runtime_limits: config/runtime_limits_v4_0.yaml
+  reproduction_matrix: config/reproduction_matrix_v4_0.yaml
+stages:
+  S0:
+    name: freeze_inventory_and_math_precheck
+    status: PASSED
+    priority: first_round
+  S1:
+    name: d1p_exact_truth_and_value_properties
+    status: PASSED
+    priority: first_round
+  R0:
+    name: official_algorithm_original_reproduction
+    status: REPRODUCED_CROSS_PLATFORM
+    priority: first_round
+  R1:
+    name: same_game_d1p_adaptation
+    status: PARTIAL_COVERAGE
+    priority: first_round
+  S2:
+    name: full_35_coordinate_combination
+    status: NOT_RUN
+    priority: later
+  S3:
+    name: d1x_complex_structures
+    status: NOT_RUN
+    priority: later
+  S4:
+    name: scale_and_approximation
+    status: NOT_RUN
+    priority: later
+  S5:
+    name: minimal_counterexample_and_research_candidate
+    status: NOT_RUN
+    priority: later
+status_columns:
+  theory_status:
+    - DIRECT
+    - REDUCIBLE_EXACT
+    - THEORY_ONLY
+    - ASSUMPTION_NOT_MET
+    - UNVERIFIED
+  code_status:
+    - NOT_STARTED
+    - ENV_READY
+    - REPRODUCED_ORIGINAL
+    - BLOCKED_ENVIRONMENT
+    - FAILED
+    - NOT_APPLICABLE
+  same_game_status:
+    - NOT_TESTED
+    - FULL_SAME_GAME
+    - PARTIAL_COVERAGE
+    - INPUT_UNSUPPORTED
+    - PLAYER_MISMATCH
+    - VALUE_MISMATCH
+    - INCORRECT_OUTPUT
+    - RESOURCE_LIMIT
+failure_codes:
+  - FETCH_FAILED
+  - INSTALL_FAILED
+  - BUILD_FAILED
+  - ORIGINAL_MISMATCH
+  - INTERFACE_MISMATCH
+  - PLAYER_MISMATCH
+  - ASSUMPTION_MISMATCH
+  - INCORRECT_OUTPUT
+  - TIMEOUT
+  - OOM
+  - NUMERICAL_FAILURE
+  - NUMERICALLY_UNRESOLVED
+  - NOT_IMPLEMENTED
+  - UNKNOWN_FAILURE
+first_execution_scope_if_authorized: [S0, S1, R0, R1]
+stop_after_first_execution_scope: true
+forbidden_before_gate:
+  - S2
+  - S3
+  - S4
+  - S5
+  - million_scale_claims
+  - new_algorithm_design

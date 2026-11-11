@@ -1,0 +1,39 @@
+version: value_audit_v4_0
+status: DESIGNED
+execution_status: PASSED
+base_value_spec: config/value_spec_v3_2.yaml
+exact_arithmetic:
+  representation: rational
+  equality_tolerance: 0
+  applies_to:
+    - internal_counts
+    - ratio_numerator_denominator
+    - V0
+    - V_count
+    - V1_default_v3_2
+    - V2_lambda_0
+    - exact_shapley_weights
+high_precision_arithmetic:
+  representation: decimal_or_equivalent
+  base_precision_digits: 80
+  confirmation_precision_digits: 120
+  property_epsilon_scaled: 1e-30
+  algorithm_epsilon_scaled: 1e-9
+  unresolved_status: NUMERICALLY_UNRESOLVED
+null_and_zero_rules:
+  sql_zero_denominator: null
+  score_zero_current_denominator: 0
+  zero_full_denominator: remove_once_before_run_and_renormalize_fixed_scope
+  zero_full_count: remove_once_before_run_and_renormalize_fixed_scope
+  dynamic_coalition_renormalization_forbidden: true
+monotonicity_audit:
+  coalitions: 4096
+  directed_addition_edges_per_value: 24576
+  values:
+    - V0
+    - V_count
+    - V1_default_v3_2
+    - V2_lambda_0
+    - V2_lambda_0_5
+  preserve_all_negative_edges: true
+  v2_lambda_0_exactly_equals_v1: true

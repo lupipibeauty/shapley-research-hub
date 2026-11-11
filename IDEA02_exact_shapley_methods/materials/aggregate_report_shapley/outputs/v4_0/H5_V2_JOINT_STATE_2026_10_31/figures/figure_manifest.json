@@ -1,0 +1,15 @@
+{
+  "figure": "H5统计族联合状态增长",
+  "source_data": "outputs\\v4_0\\H5_V2_JOINT_STATE_2026_10_31\\family_state_growth.csv",
+  "transformations": [
+    "按family_count排序",
+    "展示原始确定性计数",
+    "无平滑、无置信区间"
+  ],
+  "font": "Microsoft YaHei",
+  "outputs": [
+    "outputs\\v4_0\\H5_V2_JOINT_STATE_2026_10_31\\figures\\h5_family_joint_state_growth.png",
+    "outputs\\v4_0\\H5_V2_JOINT_STATE_2026_10_31\\figures\\h5_family_joint_state_growth.svg"
+  ],
+  "caption": "图H5-1：在玩家、SQL与满表参考均固定时，从P族逐步增加到P/E/J/M四族。左图给出实际可达联合状态和不同评分值数；右图给出B2充分状态DP的实际状态访问与转移写入。数据为确定性完整计算，不应添加抽样置信区间。"
+}

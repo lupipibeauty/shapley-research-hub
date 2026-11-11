@@ -1,0 +1,4 @@
+input_target,repeats,compile_seconds_median,compile_seconds_min,compile_seconds_max,timing_scope
+D1P_V1_V2_SHARED_INPUT,3,0.02535640000132844,0.02529540000250563,0.02674569998634979,same frozen input repeated timing; descriptive only
+SCALE_N12_V2,3,0.00014189997455105186,0.00013320002472028136,0.00023209996288642287,same frozen input repeated timing; descriptive only
+SCALE_N16_V2,3,0.00015499995788559318,0.0001509999856352806,0.00015570002142339945,same frozen input repeated timing; descriptive only

@@ -1,0 +1,32 @@
+{
+  "status": "PARTIAL_RESOURCE_TIMEOUT",
+  "task": "Faithful_GSV exp1_benchmark 官方 main.py 完整入口尝试",
+  "official_source_modified": false,
+  "command": "$env:MPLBACKEND='Agg'; external/fgsv/environment/.venv/Scripts/python.exe main.py",
+  "working_directory": "external/fgsv/source/Faithful_GSV-main/exp1_benchmark",
+  "started_at_local": "2026-10-30 11:50:50 Asia/Shanghai",
+  "hard_timeout_seconds": 1800,
+  "exit_reason": "到达预先声明的 30 分钟硬超时后人工发送 Ctrl-C；不是算法崩溃",
+  "completed_scope": {
+    "n": 64,
+    "replications_completed": 4,
+    "replications_planned": 30,
+    "last_progress_elapsed": "29:31",
+    "last_progress_average_seconds_per_replication": 442.68,
+    "n_128_started": false,
+    "n_256_started": false
+  },
+  "extrapolation_note": "按已完成四次的进度条均值，仅 n=64 的 30 次约需 3.69 小时；该值是运行时外推，不是完成测量。",
+  "archive_sha256": "763C9CAD2689F87B5E7A891CEA4C3707AEFC72D186EDF97AB53BD3EB879E9FB0",
+  "environment": {
+    "python": "3.11.6",
+    "official_readme_python_requirement": ">=3.10",
+    "numpy": "2.2.4",
+    "scipy": "1.15.2",
+    "pandas": "2.2.3",
+    "matplotlib": "3.10.1",
+    "seaborn": "0.13.2",
+    "tqdm": "4.67.1",
+    "note": "exp1 实际导入路径不需要 torch/peft/CUDA，因此未安装与本实验无关的深度学习依赖。"
+  }
+}

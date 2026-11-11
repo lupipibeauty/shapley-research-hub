@@ -1,0 +1,39 @@
+{
+  "status": "H5_V2_JOINT_STATE_COMPLETED_AND_PAUSED",
+  "players": 12,
+  "nodes": 7,
+  "report_coordinates": 35,
+  "families": [
+    "P",
+    "E",
+    "J",
+    "M"
+  ],
+  "coalitions": 4096,
+  "revenue": "1000",
+  "lambda": "1/2",
+  "sql_state_mismatches": 0,
+  "max_V1_equals_R_FA_error": "0",
+  "max_V1_equals_R_FA_exact_fraction_error": "0",
+  "max_V2_formula_reconstruction_error": "0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002",
+  "B0_vs_historical_truth_max_abs_error": "0.000000000000000000000000000000000000000000000000000000000000000000000000000001746669325358481125953506636811",
+  "method_max_errors_vs_B0": {
+    "B0_FULL_COALITION_ENUMERATION": "0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "B1_JOINT_RAW_TYPE_COUNTS": "0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007",
+    "B2_SUFFICIENT_STATE_DP": "0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000134",
+    "B3_LEAF_FACTOR_GENERATING_FUNCTION": "0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000134"
+  },
+  "B1_raw_type_count": 12,
+  "full_leaf_state_dimensions": 16,
+  "observed_full_sufficient_states": 3840,
+  "full_state_coordinate_box_upper_bound": 34992000,
+  "factorized_attainable_full_state_count": 3840,
+  "historical_files_unchanged": true,
+  "total_wall_seconds": 75.13358099997276,
+  "environment": {
+    "python": "3.11.6 (tags/v3.11.6:8b6ee5b, Oct  2 2023, 14:57:12) [MSC v.1935 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "duckdb": "1.5.6"
+  },
+  "statistical_note": "deterministic exhaustive computation; single-run timings are descriptive and no confidence intervals are applicable"
+}

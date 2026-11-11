@@ -1,0 +1,22 @@
+gap_class,item,current_evidence,why_easy_or_missing,status,minimal_next_experiment
+A,D1-P V-count,两类常数边际玩家；按叶/祖先覆盖率线性,线性加性且无跨玩家JOIN,CLASSICALLY_SOLVED,无需重复；保留为负对照
+A,D1-P V1计数部分,21坐标、84个单变量来源组件，线性合成精确,来源均为单玩家指示函数,CLASSICALLY_SOLVED,无需扩大；仅测试自动编译器工程性
+A,D1-P V1比例部分,"14坐标由(a,b,k)计数状态DP精确重建",单位记录、二维计数充分统计、坐标线性合成,CLASSIC_DP_APPLICATION,增加带权记录并分别按一元/二进制权重编码审计伪多项式边界
+A,AB-J1/J2 COUNT,层次化无自连接JOIN；DNF/d-tree精确,查询变量原子集合嵌套,CLASSICALLY_TRACTABLE,保留作层次化阳性对照
+A,AB-J2 COUNT DISTINCT,同key内OR后精确；底层CQ为all-hierarchical,两key、五grounding且满足已知可处理结构,CLASSICALLY_TRACTABLE_AFTER_REDUCTION,与非all-hierarchical count-distinct成对比较
+B,Basic与Optional独立供给,当前同一record_id绑定为一个玩家并同进同出,未激活跨所有者互补,NOT_ACTIVATED,6玩家最小包拆分：Basic和Optional由不同玩家控制，固定LEFT JOIN/NULL规则
+B,多对多层级映射,Hierarchy每叶唯一一行,无扇出、无重复路径,NOT_ACTIVATED,单叶映射到两个父节点，分别测试bag与distinct报表语义
+B,玩家统计类型多样性,12条人工平衡记录；多类含重复或近重复作用,低维计数和对称性压缩明显,WEAKLY_ACTIVATED,保持n不变，构造12个互异坐标作用签名并比较状态数
+B,V2联合统计状态,仅4096联盟高精度真值及指数Harsanyi表达；无原生联合DP,n=12掩盖联合状态增长，且尚未做状态编译,NOT_IMPLEMENTED_AS_NATIVE_STATE_ALGORITHM,固定12玩家，逐步增加独立统计族并记录可达联合状态数
+C,非hierarchical无自连接CQ,D1-P与AB-J1/J2均未覆盖,理论上存在FP#P困难边界,KNOWN_HARD_NOT_COVERED,"Q():-R(x),S(x,y),T(y)的6至10玩家精确控制游戏"
+C,self-join查询,当前控制JOIN均无自连接,Livshits/Standke主要二分结论明确排除自连接,THEORY_NOT_DIRECTLY_COVERED,"R(x,y),R(y,z)最小自连接，区分同一物理事实重复使用"
+C,非all-hierarchical COUNT DISTINCT,AB-J查询为all-hierarchical,已知困难边界未被触发,KNOWN_HARD_NOT_COVERED,"Q(x):-R(x),S(x,y),T(y)输出x并做count-distinct"
+C,高维非局部整表价值,V2只有四族几何平均,现有AggCQ定理要求局部值或单聚合；整表全局函数不直接覆盖,THEOREM_GAP,2/3/4/6统计族阶梯，固定玩家和SQL，测联合状态与精确编译规模
+D,V2原生SQL到联合状态编译,Harsanyi适配先枚举4096联盟且4094项非零,同目标可表达但未找到避免全联盟预付的原生路径,NO_EFFICIENT_NATIVE_ADAPTATION_FOUND,只做12玩家状态可达性与族交互因子图，不扩大n
+D,通用HAVING门槛来源编译,AB-J2手工4证据，官方空DNF还会报IndexError,最小证据可组合增长；无通用SQL前端,MANUAL_ONLY,2x2到3x3扇出、门槛2/3；同时记录最小DNF和因式电路
+E,官方COUNT DISTINCT SQL接口,手工key-OR后Boolean后端正确,数学和后端能力已验证，缺少前端编译接口,INTERFACE_ONLY,实现只读转换器并与64联盟SQL核验，不宣称新算法
+E,官方ABS/比例评分接口,独立计数DP已精确解决V1,官方输入不接受全局ABS，但非数学困难,INTERFACE_ONLY,"建立SQL坐标到(a,b,k)状态程序的自动翻译"
+F,跨来源共同完成一条业务记录,当前D1-P记录包预先绑定，AB-J只做独立玩具JOIN,真实业务可能由不同所有者共同满足字段/实体解析,PROMISING_BUSINESS_STRUCTURE,Basic、属性、映射由三方控制，建立一条输出的多条替代合成路径
+F,重复连接路径与去重口径,D1-P COUNT(*)=COUNT DISTINCT；AB-J规模过小,真实主数据和桥表可制造同一业务实体的多条路径,PROMISING_BUSINESS_STRUCTURE,两桥表产生重复路径，成对运行bag、distinct与HAVING
+F,跨指标业务约束,V2交互由人为几何平均设定,尚未由真实定价合同或质量门槛驱动,RESEARCH_HYPOTHESIS,先冻结业务可解释的最低覆盖/一致性条款，再定义非局部价值
+F,算法比较预算公平性,FGSV按owner拆预算；MC一次排列复用全部owner,比较设计本身影响端到端优势,COMPARISON_DESIGN_CONFOUNDING,同时报告效用调用、唯一联盟、全owner端到端和单owner查询四种预算

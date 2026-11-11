@@ -1,0 +1,6 @@
+distinct_key,witness_id,variables,variable_count,satisfied_grounding_ids,satisfied_grounding_count,every_one_variable_deletion_fails,status
+K1,K1_w1,"[""p1"", ""p2"", ""p4""]",3,"[""g1"", ""g3""]",2,True,MINIMAL_SATISFYING_EVIDENCE
+K1,K1_w2,"[""p1"", ""p2"", ""p5""]",3,"[""g2"", ""g4""]",2,True,MINIMAL_SATISFYING_EVIDENCE
+K1,K1_w3,"[""p1"", ""p4"", ""p5""]",3,"[""g1"", ""g2""]",2,True,MINIMAL_SATISFYING_EVIDENCE
+K1,K1_w4,"[""p2"", ""p4"", ""p5""]",3,"[""g3"", ""g4""]",2,True,MINIMAL_SATISFYING_EVIDENCE
+K2,,,0,,0,True,NO_WITNESS_MAX_GROUNDINGS_BELOW_THRESHOLD

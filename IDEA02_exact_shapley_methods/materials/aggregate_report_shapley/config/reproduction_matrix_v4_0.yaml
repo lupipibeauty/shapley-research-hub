@@ -1,0 +1,62 @@
+version: reproduction_matrix_v4_0
+status: EXECUTED_FIRST_ROUND
+execution_status: FIRST_ROUND_COMPLETE_PARTIAL_COVERAGE
+algorithms:
+  exact_oracle:
+    source_type: local
+    theory_status: DIRECT
+    code_status: ENV_READY
+    same_game_status: FULL_SAME_GAME
+    first_round_required: true
+  abramovich_lexashap_lexaban:
+    source_type: official_code
+    repository: https://github.com/Omer-Abramovich/LExaBan-LExaShap
+    language: Python
+    theory_status: REDUCIBLE_EXACT
+    code_status: REPRODUCED_ORIGINAL
+    same_game_status: FULL_SAME_GAME
+    first_round_required: true
+  luo_independent_utility:
+    source_type: official_code
+    repository: https://github.com/IDEAL-Lab/shapley-value-independent-utility
+    language: Rust
+    theory_status: REDUCIBLE_EXACT
+    code_status: REPRODUCED_ORIGINAL
+    same_game_status: PARTIAL_COVERAGE
+    applicability_note: V-count 可通过独立效用整数复制严格适配；V1/V2 不满足独立效用可加假设
+    first_round_required: true
+  faithful_group_shapley:
+    source_type: official_code
+    repository: supplied_archive_without_git_metadata
+    language: Python
+    theory_status: DIRECT_GROUP_SUM_TARGET
+    code_status: PARTIAL_RESOURCE_TIMEOUT
+    same_game_status: SAME_TARGET_ADAPTED
+    official_benchmark_scope_completed: n64_one_replication
+    official_full_matrix_scope_missing: n64_30_replications_and_n128_n256
+    applicability_note: 以记录为玩家，owner 支付为记录级 Shapley 之和；D1-P 适配保持玩家、联盟价值与目标一致
+    first_round_required: true
+  livshits_query_answering:
+    source_type: reimplemented_from_paper
+    theory_status: THEORY_ONLY
+    code_status: NOT_STARTED
+    same_game_status: NOT_TESTED
+    first_round_required_for_applicable_cases: true
+  standke_kimelfeld_aggregate_cq:
+    source_type: theorem_guided_case_implementation
+    theory_status: THEORY_ONLY
+    code_status: NOT_STARTED
+    same_game_status: NOT_TESTED
+    first_round_required_for_applicable_cases: true
+  besner_levels:
+    source_type: reference_only
+    theory_status: THEORY_ONLY
+    code_status: NOT_APPLICABLE
+    same_game_status: VALUE_MISMATCH
+    direct_performance_baseline: false
+  jiang_ensemble_shapley:
+    source_type: reference_only
+    theory_status: ASSUMPTION_NOT_MET
+    code_status: NOT_APPLICABLE
+    same_game_status: VALUE_MISMATCH
+    direct_performance_baseline: false

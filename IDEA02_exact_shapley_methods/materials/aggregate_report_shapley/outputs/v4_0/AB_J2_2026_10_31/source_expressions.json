@@ -1,0 +1,120 @@
+{
+  "Q1_COUNT_STAR_BAG": {
+    "compiler": "DIRECT_ARITHMETIC_SUM_OF_SQL_GROUNDINGS",
+    "components": [
+      {
+        "dnf": [
+          [
+            "p1",
+            "p4"
+          ]
+        ],
+        "coefficient": "1/1"
+      },
+      {
+        "dnf": [
+          [
+            "p1",
+            "p5"
+          ]
+        ],
+        "coefficient": "1/1"
+      },
+      {
+        "dnf": [
+          [
+            "p2",
+            "p4"
+          ]
+        ],
+        "coefficient": "1/1"
+      },
+      {
+        "dnf": [
+          [
+            "p2",
+            "p5"
+          ]
+        ],
+        "coefficient": "1/1"
+      },
+      {
+        "dnf": [
+          [
+            "p3",
+            "p6"
+          ]
+        ],
+        "coefficient": "1/1"
+      }
+    ]
+  },
+  "Q2_COUNT_DISTINCT_KEY": {
+    "compiler": "MANUAL_GROUP_BY_DISTINCT_KEY_THEN_BOOLEAN_OR",
+    "components": [
+      {
+        "dnf": [
+          [
+            "p1",
+            "p4"
+          ],
+          [
+            "p1",
+            "p5"
+          ],
+          [
+            "p2",
+            "p4"
+          ],
+          [
+            "p2",
+            "p5"
+          ]
+        ],
+        "coefficient": "1/1"
+      },
+      {
+        "dnf": [
+          [
+            "p3",
+            "p6"
+          ]
+        ],
+        "coefficient": "1/1"
+      }
+    ]
+  },
+  "Q3_HAVING_COUNT_GE_2": {
+    "compiler": "MANUAL_THRESHOLD_WITNESS_UNION_AND_SUBSUMPTION_MINIMIZATION",
+    "components": [
+      {
+        "dnf": [
+          [
+            "p1",
+            "p2",
+            "p4"
+          ],
+          [
+            "p1",
+            "p2",
+            "p5"
+          ],
+          [
+            "p1",
+            "p4",
+            "p5"
+          ],
+          [
+            "p2",
+            "p4",
+            "p5"
+          ]
+        ],
+        "coefficient": "1/1"
+      }
+    ],
+    "false_keys_omitted_as_zero_components": [
+      "K2"
+    ]
+  }
+}

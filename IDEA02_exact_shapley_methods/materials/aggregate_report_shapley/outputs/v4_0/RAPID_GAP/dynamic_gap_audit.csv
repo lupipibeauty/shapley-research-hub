@@ -1,0 +1,7 @@
+work,covered_object,update_model,exactness,directly_covers_dynamic_database_report_shapley,judgment
+Computing Shapley Values for Dynamic Data,"ML/data-utility Shapley","player insertion/deletion and utility reuse","exact utility reuse plus sampling/delta variants","NO",important competitor but different utility oracle
+Dynamic Shapley Computation 2026,"player-by-task valuation matrix","players and tasks evolve","structure-aware approximation","NO",related dynamic data valuation
+F-IVM,"join/aggregate analytics over rings","single/batch tuple updates","exact for supported ring programs","NO",maintains sufficient report statistics not Shapley weights
+DBSP,"rich relational and streaming programs","stream deltas","exact program incrementalization","NO",maintains SQL/report computation not all coalition marginals
+ProvSQL DML provenance,"provenance of INSERT/UPDATE/DELETE and Boolean circuit inputs","DML history","exact provenance semantics","NOT_DOCUMENTED",Shapley can read circuits but incremental all-vector maintenance not claimed
+RAPID-GAP provisional target,"exact record Shapley for fixed factorized report game","single logical-record insert/delete; player set and combinatorial weights change","exact","TARGET",needs dedicated theorem/citation audit before experimentation

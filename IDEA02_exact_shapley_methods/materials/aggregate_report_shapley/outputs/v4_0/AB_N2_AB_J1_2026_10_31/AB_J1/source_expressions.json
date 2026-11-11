@@ -1,0 +1,49 @@
+{
+  "A_COUNT_STAR_BAG": [
+    {
+      "dnf": [
+        [
+          "p1",
+          "p3"
+        ]
+      ],
+      "coefficient": "1"
+    },
+    {
+      "dnf": [
+        [
+          "p2",
+          "p3"
+        ]
+      ],
+      "coefficient": "1"
+    }
+  ],
+  "B_COUNT_DISTINCT_KEY_MANUAL_REDUCTION": [
+    {
+      "dnf": [
+        [
+          "p1",
+          "p3"
+        ],
+        [
+          "p2",
+          "p3"
+        ]
+      ],
+      "coefficient": "1"
+    }
+  ],
+  "C_BOOLEAN_OUTPUT_TUPLE": {
+    "dnf": [
+      [
+        "p1",
+        "p3"
+      ],
+      [
+        "p2",
+        "p3"
+      ]
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "matrix_rows": 56,
+  "run_rows": 1680,
+  "owner_rows": 5280,
+  "sou_n12_generator": "PASS_UNMODIFIED",
+  "sou_truth_analytic_vs_enumeration_max_abs": 1.1102230246251565e-16,
+  "same_target_check": "PASS",
+  "budget_and_unique_coalition_accounting": "PASS",
+  "eq8_identity_max_abs": 2.8421709430404007e-13,
+  "historical_immutability": "PASS",
+  "scope": "R2-5 only; no 64-player D1-P run"
+}

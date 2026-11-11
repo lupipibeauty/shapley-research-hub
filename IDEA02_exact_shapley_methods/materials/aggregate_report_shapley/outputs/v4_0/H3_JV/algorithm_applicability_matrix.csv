@@ -1,0 +1,64 @@
+join_id,game_id,method,status,reason
+J0,G0,B0,APPLICABLE_EXECUTED_EXACT,4096 coalition DuckDB SQL truth
+J0,G0,B1_ABRAMOVICH,APPLICABLE_EXECUTED_EXACT,official DNF backend; manual SQL grounding frontend
+J0,G0,B2_COORDINATE_DP,OUTSIDE_METHOD_SCOPE,G1 coordinate additivity; JOIN evidence state used for J1/J2
+J0,G0,B3_JOINT_STATE_DP,APPLICABLE_EXECUTED_EXACT,supplemented JOIN evidence readiness state
+J0,G0,B4_LEAF_FACTOR,APPLICABLE_EXECUTED_EXACT,J0 uses the verified 16D leaf partition; J1/J2 cross leaf/source factors
+J0,G0,B5_H5R_S4_S6,APPLICABLE_EXECUTED_EXACT,same evidence state; all-player shared solve
+J0,G0,B6_LUO,THEOREM_REDUCTION_VALIDATED_NO_OFFICIAL_FRONTEND,global G1/G2 scores are not sums of fixed independent output utilities
+J0,G1,B0,APPLICABLE_EXECUTED_EXACT,4096 coalition DuckDB SQL truth
+J0,G1,B1_ABRAMOVICH,MATHEMATICAL_INPUT_NOT_BOOLEAN_ADDITIVE_OUTPUT,official DNF backend; manual SQL grounding frontend
+J0,G1,B2_COORDINATE_DP,APPLICABLE_EXECUTED_EXACT,G1 coordinate additivity; JOIN evidence state used for J1/J2
+J0,G1,B3_JOINT_STATE_DP,APPLICABLE_EXECUTED_EXACT,supplemented JOIN evidence readiness state
+J0,G1,B4_LEAF_FACTOR,APPLICABLE_EXECUTED_EXACT,J0 uses the verified 16D leaf partition; J1/J2 cross leaf/source factors
+J0,G1,B5_H5R_S4_S6,APPLICABLE_EXECUTED_EXACT,same evidence state; all-player shared solve
+J0,G1,B6_LUO,INDEPENDENT_UTILITY_ASSUMPTION_FAILS,global G1/G2 scores are not sums of fixed independent output utilities
+J0,G2,B0,APPLICABLE_EXECUTED_EXACT,4096 coalition DuckDB SQL truth
+J0,G2,B1_ABRAMOVICH,MATHEMATICAL_INPUT_NOT_BOOLEAN_ADDITIVE_OUTPUT,official DNF backend; manual SQL grounding frontend
+J0,G2,B2_COORDINATE_DP,OUTSIDE_METHOD_SCOPE,G1 coordinate additivity; JOIN evidence state used for J1/J2
+J0,G2,B3_JOINT_STATE_DP,APPLICABLE_EXECUTED_EXACT,supplemented JOIN evidence readiness state
+J0,G2,B4_LEAF_FACTOR,APPLICABLE_EXECUTED_EXACT,J0 uses the verified 16D leaf partition; J1/J2 cross leaf/source factors
+J0,G2,B5_H5R_S4_S6,APPLICABLE_EXECUTED_EXACT,same evidence state; all-player shared solve
+J0,G2,B6_LUO,INDEPENDENT_UTILITY_ASSUMPTION_FAILS,global G1/G2 scores are not sums of fixed independent output utilities
+J1,G0,B0,APPLICABLE_EXECUTED_EXACT,4096 coalition DuckDB SQL truth
+J1,G0,B1_ABRAMOVICH,APPLICABLE_EXECUTED_EXACT,official DNF backend; manual SQL grounding frontend
+J1,G0,B2_COORDINATE_DP,OUTSIDE_METHOD_SCOPE,G1 coordinate additivity; JOIN evidence state used for J1/J2
+J1,G0,B3_JOINT_STATE_DP,APPLICABLE_EXECUTED_EXACT,supplemented JOIN evidence readiness state
+J1,G0,B4_LEAF_FACTOR,LEAF_PARTITION_ASSUMPTION_FAILS_CROSS_PLAYER_JOIN,J0 uses the verified 16D leaf partition; J1/J2 cross leaf/source factors
+J1,G0,B5_H5R_S4_S6,APPLICABLE_EXECUTED_EXACT,same evidence state; all-player shared solve
+J1,G0,B6_LUO,THEOREM_REDUCTION_VALIDATED_NO_OFFICIAL_FRONTEND,global G1/G2 scores are not sums of fixed independent output utilities
+J1,G1,B0,APPLICABLE_EXECUTED_EXACT,4096 coalition DuckDB SQL truth
+J1,G1,B1_ABRAMOVICH,MATHEMATICAL_INPUT_NOT_BOOLEAN_ADDITIVE_OUTPUT,official DNF backend; manual SQL grounding frontend
+J1,G1,B2_COORDINATE_DP,APPLICABLE_EXECUTED_EXACT,G1 coordinate additivity; JOIN evidence state used for J1/J2
+J1,G1,B3_JOINT_STATE_DP,APPLICABLE_EXECUTED_EXACT,supplemented JOIN evidence readiness state
+J1,G1,B4_LEAF_FACTOR,LEAF_PARTITION_ASSUMPTION_FAILS_CROSS_PLAYER_JOIN,J0 uses the verified 16D leaf partition; J1/J2 cross leaf/source factors
+J1,G1,B5_H5R_S4_S6,APPLICABLE_EXECUTED_EXACT,same evidence state; all-player shared solve
+J1,G1,B6_LUO,INDEPENDENT_UTILITY_ASSUMPTION_FAILS,global G1/G2 scores are not sums of fixed independent output utilities
+J1,G2,B0,APPLICABLE_EXECUTED_EXACT,4096 coalition DuckDB SQL truth
+J1,G2,B1_ABRAMOVICH,MATHEMATICAL_INPUT_NOT_BOOLEAN_ADDITIVE_OUTPUT,official DNF backend; manual SQL grounding frontend
+J1,G2,B2_COORDINATE_DP,OUTSIDE_METHOD_SCOPE,G1 coordinate additivity; JOIN evidence state used for J1/J2
+J1,G2,B3_JOINT_STATE_DP,APPLICABLE_EXECUTED_EXACT,supplemented JOIN evidence readiness state
+J1,G2,B4_LEAF_FACTOR,LEAF_PARTITION_ASSUMPTION_FAILS_CROSS_PLAYER_JOIN,J0 uses the verified 16D leaf partition; J1/J2 cross leaf/source factors
+J1,G2,B5_H5R_S4_S6,APPLICABLE_EXECUTED_EXACT,same evidence state; all-player shared solve
+J1,G2,B6_LUO,INDEPENDENT_UTILITY_ASSUMPTION_FAILS,global G1/G2 scores are not sums of fixed independent output utilities
+J2,G0,B0,APPLICABLE_EXECUTED_EXACT,4096 coalition DuckDB SQL truth
+J2,G0,B1_ABRAMOVICH,APPLICABLE_EXECUTED_EXACT,official DNF backend; manual SQL grounding frontend
+J2,G0,B2_COORDINATE_DP,OUTSIDE_METHOD_SCOPE,G1 coordinate additivity; JOIN evidence state used for J1/J2
+J2,G0,B3_JOINT_STATE_DP,APPLICABLE_EXECUTED_EXACT,supplemented JOIN evidence readiness state
+J2,G0,B4_LEAF_FACTOR,LEAF_PARTITION_ASSUMPTION_FAILS_CROSS_PLAYER_JOIN,J0 uses the verified 16D leaf partition; J1/J2 cross leaf/source factors
+J2,G0,B5_H5R_S4_S6,APPLICABLE_EXECUTED_EXACT,same evidence state; all-player shared solve
+J2,G0,B6_LUO,THEOREM_REDUCTION_VALIDATED_NO_OFFICIAL_FRONTEND,global G1/G2 scores are not sums of fixed independent output utilities
+J2,G1,B0,APPLICABLE_EXECUTED_EXACT,4096 coalition DuckDB SQL truth
+J2,G1,B1_ABRAMOVICH,MATHEMATICAL_INPUT_NOT_BOOLEAN_ADDITIVE_OUTPUT,official DNF backend; manual SQL grounding frontend
+J2,G1,B2_COORDINATE_DP,APPLICABLE_EXECUTED_EXACT,G1 coordinate additivity; JOIN evidence state used for J1/J2
+J2,G1,B3_JOINT_STATE_DP,APPLICABLE_EXECUTED_EXACT,supplemented JOIN evidence readiness state
+J2,G1,B4_LEAF_FACTOR,LEAF_PARTITION_ASSUMPTION_FAILS_CROSS_PLAYER_JOIN,J0 uses the verified 16D leaf partition; J1/J2 cross leaf/source factors
+J2,G1,B5_H5R_S4_S6,APPLICABLE_EXECUTED_EXACT,same evidence state; all-player shared solve
+J2,G1,B6_LUO,INDEPENDENT_UTILITY_ASSUMPTION_FAILS,global G1/G2 scores are not sums of fixed independent output utilities
+J2,G2,B0,APPLICABLE_EXECUTED_EXACT,4096 coalition DuckDB SQL truth
+J2,G2,B1_ABRAMOVICH,MATHEMATICAL_INPUT_NOT_BOOLEAN_ADDITIVE_OUTPUT,official DNF backend; manual SQL grounding frontend
+J2,G2,B2_COORDINATE_DP,OUTSIDE_METHOD_SCOPE,G1 coordinate additivity; JOIN evidence state used for J1/J2
+J2,G2,B3_JOINT_STATE_DP,APPLICABLE_EXECUTED_EXACT,supplemented JOIN evidence readiness state
+J2,G2,B4_LEAF_FACTOR,LEAF_PARTITION_ASSUMPTION_FAILS_CROSS_PLAYER_JOIN,J0 uses the verified 16D leaf partition; J1/J2 cross leaf/source factors
+J2,G2,B5_H5R_S4_S6,APPLICABLE_EXECUTED_EXACT,same evidence state; all-player shared solve
+J2,G2,B6_LUO,INDEPENDENT_UTILITY_ASSUMPTION_FAILS,global G1/G2 scores are not sums of fixed independent output utilities

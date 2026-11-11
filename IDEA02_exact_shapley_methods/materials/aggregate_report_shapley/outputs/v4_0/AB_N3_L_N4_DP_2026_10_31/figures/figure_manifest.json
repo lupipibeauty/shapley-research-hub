@@ -1,0 +1,21 @@
+{
+  "font": "Microsoft YaHei",
+  "input_files": [
+    "outputs/v4_0/AB_N3_L_N4_DP_2026_10_31/v1_record_shapley_comparison.csv",
+    "outputs/v4_0/AB_N3_L_N4_DP_2026_10_31/AB_N4_DP/dp_state_summary.csv"
+  ],
+  "outputs": [
+    "outputs\\v4_0\\AB_N3_L_N4_DP_2026_10_31\\figures\\figure_1_v1_shapley_decomposition.png",
+    "outputs\\v4_0\\AB_N3_L_N4_DP_2026_10_31\\figures\\figure_1_v1_shapley_decomposition.svg",
+    "outputs\\v4_0\\AB_N3_L_N4_DP_2026_10_31\\figures\\figure_1_v1_shapley_decomposition.pdf",
+    "outputs\\v4_0\\AB_N3_L_N4_DP_2026_10_31\\figures\\figure_2_dp_state_transition_costs.png",
+    "outputs\\v4_0\\AB_N3_L_N4_DP_2026_10_31\\figures\\figure_2_dp_state_transition_costs.svg",
+    "outputs\\v4_0\\AB_N3_L_N4_DP_2026_10_31\\figures\\figure_2_dp_state_transition_costs.pdf"
+  ],
+  "uncertainty": "none; deterministic exact computations",
+  "smoothing": false,
+  "captions": {
+    "figure_1": "蓝色为21个计数坐标的官方来源算法线性部分，橙色为14个比例坐标的独立计数状态DP；黑色叉号为4096联盟精确V1真值。",
+    "figure_2": "14个比例坐标中实际存在的27个目标/非目标代表玩家DP的终端状态数与转移写入次数；无关玩家按零边际直接跳过。"
+  }
+}

@@ -1,0 +1,33 @@
+method,query,status,boundary
+B0,BAG,APPLICABLE_EXACT,exponential truth only
+B1_BAG_CLOSED,BAG,APPLICABLE_EXACT,grounding weight split only
+B2_ABRAMOVICH,BAG,APPLICABLE_AFTER_MANUAL_DNF,official SQL frontend absent; d-tree size instance dependent
+B3_KNOWLEDGE_COMPILATION,BAG,SAME_DNF_CIRCUIT_EVIDENCE_AS_B2,not separately timed as a different algorithm
+B4_STATE_DP,BAG,APPLICABLE_EXACT,evidence-state frontier may approach coalitions
+B5_VARIABLE_ELIMINATION,BAG,STRUCTURAL_WIDTH_AUDITED_NOT_SEPARATE_SOLVER,min-fill width recorded; no claim of optimized implementation
+B6_S4,BAG,APPLICABLE_EXACT,shared prefix/suffix state
+B7_S6,BAG,APPLICABLE_EXACT,multilinear expectation circuit
+B0,DISTINCT,APPLICABLE_EXACT,exponential truth only
+B1_BAG_CLOSED,DISTINCT,NOT_APPLICABLE_OR_AND_THRESHOLD,grounding weight split only
+B2_ABRAMOVICH,DISTINCT,APPLICABLE_AFTER_MANUAL_DNF,official SQL frontend absent; d-tree size instance dependent
+B3_KNOWLEDGE_COMPILATION,DISTINCT,SAME_DNF_CIRCUIT_EVIDENCE_AS_B2,not separately timed as a different algorithm
+B4_STATE_DP,DISTINCT,APPLICABLE_EXACT,evidence-state frontier may approach coalitions
+B5_VARIABLE_ELIMINATION,DISTINCT,STRUCTURAL_WIDTH_AUDITED_NOT_SEPARATE_SOLVER,min-fill width recorded; no claim of optimized implementation
+B6_S4,DISTINCT,APPLICABLE_EXACT,shared prefix/suffix state
+B7_S6,DISTINCT,APPLICABLE_EXACT,multilinear expectation circuit
+B0,HAVING2,APPLICABLE_EXACT,exponential truth only
+B1_BAG_CLOSED,HAVING2,NOT_APPLICABLE_OR_AND_THRESHOLD,grounding weight split only
+B2_ABRAMOVICH,HAVING2,APPLICABLE_AFTER_MANUAL_DNF,official SQL frontend absent; d-tree size instance dependent
+B3_KNOWLEDGE_COMPILATION,HAVING2,SAME_DNF_CIRCUIT_EVIDENCE_AS_B2,not separately timed as a different algorithm
+B4_STATE_DP,HAVING2,APPLICABLE_EXACT,evidence-state frontier may approach coalitions
+B5_VARIABLE_ELIMINATION,HAVING2,STRUCTURAL_WIDTH_AUDITED_NOT_SEPARATE_SOLVER,min-fill width recorded; no claim of optimized implementation
+B6_S4,HAVING2,APPLICABLE_EXACT,shared prefix/suffix state
+B7_S6,HAVING2,APPLICABLE_EXACT,multilinear expectation circuit
+B0,HAVING3,APPLICABLE_EXACT,exponential truth only
+B1_BAG_CLOSED,HAVING3,NOT_APPLICABLE_OR_AND_THRESHOLD,grounding weight split only
+B2_ABRAMOVICH,HAVING3,APPLICABLE_AFTER_MANUAL_DNF,official SQL frontend absent; d-tree size instance dependent
+B3_KNOWLEDGE_COMPILATION,HAVING3,SAME_DNF_CIRCUIT_EVIDENCE_AS_B2,not separately timed as a different algorithm
+B4_STATE_DP,HAVING3,APPLICABLE_EXACT,evidence-state frontier may approach coalitions
+B5_VARIABLE_ELIMINATION,HAVING3,STRUCTURAL_WIDTH_AUDITED_NOT_SEPARATE_SOLVER,min-fill width recorded; no claim of optimized implementation
+B6_S4,HAVING3,APPLICABLE_EXACT,shared prefix/suffix state
+B7_S6,HAVING3,APPLICABLE_EXACT,multilinear expectation circuit

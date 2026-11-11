@@ -1,0 +1,10 @@
+structure,paper,result_or_theorem,assumptions_mapping,project_evidence,judgment
+J0,Livshits et al. 2020,"Theorem 9/11; Corollary 15","无自连接、hierarchical CQ及求和聚合","单玩家单子句来源",DIRECTLY_IN_TRACTABLE_REGION
+J1,Livshits et al. 2020,"Theorem 9/11; Corollary 15","每个二关系分支为hierarchical且无自连接","官方DNF后端G0精确通过",TRACTABLE_AFTER_UCQ_COMPONENT_REDUCTION
+J2,Livshits et al. 2020,Theorem 13,"固定无自连接non-hierarchical CQ的困难类别","R(x),S(x,y),T(y)；本固定8-grounding实例仍可运行",KNOWN_WORST_CASE_HARD_CLASS_BUT_SMALL_INSTANCE_SOLVED
+J0/J1,Standke and Kimelfeld 2025,"Theorem 3.1/4.1","层次条件与局部值函数","G0为局部可加；G1/G2为整表后处理",G0_COVERED_G1_G2_NOT_DIRECTLY_COVERED
+J2,Standke and Kimelfeld 2025,Theorem 3.1,"非existential-hierarchical聚合查询困难侧的条件","底层查询non-hierarchical；整表评分超出单局部值接口",THEOREM_CALIBRATION_NOT_NEW_RESULT
+J0/J1/J2,Abramovich et al. 2025,Theorem 3.6,"给定d-tree后全变量梯度线性于树规模","G0人工SQL-grounding前端+未修改官方后端精确；G1/G2非Boolean加性输入",G0_EXECUTED_G1_G2_INTERFACE_AND_MATHEMATICAL_MISMATCH
+J0/J1/J2,Luo et al. 2022,"Assumption 1; Theorems 1/2","输出元组效用非负、独立、总效用可加","G0可归约；G1/G2全局归一化与几何耦合违反假设",G0_REDUCTION_VALIDATED_G1_G2_NOT_APPLICABLE
+J0/J1/J2,H5/H5-R,经典充分状态DP与多线性期望反向求导,"玩家状态增量可加且终端值由状态决定","JOIN证据就绪度为可加状态；所有执行方法误差<1e-9",APPLICABLE_WITH_SUPPLEMENTED_EVIDENCE_STATE
+

@@ -1,0 +1,27 @@
+{
+  "AB-N3-L": {
+    "sql_grounding_seconds": 0.015306199959013611,
+    "source_expression_assembly_seconds": 0.003945499949622899,
+    "official_dtree_compile_seconds": 0.00454130006255582,
+    "official_backward_solve_seconds": 0.003020200238097459,
+    "official_untouched_end_to_end_seconds": 0.010869199701119214,
+    "algorithm_end_to_end_seconds": 0.05158099997788668,
+    "components": 84
+  },
+  "AB-N4-DP": {
+    "dp_algorithm_seconds": 0.16804890002822503,
+    "representative_dp_runs": 27,
+    "total_transition_updates": 8632,
+    "terminal_state_rows": 1360,
+    "maximum_terminal_states_one_run": 100
+  },
+  "posthoc_oracles": {
+    "all_exact_validation_seconds": 41.6725684000412,
+    "truth_loaded_after_algorithm_construction": true
+  },
+  "memory": {
+    "python_tracemalloc_current_bytes": 66889461,
+    "python_tracemalloc_peak_bytes": 67147020,
+    "scope": "Python allocations only; process RSS unavailable without psutil"
+  }
+}

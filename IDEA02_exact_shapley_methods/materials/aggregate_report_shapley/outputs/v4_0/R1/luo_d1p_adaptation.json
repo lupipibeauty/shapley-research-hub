@@ -1,0 +1,367 @@
+{
+  "stage": "R1",
+  "algorithm": "Luo independent utility",
+  "official_source_modified": false,
+  "same_game_contract": {
+    "players": [
+      "p1",
+      "p2",
+      "p3",
+      "p4",
+      "p5",
+      "p6",
+      "p7",
+      "p8",
+      "p9",
+      "p10",
+      "p11",
+      "p12"
+    ],
+    "player_binding": "每个 seller id 对应一条 D1-P 逻辑记录，而不是原论文 world owner",
+    "coalitions": 4096,
+    "target_value": "D1-P V-count",
+    "report_reference": "完整 35 坐标报表中的分层 record_count 价值版本"
+  },
+  "construction": {
+    "type": "utility-preserving integer replication into the fixed world join plan",
+    "integer_scale": 9,
+    "exact_record_payments": [
+      "1000/9",
+      "1000/9",
+      "1000/9",
+      "1000/9",
+      "625/9",
+      "625/9",
+      "625/9",
+      "625/9",
+      "625/9",
+      "625/9",
+      "625/9",
+      "625/9"
+    ],
+    "replicas_per_player": [
+      1000,
+      1000,
+      1000,
+      1000,
+      625,
+      625,
+      625,
+      625,
+      625,
+      625,
+      625,
+      625
+    ],
+    "join_output_rows": 9000,
+    "physical_csv_rows": 27000,
+    "seller_assignments": 27000,
+    "details": "每个复制单元由 city/country/countrylanguage 三行组成，连接键唯一，三行均绑定同一记录玩家；选择该玩家时产生一个独立连接输出元组。Luo 原始计数除以 9 后恢复 V-count。"
+  },
+  "coalition_equivalence": {
+    "checked_coalitions": 4096,
+    "maximum_absolute_error": 0.0
+  },
+  "proposed": {
+    "command": [
+      "D:\\python项目\\shapley\\aggregate_report_shapley\\external\\luo\\build\\windows-gnu\\shapley-value.exe",
+      "-i",
+      "C:\\Users\\86156\\AppData\\Local\\Temp\\ars_luo_d1p_ascii_hq30bgh6\\csv",
+      "-m",
+      "C:\\Users\\86156\\AppData\\Local\\Temp\\ars_luo_d1p_ascii_hq30bgh6\\metadata",
+      "-d",
+      "world",
+      "-o",
+      "C:\\Users\\86156\\AppData\\Local\\Temp\\ars_luo_d1p_ascii_hq30bgh6\\d1p_vcount_proposed.json",
+      "-s",
+      "proposed"
+    ],
+    "exit_code": 0,
+    "wall_seconds": 1.1629708999826107,
+    "stdout": "",
+    "stderr": "",
+    "raw": {
+      "avg_time": 0.001775833,
+      "comb_count": 0,
+      "csv_dir": "C:\\Users\\86156\\AppData\\Local\\Temp\\ars_luo_d1p_ascii_hq30bgh6\\csv",
+      "dataset": "world",
+      "linear_count": 9000,
+      "lookup_count": 0,
+      "meta_dir": "C:\\Users\\86156\\AppData\\Local\\Temp\\ars_luo_d1p_ascii_hq30bgh6\\metadata",
+      "num_threads": null,
+      "sample_size": null,
+      "scale": 1.0,
+      "scheme": "proposed",
+      "shapley_values": {
+        "0": 1000.0,
+        "1": 1000.0,
+        "10": 625.0,
+        "11": 625.0,
+        "2": 1000.0,
+        "3": 1000.0,
+        "4": 625.0,
+        "5": 625.0,
+        "6": 625.0,
+        "7": 625.0,
+        "8": 625.0,
+        "9": 625.0
+      },
+      "total_time": 0.02131
+    },
+    "comparison": {
+      "rows": [
+        {
+          "player": "p1",
+          "luo_raw": 1000.0,
+          "integer_scale": 9,
+          "adapted_payment": 111.11111111111111,
+          "exact_payment": "1000/9",
+          "absolute_error": 0.0
+        },
+        {
+          "player": "p2",
+          "luo_raw": 1000.0,
+          "integer_scale": 9,
+          "adapted_payment": 111.11111111111111,
+          "exact_payment": "1000/9",
+          "absolute_error": 0.0
+        },
+        {
+          "player": "p3",
+          "luo_raw": 1000.0,
+          "integer_scale": 9,
+          "adapted_payment": 111.11111111111111,
+          "exact_payment": "1000/9",
+          "absolute_error": 0.0
+        },
+        {
+          "player": "p4",
+          "luo_raw": 1000.0,
+          "integer_scale": 9,
+          "adapted_payment": 111.11111111111111,
+          "exact_payment": "1000/9",
+          "absolute_error": 0.0
+        },
+        {
+          "player": "p5",
+          "luo_raw": 625.0,
+          "integer_scale": 9,
+          "adapted_payment": 69.44444444444444,
+          "exact_payment": "625/9",
+          "absolute_error": 0.0
+        },
+        {
+          "player": "p6",
+          "luo_raw": 625.0,
+          "integer_scale": 9,
+          "adapted_payment": 69.44444444444444,
+          "exact_payment": "625/9",
+          "absolute_error": 0.0
+        },
+        {
+          "player": "p7",
+          "luo_raw": 625.0,
+          "integer_scale": 9,
+          "adapted_payment": 69.44444444444444,
+          "exact_payment": "625/9",
+          "absolute_error": 0.0
+        },
+        {
+          "player": "p8",
+          "luo_raw": 625.0,
+          "integer_scale": 9,
+          "adapted_payment": 69.44444444444444,
+          "exact_payment": "625/9",
+          "absolute_error": 0.0
+        },
+        {
+          "player": "p9",
+          "luo_raw": 625.0,
+          "integer_scale": 9,
+          "adapted_payment": 69.44444444444444,
+          "exact_payment": "625/9",
+          "absolute_error": 0.0
+        },
+        {
+          "player": "p10",
+          "luo_raw": 625.0,
+          "integer_scale": 9,
+          "adapted_payment": 69.44444444444444,
+          "exact_payment": "625/9",
+          "absolute_error": 0.0
+        },
+        {
+          "player": "p11",
+          "luo_raw": 625.0,
+          "integer_scale": 9,
+          "adapted_payment": 69.44444444444444,
+          "exact_payment": "625/9",
+          "absolute_error": 0.0
+        },
+        {
+          "player": "p12",
+          "luo_raw": 625.0,
+          "integer_scale": 9,
+          "adapted_payment": 69.44444444444444,
+          "exact_payment": "625/9",
+          "absolute_error": 0.0
+        }
+      ],
+      "maximum_absolute_error": 0.0
+    }
+  },
+  "traditional": {
+    "command": [
+      "D:\\python项目\\shapley\\aggregate_report_shapley\\external\\luo\\build\\windows-gnu\\shapley-value.exe",
+      "-i",
+      "C:\\Users\\86156\\AppData\\Local\\Temp\\ars_luo_d1p_ascii_hq30bgh6\\csv",
+      "-m",
+      "C:\\Users\\86156\\AppData\\Local\\Temp\\ars_luo_d1p_ascii_hq30bgh6\\metadata",
+      "-d",
+      "world",
+      "-o",
+      "C:\\Users\\86156\\AppData\\Local\\Temp\\ars_luo_d1p_ascii_hq30bgh6\\d1p_vcount_trad.json",
+      "-s",
+      "trad"
+    ],
+    "exit_code": 0,
+    "wall_seconds": 14.408196899981704,
+    "stdout": "",
+    "stderr": "",
+    "raw": {
+      "avg_time": 1.1909954329999999,
+      "comb_count": 0,
+      "csv_dir": "C:\\Users\\86156\\AppData\\Local\\Temp\\ars_luo_d1p_ascii_hq30bgh6\\csv",
+      "dataset": "world",
+      "linear_count": 0,
+      "lookup_count": 0,
+      "meta_dir": "C:\\Users\\86156\\AppData\\Local\\Temp\\ars_luo_d1p_ascii_hq30bgh6\\metadata",
+      "num_threads": null,
+      "sample_size": null,
+      "scale": 1.0,
+      "scheme": "trad",
+      "shapley_values": {
+        "0": 1000.0,
+        "1": 1000.0,
+        "10": 625.0,
+        "11": 625.0,
+        "2": 1000.0,
+        "3": 1000.0,
+        "4": 625.0,
+        "5": 625.0,
+        "6": 625.0,
+        "7": 625.0,
+        "8": 625.0,
+        "9": 625.0
+      },
+      "total_time": 14.2919452
+    },
+    "comparison": {
+      "rows": [
+        {
+          "player": "p1",
+          "luo_raw": 1000.0,
+          "integer_scale": 9,
+          "adapted_payment": 111.11111111111111,
+          "exact_payment": "1000/9",
+          "absolute_error": 0.0
+        },
+        {
+          "player": "p2",
+          "luo_raw": 1000.0,
+          "integer_scale": 9,
+          "adapted_payment": 111.11111111111111,
+          "exact_payment": "1000/9",
+          "absolute_error": 0.0
+        },
+        {
+          "player": "p3",
+          "luo_raw": 1000.0,
+          "integer_scale": 9,
+          "adapted_payment": 111.11111111111111,
+          "exact_payment": "1000/9",
+          "absolute_error": 0.0
+        },
+        {
+          "player": "p4",
+          "luo_raw": 1000.0,
+          "integer_scale": 9,
+          "adapted_payment": 111.11111111111111,
+          "exact_payment": "1000/9",
+          "absolute_error": 0.0
+        },
+        {
+          "player": "p5",
+          "luo_raw": 625.0,
+          "integer_scale": 9,
+          "adapted_payment": 69.44444444444444,
+          "exact_payment": "625/9",
+          "absolute_error": 0.0
+        },
+        {
+          "player": "p6",
+          "luo_raw": 625.0,
+          "integer_scale": 9,
+          "adapted_payment": 69.44444444444444,
+          "exact_payment": "625/9",
+          "absolute_error": 0.0
+        },
+        {
+          "player": "p7",
+          "luo_raw": 625.0,
+          "integer_scale": 9,
+          "adapted_payment": 69.44444444444444,
+          "exact_payment": "625/9",
+          "absolute_error": 0.0
+        },
+        {
+          "player": "p8",
+          "luo_raw": 625.0,
+          "integer_scale": 9,
+          "adapted_payment": 69.44444444444444,
+          "exact_payment": "625/9",
+          "absolute_error": 0.0
+        },
+        {
+          "player": "p9",
+          "luo_raw": 625.0,
+          "integer_scale": 9,
+          "adapted_payment": 69.44444444444444,
+          "exact_payment": "625/9",
+          "absolute_error": 0.0
+        },
+        {
+          "player": "p10",
+          "luo_raw": 625.0,
+          "integer_scale": 9,
+          "adapted_payment": 69.44444444444444,
+          "exact_payment": "625/9",
+          "absolute_error": 0.0
+        },
+        {
+          "player": "p11",
+          "luo_raw": 625.0,
+          "integer_scale": 9,
+          "adapted_payment": 69.44444444444444,
+          "exact_payment": "625/9",
+          "absolute_error": 0.0
+        },
+        {
+          "player": "p12",
+          "luo_raw": 625.0,
+          "integer_scale": 9,
+          "adapted_payment": 69.44444444444444,
+          "exact_payment": "625/9",
+          "absolute_error": 0.0
+        }
+      ],
+      "maximum_absolute_error": 0.0
+    }
+  },
+  "unsupported_targets": {
+    "V1": "包含比例一致性分数，联盟价值不是独立输出元组的固定效用和；官方 CLI 与 subset_utility 只接受连接结果基数。",
+    "V2_lambda_0_5": "包含跨指标族几何平均交互，不满足独立效用可加假设；保持同一游戏时不能直接映射为官方连接计数。"
+  },
+  "same_game_status": "PARTIAL_COVERAGE",
+  "interpretation": "V-count 可通过严格等价的整数复制使用 Luo 官方算法；V1/V2 的完整报表价值不能原生适配。该结果不是对 35 坐标完整价值函数的通用求解。"
+}

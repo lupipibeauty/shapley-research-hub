@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "summary_rows": 45,
+  "figures": 6,
+  "all_fixed_errors_below_1e_9": true,
+  "all_replicates_passed": true
+}

@@ -1,0 +1,7 @@
+coalition,mask,players,old_base_state,join_count,add_p4_marginal
+S1,13,p1;p3;p4,"[1, 1, 1]",1,
+S2,14,p2;p3;p4,"[1, 1, 1]",0,
+S3,5,p1;p3,"[1, 1, 0]",0,1
+S4,6,p2;p3,"[1, 1, 0]",0,0
+S3_plus_p4,13,p1;p3;p4,"[1, 1, 1]",1,
+S4_plus_p4,14,p2;p3;p4,"[1, 1, 1]",0,

@@ -1,0 +1,15 @@
+node,metric,full_denominator_F,full_target_C,alliances_checked,t_equals_zero_cases,reachable_count_states,theoretical_rectangular_state_bound,maximum_identity_error
+COUNTRY,category_a_target_share,12,6,4096,1,49,49,0/1
+COUNTRY,category_b_target_share,10,6,4096,4,35,35,0/1
+A,category_a_target_share,4,2,4096,256,9,9,0/1
+A,category_b_target_share,3,2,4096,512,6,6,0/1
+B,category_a_target_share,8,4,4096,16,25,25,0/1
+B,category_b_target_share,7,4,4096,32,20,20,0/1
+A1,category_a_target_share,2,1,4096,1024,4,4,0/1
+A1,category_b_target_share,2,1,4096,1024,4,4,0/1
+A2,category_a_target_share,2,1,4096,1024,4,4,0/1
+A2,category_b_target_share,1,1,4096,2048,2,2,0/1
+B1,category_a_target_share,4,2,4096,256,9,9,0/1
+B1,category_b_target_share,3,2,4096,512,6,6,0/1
+B2,category_a_target_share,4,2,4096,256,9,9,0/1
+B2,category_b_target_share,4,2,4096,256,9,9,0/1

@@ -1,0 +1,44 @@
+{
+  "stage": "R0",
+  "date": "2026-10-30",
+  "policy": "一次真实尝试；失败后不静默自动重试",
+  "environment": {
+    "os": "Windows",
+    "python": "3.11.6",
+    "git": "2.53.0.windows.2",
+    "cargo": "UNAVAILABLE",
+    "rustc": "UNAVAILABLE"
+  },
+  "attempts": [
+    {
+      "algorithm": "Abramovich LExaBan/LExaShap",
+      "repository": "https://github.com/Omer-Abramovich/LExaBan-LExaShap",
+      "official_default_branch_from_web": "main",
+      "command": "git clone https://github.com/Omer-Abramovich/LExaBan-LExaShap.git external\\abramovich\\source",
+      "exit_code": 1,
+      "stderr": "fatal: unable to access repository: Recv failure: Connection was reset",
+      "failure_code": "FETCH_FAILED",
+      "code_status": "BLOCKED_ENVIRONMENT",
+      "commit_sha": "UNAVAILABLE_FETCH_FAILED",
+      "license": "UNVERIFIED_SOURCE_NOT_FETCHED"
+    },
+    {
+      "algorithm": "Luo independent utility",
+      "repository": "https://github.com/IDEAL-Lab/shapley-value-independent-utility",
+      "official_default_branch_from_web": "master",
+      "command": "git clone https://github.com/IDEAL-Lab/shapley-value-independent-utility.git external\\luo\\source",
+      "exit_code": 1,
+      "stderr": "fatal: unable to access repository: Failed to connect to github.com port 443 after 21089 ms",
+      "failure_code": "FETCH_FAILED",
+      "code_status": "BLOCKED_ENVIRONMENT",
+      "commit_sha": "UNAVAILABLE_FETCH_FAILED",
+      "license": "UNVERIFIED_SOURCE_NOT_FETCHED",
+      "additional_blocker": "本机未安装 cargo/rustc；官方 README 指定 Ubuntu 20.04 LTS 与 cargo build --release"
+    }
+  ],
+  "official_page_facts": {
+    "abramovich": "官方 README 要求 Python >=3.11；SPJU 输入为 DNF 集合列表；SUM/COUNT 输入为 DNF 与系数列表。",
+    "luo": "官方 README 要求 Ubuntu 20.04 LTS、Rust、cargo build --release，并需另行下载源数据。"
+  },
+  "result": "未达到 ORIGINAL_REPRODUCED；失败发生在源码获取/工具链层，不能用于判断算法正确性、适用性或性能。"
+}

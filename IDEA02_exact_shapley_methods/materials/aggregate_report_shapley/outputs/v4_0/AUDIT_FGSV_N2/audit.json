@@ -1,0 +1,113 @@
+{
+  "status": "HISTORICAL_RESULTS_CONSISTENT_DIFFERENT_INPUT_GAMES",
+  "conclusion": "同一官方逻辑对[1,0]返回0.75，对[1,4]返回1.75；差异由补集玩家权重不同造成。",
+  "general_released_formula": "estimate = 0.75*a + 0.25*b for n=2, group={0}, additive weights=[a,b]",
+  "n2_branch": "s=1<threshold=10, only small-s branch; both hypergeometric strata contain exactly one coalition",
+  "sampling_effect": "none: n=2 strata are singleton and the estimate is deterministic",
+  "historical_hashes_before": {
+    "outputs\\v4_0\\R2\\minimal_counterexample.json": "e5b4e6b9e4d9ef410d6e27390ab5ee794b93481d94d4c9e99791636c9fe4835e",
+    "outputs\\v4_0\\R2_3\\audit.json": "882f040c1eb50c824f3647f9e15718b4a8d7c22e3ff3bf4ea858600c3af4f64d",
+    "outputs\\v4_0\\R2_4\\analytic_smoke_tests.csv": "494e64814da03c975056186b9260189858c4a32e6821f45b84204680b1d5043d",
+    "outputs\\v4_0\\R2_4\\audit.json": "3d6947d4f5a69dd7ee9ebcff6c331b26285190313d946019ce7533be3a64201f",
+    "reports\\fgsv_r2_3_formula_audit.md": "0cc8c81074e846e49cd1180cbf2d0c390aebb51acba68093b4abec3f58395674",
+    "reports\\fgsv_r2_3_formula_verification.md": "54268cac0bb10be2fea3cb6f911121604a760c8d34fcded794f85ab1720e7321",
+    "reports\\fgsv_r2_4_error_source_decomposition.md": "1b7e7fec4ce5421a57f3dcf8afc176e6eb4bdb45662e366c603b10acc6153b42"
+  },
+  "historical_hashes_after": {
+    "outputs\\v4_0\\R2\\minimal_counterexample.json": "e5b4e6b9e4d9ef410d6e27390ab5ee794b93481d94d4c9e99791636c9fe4835e",
+    "outputs\\v4_0\\R2_3\\audit.json": "882f040c1eb50c824f3647f9e15718b4a8d7c22e3ff3bf4ea858600c3af4f64d",
+    "outputs\\v4_0\\R2_4\\analytic_smoke_tests.csv": "494e64814da03c975056186b9260189858c4a32e6821f45b84204680b1d5043d",
+    "outputs\\v4_0\\R2_4\\audit.json": "3d6947d4f5a69dd7ee9ebcff6c331b26285190313d946019ce7533be3a64201f",
+    "reports\\fgsv_r2_3_formula_audit.md": "0cc8c81074e846e49cd1180cbf2d0c390aebb51acba68093b4abec3f58395674",
+    "reports\\fgsv_r2_3_formula_verification.md": "54268cac0bb10be2fea3cb6f911121604a760c8d34fcded794f85ab1720e7321",
+    "reports\\fgsv_r2_4_error_source_decomposition.md": "1b7e7fec4ce5421a57f3dcf8afc176e6eb4bdb45662e366c603b10acc6153b42"
+  },
+  "details": {
+    "R2_3_history_input": {
+      "weights": [
+        1.0,
+        0.0
+      ],
+      "official_curve": [
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75
+      ],
+      "a0_detail": {
+        "estimate": 0.75,
+        "useful_calls": 100,
+        "padding_calls": 0,
+        "terms": [
+          0.25
+        ],
+        "size_update_counts": [
+          49
+        ],
+        "sampled_sizes": {
+          "1": 98
+        },
+        "stage": "A0_RELEASE_LOGIC_CAPPED"
+      },
+      "analytic_parts": {
+        "linear_base": 0.5,
+        "s1_0_direct": -0.0,
+        "s1_1_direct": 0.25,
+        "released_direct_sum": 0.25,
+        "released_total": 0.75,
+        "equation_8_multiplier": 2.0,
+        "equation_8_total": 1.0,
+        "exact_group_shapley": 1.0
+      }
+    },
+    "R2_4_history_input": {
+      "weights": [
+        1.0,
+        4.0
+      ],
+      "official_curve": [
+        1.75,
+        1.75,
+        1.75,
+        1.75,
+        1.75,
+        1.75,
+        1.75,
+        1.75,
+        1.75,
+        1.75
+      ],
+      "a0_detail": {
+        "estimate": 1.75,
+        "useful_calls": 100,
+        "padding_calls": 0,
+        "terms": [
+          -0.75
+        ],
+        "size_update_counts": [
+          49
+        ],
+        "sampled_sizes": {
+          "1": 98
+        },
+        "stage": "A0_RELEASE_LOGIC_CAPPED"
+      },
+      "analytic_parts": {
+        "linear_base": 2.5,
+        "s1_0_direct": -1.0,
+        "s1_1_direct": 0.25,
+        "released_direct_sum": -0.75,
+        "released_total": 1.75,
+        "equation_8_multiplier": 2.0,
+        "equation_8_total": 1.0,
+        "exact_group_shapley": 1.0
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "before": {
+    "config\\d1p_design.yaml": "ad73a0ff389746f115d9d487d2e713ab88e73cf4777751dc3d58a64789d6309d",
+    "config\\value_spec_v3_2.yaml": "3b3aa3694aa27b60aad7df50351fcea4de17f46413d0b0fe06627f309ed8685b",
+    "docs\\H0_模型与实验设计审计.md": "f5e3be5ab1e2725bb0e525df936fd8619e032416c57bce38d50604ea87827801",
+    "reports\\H5_V2_JOINT_STATE实验审计报告_2026-10-31.md": "a0b8f227e248c086e9397275f703e9d9cdf2acc52e42a2e5a428b7c2b6f21e1c",
+    "reports\\H5_SCALE联合状态与规模结构审计报告_2026-11-01.md": "cf9c7698621898fdf5a5910718a57acf4d3f6519c52a5c724b6be8565e38a9e2",
+    "reports\\H5_R_经典精确算法全玩家共享计算审计报告_2026-11-01.md": "7b49dcf3a9b4d48b66ca6c08c34f4c3dc08da1cf5922153e22c070e3285fb3c0",
+    "experiments\\run_ab_j2_2026_10_31.py": "6679fb03c0b7672e95bb52061c4a24a737c43d3fab2c9dc3e0645ffde8a143e1",
+    "experiments\\run_h5_r_shared_all_players_2026_11_01.py": "82bd59ae9b6a1930bae99405ab14003e455b82f381a6aa08efacd1bf396331a1",
+    "external\\abramovich\\source\\LExaBan-LExaShap-main\\Algorithms\\LExaShap\\ShapleyCircuit.py": "63855c5b1b7997b79cef9731a63eae9aa81e64f4987a4ae9c731c994f41d68fe",
+    "external\\abramovich\\source\\LExaBan-LExaShap-main\\Algorithms\\LExaShap\\ShapleyEngine.py": "6d45813c1b89e65e70a71d56a14f65f0f7ba883264d72b2c6dc3d837306d16b2",
+    "external\\abramovich\\source\\LExaBan-LExaShap-main\\Advancing_Fact_Attribution_for_Query_Answering.pdf": "d4a035106da8551505860357d622003f1e9afc6e34e7684cbbc6d8b3908e11f0"
+  },
+  "after": {
+    "config\\d1p_design.yaml": "ad73a0ff389746f115d9d487d2e713ab88e73cf4777751dc3d58a64789d6309d",
+    "config\\value_spec_v3_2.yaml": "3b3aa3694aa27b60aad7df50351fcea4de17f46413d0b0fe06627f309ed8685b",
+    "docs\\H0_模型与实验设计审计.md": "f5e3be5ab1e2725bb0e525df936fd8619e032416c57bce38d50604ea87827801",
+    "reports\\H5_V2_JOINT_STATE实验审计报告_2026-10-31.md": "a0b8f227e248c086e9397275f703e9d9cdf2acc52e42a2e5a428b7c2b6f21e1c",
+    "reports\\H5_SCALE联合状态与规模结构审计报告_2026-11-01.md": "cf9c7698621898fdf5a5910718a57acf4d3f6519c52a5c724b6be8565e38a9e2",
+    "reports\\H5_R_经典精确算法全玩家共享计算审计报告_2026-11-01.md": "7b49dcf3a9b4d48b66ca6c08c34f4c3dc08da1cf5922153e22c070e3285fb3c0",
+    "experiments\\run_ab_j2_2026_10_31.py": "6679fb03c0b7672e95bb52061c4a24a737c43d3fab2c9dc3e0645ffde8a143e1",
+    "experiments\\run_h5_r_shared_all_players_2026_11_01.py": "82bd59ae9b6a1930bae99405ab14003e455b82f381a6aa08efacd1bf396331a1",
+    "external\\abramovich\\source\\LExaBan-LExaShap-main\\Algorithms\\LExaShap\\ShapleyCircuit.py": "63855c5b1b7997b79cef9731a63eae9aa81e64f4987a4ae9c731c994f41d68fe",
+    "external\\abramovich\\source\\LExaBan-LExaShap-main\\Algorithms\\LExaShap\\ShapleyEngine.py": "6d45813c1b89e65e70a71d56a14f65f0f7ba883264d72b2c6dc3d837306d16b2",
+    "external\\abramovich\\source\\LExaBan-LExaShap-main\\Advancing_Fact_Attribution_for_Query_Answering.pdf": "d4a035106da8551505860357d622003f1e9afc6e34e7684cbbc6d8b3908e11f0"
+  },
+  "unchanged": true
+}

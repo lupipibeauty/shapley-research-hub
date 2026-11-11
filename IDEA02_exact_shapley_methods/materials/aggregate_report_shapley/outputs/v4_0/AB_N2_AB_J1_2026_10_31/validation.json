@@ -1,0 +1,24 @@
+{
+  "status": "ALL_CHECKS_PASSED",
+  "checks": {
+    "manifest_scope": true,
+    "historical_n1_unchanged": true,
+    "n1_sql_rows_4096": true,
+    "n1_raw_null_count_1024": true,
+    "n1_value_errors_zero": true,
+    "n2_components_84": true,
+    "n2_component_breakdown": true,
+    "n2_errors_zero": true,
+    "n2_grounding_rows_36": true,
+    "n2_alliance_validation_rows_86016": true,
+    "n2_shapley_rows_252": true,
+    "j1_bag_distinct_activated": true,
+    "j1_payment_error_zero": true,
+    "j1_alliance_rows_8": true,
+    "j1_shapley_rows_9": true,
+    "n4_identity_exact": true,
+    "n4_no_full_adaptation": true,
+    "n4_max_states_49": true
+  },
+  "check_count": 18
+}

@@ -1,0 +1,36 @@
+{
+  "status": "COMPLETED_R2_5_ONLY",
+  "scope_warning": "One SOU instance (seed 42) and one frozen D1-P instance; 30 seeds repeat algorithm randomness, not data environments.",
+  "sou_generator_modified": false,
+  "official_utils_sha256": "282792e2c242603843c4ed461d12ca89668a44679707cddc87ca19bbfc8cba94",
+  "paper_formula_sha256": "6c3d6c49892ca94760493aa027189f2b7ba617e505e8ac52bad1f702917415fd",
+  "permutation_source_sha256": "e99692f3c425dc73e50e8e919cca952b9ccdbd50519620d4bbf35aca8880b934",
+  "config_sha256": "126f015a3db2132cc48e2fee6bf523c1625260dc5bc094bab4b15593701cd904",
+  "historical_before": {
+    "outputs\\v4_0\\R2\\sou_partial\\summary.json": "99720403d2803c4896f72f43011e5512a1263ab9cdf15017d6ee25c420368f5c",
+    "outputs\\v4_0\\R2_3\\exact_targets.json": "4dfa6adcb8c21793d3b480537fccb69aa5efa100e202431a9550eeeca1f6fc6f",
+    "outputs\\v4_0\\R2_4\\audit.json": "3d6947d4f5a69dd7ee9ebcff6c331b26285190313d946019ce7533be3a64201f"
+  },
+  "historical_after": {
+    "outputs\\v4_0\\R2\\sou_partial\\summary.json": "99720403d2803c4896f72f43011e5512a1263ab9cdf15017d6ee25c420368f5c",
+    "outputs\\v4_0\\R2_3\\exact_targets.json": "4dfa6adcb8c21793d3b480537fccb69aa5efa100e202431a9550eeeca1f6fc6f",
+    "outputs\\v4_0\\R2_4\\audit.json": "3d6947d4f5a69dd7ee9ebcff6c331b26285190313d946019ce7533be3a64201f"
+  },
+  "rows": {
+    "matrix": 56,
+    "runs": 1680,
+    "owners": 5280,
+    "marginals": 73728,
+    "interactions": 202752,
+    "conditional": 884,
+    "formula_s": 242
+  },
+  "elapsed_seconds": 2000.7345615999657,
+  "environment": {
+    "python": "3.11.6 (tags/v3.11.6:8b6ee5b, Oct  2 2023, 14:57:12) [MSC v.1935 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "numpy": "2.4.6",
+    "pandas": "3.1.0",
+    "scipy": "1.17.1"
+  }
+}

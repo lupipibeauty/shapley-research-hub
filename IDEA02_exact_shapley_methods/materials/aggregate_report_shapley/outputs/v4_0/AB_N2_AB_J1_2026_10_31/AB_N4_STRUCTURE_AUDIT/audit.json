@@ -1,0 +1,28 @@
+{
+  "stage": "AB-N4-STRUCTURE-AUDIT",
+  "status": "IDENTITY_VERIFIED_COMPACT_STATE_DP_PLAUSIBLE_NO_N4_ADAPTATION_RUN",
+  "alliances_checked_per_coordinate": 4096,
+  "ratio_coordinates": 14,
+  "identity": "score(c,t)=t/F-|cF-tC|/F^2",
+  "t_zero_rule": "联盟中t=0时必有c=0，代数式精确给出0，与冻结NULL->score 0约定一致。",
+  "maximum_exact_identity_error": "0/1",
+  "maximum_reachable_count_states": 49,
+  "dynamic_programming_analysis": {
+    "mathematical_representation": "每个比例坐标只依赖(c,t)两个整数计数。可按记录逐步卷积，维护(已处理记录数,c,t,子集大小)的计数，再按Shapley子集大小权重累加边际；目标/非目标记录还可利用对称性。",
+    "state_bound_per_coordinate": "(C+1)*(F-C+1); 冻结D1-P实测最大49个可达(c,t)状态",
+    "complexity_scope": "冻结D1-P为单位计数，F不超过记录数，状态DP对F是多项式；若推广到二进制编码的大整数权重，同类按总权重建状态的方法通常只能称为伪多项式。该路径不依赖预枚举4096个联盟。",
+    "official_interface": "发布LExaShap的正DNF与线性SUM/COUNT输入不接受聚合结果ABS；Max_LExaBan既不是Shapley接口，其MAX-of-output-tuples语义也不等同于max of two global sums。",
+    "expression_scale": "历史稠密Harsanyi展开说明该基表示很大，但不能据此推出所有精确算法都指数；小计数状态DP是独立候选路径。",
+    "literature_boundary": "本轮未完成与现有计数DP/生成函数文献的系统归约，不将该结构称为新算法。"
+  },
+  "full_n4_adaptation_executed": false,
+  "audit_wall_seconds": 4.1601936999941245,
+  "memory": {
+    "rss_start_bytes": null,
+    "rss_end_bytes": null,
+    "rss_observed_change_bytes": null,
+    "python_tracemalloc_start_bytes": 31539535,
+    "python_tracemalloc_end_bytes": 31591029,
+    "python_tracemalloc_peak_bytes": 31754445
+  }
+}

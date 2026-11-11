@@ -1,0 +1,4 @@
+stage,algorithm_seconds,source_or_transition_count,python_tracemalloc_peak_bytes_shared_run
+AB-N3-L,0.05158099997788668,84,67147020
+AB-N4-DP,0.16804890002822503,8632,67147020
+POSTHOC-ORACLES,41.6725684000412,4096,67147020

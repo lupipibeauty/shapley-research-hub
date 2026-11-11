@@ -1,0 +1,11 @@
+item,verified_fact,consequence
+Query template,"90个实例只来自R(x)-S(x,y)-T(x/y)两个固定模板",query-class diversity is low
+Grounding arity,"every grounding has exactly three logical players",hyperedge arity never varies
+Player roles,"each S fact has a private player; R/T counts are n/4 and S count is n/2",degree and overlap patterns are tightly constrained
+Seeds,"five seeds change edge incidences but not the template or role-count proportions",independent structures remain from one narrow family
+Width graph,"min_fill_width builds the primal player graph by making each grounding a clique",does not include value factors or latent circuit gates
+Width status,"reported width 2 was a min-fill heuristic upper bound",not an exact treewidth result
+d-tree coverage,"official metrics cover n=12 seed 8201 for H/NH and three sharing levels",not all 90 instances
+d-tree components,"nodes are summed over separately compiled output-key components",sum includes all components but does not expose cross-component DAG sharing
+Compilation timing,"official compile and backward solve are timed after Python minimal-witness construction",SQL grounding and DNF construction are excluded
+Expression construction,"end-to-end wrapper includes Python overhead but no PostgreSQL SQL-to-provenance frontend",cannot be interpreted as full native SQL compilation cost

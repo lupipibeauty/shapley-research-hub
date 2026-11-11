@@ -1,0 +1,286 @@
+{
+  "stage": "R0",
+  "source": "用户提供的官方 GitHub ZIP",
+  "archive_sha256": "7E28BA907C2D1AF830D49B89D8647F4ECD4D14DC6817ED73CABC791D2C31EF3C",
+  "commit_sha": "ZIP 未携带 .git，无法从归档内确认",
+  "license": "归档中未发现 LICENSE/COPYING，状态为未核验",
+  "python": "3.11.6 (tags/v3.11.6:8b6ee5b, Oct  2 2023, 14:57:12) [MSC v.1935 64 bit (AMD64)]",
+  "dependencies": {
+    "numpy": "2.4.6",
+    "scipy": "1.17.1"
+  },
+  "official_interface_note": "LExaShap 的 banzhaf_values 属性暴露梯度向量；最终标量需由外部适配器归一化。",
+  "normalization": "sum(grad_i * prob_i) * 2^n / n!",
+  "boolean_cases": {
+    "single": {
+      "dnf": [
+        [
+          "x"
+        ]
+      ],
+      "official_raw": {
+        "x": {
+          "grad": [
+            0.0,
+            1.0
+          ],
+          "prob": [
+            0.0,
+            0.5
+          ],
+          "scale": 2.0,
+          "scalar": 1.0
+        }
+      },
+      "adapter_scalar": {
+        "x": 1.0
+      },
+      "exact_oracle": {
+        "x": "1/1"
+      },
+      "maximum_absolute_error": 0.0,
+      "duration_seconds": 0.00012120002065785229
+    },
+    "or2": {
+      "dnf": [
+        [
+          "x1"
+        ],
+        [
+          "x2"
+        ]
+      ],
+      "official_raw": {
+        "x2": {
+          "grad": [
+            0.0,
+            0.5
+          ],
+          "prob": [
+            0.0,
+            0.5
+          ],
+          "scale": 2.0,
+          "scalar": 0.5
+        },
+        "x1": {
+          "grad": [
+            0.0,
+            0.5
+          ],
+          "prob": [
+            0.0,
+            0.5
+          ],
+          "scale": 2.0,
+          "scalar": 0.5
+        }
+      },
+      "adapter_scalar": {
+        "x2": 0.5,
+        "x1": 0.5
+      },
+      "exact_oracle": {
+        "x1": "1/2",
+        "x2": "1/2"
+      },
+      "maximum_absolute_error": 0.0,
+      "duration_seconds": 0.0013146000273991376
+    },
+    "and2": {
+      "dnf": [
+        [
+          "x1",
+          "x2"
+        ]
+      ],
+      "official_raw": {
+        "x2": {
+          "grad": [
+            0.5,
+            0.5
+          ],
+          "prob": [
+            0.0,
+            0.5
+          ],
+          "scale": 2.0,
+          "scalar": 0.5
+        },
+        "x1": {
+          "grad": [
+            0.5,
+            0.5
+          ],
+          "prob": [
+            0.0,
+            0.5
+          ],
+          "scale": 2.0,
+          "scalar": 0.5
+        }
+      },
+      "adapter_scalar": {
+        "x2": 0.5,
+        "x1": 0.5
+      },
+      "exact_oracle": {
+        "x1": "1/2",
+        "x2": "1/2"
+      },
+      "maximum_absolute_error": 0.0,
+      "duration_seconds": 0.0010099000064656138
+    },
+    "readme_mixed": {
+      "dnf": [
+        [
+          "x1",
+          "x2"
+        ],
+        [
+          "x3"
+        ]
+      ],
+      "official_raw": {
+        "x2": {
+          "grad": [
+            0.5,
+            0.25
+          ],
+          "prob": [
+            0.0,
+            0.5
+          ],
+          "scale": 1.3333333333333333,
+          "scalar": 0.16666666666666666
+        },
+        "x3": {
+          "grad": [
+            1.0,
+            1.0
+          ],
+          "prob": [
+            0.0,
+            0.5
+          ],
+          "scale": 1.3333333333333333,
+          "scalar": 0.6666666666666666
+        },
+        "x1": {
+          "grad": [
+            0.5,
+            0.25
+          ],
+          "prob": [
+            0.0,
+            0.5
+          ],
+          "scale": 1.3333333333333333,
+          "scalar": 0.16666666666666666
+        }
+      },
+      "adapter_scalar": {
+        "x2": 0.16666666666666666,
+        "x3": 0.6666666666666666,
+        "x1": 0.16666666666666666
+      },
+      "exact_oracle": {
+        "x1": "1/6",
+        "x2": "1/6",
+        "x3": "2/3"
+      },
+      "maximum_absolute_error": 0.0,
+      "duration_seconds": 0.0019588000141084194
+    }
+  },
+  "aggregate_readme_case": {
+    "input": [
+      {
+        "dnf": [
+          [
+            "x1",
+            "x2"
+          ],
+          [
+            "x3"
+          ]
+        ],
+        "coefficient": "3/1",
+        "official_raw": {
+          "x2": {
+            "grad": [
+              0.5,
+              0.25
+            ],
+            "prob": [
+              0.0,
+              0.5
+            ],
+            "scale": 1.3333333333333333,
+            "scalar": 0.16666666666666666
+          },
+          "x3": {
+            "grad": [
+              1.0,
+              1.0
+            ],
+            "prob": [
+              0.0,
+              0.5
+            ],
+            "scale": 1.3333333333333333,
+            "scalar": 0.6666666666666666
+          },
+          "x1": {
+            "grad": [
+              0.5,
+              0.25
+            ],
+            "prob": [
+              0.0,
+              0.5
+            ],
+            "scale": 1.3333333333333333,
+            "scalar": 0.16666666666666666
+          }
+        }
+      },
+      {
+        "dnf": [
+          [
+            "x4"
+          ]
+        ],
+        "coefficient": "5/1",
+        "official_raw": {
+          "x4": {
+            "grad": [
+              0.0,
+              1.0
+            ],
+            "prob": [
+              0.0,
+              0.5
+            ],
+            "scale": 2.0,
+            "scalar": 1.0
+          }
+        }
+      }
+    ],
+    "adapter_scalar": {
+      "x1": 0.5,
+      "x2": 0.5,
+      "x3": 2.0,
+      "x4": 5.0
+    },
+    "exact_oracle": {
+      "x1": 0.5,
+      "x2": 0.5,
+      "x3": 2.0,
+      "x4": 5.0
+    },
+    "maximum_absolute_error": 0.0
+  },
+  "status": "REPRODUCED_ORIGINAL_WITH_EXPLICIT_POSTPROCESS"
+}

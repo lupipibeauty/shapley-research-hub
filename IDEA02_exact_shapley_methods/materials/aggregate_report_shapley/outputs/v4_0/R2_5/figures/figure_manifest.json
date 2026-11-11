@@ -1,0 +1,16 @@
+{
+  "files": [
+    "bias_vs_random_error.png",
+    "bias_vs_random_error.svg",
+    "coalition_coverage.png",
+    "coalition_coverage.svg",
+    "game_structure_comparison.png",
+    "game_structure_comparison.svg",
+    "normalized_accuracy_convergence.png",
+    "normalized_accuracy_convergence.svg"
+  ],
+  "normalization": "误差、边际和交互均除以 |U(N)-U(empty)|",
+  "uncertainty": "精度曲线为30个算法随机种子的均值与95% t区间；种子不是独立数据环境。",
+  "scope": "主图只含共同三 owner 分组；SOU 模4结果保留在CSV与报告的独立对照中。",
+  "smoothing": false
+}

@@ -1,0 +1,27 @@
+{
+  "before": {
+    "config\\d1p_design.yaml": "ad73a0ff389746f115d9d487d2e713ab88e73cf4777751dc3d58a64789d6309d",
+    "config\\value_spec_v3_2.yaml": "3b3aa3694aa27b60aad7df50351fcea4de17f46413d0b0fe06627f309ed8685b",
+    "src\\aggregate_report_shapley\\d1p.py": "6758b0bbcdfc4f432054049cdf5d4594edf61981fddbdfb6ef7d85704fc7dca3",
+    "src\\aggregate_report_shapley\\d1p_sql.py": "eaaedbecb1619430aada5adc2e4bb74f0be029c712d35c7e393fbca913d0d92a",
+    "src\\aggregate_report_shapley\\d1p_values.py": "a5ac88f8fab0a13d172c4b8b228c4cb8592107fcd5b6a97165964f62a8998ce2",
+    "docs\\H0_模型与实验设计审计.md": "f5e3be5ab1e2725bb0e525df936fd8619e032416c57bce38d50604ea87827801",
+    "outputs\\v4_0\\H0\\structural_gap_matrix.csv": "7630494e6f7abc5be0cf2d3a7ddbd555db7f75eeb8742d865c51c2506d71aee9",
+    "reports\\Abramovich_AB_N3_L_AB_N4_DP实验报告_2026-10-31.md": "390ed89f857d97451f7123b21fd6771b222890bf8ab1f4427221bb2caa143cbb",
+    "outputs\\v4_0\\AB_N3_L_N4_DP_2026_10_31\\v1_record_shapley_comparison.csv": "959861d039180bce38225f5de12fba56e4642100db11545b7a81081d30a7b896",
+    "outputs\\v4_0\\R2_3\\exact_targets.json": "4dfa6adcb8c21793d3b480537fccb69aa5efa100e202431a9550eeeca1f6fc6f"
+  },
+  "after": {
+    "config\\d1p_design.yaml": "ad73a0ff389746f115d9d487d2e713ab88e73cf4777751dc3d58a64789d6309d",
+    "config\\value_spec_v3_2.yaml": "3b3aa3694aa27b60aad7df50351fcea4de17f46413d0b0fe06627f309ed8685b",
+    "src\\aggregate_report_shapley\\d1p.py": "6758b0bbcdfc4f432054049cdf5d4594edf61981fddbdfb6ef7d85704fc7dca3",
+    "src\\aggregate_report_shapley\\d1p_sql.py": "eaaedbecb1619430aada5adc2e4bb74f0be029c712d35c7e393fbca913d0d92a",
+    "src\\aggregate_report_shapley\\d1p_values.py": "a5ac88f8fab0a13d172c4b8b228c4cb8592107fcd5b6a97165964f62a8998ce2",
+    "docs\\H0_模型与实验设计审计.md": "f5e3be5ab1e2725bb0e525df936fd8619e032416c57bce38d50604ea87827801",
+    "outputs\\v4_0\\H0\\structural_gap_matrix.csv": "7630494e6f7abc5be0cf2d3a7ddbd555db7f75eeb8742d865c51c2506d71aee9",
+    "reports\\Abramovich_AB_N3_L_AB_N4_DP实验报告_2026-10-31.md": "390ed89f857d97451f7123b21fd6771b222890bf8ab1f4427221bb2caa143cbb",
+    "outputs\\v4_0\\AB_N3_L_N4_DP_2026_10_31\\v1_record_shapley_comparison.csv": "959861d039180bce38225f5de12fba56e4642100db11545b7a81081d30a7b896",
+    "outputs\\v4_0\\R2_3\\exact_targets.json": "4dfa6adcb8c21793d3b480537fccb69aa5efa100e202431a9550eeeca1f6fc6f"
+  },
+  "unchanged": true
+}

@@ -1,0 +1,6 @@
+candidate,status,reason_class,observed_evidence,minimal_counterexample_or_boundary
+A_raw_record_type_counts,EXACT_BUT_NO_COMPRESSION_ON_D1P,data_instance_has_12_unique_raw_types,raw_type_count=12; state_grid=4096,12 singleton types make the type-count grid exactly 2^12
+B_shared_leaf_base_statistics,SUFFICIENT_AND_EXECUTABLE,verified_sufficient_state,all-coalition report states reconstructed; B2 error=1.34E-106,would fail if score depends on record identity beyond the four leaf counters
+C_family_local_states,SUFFICIENT_PER_DERIVED_GAME_NOT_SEPARABLE_FOR_FG,nonadditive_global_score_requires_joint_family_state,individual family values are insufficient to add Shapley results for the geometric product,two coalitions with same P score but different E score have different sqrt(P*E)
+D_leaf_factor_variable_elimination,EXACT_EXECUTABLE_CLASSIC_REDUCTION,disjoint_leaf_factors_then_global_score,B3 error=1.34E-106,cross-leaf record/JOIN factors would destroy the current disjoint-leaf product
+E_generic_polynomial_time_claim,NOT_ESTABLISHED,state_space_may_grow_with_joint_counter_ranges_and_factor_width,fixed n=12 single-instance run only,add independent counters or cross-leaf factors and measure reachable joint states

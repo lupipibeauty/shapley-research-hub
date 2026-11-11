@@ -1,0 +1,17 @@
+{
+  "timestamp": "2026-10-30T02:00:33.628135",
+  "python": "3.11.6 (tags/v3.11.6:8b6ee5b, Oct  2 2023, 14:57:12) [MSC v.1935 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "processor": "AMD64 Family 25 Model 80 Stepping 0, AuthenticAMD",
+  "duckdb": "1.5.6",
+  "cwd": "D:\\python项目\\shapley\\aggregate_report_shapley",
+  "git_repository": false,
+  "rust_cargo_available": false,
+  "input_sha256": {
+    "config\\d1p_design.yaml": "ad73a0ff389746f115d9d487d2e713ab88e73cf4777751dc3d58a64789d6309d",
+    "config\\report_spec_v3_2.yaml": "8c9717834c73b08b858a9f303c688701b9caaf61d5455cee66324ec2ecaaa9c9",
+    "config\\value_spec_v3_2.yaml": "3b3aa3694aa27b60aad7df50351fcea4de17f46413d0b0fe06627f309ed8685b",
+    "config\\value_audit_v4_0.yaml": "a16bd3284f2f53d5b9d9c99ac6766c01c3de9bc580bc9db5375eb2b9b072e63a",
+    "config\\protocol_v4_0.yaml": "d81455595f353db02fc687463348cf2bae0aa35634e628b8ca8672e73c338733"
+  }
+}

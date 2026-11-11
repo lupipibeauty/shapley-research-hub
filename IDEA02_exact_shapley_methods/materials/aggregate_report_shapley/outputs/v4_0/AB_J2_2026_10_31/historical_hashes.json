@@ -1,0 +1,42 @@
+{
+  "before": {
+    "reports\\Abramovich原生SQL最小适配验证_2026-10-31.md": "2d38e54bab4e999a95a674f0a487403549a2c4f43287727d44c66cdbd5ef5960",
+    "reports\\Abramovich_AB_N2_AB_J1实验报告_2026-10-31.md": "39b621ba8daa324993b1c29a2ff5339dfb61460316b847383720d5e54b5c38f9",
+    "reports\\Abramovich_AB_N3_L_AB_N4_DP实验报告_2026-10-31.md": "390ed89f857d97451f7123b21fd6771b222890bf8ab1f4427221bb2caa143cbb",
+    "experiments\\run_ab_n2_ab_j1_2026_10_31.py": "a0959a03e71d62335c0204d6a9463f83de03757f8a15e1d5c9746e8db66956b7",
+    "experiments\\run_ab_n3_l_n4_dp_2026_10_31.py": "4a84475072836d79eb16257f0d801081619a8043aa774a529238ab60b662d468",
+    "outputs\\v4_0\\AB_NATIVE_SQL\\ab_n1_minimal_validation.json": "777fbc7738c8b0b9eba23657c99c4a67c8e1535600c8392441b0bc10ad453374",
+    "outputs\\v4_0\\AB_N2_AB_J1_2026_10_31\\manifest.json": "8620156a9559c2d14d8e374309eba13c4f2f6650b2836fe7ea75999fbaa8f176",
+    "outputs\\v4_0\\AB_N2_AB_J1_2026_10_31\\AB_J1\\result.json": "59c20a2dcb59985bcb8f3bdb724aa76278ebe32833871d8e77e7d14db8b13aee",
+    "outputs\\v4_0\\AB_N3_L_N4_DP_2026_10_31\\manifest.json": "21b3d60d2b38f78fb705d3f4943c494f948c1269c17f0005f93a60d978f43440",
+    "outputs\\v4_0\\AB_N3_L_N4_DP_2026_10_31\\AB_J2_design.json": "41361e0da7ae7c3a9e1bf590185979659eb19bdf4ca5f4457554ecd69168d94b",
+    "docs\\AB_J2_控制实验设计_2026-10-31.md": "6f94d3c382a2820227facdc65c15939917e3d68d9c609fd5588aee27fa6a4f98",
+    "config\\d1p_design.yaml": "ad73a0ff389746f115d9d487d2e713ab88e73cf4777751dc3d58a64789d6309d",
+    "config\\value_spec_v3_2.yaml": "3b3aa3694aa27b60aad7df50351fcea4de17f46413d0b0fe06627f309ed8685b",
+    "external\\abramovich\\source\\LExaBan-LExaShap-main\\README.md": "4759a12e69f07a789fe45d606a3a7f73d3d1f3efa68007ce6121c6bbbc43254c",
+    "external\\abramovich\\source\\LExaBan-LExaShap-main\\Algorithms\\LExaShap\\ShapleyCircuit.py": "63855c5b1b7997b79cef9731a63eae9aa81e64f4987a4ae9c731c994f41d68fe",
+    "external\\abramovich\\source\\LExaBan-LExaShap-main\\Algorithms\\LExaShap\\ShapleyEngine.py": "6d45813c1b89e65e70a71d56a14f65f0f7ba883264d72b2c6dc3d837306d16b2",
+    "external\\abramovich\\source\\LExaBan-LExaShap-main\\Algorithms\\LExaShap\\Helper_functions.py": "8129b2c240c100ebd2a180b32361542a67aeeec731202543ea3f9789cb4a7e80",
+    "external\\abramovich\\source\\LExaBan-LExaShap-main\\Advancing_Fact_Attribution_for_Query_Answering.pdf": "d4a035106da8551505860357d622003f1e9afc6e34e7684cbbc6d8b3908e11f0"
+  },
+  "after": {
+    "reports\\Abramovich原生SQL最小适配验证_2026-10-31.md": "2d38e54bab4e999a95a674f0a487403549a2c4f43287727d44c66cdbd5ef5960",
+    "reports\\Abramovich_AB_N2_AB_J1实验报告_2026-10-31.md": "39b621ba8daa324993b1c29a2ff5339dfb61460316b847383720d5e54b5c38f9",
+    "reports\\Abramovich_AB_N3_L_AB_N4_DP实验报告_2026-10-31.md": "390ed89f857d97451f7123b21fd6771b222890bf8ab1f4427221bb2caa143cbb",
+    "experiments\\run_ab_n2_ab_j1_2026_10_31.py": "a0959a03e71d62335c0204d6a9463f83de03757f8a15e1d5c9746e8db66956b7",
+    "experiments\\run_ab_n3_l_n4_dp_2026_10_31.py": "4a84475072836d79eb16257f0d801081619a8043aa774a529238ab60b662d468",
+    "outputs\\v4_0\\AB_NATIVE_SQL\\ab_n1_minimal_validation.json": "777fbc7738c8b0b9eba23657c99c4a67c8e1535600c8392441b0bc10ad453374",
+    "outputs\\v4_0\\AB_N2_AB_J1_2026_10_31\\manifest.json": "8620156a9559c2d14d8e374309eba13c4f2f6650b2836fe7ea75999fbaa8f176",
+    "outputs\\v4_0\\AB_N2_AB_J1_2026_10_31\\AB_J1\\result.json": "59c20a2dcb59985bcb8f3bdb724aa76278ebe32833871d8e77e7d14db8b13aee",
+    "outputs\\v4_0\\AB_N3_L_N4_DP_2026_10_31\\manifest.json": "21b3d60d2b38f78fb705d3f4943c494f948c1269c17f0005f93a60d978f43440",
+    "outputs\\v4_0\\AB_N3_L_N4_DP_2026_10_31\\AB_J2_design.json": "41361e0da7ae7c3a9e1bf590185979659eb19bdf4ca5f4457554ecd69168d94b",
+    "docs\\AB_J2_控制实验设计_2026-10-31.md": "6f94d3c382a2820227facdc65c15939917e3d68d9c609fd5588aee27fa6a4f98",
+    "config\\d1p_design.yaml": "ad73a0ff389746f115d9d487d2e713ab88e73cf4777751dc3d58a64789d6309d",
+    "config\\value_spec_v3_2.yaml": "3b3aa3694aa27b60aad7df50351fcea4de17f46413d0b0fe06627f309ed8685b",
+    "external\\abramovich\\source\\LExaBan-LExaShap-main\\README.md": "4759a12e69f07a789fe45d606a3a7f73d3d1f3efa68007ce6121c6bbbc43254c",
+    "external\\abramovich\\source\\LExaBan-LExaShap-main\\Algorithms\\LExaShap\\ShapleyCircuit.py": "63855c5b1b7997b79cef9731a63eae9aa81e64f4987a4ae9c731c994f41d68fe",
+    "external\\abramovich\\source\\LExaBan-LExaShap-main\\Algorithms\\LExaShap\\ShapleyEngine.py": "6d45813c1b89e65e70a71d56a14f65f0f7ba883264d72b2c6dc3d837306d16b2",
+    "external\\abramovich\\source\\LExaBan-LExaShap-main\\Algorithms\\LExaShap\\Helper_functions.py": "8129b2c240c100ebd2a180b32361542a67aeeec731202543ea3f9789cb4a7e80",
+    "external\\abramovich\\source\\LExaBan-LExaShap-main\\Advancing_Fact_Attribution_for_Query_Answering.pdf": "d4a035106da8551505860357d622003f1e9afc6e34e7684cbbc6d8b3908e11f0"
+  }
+}

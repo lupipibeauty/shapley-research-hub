@@ -1,0 +1,42 @@
+{
+  "stage": "R1",
+  "date": "2026-10-30",
+  "oracle": {
+    "code_status": "ENV_READY",
+    "same_game_status": "FULL_SAME_GAME",
+    "evidence": "S1 的 4096 联盟精确枚举、三实现一致性和两套 Shapley 求解器"
+  },
+  "abramovich": {
+    "code_status": "BLOCKED_ENVIRONMENT",
+    "same_game_status": "NOT_TESTED",
+    "theory_status": "REDUCIBLE_EXACT",
+    "items": {
+      "AB-1": "单叶 COUNT 可构造为每条记录变量的单项 DNF；待官方代码运行验证",
+      "AB-2": "叶/父/根单 COUNT 可分别构造；待官方代码运行验证",
+      "AB-3": "V-count 是七个 COUNT 覆盖率的固定非负线性组合，可精确归约；待官方代码运行验证",
+      "AB-4": "V1 的计数坐标可线性归约；比例相似度含当前分母和绝对值，官方原生接口覆盖性未验证",
+      "AB-5": "V2 含指标族几何聚合，尚无等价官方输入证明",
+      "AB-6": "D1-P 必须把同一 record_id 的 Basic 与 Optional 行绑定为一个来源变量；尚未通过官方代码验证"
+    },
+    "failure_code": "FETCH_FAILED"
+  },
+  "luo": {
+    "code_status": "BLOCKED_ENVIRONMENT",
+    "same_game_status": "NOT_TESTED",
+    "theory_status": "UNVERIFIED",
+    "items": {
+      "LU-1": "仅完成独立效用原生 owner 游戏的接口预审，未运行",
+      "LU-2": "V0/V-count 在记录即 owner 时具有可加投影，但与官方数据生成和单位效用的等价性未执行验证",
+      "LU-3": "V1 含联盟分母依赖，不能在无证明时宣称独立效用",
+      "LU-4": "V2 的几何交互不能在无证明时宣称独立效用"
+    },
+    "failure_codes": ["FETCH_FAILED", "INSTALL_FAILED"]
+  },
+  "livshits_and_standke_kimelfeld": {
+    "code_status": "NOT_STARTED",
+    "same_game_status": "NOT_TESTED",
+    "note": "本轮未把复杂性定理冒充可运行程序；适用特例实现等待官方两条主线解除阻塞后再决定。"
+  },
+  "performance_comparison_allowed": false,
+  "reason": "官方代码未获取且未运行，不能与 S1 oracle 排名。"
+}

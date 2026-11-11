@@ -1,0 +1,130 @@
+{
+  "stage": "AB-N2",
+  "status": "FULL_SAME_GAME_NATIVE_SQL_COUNT_VALIDATED",
+  "players": [
+    "p1",
+    "p2",
+    "p3",
+    "p4",
+    "p5",
+    "p6",
+    "p7",
+    "p8",
+    "p9",
+    "p10",
+    "p11",
+    "p12"
+  ],
+  "player_binding": "Basic与OptionalAttribute按record_id共享同一玩家变量；Hierarchy为外生固定关系。",
+  "grounding_sql": "WITH base AS (SELECT * FROM BasicSource_A1\n        UNION ALL SELECT * FROM BasicSource_A2\n        UNION ALL SELECT * FROM BasicSource_B1\n        UNION ALL SELECT * FROM BasicSource_B2),\n    joined AS (\n        SELECT b.player_index, b.record_id, b.leaf_node_id, b.category_a_id,\n               o.record_id AS optional_record_id, o.category_b_id\n        FROM base b\n        LEFT JOIN OptionalAttribute o USING (record_id)\n    )\n    SELECT j.player_index, j.record_id, nodes.node_id,\n           1::BIGINT AS record_count_coefficient,\n           CASE WHEN j.category_a_id='E2' THEN 1 ELSE 0 END::BIGINT AS category_a_target_count_coefficient,\n           CASE WHEN j.optional_record_id IS NOT NULL THEN 1 ELSE 0 END::BIGINT AS attribute_present_count_coefficient,\n           j.optional_record_id\n    FROM joined j\n    JOIN Hierarchy h USING (leaf_node_id)\n    CROSS JOIN UNNEST([j.leaf_node_id, h.parent_node_id, h.root_node_id]) AS nodes(node_id)\n    ORDER BY j.player_index, nodes.node_id",
+  "oracle_sql": "WITH masks AS (SELECT range AS mask FROM range(4096)),\n    base AS (SELECT * FROM BasicSource_A1\n        UNION ALL SELECT * FROM BasicSource_A2\n        UNION ALL SELECT * FROM BasicSource_B1\n        UNION ALL SELECT * FROM BasicSource_B2),\n    joined AS (\n        SELECT b.player_index, b.record_id, b.leaf_node_id, b.category_a_id,\n               o.record_id AS optional_record_id\n        FROM base b\n        LEFT JOIN OptionalAttribute o USING (record_id)\n    ),\n    expanded AS (\n        SELECT j.player_index, j.record_id, j.category_a_id, j.optional_record_id, nodes.node_id\n        FROM joined j\n        JOIN Hierarchy h USING (leaf_node_id)\n        CROSS JOIN UNNEST([j.leaf_node_id, h.parent_node_id, h.root_node_id]) AS nodes(node_id)\n    ),\n    report_nodes(node_id) AS (VALUES ('COUNTRY'),('A'),('B'),('A1'),('A2'),('B1'),('B2'))\n    SELECT m.mask, n.node_id,\n           COUNT(e.record_id)::BIGINT AS record_count,\n           COUNT(CASE WHEN e.category_a_id='E2' THEN 1 END)::BIGINT AS category_a_target_count,\n           COUNT(e.optional_record_id)::BIGINT AS attribute_present_count\n    FROM masks m\n    CROSS JOIN report_nodes n\n    LEFT JOIN expanded e\n      ON e.node_id=n.node_id AND ((m.mask >> e.player_index) & 1)=1\n    GROUP BY m.mask, n.node_id\n    ORDER BY m.mask, n.node_id",
+  "oracle_sql_sha256": "e45d69aa2122b582dfa20495d83120c759b64aef8e04454f0792d2b287d5c27e",
+  "oracle_rows": 28672,
+  "raw_grouped_sql_rows_without_skeleton": 25839,
+  "final_report_skeleton_rows": 28672,
+  "empty_cell_policy": "原始GROUP BY省略空节点；最终报表SQL显式使用mask×node骨架并以COUNT返回0。",
+  "null_policy": "OptionalAttribute缺失时optional_record_id为NULL；COUNT(optional_record_id)=0，LEFT JOIN保留基础记录。",
+  "identity_checks": {
+    "basic_rows_distinct_records_distinct_players": [
+      12,
+      12,
+      12
+    ],
+    "optional_rows_distinct_records": [
+      10,
+      10
+    ],
+    "joined_rows_distinct_records_missing_optional_preserved": [
+      12,
+      12,
+      2
+    ],
+    "expanded_grounding_rows": 36,
+    "distinct_player_variables": 12,
+    "levels_per_player": 3
+  },
+  "duplicate_audit": {
+    "frozen_data_has_join_duplicates": false,
+    "per_node_count_star_vs_count_distinct": [
+      {
+        "node": "A",
+        "count_star": 4,
+        "count_distinct_record_id": 4
+      },
+      {
+        "node": "A1",
+        "count_star": 2,
+        "count_distinct_record_id": 2
+      },
+      {
+        "node": "A2",
+        "count_star": 2,
+        "count_distinct_record_id": 2
+      },
+      {
+        "node": "B",
+        "count_star": 8,
+        "count_distinct_record_id": 8
+      },
+      {
+        "node": "B1",
+        "count_star": 4,
+        "count_distinct_record_id": 4
+      },
+      {
+        "node": "B2",
+        "count_star": 4,
+        "count_distinct_record_id": 4
+      },
+      {
+        "node": "COUNTRY",
+        "count_star": 12,
+        "count_distinct_record_id": 12
+      }
+    ],
+    "scope_note": "冻结D1-P没有激活重复JOIN路径；bag与去重语义差异由独立AB-J1检验。"
+  },
+  "component_counts": {
+    "record_count": 36,
+    "attribute_present_count": 30,
+    "category_a_target_count": 18
+  },
+  "component_count_total": 84,
+  "expected_component_counts": {
+    "record_count": 36,
+    "category_a_target_count": 18,
+    "attribute_present_count": 30
+  },
+  "source_expression_size": {
+    "coordinates": 21,
+    "components": 84,
+    "clauses": 84,
+    "literal_occurrences": 84,
+    "serialized_utf8_bytes": 4072
+  },
+  "construction_used_coalition_values": false,
+  "construction_used_exact_payments": false,
+  "maximum_coalition_value_error": 0,
+  "maximum_payment_error": 0.0,
+  "maximum_efficiency_error": 0.0,
+  "timings_seconds": {
+    "sql_grounding": 0.021271899982821196,
+    "source_expression_assembly": 0.0018901000148616731,
+    "official_untouched_end_to_end_seconds": 0.010922499990556389,
+    "official_dtree_compile_seconds": 0.00420820020372048,
+    "official_backward_solve_seconds": 0.0033093002275563776,
+    "algorithm_end_to_end_excluding_oracles": 0.03408449998823926,
+    "posthoc_4096_alliance_sql_oracle": 0.5409532000194304,
+    "posthoc_exact_shapley": 16.905165300006047,
+    "whole_stage_including_csv_and_oracles": 30.0415265999618
+  },
+  "memory": {
+    "rss_start_bytes": null,
+    "rss_end_bytes": null,
+    "rss_observed_change_bytes": null,
+    "python_tracemalloc_start_bytes": 31524261,
+    "python_tracemalloc_end_bytes": 64606535,
+    "python_tracemalloc_peak_bytes": 64824345
+  },
+  "official_source_modified": false
+}

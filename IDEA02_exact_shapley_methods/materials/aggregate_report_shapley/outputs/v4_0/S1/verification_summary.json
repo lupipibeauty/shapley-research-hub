@@ -1,0 +1,180 @@
+{
+  "dataset": "D1-P（完全合成控制数据）",
+  "players": 12,
+  "nodes": 7,
+  "coordinates": 35,
+  "coalitions": 4096,
+  "directed_edges_per_value": 24576,
+  "implementation_hashes": {
+    "SQL-P": "55a82e373945ee21fcea7f8b2a02cccdedbf1a93e6a07366315d0d435aacbb0a",
+    "SQL-U": "55a82e373945ee21fcea7f8b2a02cccdedbf1a93e6a07366315d0d435aacbb0a",
+    "ST": "55a82e373945ee21fcea7f8b2a02cccdedbf1a93e6a07366315d0d435aacbb0a"
+  },
+  "mismatches": [],
+  "value_audits": [
+    {
+      "value": "V0",
+      "edges": 24576,
+      "negative_edges": 0,
+      "zero_edges": 0,
+      "positive_edges": 24576,
+      "minimum_marginal": "250/3",
+      "minimum_edge": {
+        "mask": 0,
+        "player_index": 0
+      },
+      "maximum_marginal": "250/3",
+      "maximum_edge": {
+        "mask": 0,
+        "player_index": 0
+      },
+      "value_minimum": "0/1",
+      "value_maximum": "1000/1"
+    },
+    {
+      "value": "V_count",
+      "edges": 24576,
+      "negative_edges": 0,
+      "zero_edges": 0,
+      "positive_edges": 24576,
+      "minimum_marginal": "625/9",
+      "minimum_edge": {
+        "mask": 0,
+        "player_index": 4
+      },
+      "maximum_marginal": "1000/9",
+      "maximum_edge": {
+        "mask": 0,
+        "player_index": 0
+      },
+      "value_minimum": "0/1",
+      "value_maximum": "1000/1"
+    },
+    {
+      "value": "V1",
+      "edges": 24576,
+      "negative_edges": 0,
+      "zero_edges": 0,
+      "positive_edges": 24576,
+      "minimum_marginal": "625/16",
+      "minimum_edge": {
+        "mask": 0,
+        "player_index": 7
+      },
+      "maximum_marginal": "34805/216",
+      "maximum_edge": {
+        "mask": 5,
+        "player_index": 1
+      },
+      "value_minimum": "0/1",
+      "value_maximum": "1000/1"
+    },
+    {
+      "value": "V2_lambda_0",
+      "edges": 24576,
+      "negative_edges": 0,
+      "zero_edges": 0,
+      "positive_edges": 24576,
+      "minimum_marginal": "625/16",
+      "minimum_edge": {
+        "mask": 0,
+        "player_index": 7
+      },
+      "maximum_marginal": "34805/216",
+      "maximum_edge": {
+        "mask": 5,
+        "player_index": 1
+      },
+      "value_minimum": "0/1",
+      "value_maximum": "1000/1"
+    },
+    {
+      "value": "V2_lambda_0_5",
+      "edges": 24576,
+      "negative_edges": 0,
+      "zero_edges": 0,
+      "positive_edges": 24576,
+      "minimum_marginal": "19.53125000000000000000000000",
+      "minimum_edge": {
+        "mask": 0,
+        "player_index": 7
+      },
+      "maximum_marginal": "177.0029130166904975448373050",
+      "maximum_edge": {
+        "mask": 309,
+        "player_index": 1
+      },
+      "value_minimum": "0.000",
+      "value_maximum": "1000.000"
+    }
+  ],
+  "v2_boundary_rechecks": [],
+  "independent_oracle_max_abs_diff": {
+    "V0": "0/1",
+    "V_count": "0/1",
+    "V1": "0/1",
+    "V2_lambda_0": "0/1",
+    "V2_lambda_0_5": "0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011"
+  },
+  "timing": {
+    "T_load_seconds": 0.014310600003227592,
+    "T_sql_p": {
+      "runs": 3,
+      "minimum_seconds": 0.1052827000094112,
+      "median_seconds": 0.10809710001922213,
+      "maximum_seconds": 0.13302780000958592,
+      "raw_seconds": [
+        0.1052827000094112,
+        0.13302780000958592,
+        0.10809710001922213
+      ]
+    },
+    "T_sql_u": {
+      "runs": 3,
+      "minimum_seconds": 0.12225489999400452,
+      "median_seconds": 0.1353708000096958,
+      "maximum_seconds": 0.1499245000013616,
+      "raw_seconds": [
+        0.12225489999400452,
+        0.1353708000096958,
+        0.1499245000013616
+      ]
+    },
+    "T_shared_state": {
+      "runs": 3,
+      "minimum_seconds": 0.02480360001209192,
+      "median_seconds": 0.0577276999829337,
+      "maximum_seconds": 0.05949700000928715,
+      "raw_seconds": [
+        0.0577276999829337,
+        0.02480360001209192,
+        0.05949700000928715
+      ]
+    },
+    "T_value_eval": {
+      "runs": 3,
+      "minimum_seconds": 4.872582300013164,
+      "median_seconds": 5.26649899999029,
+      "maximum_seconds": 6.065376300015487,
+      "raw_seconds": [
+        4.872582300013164,
+        5.26649899999029,
+        6.065376300015487
+      ]
+    },
+    "T_shapley_compute": {
+      "runs": 3,
+      "minimum_seconds": 0.872954699996626,
+      "median_seconds": 0.9056112999969628,
+      "maximum_seconds": 1.1464650999987498,
+      "raw_seconds": [
+        0.872954699996626,
+        0.9056112999969628,
+        1.1464650999987498
+      ]
+    },
+    "T_total_seconds": 40.72807899999316,
+    "peak_rss": "NA（当前无无侵入式进程峰值采集器）",
+    "temporary_disk_bytes": 333138
+  }
+}

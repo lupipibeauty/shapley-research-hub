@@ -1,0 +1,70 @@
+protocol_id: BRBD_v1
+protocol_version: '1.0'
+status: FROZEN
+frozen_at: '2026-11-06T00:00:00+08:00'
+scope:
+  main_direction: C1_shared_sql_provenance_joint_value_exact_shapley
+  non_goals: [new_idea_generation, novelty_declaration, payout_rule_redesign]
+artifacts:
+  previous_project_root: D:/python项目/shapley/aggregate_report_shapley
+  research_lab_root: D:/python项目/shapley/tmp/researchlab_v2/Codex_Research_Lab_v2
+  new_output_root: D:/python项目/shapley/tmp/researchlab_v2/workspace/BRBD_v1
+  prior_evidence: [P3-1C, H3-JV, H5-R, RAPID-GAP, Luo2024_R1]
+objectives:
+  r1: reproduce_paper_algorithms_on_authors_games
+  r2: compare_exact_methods_on_same_report_game
+  r3: locate_stage_bottlenecks_with_controlled_structure
+r1:
+  papers:
+    - id: abramovich_2025
+      paper_figures_tables: [Table_4, Table_5, Table_6, Table_7, Table_8, Table_9, Table_10, Figure_4, Figure_5, Figure_6]
+      note: Figure_3_is_a_theoretical_dtree_example_not_the_performance_scaling_figure
+      datasets: [Academic, IMDB, TPC-H]
+      baseline_methods: [LExaBan, LExaShap, ExaBan, ExaShap, AdaBan]
+      ablations: [lift_disabled, shared_gradient_disabled]
+      status: IN_PROGRESS
+    - id: luo_2024
+      datasets: [TPC-H, ESD]
+      baseline_methods: [RDSV, IUSV, traditional, permutation]
+      ablations: [no_vertical, no_horizontal, no_mixed]
+      status: R1_SMOKE_PASS_ONLY
+r2:
+  player_granularity: FROZEN_PER_INSTANCE
+  source_sql_semantics: TO_COPY_FROM_ORIGINAL_FIXTURE
+  null_handling: TO_COPY_FROM_ORIGINAL_FIXTURE
+  game_definition: 'v(S) = G(Q(D_S)) - G(Q(D_empty))'
+  value_functions: TO_FREEZE_FROM_ORIGINAL_FIXTURE
+  input_identity_fields: [players, player_map, sql_sha256, g_sha256, data_sha256, semantic_rules]
+  exact_competitors: [independent_oracle, VE, MTBDD, available_dDNNF, abramovich_legal_components, luo_legal_simple_components]
+r3:
+  controlled_axes: [source_sharing, witness_overlap, join_fanout, distinct_duplication, output_coordinate_count, utility_factor_structure, number_of_players]
+  matched_constraints: [n_players, n_rows, witness_count, distinct_key_count, output_values, g_definition]
+  required_metrics: [input_build_s, lineage_s, min_synth_s, compile_s, solve_s, end_to_end_s, peak_rss_mb, circuit_nodes, intermediate_states, success_rate]
+resources:
+  local_cpu: AMD_Ryzen_7_5800H_8C16T
+  local_ram_gb: 13.87
+  local_os: Windows_10_build_26200
+  local_python: '3.11.6'
+  author_paper_machine: Debian_14.04_1TB_RAM_Intel_Xeon_Gold_6252_2.10GHz
+  threads: 1
+  pythonhashseed: 0
+  original_paper_timeout_seconds: 3600
+  exploratory_smoke_timeout_seconds: 600
+  r2_timeout_seconds: 1800
+  repeats_deterministic: 3
+  seeds_randomized: [101, 202, 303, 404, 505]
+acceptance:
+  game_fingerprint_equal_for_method_speed_ranking: true
+  exact_oracle_required_when_feasible: true
+  default_absolute_tolerance: 1.0e-10
+  default_relative_tolerance: 1.0e-9
+  timeout_failures_included: true
+  provenance_and_build_costs_in_total: true
+  paper_R1_not_same_as_our_R2: true
+  author_method_vs_adapter_separated: true
+  negative_results_retained: true
+  exploratory_speedup_signal: 'stable >=2x end-to-end on >=2 scales; not a novelty test'
+version_control:
+  changes_require_protocol_amendment: true
+  record_code_and_data_sha256: true
+  archive_raw_logs: true

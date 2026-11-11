@@ -1,0 +1,11 @@
+{
+  "status": "H3_JV_COMPLETED_AND_PAUSED",
+  "fixed_units": 9,
+  "full_sql_coalition_evaluations": 36864,
+  "independent_instances_per_join": 5,
+  "all_sql_lineage_checks_passed": true,
+  "all_executed_exact_algorithms_passed_1e_9": true,
+  "historical_files_unchanged": true,
+  "n16_extension": "NOT_RUN_SCOPE_PAUSED_AFTER_REQUIRED_12_PLAYER_AUDIT",
+  "duckdb_version": "1.5.6"
+}

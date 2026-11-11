@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-30",
+  "source": "用户提供的官方代码 ZIP",
+  "archives": [
+    {
+      "name": "LExaBan-LExaShap-main.zip",
+      "sha256": "7E28BA907C2D1AF830D49B89D8647F4ECD4D14DC6817ED73CABC791D2C31EF3C",
+      "compressed_bytes": 19382618,
+      "entries": 342,
+      "uncompressed_bytes": 24806199,
+      "unsafe_path_entries": 0,
+      "top_level": "LExaBan-LExaShap-main",
+      "commit_sha": "ZIP 不含 .git，无法从归档内部确认",
+      "license": "未发现 LICENSE/COPYING"
+    },
+    {
+      "name": "shapley-value-independent-utility-master.zip",
+      "sha256": "469C9FB8C9F2798A42A14FB56E88CA41D7C2799D4C6C9DC556D2BA1C14D28530",
+      "compressed_bytes": 170128,
+      "entries": 49,
+      "uncompressed_bytes": 430057,
+      "unsafe_path_entries": 0,
+      "top_level": "shapley-value-independent-utility-master",
+      "commit_sha": "ZIP 不含 .git，无法从归档内部确认",
+      "license": "未发现 LICENSE/COPYING"
+    }
+  ]
+}

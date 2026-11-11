@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "correctness_rows": 29,
+  "all_correctness_passed": true,
+  "record_payment_rows": 376,
+  "expected_record_payment_rows": 376,
+  "predecessor_audit_rows": 52,
+  "all_predecessor_audits_passed": true,
+  "summary_completed": true,
+  "historical_files_unchanged": true,
+  "expected_files_present": true,
+  "figure_files": 6
+}

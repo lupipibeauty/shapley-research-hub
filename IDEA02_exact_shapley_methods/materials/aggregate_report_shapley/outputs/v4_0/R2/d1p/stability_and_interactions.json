@@ -1,0 +1,41 @@
+{
+  "V_count": {
+    "marginal_edges": 24576,
+    "marginal_minimum": 69.44444444444434,
+    "marginal_maximum": 111.1111111111112,
+    "marginal_negative_count": 0,
+    "pair_interactions": 67584,
+    "interaction_minimum": -1.7053025658242404e-13,
+    "interaction_maximum": 1.1368683772161603e-13,
+    "interaction_negative_count": 0,
+    "interaction_zero_count": 67584,
+    "interaction_positive_count": 0,
+    "scope": "finite exhaustive D1-P check; not a proof of asymptotic stability"
+  },
+  "V1": {
+    "marginal_edges": 24576,
+    "marginal_minimum": 39.06249999999994,
+    "marginal_maximum": 161.13425925925935,
+    "marginal_negative_count": 0,
+    "pair_interactions": 67584,
+    "interaction_minimum": -21.17842970521542,
+    "interaction_maximum": 40.23148148148158,
+    "interaction_negative_count": 17694,
+    "interaction_zero_count": 25206,
+    "interaction_positive_count": 24684,
+    "scope": "finite exhaustive D1-P check; not a proof of asymptotic stability"
+  },
+  "V2_lambda_0_5": {
+    "marginal_edges": 24576,
+    "marginal_minimum": 19.53125,
+    "marginal_maximum": 177.0029130166905,
+    "marginal_negative_count": 0,
+    "pair_interactions": 67584,
+    "interaction_minimum": -40.70747348604044,
+    "interaction_maximum": 53.41468390722325,
+    "interaction_negative_count": 30288,
+    "interaction_zero_count": 1,
+    "interaction_positive_count": 37295,
+    "scope": "finite exhaustive D1-P check; not a proof of asymptotic stability"
+  }
+}

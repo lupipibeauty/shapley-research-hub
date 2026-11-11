@@ -1,0 +1,17 @@
+{
+  "files": [
+    "ablation_convergence.png",
+    "ablation_convergence.svg",
+    "eq9_error_contribution_by_s.png",
+    "eq9_error_contribution_by_s.svg",
+    "exact_vs_approx_G-equal.png",
+    "exact_vs_approx_G-equal.svg",
+    "exact_vs_approx_G-skew.png",
+    "exact_vs_approx_G-skew.svg"
+  ],
+  "data_sources": [
+    "per_s_exact_and_approx.csv",
+    "ablation_summary.csv"
+  ],
+  "note": "置信带为30个随机种子的95% t区间；不平滑、不插补。"
+}

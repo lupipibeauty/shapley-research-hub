@@ -1,0 +1,6 @@
+{
+  "normalization": "absolute errors and total L1 divided by abs(U(N)-U(empty))",
+  "runtime_policy": "Raw timings retained. Primary timing summary uses median and IQR; values above Q3+3*IQR are flagged, not deleted.",
+  "permutation_variance": "Exact variance over the permutation-induced distribution: size is uniform on 0..n-1 and subsets are uniform conditional on size.",
+  "sampling_unit_warning": "Thirty seeds repeat algorithm randomness on one fixed game instance; they are not independent data environments."
+}

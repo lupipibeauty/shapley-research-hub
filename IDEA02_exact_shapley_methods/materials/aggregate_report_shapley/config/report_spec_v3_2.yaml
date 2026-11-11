@@ -1,0 +1,35 @@
+version: report35_v3_2
+status: DESIGNED
+data_source: config/d1p_design.yaml
+node_order: [COUNTRY, A, B, A1, A2, B1, B2]
+levels:
+  root: [COUNTRY]
+  parent: [A, B]
+  leaf: [A1, A2, B1, B2]
+internal_counters:
+  - total_count
+  - category_a_target_count
+  - attribute_present_count
+  - category_b_target_count
+output_metrics:
+  - record_count
+  - category_a_target_count
+  - category_a_target_share
+  - attribute_present_count
+  - category_b_target_share
+targets:
+  category_a_id: E2
+  category_b_id: manufacturing
+empty_node:
+  count_value: 0
+  ratio_value_sql: null
+  ratio_score_value: 0
+fixed_output_coordinates: 35
+player_spec:
+  version: record_bundle_v3_2
+  player_id: record_id
+  bundle_members:
+    - one BasicSource row
+    - zero_or_one OptionalAttribute row
+  dimensions_exogenous: true
+owner_map_role: payment_aggregation_only

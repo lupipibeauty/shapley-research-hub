@@ -1,0 +1,145 @@
+{
+  "stage": "H0_NEXT_EXPERIMENT_SPECS_ONLY",
+  "status": "DESIGNED_NOT_RUN",
+  "constraints": [
+    "不覆盖D1-P",
+    "每次只激活一个结构",
+    "先做小规模全联盟真值",
+    "保持玩家与价值目标一致"
+  ],
+  "experiments": [
+    {
+      "id": "H1-NH-CQ",
+      "factor": "查询非层次性",
+      "minimal_sql_shape": "Q() :- R(x), S(x,y), T(y)",
+      "players": "6-10 endogenous tuples",
+      "control": "paired hierarchical Q() :- R(x), S(x,y)",
+      "metrics": [
+        "groundings",
+        "DNF/d-tree size",
+        "exact Shapley time"
+      ],
+      "acceptance": "逐联盟SQL=来源=精确Shapley"
+    },
+    {
+      "id": "H2-CDIST-FRONTIER",
+      "factor": "all-hierarchical条件",
+      "minimal_sql_shape": "成对构造all-hierarchical与非all-hierarchical COUNT DISTINCT",
+      "players": "<=10",
+      "control": "相同玩家数、grounding数、key数",
+      "metrics": [
+        "key lineage",
+        "编译规模",
+        "定理条件"
+      ],
+      "acceptance": "定理映射与实测分开报告"
+    },
+    {
+      "id": "H3-HAVING-CIRCUIT",
+      "factor": "门槛证据与共享因式",
+      "minimal_sql_shape": "m×n JOIN, GROUP BY key HAVING COUNT(*)>=h",
+      "levels": {
+        "m": [
+          2,
+          3
+        ],
+        "n": [
+          2,
+          3
+        ],
+        "h": [
+          2,
+          3
+        ]
+      },
+      "metrics": [
+        "最小DNF",
+        "因式电路",
+        "官方d-tree",
+        "唯一联盟"
+      ],
+      "acceptance": "不得以展开DNF代替最优电路规模"
+    },
+    {
+      "id": "H4-BUNDLE-SPLIT",
+      "factor": "逻辑记录包拆分",
+      "minimal_sql_shape": "Basic LEFT JOIN Optional",
+      "players": "Basic与Optional由不同玩家控制",
+      "control": "现有绑定记录包",
+      "metrics": [
+        "NULL",
+        "记录保留",
+        "互补交互"
+      ],
+      "acceptance": "业务玩家定义先冻结"
+    },
+    {
+      "id": "H5-V2-JOINT-STATE",
+      "factor": "统计族联合维度",
+      "minimal_sql_shape": "固定D1-P SQL与12玩家",
+      "levels": {
+        "families": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "interaction": [
+          "arithmetic",
+          "geometric"
+        ]
+      },
+      "metrics": [
+        "可达联合状态",
+        "转移",
+        "内存",
+        "真值误差"
+      ],
+      "acceptance": "不先枚举全部联盟构造算法输入"
+    },
+    {
+      "id": "H6-SELF-JOIN",
+      "factor": "自连接",
+      "minimal_sql_shape": "Q(x,z) :- R(x,y), R(y,z)",
+      "players": "同一物理事实只能是一个变量",
+      "control": "复制为两个不同关系符号的无自连接版本",
+      "metrics": [
+        "变量复用",
+        "lineage",
+        "编译规模"
+      ],
+      "acceptance": "严格区分同事实重复引用与两个玩家"
+    },
+    {
+      "id": "H7-BUSINESS-MULTIPATH",
+      "factor": "真实多源替代与互补路径",
+      "minimal_sql_shape": "实体主表+两桥表+可替代属性源",
+      "players": "来源所有者记录",
+      "control": "单路径版本",
+      "metrics": [
+        "bag/distinct",
+        "重复路径",
+        "跨源最小synthesis"
+      ],
+      "acceptance": "先冻结业务计数单位和收入函数"
+    },
+    {
+      "id": "H8-COMPARISON-BUDGET",
+      "factor": "算法比较口径",
+      "minimal_sql_shape": "复用现有D1-P/SOU",
+      "controls": [
+        "总效用调用",
+        "唯一联盟",
+        "全owner端到端",
+        "单owner查询"
+      ],
+      "metrics": [
+        "误差",
+        "调用",
+        "编译",
+        "求解"
+      ],
+      "acceptance": "不把预算复用差异解释成算法数学误差"
+    }
+  ]
+}

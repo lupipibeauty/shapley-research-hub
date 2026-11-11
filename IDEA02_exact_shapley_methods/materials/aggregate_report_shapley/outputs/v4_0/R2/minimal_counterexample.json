@@ -1,0 +1,36 @@
+{
+  "status": "CONFIRMED_MINIMAL_COUNTEREXAMPLE",
+  "official_source_modified": false,
+  "n": 2,
+  "group": [
+    0
+  ],
+  "weights": [
+    1.0,
+    0.0
+  ],
+  "utility": "U(S)=sum_{i in S} weights[i]",
+  "exact_faithful_group_shapley": 1.0,
+  "official_code_final_estimate": 0.75,
+  "absolute_error": 0.25,
+  "released_code_linear_term": 0.5,
+  "released_code_direct_term": 0.25,
+  "paper_equation_8_multiplier": 2.0,
+  "paper_equation_8_corrected_direct_term": 0.5,
+  "paper_equation_8_total": 1.0,
+  "curve": [
+    0.75,
+    0.75,
+    0.75,
+    0.75,
+    0.75,
+    0.75,
+    0.75,
+    0.75,
+    0.75,
+    0.75
+  ],
+  "source_location": "exp1_benchmark/estimators.py:361-370",
+  "source_sha256": "b5f86e99241bc85cdc15d68ed96895575d5f1ad30df280d14ff547fe56baec8f",
+  "interpretation": "The direct small-s branch omits n/[s(n-s)]. The n=2 additive game is deterministic, so the 0.25 error is implementation bias rather than Monte Carlo variance."
+}

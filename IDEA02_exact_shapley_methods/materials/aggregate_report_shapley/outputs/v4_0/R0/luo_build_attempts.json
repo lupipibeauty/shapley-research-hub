@@ -1,0 +1,65 @@
+{
+  "stage": "R0",
+  "algorithm": "Luo independent utility",
+  "archive_sha256": "469C9FB8C9F2798A42A14FB56E88CA41D7C2799D4C6C9DC556D2BA1C14D28530",
+  "official_environment": "README 指定 Ubuntu 20.04 LTS 与 Rust",
+  "attempt_environment": {
+    "os": "Windows",
+    "rustc": "1.99.1 (58cf8f9c3 2026-10-13)",
+    "cargo": "1.99.1 (5f94df478 2026-08-27)",
+    "host": "x86_64-pc-windows-gnu",
+    "toolchain_scope": "项目内部目录，不修改系统 PATH",
+    "rustup_installer_sha256": "00F139DA614DCED87D3C3D4121C43EEBDAC3C1BF8A5EE86B9D80DFD71C8D70FD",
+    "rustup_installer_authenticode": "NotSigned"
+  },
+  "source_data": {
+    "description": "ZIP 自带 world 三张 CSV、seller/index 元数据和 6-owner ground truth",
+    "ground_truth": {
+      "0": 5287.349999999999,
+      "1": 4852.133333333333,
+      "2": 5414.933333333333,
+      "3": 4672.7,
+      "4": 5896.916666666667,
+      "5": 4545.966666666666
+    },
+    "hashes": {
+      "Cargo.lock": "FB93659EDCF43FBE84F77B052251B736636BB54CF074208143209A80E7AC7DE8",
+      "Cargo.toml": "C1F36F78E13010CE30E2046D11EB077EB6CA5D7E1F370E7CC72EF5016737C7E2",
+      "data/world-ground-truth.json": "D7B8CE39B2A6716ECED9E0CD89403075719EFBF25FD8DF665FB05BFC90E38774",
+      "data/world/city.csv": "531F3DE20D95BA3772C80613B5CC3859AC0BD81347F75D7D5520DD0B4D9C89A3",
+      "data/world/country.csv": "E51C11537C9532E816310303D4D1B7FC732C62FEEBAB27C1D8611DAE537A490A",
+      "data/world/countrylanguage.csv": "C92206ED067C5450A1BC9E6318EF0D7096AF5C14D246337811D41E6E67170BCD"
+    }
+  },
+  "attempts": [
+    {
+      "command": "cargo build --release",
+      "working_directory": "官方源码真实路径（含中文）",
+      "exit_code": 1,
+      "failure_code": "BUILD_FAILED",
+      "cause": "x86_64-w64-mingw32-gcc/ld 无法解析含中文字符的工具链、target 和标准库路径",
+      "representative_error": "ld: cannot find D:\\python项目\\...\\dllcrt2.o"
+    },
+    {
+      "command": "cargo build --release --offline",
+      "working_directory": "ASCII 临时目录联接",
+      "exit_code": 1,
+      "failure_code": "BUILD_FAILED",
+      "cause": "target 已为 ASCII，但 rustup 规范化目录联接后仍向 ld 传入含中文的标准库真实路径",
+      "representative_error": "ld: cannot find D:\\python项目\\...\\libstd-*.rlib"
+    },
+    {
+      "command": "cargo build --release --locked --offline",
+      "working_directory": "C:\\Users\\86156\\AppData\\Local\\Temp\\ars_luo_physical_ascii（源码、Cargo 缓存和 Rust 工具链均为实体 ASCII 副本）",
+      "exit_code": 0,
+      "duration_seconds": 434,
+      "failure_code": null,
+      "result": "release + LTO 构建成功",
+      "executable_sha256": "6D2BF648967580DEC6DB5B52FEF53D07386C91C98101405308973F079617D6CB"
+    }
+  ],
+  "code_status": "REPRODUCED_ORIGINAL",
+  "same_game_status": "PARTIAL_COVERAGE",
+  "reproducibility_verdict": "REPRODUCIBLE_WITH_NUMERICAL_TOLERANCE",
+  "interpretation": "前两次失败是 Windows GNU 链接器处理含中文真实路径的环境问题。将源码、Cargo 缓存和 Rust 工具链物理复制到 ASCII 路径后构建成功，证明不必强制使用 Ubuntu。官方 world 输入已复现；D1-P 仅 V-count 可严格同目标适配。"
+}

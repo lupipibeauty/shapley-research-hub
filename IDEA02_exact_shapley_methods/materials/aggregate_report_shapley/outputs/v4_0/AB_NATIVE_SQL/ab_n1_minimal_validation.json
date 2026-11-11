@@ -1,0 +1,169 @@
+{
+  "stage": "AB-N1",
+  "status": "MINIMAL_NATIVE_SQL_ADAPTATION_VALIDATED",
+  "scope": "D1-P A1 单层 COUNT 与条件 SUM；未执行 AB-N2 至 AB-N5",
+  "official_source_modified": false,
+  "players": [
+    "p1",
+    "p2",
+    "p3",
+    "p4",
+    "p5",
+    "p6",
+    "p7",
+    "p8",
+    "p9",
+    "p10",
+    "p11",
+    "p12"
+  ],
+  "player_binding": "one record_id -> one endogenous Boolean variable; hierarchy rows are exogenous",
+  "aggregate_sql": "SELECT\n    COUNT(*)::BIGINT AS record_count,\n    SUM(CASE WHEN b.category_a_id = 'E2' THEN 1 ELSE 0 END)::BIGINT AS category_a_target_sum\nFROM (\n    SELECT * FROM BasicSource_A1\n    UNION ALL SELECT * FROM BasicSource_A2\n    UNION ALL SELECT * FROM BasicSource_B1\n    UNION ALL SELECT * FROM BasicSource_B2\n) b\nJOIN Hierarchy h USING (leaf_node_id)\nWHERE b.leaf_node_id = 'A1'",
+  "grounding_sql": "SELECT\n    b.player_index,\n    b.record_id,\n    1::BIGINT AS record_count_coefficient,\n    CASE WHEN b.category_a_id = 'E2' THEN 1 ELSE 0 END::BIGINT AS category_a_target_sum_coefficient\nFROM (\n    SELECT * FROM BasicSource_A1\n    UNION ALL SELECT * FROM BasicSource_A2\n    UNION ALL SELECT * FROM BasicSource_B1\n    UNION ALL SELECT * FROM BasicSource_B2\n) b\nJOIN Hierarchy h USING (leaf_node_id)\nWHERE b.leaf_node_id = 'A1'\nORDER BY b.player_index",
+  "full_database_sql_result": {
+    "record_count": 2,
+    "category_a_target_sum": 1
+  },
+  "grounding_rows": [
+    [
+      0,
+      "p1",
+      1,
+      0
+    ],
+    [
+      1,
+      "p2",
+      1,
+      1
+    ]
+  ],
+  "source_expression": {
+    "record_count": [
+      {
+        "dnf": [
+          [
+            "p1"
+          ]
+        ],
+        "coefficient": "1"
+      },
+      {
+        "dnf": [
+          [
+            "p2"
+          ]
+        ],
+        "coefficient": "1"
+      }
+    ],
+    "category_a_target_sum": [
+      {
+        "dnf": [
+          [
+            "p2"
+          ]
+        ],
+        "coefficient": "1"
+      }
+    ]
+  },
+  "source_expression_size": {
+    "components": 3,
+    "clauses": 3,
+    "literal_occurrences": 3,
+    "serialized_utf8_bytes": 162
+  },
+  "construction_used_coalition_values": false,
+  "construction_used_exact_payments": false,
+  "official_payments": {
+    "record_count": {
+      "p1": 1.0,
+      "p2": 1.0,
+      "p3": 0.0,
+      "p4": 0.0,
+      "p5": 0.0,
+      "p6": 0.0,
+      "p7": 0.0,
+      "p8": 0.0,
+      "p9": 0.0,
+      "p10": 0.0,
+      "p11": 0.0,
+      "p12": 0.0
+    },
+    "category_a_target_sum": {
+      "p1": 0.0,
+      "p2": 1.0,
+      "p3": 0.0,
+      "p4": 0.0,
+      "p5": 0.0,
+      "p6": 0.0,
+      "p7": 0.0,
+      "p8": 0.0,
+      "p9": 0.0,
+      "p10": 0.0,
+      "p11": 0.0,
+      "p12": 0.0
+    }
+  },
+  "exact_payments": {
+    "record_count": {
+      "p1": "1/1",
+      "p2": "1/1",
+      "p3": "0/1",
+      "p4": "0/1",
+      "p5": "0/1",
+      "p6": "0/1",
+      "p7": "0/1",
+      "p8": "0/1",
+      "p9": "0/1",
+      "p10": "0/1",
+      "p11": "0/1",
+      "p12": "0/1"
+    },
+    "category_a_target_sum": {
+      "p1": "0/1",
+      "p2": "1/1",
+      "p3": "0/1",
+      "p4": "0/1",
+      "p5": "0/1",
+      "p6": "0/1",
+      "p7": "0/1",
+      "p8": "0/1",
+      "p9": "0/1",
+      "p10": "0/1",
+      "p11": "0/1",
+      "p12": "0/1"
+    }
+  },
+  "maximum_coalition_value_error": {
+    "record_count": 0,
+    "category_a_target_sum": 0
+  },
+  "maximum_payment_error": {
+    "record_count": 0.0,
+    "category_a_target_sum": 0.0
+  },
+  "timings": {
+    "sql_to_grounding_source_compile_seconds": 0.009305300016421825,
+    "per_metric_official_phases": {
+      "record_count": {
+        "official_dtree_compile_seconds": 4.0700018871575594e-05,
+        "official_backward_solve_seconds": 1.9700033590197563e-05
+      },
+      "category_a_target_sum": {
+        "official_dtree_compile_seconds": 2.0300038158893585e-05,
+        "official_backward_solve_seconds": 8.600007276982069e-06
+      }
+    },
+    "official_end_to_end_seconds": 0.00037510000402107835,
+    "posthoc_4096_coalition_sql_oracle_seconds": 0.018578300019726157,
+    "timing_note": "compile/solve split uses official internal classes in an independent harness and is cross-checked against the untouched DNFCircuit constructor"
+  },
+  "hashes": {
+    "official_shapley_source_sha256": "63855c5b1b7997b79cef9731a63eae9aa81e64f4987a4ae9c731c994f41d68fe",
+    "d1p_design_sha256": "ad73a0ff389746f115d9d487d2e713ab88e73cf4777751dc3d58a64789d6309d",
+    "value_spec_sha256": "3b3aa3694aa27b60aad7df50351fcea4de17f46413d0b0fe06627f309ed8685b"
+  },
+  "boundary": "This validates a handwritten native compiler for one simple SPJ+COUNT/SUM query, not a general SQL-to-lineage compiler and not V1/V2."
+}

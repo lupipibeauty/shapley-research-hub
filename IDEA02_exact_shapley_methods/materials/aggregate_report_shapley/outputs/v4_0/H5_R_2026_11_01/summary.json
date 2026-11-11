@@ -1,0 +1,79 @@
+{
+  "status": "H5_R_COMPLETED_AND_PAUSED",
+  "games": [
+    {
+      "game_id": "D1P_V1",
+      "player_count": 12,
+      "state_width": 16,
+      "leaf_count": 4,
+      "leaf_width": 4,
+      "unique_delta_types": 12,
+      "value_target": "frozen D1-P",
+      "seed": "FROZEN"
+    },
+    {
+      "game_id": "D1P_V2",
+      "player_count": 12,
+      "state_width": 16,
+      "leaf_count": 4,
+      "leaf_width": 4,
+      "unique_delta_types": 12,
+      "value_target": "frozen D1-P",
+      "seed": "FROZEN"
+    },
+    {
+      "game_id": "SCALE_N12_V2",
+      "player_count": 12,
+      "state_width": 16,
+      "leaf_count": 4,
+      "leaf_width": 4,
+      "unique_delta_types": 10,
+      "value_target": "H5-SCALE generated control",
+      "seed": 7301
+    },
+    {
+      "game_id": "SCALE_N16_V2",
+      "player_count": 16,
+      "state_width": 16,
+      "leaf_count": 4,
+      "leaf_width": 4,
+      "unique_delta_types": 12,
+      "value_target": "H5-SCALE generated control",
+      "seed": 7301
+    }
+  ],
+  "game_ids": [
+    "D1P_V1",
+    "D1P_V2",
+    "SCALE_N12_V2",
+    "SCALE_N16_V2"
+  ],
+  "methods": [
+    "S0_PER_FOCUS_B2",
+    "S1_PER_FOCUS_B3",
+    "S2_PER_FOCUS_B4",
+    "S3_SHARED_FORWARD_DIVISION",
+    "S4_PREFIX_SUFFIX_REUSE",
+    "S5_TYPE_MULTI_OUTPUT_VE",
+    "S6_REVERSE_MULTILINEAR_AD",
+    "V1_COORDINATE_DECOMPOSITION"
+  ],
+  "cap_tiers": [
+    5000,
+    10000,
+    25000
+  ],
+  "timing_repeats": 3,
+  "correctness_tolerance": 1e-09,
+  "all_correctness_passed": true,
+  "historical_truth_loaded_posthoc_only": true,
+  "historical_files_unchanged": true,
+  "predecessor_weight_audit_passed": true,
+  "strongest_observed_v2_method": "S4_PREFIX_SUFFIX_REUSE",
+  "total_wall_seconds": 486.1132959999959,
+  "environment": {
+    "python": "3.11.6 (tags/v3.11.6:8b6ee5b, Oct  2 2023, 14:57:12) [MSC v.1935 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.26200-SP0"
+  },
+  "statistical_scope": "three repeated timings on each same frozen instance; median and IQR are runtime-noise summaries, not independent-instance confidence intervals"
+}

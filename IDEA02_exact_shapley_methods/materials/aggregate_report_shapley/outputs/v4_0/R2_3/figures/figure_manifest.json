@@ -1,0 +1,30 @@
+{
+  "status": "generated_from_real_r2_3_outputs",
+  "font": "Microsoft YaHei",
+  "source_files": [
+    "outputs/v4_0/R2_3/raw_runs.csv",
+    "outputs/v4_0/R2_3/owner_error_summary.csv"
+  ],
+  "uncertainty": "95% t confidence interval across 30 independent random seeds",
+  "transformations": [
+    "arithmetic mean across seeds",
+    "symlog display scale with linear threshold 0.1",
+    "no smoothing or interpolation"
+  ],
+  "missing_data": "none in numerical figure inputs",
+  "outputs": [
+    "outputs\\v4_0\\R2_3\\figures\\r2_3_overall_convergence.png",
+    "outputs\\v4_0\\R2_3\\figures\\r2_3_overall_convergence.svg",
+    "outputs\\v4_0\\R2_3\\figures\\r2_3_overall_convergence.pdf",
+    "outputs\\v4_0\\R2_3\\figures\\r2_3_owner_convergence_g-equal.png",
+    "outputs\\v4_0\\R2_3\\figures\\r2_3_owner_convergence_g-equal.svg",
+    "outputs\\v4_0\\R2_3\\figures\\r2_3_owner_convergence_g-equal.pdf",
+    "outputs\\v4_0\\R2_3\\figures\\r2_3_owner_convergence_g-skew.png",
+    "outputs\\v4_0\\R2_3\\figures\\r2_3_owner_convergence_g-skew.svg",
+    "outputs\\v4_0\\R2_3\\figures\\r2_3_owner_convergence_g-skew.pdf",
+    "outputs\\v4_0\\R2_3\\figures\\r2_3_bias_vs_random.png",
+    "outputs\\v4_0\\R2_3\\figures\\r2_3_bias_vs_random.svg",
+    "outputs\\v4_0\\R2_3\\figures\\r2_3_bias_vs_random.pdf"
+  ],
+  "matplotlib": "3.10.1"
+}

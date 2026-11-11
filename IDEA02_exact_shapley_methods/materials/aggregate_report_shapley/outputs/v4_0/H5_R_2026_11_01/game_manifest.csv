@@ -1,0 +1,5 @@
+game_id,player_count,state_width,leaf_count,leaf_width,unique_delta_types,value_target,seed
+D1P_V1,12,16,4,4,12,frozen D1-P,FROZEN
+D1P_V2,12,16,4,4,12,frozen D1-P,FROZEN
+SCALE_N12_V2,12,16,4,4,10,H5-SCALE generated control,7301
+SCALE_N16_V2,16,16,4,4,12,H5-SCALE generated control,7301

@@ -1,0 +1,4836 @@
+{
+  "J0": {
+    "groundings": [
+      {
+        "id": "J0_b1",
+        "clause": [
+          "p1"
+        ],
+        "leaf": "A1",
+        "category": "C2",
+        "amount": 1,
+        "business_key": "I_b1",
+        "branch": "INDEPENDENT"
+      },
+      {
+        "id": "J0_b2",
+        "clause": [
+          "p2"
+        ],
+        "leaf": "A2",
+        "category": "C1",
+        "amount": 2,
+        "business_key": "I_b2",
+        "branch": "INDEPENDENT"
+      },
+      {
+        "id": "J0_b3",
+        "clause": [
+          "p3"
+        ],
+        "leaf": "B1",
+        "category": "C2",
+        "amount": 1,
+        "business_key": "I_b3",
+        "branch": "INDEPENDENT"
+      },
+      {
+        "id": "J0_b4",
+        "clause": [
+          "p4"
+        ],
+        "leaf": "B2",
+        "category": "C1",
+        "amount": 2,
+        "business_key": "I_b4",
+        "branch": "INDEPENDENT"
+      },
+      {
+        "id": "J0_e1",
+        "clause": [
+          "p5"
+        ],
+        "leaf": "A1",
+        "category": "C1",
+        "amount": 2,
+        "business_key": "I_e1",
+        "branch": "INDEPENDENT"
+      },
+      {
+        "id": "J0_e2",
+        "clause": [
+          "p6"
+        ],
+        "leaf": "A2",
+        "category": "C2",
+        "amount": 1,
+        "business_key": "I_e2",
+        "branch": "INDEPENDENT"
+      },
+      {
+        "id": "J0_e3",
+        "clause": [
+          "p7"
+        ],
+        "leaf": "B1",
+        "category": "C1",
+        "amount": 2,
+        "business_key": "I_e3",
+        "branch": "INDEPENDENT"
+      },
+      {
+        "id": "J0_e4",
+        "clause": [
+          "p8"
+        ],
+        "leaf": "B2",
+        "category": "C2",
+        "amount": 1,
+        "business_key": "I_e4",
+        "branch": "INDEPENDENT"
+      },
+      {
+        "id": "J0_sp1",
+        "clause": [
+          "p9"
+        ],
+        "leaf": "A1",
+        "category": "C1",
+        "amount": 1,
+        "business_key": "I_sp1",
+        "branch": "INDEPENDENT"
+      },
+      {
+        "id": "J0_sp2",
+        "clause": [
+          "p10"
+        ],
+        "leaf": "A2",
+        "category": "C2",
+        "amount": 2,
+        "business_key": "I_sp2",
+        "branch": "INDEPENDENT"
+      },
+      {
+        "id": "J0_sp3",
+        "clause": [
+          "p11"
+        ],
+        "leaf": "B1",
+        "category": "C1",
+        "amount": 1,
+        "business_key": "I_sp3",
+        "branch": "INDEPENDENT"
+      },
+      {
+        "id": "J0_sp4",
+        "clause": [
+          "p12"
+        ],
+        "leaf": "B2",
+        "category": "C2",
+        "amount": 2,
+        "business_key": "I_sp4",
+        "branch": "INDEPENDENT"
+      }
+    ],
+    "G0_components": [
+      {
+        "dnf": [
+          [
+            "p1"
+          ]
+        ],
+        "coefficient": "200/21",
+        "node": "A1",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p1"
+          ]
+        ],
+        "coefficient": "50/7",
+        "node": "A1",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p5"
+          ]
+        ],
+        "coefficient": "200/21",
+        "node": "A1",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p5"
+          ]
+        ],
+        "coefficient": "100/7",
+        "node": "A1",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p5"
+          ]
+        ],
+        "coefficient": "100/7",
+        "node": "A1",
+        "metric": "target_count"
+      },
+      {
+        "dnf": [
+          [
+            "p9"
+          ]
+        ],
+        "coefficient": "200/21",
+        "node": "A1",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p9"
+          ]
+        ],
+        "coefficient": "50/7",
+        "node": "A1",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p9"
+          ]
+        ],
+        "coefficient": "100/7",
+        "node": "A1",
+        "metric": "target_count"
+      },
+      {
+        "dnf": [
+          [
+            "p1"
+          ]
+        ],
+        "coefficient": "200/21",
+        "node": "A1",
+        "metric": "distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p5"
+          ]
+        ],
+        "coefficient": "200/21",
+        "node": "A1",
+        "metric": "distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p9"
+          ]
+        ],
+        "coefficient": "200/21",
+        "node": "A1",
+        "metric": "distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p5"
+          ]
+        ],
+        "coefficient": "100/7",
+        "node": "A1",
+        "metric": "target_distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p9"
+          ]
+        ],
+        "coefficient": "100/7",
+        "node": "A1",
+        "metric": "target_distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p2"
+          ]
+        ],
+        "coefficient": "200/21",
+        "node": "A2",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p2"
+          ]
+        ],
+        "coefficient": "80/7",
+        "node": "A2",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p2"
+          ]
+        ],
+        "coefficient": "200/7",
+        "node": "A2",
+        "metric": "target_count"
+      },
+      {
+        "dnf": [
+          [
+            "p6"
+          ]
+        ],
+        "coefficient": "200/21",
+        "node": "A2",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p6"
+          ]
+        ],
+        "coefficient": "40/7",
+        "node": "A2",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p10"
+          ]
+        ],
+        "coefficient": "200/21",
+        "node": "A2",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p10"
+          ]
+        ],
+        "coefficient": "80/7",
+        "node": "A2",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p2"
+          ]
+        ],
+        "coefficient": "200/21",
+        "node": "A2",
+        "metric": "distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p6"
+          ]
+        ],
+        "coefficient": "200/21",
+        "node": "A2",
+        "metric": "distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p10"
+          ]
+        ],
+        "coefficient": "200/21",
+        "node": "A2",
+        "metric": "distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p2"
+          ]
+        ],
+        "coefficient": "200/7",
+        "node": "A2",
+        "metric": "target_distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p3"
+          ]
+        ],
+        "coefficient": "200/21",
+        "node": "B1",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p3"
+          ]
+        ],
+        "coefficient": "50/7",
+        "node": "B1",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p7"
+          ]
+        ],
+        "coefficient": "200/21",
+        "node": "B1",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p7"
+          ]
+        ],
+        "coefficient": "100/7",
+        "node": "B1",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p7"
+          ]
+        ],
+        "coefficient": "100/7",
+        "node": "B1",
+        "metric": "target_count"
+      },
+      {
+        "dnf": [
+          [
+            "p11"
+          ]
+        ],
+        "coefficient": "200/21",
+        "node": "B1",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p11"
+          ]
+        ],
+        "coefficient": "50/7",
+        "node": "B1",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p11"
+          ]
+        ],
+        "coefficient": "100/7",
+        "node": "B1",
+        "metric": "target_count"
+      },
+      {
+        "dnf": [
+          [
+            "p3"
+          ]
+        ],
+        "coefficient": "200/21",
+        "node": "B1",
+        "metric": "distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p7"
+          ]
+        ],
+        "coefficient": "200/21",
+        "node": "B1",
+        "metric": "distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p11"
+          ]
+        ],
+        "coefficient": "200/21",
+        "node": "B1",
+        "metric": "distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p7"
+          ]
+        ],
+        "coefficient": "100/7",
+        "node": "B1",
+        "metric": "target_distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p11"
+          ]
+        ],
+        "coefficient": "100/7",
+        "node": "B1",
+        "metric": "target_distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p4"
+          ]
+        ],
+        "coefficient": "200/21",
+        "node": "B2",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p4"
+          ]
+        ],
+        "coefficient": "80/7",
+        "node": "B2",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p4"
+          ]
+        ],
+        "coefficient": "200/7",
+        "node": "B2",
+        "metric": "target_count"
+      },
+      {
+        "dnf": [
+          [
+            "p8"
+          ]
+        ],
+        "coefficient": "200/21",
+        "node": "B2",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p8"
+          ]
+        ],
+        "coefficient": "40/7",
+        "node": "B2",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p12"
+          ]
+        ],
+        "coefficient": "200/21",
+        "node": "B2",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p12"
+          ]
+        ],
+        "coefficient": "80/7",
+        "node": "B2",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p4"
+          ]
+        ],
+        "coefficient": "200/21",
+        "node": "B2",
+        "metric": "distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p8"
+          ]
+        ],
+        "coefficient": "200/21",
+        "node": "B2",
+        "metric": "distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p12"
+          ]
+        ],
+        "coefficient": "200/21",
+        "node": "B2",
+        "metric": "distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p4"
+          ]
+        ],
+        "coefficient": "200/7",
+        "node": "B2",
+        "metric": "target_distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p1"
+          ]
+        ],
+        "coefficient": "100/21",
+        "node": "PA",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p1"
+          ]
+        ],
+        "coefficient": "200/63",
+        "node": "PA",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p2"
+          ]
+        ],
+        "coefficient": "100/21",
+        "node": "PA",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p2"
+          ]
+        ],
+        "coefficient": "400/63",
+        "node": "PA",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p2"
+          ]
+        ],
+        "coefficient": "200/21",
+        "node": "PA",
+        "metric": "target_count"
+      },
+      {
+        "dnf": [
+          [
+            "p5"
+          ]
+        ],
+        "coefficient": "100/21",
+        "node": "PA",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p5"
+          ]
+        ],
+        "coefficient": "400/63",
+        "node": "PA",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p5"
+          ]
+        ],
+        "coefficient": "200/21",
+        "node": "PA",
+        "metric": "target_count"
+      },
+      {
+        "dnf": [
+          [
+            "p6"
+          ]
+        ],
+        "coefficient": "100/21",
+        "node": "PA",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p6"
+          ]
+        ],
+        "coefficient": "200/63",
+        "node": "PA",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p9"
+          ]
+        ],
+        "coefficient": "100/21",
+        "node": "PA",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p9"
+          ]
+        ],
+        "coefficient": "200/63",
+        "node": "PA",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p9"
+          ]
+        ],
+        "coefficient": "200/21",
+        "node": "PA",
+        "metric": "target_count"
+      },
+      {
+        "dnf": [
+          [
+            "p10"
+          ]
+        ],
+        "coefficient": "100/21",
+        "node": "PA",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p10"
+          ]
+        ],
+        "coefficient": "400/63",
+        "node": "PA",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p1"
+          ]
+        ],
+        "coefficient": "100/21",
+        "node": "PA",
+        "metric": "distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p2"
+          ]
+        ],
+        "coefficient": "100/21",
+        "node": "PA",
+        "metric": "distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p5"
+          ]
+        ],
+        "coefficient": "100/21",
+        "node": "PA",
+        "metric": "distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p6"
+          ]
+        ],
+        "coefficient": "100/21",
+        "node": "PA",
+        "metric": "distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p9"
+          ]
+        ],
+        "coefficient": "100/21",
+        "node": "PA",
+        "metric": "distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p10"
+          ]
+        ],
+        "coefficient": "100/21",
+        "node": "PA",
+        "metric": "distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p2"
+          ]
+        ],
+        "coefficient": "200/21",
+        "node": "PA",
+        "metric": "target_distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p5"
+          ]
+        ],
+        "coefficient": "200/21",
+        "node": "PA",
+        "metric": "target_distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p9"
+          ]
+        ],
+        "coefficient": "200/21",
+        "node": "PA",
+        "metric": "target_distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p3"
+          ]
+        ],
+        "coefficient": "100/21",
+        "node": "PB",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p3"
+          ]
+        ],
+        "coefficient": "200/63",
+        "node": "PB",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p4"
+          ]
+        ],
+        "coefficient": "100/21",
+        "node": "PB",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p4"
+          ]
+        ],
+        "coefficient": "400/63",
+        "node": "PB",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p4"
+          ]
+        ],
+        "coefficient": "200/21",
+        "node": "PB",
+        "metric": "target_count"
+      },
+      {
+        "dnf": [
+          [
+            "p7"
+          ]
+        ],
+        "coefficient": "100/21",
+        "node": "PB",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p7"
+          ]
+        ],
+        "coefficient": "400/63",
+        "node": "PB",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p7"
+          ]
+        ],
+        "coefficient": "200/21",
+        "node": "PB",
+        "metric": "target_count"
+      },
+      {
+        "dnf": [
+          [
+            "p8"
+          ]
+        ],
+        "coefficient": "100/21",
+        "node": "PB",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p8"
+          ]
+        ],
+        "coefficient": "200/63",
+        "node": "PB",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p11"
+          ]
+        ],
+        "coefficient": "100/21",
+        "node": "PB",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p11"
+          ]
+        ],
+        "coefficient": "200/63",
+        "node": "PB",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p11"
+          ]
+        ],
+        "coefficient": "200/21",
+        "node": "PB",
+        "metric": "target_count"
+      },
+      {
+        "dnf": [
+          [
+            "p12"
+          ]
+        ],
+        "coefficient": "100/21",
+        "node": "PB",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p12"
+          ]
+        ],
+        "coefficient": "400/63",
+        "node": "PB",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p3"
+          ]
+        ],
+        "coefficient": "100/21",
+        "node": "PB",
+        "metric": "distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p4"
+          ]
+        ],
+        "coefficient": "100/21",
+        "node": "PB",
+        "metric": "distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p7"
+          ]
+        ],
+        "coefficient": "100/21",
+        "node": "PB",
+        "metric": "distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p8"
+          ]
+        ],
+        "coefficient": "100/21",
+        "node": "PB",
+        "metric": "distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p11"
+          ]
+        ],
+        "coefficient": "100/21",
+        "node": "PB",
+        "metric": "distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p12"
+          ]
+        ],
+        "coefficient": "100/21",
+        "node": "PB",
+        "metric": "distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p4"
+          ]
+        ],
+        "coefficient": "200/21",
+        "node": "PB",
+        "metric": "target_distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p7"
+          ]
+        ],
+        "coefficient": "200/21",
+        "node": "PB",
+        "metric": "target_distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p11"
+          ]
+        ],
+        "coefficient": "200/21",
+        "node": "PB",
+        "metric": "target_distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p1"
+          ]
+        ],
+        "coefficient": "50/21",
+        "node": "NAT",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p1"
+          ]
+        ],
+        "coefficient": "100/63",
+        "node": "NAT",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p2"
+          ]
+        ],
+        "coefficient": "50/21",
+        "node": "NAT",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p2"
+          ]
+        ],
+        "coefficient": "200/63",
+        "node": "NAT",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p2"
+          ]
+        ],
+        "coefficient": "100/21",
+        "node": "NAT",
+        "metric": "target_count"
+      },
+      {
+        "dnf": [
+          [
+            "p3"
+          ]
+        ],
+        "coefficient": "50/21",
+        "node": "NAT",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p3"
+          ]
+        ],
+        "coefficient": "100/63",
+        "node": "NAT",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p4"
+          ]
+        ],
+        "coefficient": "50/21",
+        "node": "NAT",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p4"
+          ]
+        ],
+        "coefficient": "200/63",
+        "node": "NAT",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p4"
+          ]
+        ],
+        "coefficient": "100/21",
+        "node": "NAT",
+        "metric": "target_count"
+      },
+      {
+        "dnf": [
+          [
+            "p5"
+          ]
+        ],
+        "coefficient": "50/21",
+        "node": "NAT",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p5"
+          ]
+        ],
+        "coefficient": "200/63",
+        "node": "NAT",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p5"
+          ]
+        ],
+        "coefficient": "100/21",
+        "node": "NAT",
+        "metric": "target_count"
+      },
+      {
+        "dnf": [
+          [
+            "p6"
+          ]
+        ],
+        "coefficient": "50/21",
+        "node": "NAT",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p6"
+          ]
+        ],
+        "coefficient": "100/63",
+        "node": "NAT",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p7"
+          ]
+        ],
+        "coefficient": "50/21",
+        "node": "NAT",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p7"
+          ]
+        ],
+        "coefficient": "200/63",
+        "node": "NAT",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p7"
+          ]
+        ],
+        "coefficient": "100/21",
+        "node": "NAT",
+        "metric": "target_count"
+      },
+      {
+        "dnf": [
+          [
+            "p8"
+          ]
+        ],
+        "coefficient": "50/21",
+        "node": "NAT",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p8"
+          ]
+        ],
+        "coefficient": "100/63",
+        "node": "NAT",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p9"
+          ]
+        ],
+        "coefficient": "50/21",
+        "node": "NAT",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p9"
+          ]
+        ],
+        "coefficient": "100/63",
+        "node": "NAT",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p9"
+          ]
+        ],
+        "coefficient": "100/21",
+        "node": "NAT",
+        "metric": "target_count"
+      },
+      {
+        "dnf": [
+          [
+            "p10"
+          ]
+        ],
+        "coefficient": "50/21",
+        "node": "NAT",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p10"
+          ]
+        ],
+        "coefficient": "200/63",
+        "node": "NAT",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p11"
+          ]
+        ],
+        "coefficient": "50/21",
+        "node": "NAT",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p11"
+          ]
+        ],
+        "coefficient": "100/63",
+        "node": "NAT",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p11"
+          ]
+        ],
+        "coefficient": "100/21",
+        "node": "NAT",
+        "metric": "target_count"
+      },
+      {
+        "dnf": [
+          [
+            "p12"
+          ]
+        ],
+        "coefficient": "50/21",
+        "node": "NAT",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p12"
+          ]
+        ],
+        "coefficient": "200/63",
+        "node": "NAT",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p1"
+          ]
+        ],
+        "coefficient": "50/21",
+        "node": "NAT",
+        "metric": "distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p2"
+          ]
+        ],
+        "coefficient": "50/21",
+        "node": "NAT",
+        "metric": "distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p3"
+          ]
+        ],
+        "coefficient": "50/21",
+        "node": "NAT",
+        "metric": "distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p4"
+          ]
+        ],
+        "coefficient": "50/21",
+        "node": "NAT",
+        "metric": "distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p5"
+          ]
+        ],
+        "coefficient": "50/21",
+        "node": "NAT",
+        "metric": "distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p6"
+          ]
+        ],
+        "coefficient": "50/21",
+        "node": "NAT",
+        "metric": "distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p7"
+          ]
+        ],
+        "coefficient": "50/21",
+        "node": "NAT",
+        "metric": "distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p8"
+          ]
+        ],
+        "coefficient": "50/21",
+        "node": "NAT",
+        "metric": "distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p9"
+          ]
+        ],
+        "coefficient": "50/21",
+        "node": "NAT",
+        "metric": "distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p10"
+          ]
+        ],
+        "coefficient": "50/21",
+        "node": "NAT",
+        "metric": "distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p11"
+          ]
+        ],
+        "coefficient": "50/21",
+        "node": "NAT",
+        "metric": "distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p12"
+          ]
+        ],
+        "coefficient": "50/21",
+        "node": "NAT",
+        "metric": "distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p2"
+          ]
+        ],
+        "coefficient": "100/21",
+        "node": "NAT",
+        "metric": "target_distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p4"
+          ]
+        ],
+        "coefficient": "100/21",
+        "node": "NAT",
+        "metric": "target_distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p5"
+          ]
+        ],
+        "coefficient": "100/21",
+        "node": "NAT",
+        "metric": "target_distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p7"
+          ]
+        ],
+        "coefficient": "100/21",
+        "node": "NAT",
+        "metric": "target_distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p9"
+          ]
+        ],
+        "coefficient": "100/21",
+        "node": "NAT",
+        "metric": "target_distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p11"
+          ]
+        ],
+        "coefficient": "100/21",
+        "node": "NAT",
+        "metric": "target_distinct_count"
+      }
+    ],
+    "G1_terminal": "35 coordinate scores added; first four coverage, fifth target-share absolute-deviation score",
+    "G2_terminal": "four family scores; 0.5 arithmetic + 0.5 weighted geometric mean"
+  },
+  "J1": {
+    "groundings": [
+      {
+        "id": "J1_BS_s1_1",
+        "clause": [
+          "p1",
+          "p9"
+        ],
+        "leaf": "A1",
+        "category": "C2",
+        "amount": 2,
+        "business_key": "X_x1",
+        "branch": "BASIC_RELATION"
+      },
+      {
+        "id": "J1_SE_s1_1",
+        "clause": [
+          "p6",
+          "p9"
+        ],
+        "leaf": "A2",
+        "category": "C2",
+        "amount": 2,
+        "business_key": "Y_y2",
+        "branch": "RELATION_EVENT"
+      },
+      {
+        "id": "J1_BS_s1_2",
+        "clause": [
+          "p1",
+          "p9"
+        ],
+        "leaf": "A1",
+        "category": "C2",
+        "amount": 2,
+        "business_key": "X_x1",
+        "branch": "BASIC_RELATION"
+      },
+      {
+        "id": "J1_SE_s1_2",
+        "clause": [
+          "p5",
+          "p9"
+        ],
+        "leaf": "A1",
+        "category": "C1",
+        "amount": 3,
+        "business_key": "Y_y1",
+        "branch": "RELATION_EVENT"
+      },
+      {
+        "id": "J1_BS_s2_1",
+        "clause": [
+          "p2",
+          "p10"
+        ],
+        "leaf": "A2",
+        "category": "C1",
+        "amount": 3,
+        "business_key": "X_x2",
+        "branch": "BASIC_RELATION"
+      },
+      {
+        "id": "J1_SE_s2_1",
+        "clause": [
+          "p5",
+          "p10"
+        ],
+        "leaf": "A1",
+        "category": "C1",
+        "amount": 3,
+        "business_key": "Y_y1",
+        "branch": "RELATION_EVENT"
+      },
+      {
+        "id": "J1_BS_s2_2",
+        "clause": [
+          "p2",
+          "p10"
+        ],
+        "leaf": "A2",
+        "category": "C1",
+        "amount": 3,
+        "business_key": "X_x2",
+        "branch": "BASIC_RELATION"
+      },
+      {
+        "id": "J1_SE_s2_2",
+        "clause": [
+          "p8",
+          "p10"
+        ],
+        "leaf": "B2",
+        "category": "C2",
+        "amount": 2,
+        "business_key": "Y_y4",
+        "branch": "RELATION_EVENT"
+      },
+      {
+        "id": "J1_BS_s3_1",
+        "clause": [
+          "p3",
+          "p11"
+        ],
+        "leaf": "B1",
+        "category": "C2",
+        "amount": 2,
+        "business_key": "X_x3",
+        "branch": "BASIC_RELATION"
+      },
+      {
+        "id": "J1_SE_s3_1",
+        "clause": [
+          "p8",
+          "p11"
+        ],
+        "leaf": "B2",
+        "category": "C2",
+        "amount": 2,
+        "business_key": "Y_y4",
+        "branch": "RELATION_EVENT"
+      },
+      {
+        "id": "J1_BS_s3_2",
+        "clause": [
+          "p3",
+          "p11"
+        ],
+        "leaf": "B1",
+        "category": "C2",
+        "amount": 2,
+        "business_key": "X_x3",
+        "branch": "BASIC_RELATION"
+      },
+      {
+        "id": "J1_SE_s3_2",
+        "clause": [
+          "p7",
+          "p11"
+        ],
+        "leaf": "B1",
+        "category": "C1",
+        "amount": 3,
+        "business_key": "Y_y3",
+        "branch": "RELATION_EVENT"
+      },
+      {
+        "id": "J1_BS_s4_1",
+        "clause": [
+          "p4",
+          "p12"
+        ],
+        "leaf": "B2",
+        "category": "C1",
+        "amount": 3,
+        "business_key": "X_x4",
+        "branch": "BASIC_RELATION"
+      },
+      {
+        "id": "J1_SE_s4_1",
+        "clause": [
+          "p7",
+          "p12"
+        ],
+        "leaf": "B1",
+        "category": "C1",
+        "amount": 3,
+        "business_key": "Y_y3",
+        "branch": "RELATION_EVENT"
+      },
+      {
+        "id": "J1_BS_s4_2",
+        "clause": [
+          "p4",
+          "p12"
+        ],
+        "leaf": "B2",
+        "category": "C1",
+        "amount": 3,
+        "business_key": "X_x4",
+        "branch": "BASIC_RELATION"
+      },
+      {
+        "id": "J1_SE_s4_2",
+        "clause": [
+          "p6",
+          "p12"
+        ],
+        "leaf": "A2",
+        "category": "C2",
+        "amount": 2,
+        "business_key": "Y_y2",
+        "branch": "RELATION_EVENT"
+      }
+    ],
+    "G0_components": [
+      {
+        "dnf": [
+          [
+            "p1",
+            "p9"
+          ]
+        ],
+        "coefficient": "50/7",
+        "node": "A1",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p1",
+            "p9"
+          ]
+        ],
+        "coefficient": "40/7",
+        "node": "A1",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p1",
+            "p9"
+          ]
+        ],
+        "coefficient": "50/7",
+        "node": "A1",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p1",
+            "p9"
+          ]
+        ],
+        "coefficient": "40/7",
+        "node": "A1",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p5",
+            "p9"
+          ]
+        ],
+        "coefficient": "50/7",
+        "node": "A1",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p5",
+            "p9"
+          ]
+        ],
+        "coefficient": "60/7",
+        "node": "A1",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p5",
+            "p9"
+          ]
+        ],
+        "coefficient": "100/7",
+        "node": "A1",
+        "metric": "target_count"
+      },
+      {
+        "dnf": [
+          [
+            "p10",
+            "p5"
+          ]
+        ],
+        "coefficient": "50/7",
+        "node": "A1",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p10",
+            "p5"
+          ]
+        ],
+        "coefficient": "60/7",
+        "node": "A1",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p10",
+            "p5"
+          ]
+        ],
+        "coefficient": "100/7",
+        "node": "A1",
+        "metric": "target_count"
+      },
+      {
+        "dnf": [
+          [
+            "p1",
+            "p9"
+          ],
+          [
+            "p1",
+            "p9"
+          ]
+        ],
+        "coefficient": "100/7",
+        "node": "A1",
+        "metric": "distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p5",
+            "p9"
+          ],
+          [
+            "p10",
+            "p5"
+          ]
+        ],
+        "coefficient": "100/7",
+        "node": "A1",
+        "metric": "distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p5",
+            "p9"
+          ],
+          [
+            "p10",
+            "p5"
+          ]
+        ],
+        "coefficient": "200/7",
+        "node": "A1",
+        "metric": "target_distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p6",
+            "p9"
+          ]
+        ],
+        "coefficient": "50/7",
+        "node": "A2",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p6",
+            "p9"
+          ]
+        ],
+        "coefficient": "40/7",
+        "node": "A2",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p10",
+            "p2"
+          ]
+        ],
+        "coefficient": "50/7",
+        "node": "A2",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p10",
+            "p2"
+          ]
+        ],
+        "coefficient": "60/7",
+        "node": "A2",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p10",
+            "p2"
+          ]
+        ],
+        "coefficient": "100/7",
+        "node": "A2",
+        "metric": "target_count"
+      },
+      {
+        "dnf": [
+          [
+            "p10",
+            "p2"
+          ]
+        ],
+        "coefficient": "50/7",
+        "node": "A2",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p10",
+            "p2"
+          ]
+        ],
+        "coefficient": "60/7",
+        "node": "A2",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p10",
+            "p2"
+          ]
+        ],
+        "coefficient": "100/7",
+        "node": "A2",
+        "metric": "target_count"
+      },
+      {
+        "dnf": [
+          [
+            "p12",
+            "p6"
+          ]
+        ],
+        "coefficient": "50/7",
+        "node": "A2",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p12",
+            "p6"
+          ]
+        ],
+        "coefficient": "40/7",
+        "node": "A2",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p6",
+            "p9"
+          ],
+          [
+            "p12",
+            "p6"
+          ]
+        ],
+        "coefficient": "100/7",
+        "node": "A2",
+        "metric": "distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p10",
+            "p2"
+          ],
+          [
+            "p10",
+            "p2"
+          ]
+        ],
+        "coefficient": "100/7",
+        "node": "A2",
+        "metric": "distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p10",
+            "p2"
+          ],
+          [
+            "p10",
+            "p2"
+          ]
+        ],
+        "coefficient": "200/7",
+        "node": "A2",
+        "metric": "target_distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p11",
+            "p3"
+          ]
+        ],
+        "coefficient": "50/7",
+        "node": "B1",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p11",
+            "p3"
+          ]
+        ],
+        "coefficient": "40/7",
+        "node": "B1",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p11",
+            "p3"
+          ]
+        ],
+        "coefficient": "50/7",
+        "node": "B1",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p11",
+            "p3"
+          ]
+        ],
+        "coefficient": "40/7",
+        "node": "B1",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p11",
+            "p7"
+          ]
+        ],
+        "coefficient": "50/7",
+        "node": "B1",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p11",
+            "p7"
+          ]
+        ],
+        "coefficient": "60/7",
+        "node": "B1",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p11",
+            "p7"
+          ]
+        ],
+        "coefficient": "100/7",
+        "node": "B1",
+        "metric": "target_count"
+      },
+      {
+        "dnf": [
+          [
+            "p12",
+            "p7"
+          ]
+        ],
+        "coefficient": "50/7",
+        "node": "B1",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p12",
+            "p7"
+          ]
+        ],
+        "coefficient": "60/7",
+        "node": "B1",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p12",
+            "p7"
+          ]
+        ],
+        "coefficient": "100/7",
+        "node": "B1",
+        "metric": "target_count"
+      },
+      {
+        "dnf": [
+          [
+            "p11",
+            "p3"
+          ],
+          [
+            "p11",
+            "p3"
+          ]
+        ],
+        "coefficient": "100/7",
+        "node": "B1",
+        "metric": "distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p11",
+            "p7"
+          ],
+          [
+            "p12",
+            "p7"
+          ]
+        ],
+        "coefficient": "100/7",
+        "node": "B1",
+        "metric": "distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p11",
+            "p7"
+          ],
+          [
+            "p12",
+            "p7"
+          ]
+        ],
+        "coefficient": "200/7",
+        "node": "B1",
+        "metric": "target_distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p10",
+            "p8"
+          ]
+        ],
+        "coefficient": "50/7",
+        "node": "B2",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p10",
+            "p8"
+          ]
+        ],
+        "coefficient": "40/7",
+        "node": "B2",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p11",
+            "p8"
+          ]
+        ],
+        "coefficient": "50/7",
+        "node": "B2",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p11",
+            "p8"
+          ]
+        ],
+        "coefficient": "40/7",
+        "node": "B2",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p12",
+            "p4"
+          ]
+        ],
+        "coefficient": "50/7",
+        "node": "B2",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p12",
+            "p4"
+          ]
+        ],
+        "coefficient": "60/7",
+        "node": "B2",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p12",
+            "p4"
+          ]
+        ],
+        "coefficient": "100/7",
+        "node": "B2",
+        "metric": "target_count"
+      },
+      {
+        "dnf": [
+          [
+            "p12",
+            "p4"
+          ]
+        ],
+        "coefficient": "50/7",
+        "node": "B2",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p12",
+            "p4"
+          ]
+        ],
+        "coefficient": "60/7",
+        "node": "B2",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p12",
+            "p4"
+          ]
+        ],
+        "coefficient": "100/7",
+        "node": "B2",
+        "metric": "target_count"
+      },
+      {
+        "dnf": [
+          [
+            "p10",
+            "p8"
+          ],
+          [
+            "p11",
+            "p8"
+          ]
+        ],
+        "coefficient": "100/7",
+        "node": "B2",
+        "metric": "distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p12",
+            "p4"
+          ],
+          [
+            "p12",
+            "p4"
+          ]
+        ],
+        "coefficient": "100/7",
+        "node": "B2",
+        "metric": "distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p12",
+            "p4"
+          ],
+          [
+            "p12",
+            "p4"
+          ]
+        ],
+        "coefficient": "200/7",
+        "node": "B2",
+        "metric": "target_distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p1",
+            "p9"
+          ]
+        ],
+        "coefficient": "25/7",
+        "node": "PA",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p1",
+            "p9"
+          ]
+        ],
+        "coefficient": "20/7",
+        "node": "PA",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p6",
+            "p9"
+          ]
+        ],
+        "coefficient": "25/7",
+        "node": "PA",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p6",
+            "p9"
+          ]
+        ],
+        "coefficient": "20/7",
+        "node": "PA",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p1",
+            "p9"
+          ]
+        ],
+        "coefficient": "25/7",
+        "node": "PA",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p1",
+            "p9"
+          ]
+        ],
+        "coefficient": "20/7",
+        "node": "PA",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p5",
+            "p9"
+          ]
+        ],
+        "coefficient": "25/7",
+        "node": "PA",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p5",
+            "p9"
+          ]
+        ],
+        "coefficient": "30/7",
+        "node": "PA",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p5",
+            "p9"
+          ]
+        ],
+        "coefficient": "50/7",
+        "node": "PA",
+        "metric": "target_count"
+      },
+      {
+        "dnf": [
+          [
+            "p10",
+            "p2"
+          ]
+        ],
+        "coefficient": "25/7",
+        "node": "PA",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p10",
+            "p2"
+          ]
+        ],
+        "coefficient": "30/7",
+        "node": "PA",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p10",
+            "p2"
+          ]
+        ],
+        "coefficient": "50/7",
+        "node": "PA",
+        "metric": "target_count"
+      },
+      {
+        "dnf": [
+          [
+            "p10",
+            "p5"
+          ]
+        ],
+        "coefficient": "25/7",
+        "node": "PA",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p10",
+            "p5"
+          ]
+        ],
+        "coefficient": "30/7",
+        "node": "PA",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p10",
+            "p5"
+          ]
+        ],
+        "coefficient": "50/7",
+        "node": "PA",
+        "metric": "target_count"
+      },
+      {
+        "dnf": [
+          [
+            "p10",
+            "p2"
+          ]
+        ],
+        "coefficient": "25/7",
+        "node": "PA",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p10",
+            "p2"
+          ]
+        ],
+        "coefficient": "30/7",
+        "node": "PA",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p10",
+            "p2"
+          ]
+        ],
+        "coefficient": "50/7",
+        "node": "PA",
+        "metric": "target_count"
+      },
+      {
+        "dnf": [
+          [
+            "p12",
+            "p6"
+          ]
+        ],
+        "coefficient": "25/7",
+        "node": "PA",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p12",
+            "p6"
+          ]
+        ],
+        "coefficient": "20/7",
+        "node": "PA",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p1",
+            "p9"
+          ],
+          [
+            "p1",
+            "p9"
+          ]
+        ],
+        "coefficient": "50/7",
+        "node": "PA",
+        "metric": "distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p6",
+            "p9"
+          ],
+          [
+            "p12",
+            "p6"
+          ]
+        ],
+        "coefficient": "50/7",
+        "node": "PA",
+        "metric": "distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p5",
+            "p9"
+          ],
+          [
+            "p10",
+            "p5"
+          ]
+        ],
+        "coefficient": "50/7",
+        "node": "PA",
+        "metric": "distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p10",
+            "p2"
+          ],
+          [
+            "p10",
+            "p2"
+          ]
+        ],
+        "coefficient": "50/7",
+        "node": "PA",
+        "metric": "distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p5",
+            "p9"
+          ],
+          [
+            "p10",
+            "p5"
+          ]
+        ],
+        "coefficient": "100/7",
+        "node": "PA",
+        "metric": "target_distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p10",
+            "p2"
+          ],
+          [
+            "p10",
+            "p2"
+          ]
+        ],
+        "coefficient": "100/7",
+        "node": "PA",
+        "metric": "target_distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p10",
+            "p8"
+          ]
+        ],
+        "coefficient": "25/7",
+        "node": "PB",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p10",
+            "p8"
+          ]
+        ],
+        "coefficient": "20/7",
+        "node": "PB",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p11",
+            "p3"
+          ]
+        ],
+        "coefficient": "25/7",
+        "node": "PB",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p11",
+            "p3"
+          ]
+        ],
+        "coefficient": "20/7",
+        "node": "PB",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p11",
+            "p8"
+          ]
+        ],
+        "coefficient": "25/7",
+        "node": "PB",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p11",
+            "p8"
+          ]
+        ],
+        "coefficient": "20/7",
+        "node": "PB",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p11",
+            "p3"
+          ]
+        ],
+        "coefficient": "25/7",
+        "node": "PB",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p11",
+            "p3"
+          ]
+        ],
+        "coefficient": "20/7",
+        "node": "PB",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p11",
+            "p7"
+          ]
+        ],
+        "coefficient": "25/7",
+        "node": "PB",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p11",
+            "p7"
+          ]
+        ],
+        "coefficient": "30/7",
+        "node": "PB",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p11",
+            "p7"
+          ]
+        ],
+        "coefficient": "50/7",
+        "node": "PB",
+        "metric": "target_count"
+      },
+      {
+        "dnf": [
+          [
+            "p12",
+            "p4"
+          ]
+        ],
+        "coefficient": "25/7",
+        "node": "PB",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p12",
+            "p4"
+          ]
+        ],
+        "coefficient": "30/7",
+        "node": "PB",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p12",
+            "p4"
+          ]
+        ],
+        "coefficient": "50/7",
+        "node": "PB",
+        "metric": "target_count"
+      },
+      {
+        "dnf": [
+          [
+            "p12",
+            "p7"
+          ]
+        ],
+        "coefficient": "25/7",
+        "node": "PB",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p12",
+            "p7"
+          ]
+        ],
+        "coefficient": "30/7",
+        "node": "PB",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p12",
+            "p7"
+          ]
+        ],
+        "coefficient": "50/7",
+        "node": "PB",
+        "metric": "target_count"
+      },
+      {
+        "dnf": [
+          [
+            "p12",
+            "p4"
+          ]
+        ],
+        "coefficient": "25/7",
+        "node": "PB",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p12",
+            "p4"
+          ]
+        ],
+        "coefficient": "30/7",
+        "node": "PB",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p12",
+            "p4"
+          ]
+        ],
+        "coefficient": "50/7",
+        "node": "PB",
+        "metric": "target_count"
+      },
+      {
+        "dnf": [
+          [
+            "p10",
+            "p8"
+          ],
+          [
+            "p11",
+            "p8"
+          ]
+        ],
+        "coefficient": "50/7",
+        "node": "PB",
+        "metric": "distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p11",
+            "p3"
+          ],
+          [
+            "p11",
+            "p3"
+          ]
+        ],
+        "coefficient": "50/7",
+        "node": "PB",
+        "metric": "distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p11",
+            "p7"
+          ],
+          [
+            "p12",
+            "p7"
+          ]
+        ],
+        "coefficient": "50/7",
+        "node": "PB",
+        "metric": "distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p12",
+            "p4"
+          ],
+          [
+            "p12",
+            "p4"
+          ]
+        ],
+        "coefficient": "50/7",
+        "node": "PB",
+        "metric": "distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p11",
+            "p7"
+          ],
+          [
+            "p12",
+            "p7"
+          ]
+        ],
+        "coefficient": "100/7",
+        "node": "PB",
+        "metric": "target_distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p12",
+            "p4"
+          ],
+          [
+            "p12",
+            "p4"
+          ]
+        ],
+        "coefficient": "100/7",
+        "node": "PB",
+        "metric": "target_distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p1",
+            "p9"
+          ]
+        ],
+        "coefficient": "25/14",
+        "node": "NAT",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p1",
+            "p9"
+          ]
+        ],
+        "coefficient": "10/7",
+        "node": "NAT",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p6",
+            "p9"
+          ]
+        ],
+        "coefficient": "25/14",
+        "node": "NAT",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p6",
+            "p9"
+          ]
+        ],
+        "coefficient": "10/7",
+        "node": "NAT",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p1",
+            "p9"
+          ]
+        ],
+        "coefficient": "25/14",
+        "node": "NAT",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p1",
+            "p9"
+          ]
+        ],
+        "coefficient": "10/7",
+        "node": "NAT",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p5",
+            "p9"
+          ]
+        ],
+        "coefficient": "25/14",
+        "node": "NAT",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p5",
+            "p9"
+          ]
+        ],
+        "coefficient": "15/7",
+        "node": "NAT",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p5",
+            "p9"
+          ]
+        ],
+        "coefficient": "25/7",
+        "node": "NAT",
+        "metric": "target_count"
+      },
+      {
+        "dnf": [
+          [
+            "p10",
+            "p2"
+          ]
+        ],
+        "coefficient": "25/14",
+        "node": "NAT",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p10",
+            "p2"
+          ]
+        ],
+        "coefficient": "15/7",
+        "node": "NAT",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p10",
+            "p2"
+          ]
+        ],
+        "coefficient": "25/7",
+        "node": "NAT",
+        "metric": "target_count"
+      },
+      {
+        "dnf": [
+          [
+            "p10",
+            "p5"
+          ]
+        ],
+        "coefficient": "25/14",
+        "node": "NAT",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p10",
+            "p5"
+          ]
+        ],
+        "coefficient": "15/7",
+        "node": "NAT",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p10",
+            "p5"
+          ]
+        ],
+        "coefficient": "25/7",
+        "node": "NAT",
+        "metric": "target_count"
+      },
+      {
+        "dnf": [
+          [
+            "p10",
+            "p2"
+          ]
+        ],
+        "coefficient": "25/14",
+        "node": "NAT",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p10",
+            "p2"
+          ]
+        ],
+        "coefficient": "15/7",
+        "node": "NAT",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p10",
+            "p2"
+          ]
+        ],
+        "coefficient": "25/7",
+        "node": "NAT",
+        "metric": "target_count"
+      },
+      {
+        "dnf": [
+          [
+            "p10",
+            "p8"
+          ]
+        ],
+        "coefficient": "25/14",
+        "node": "NAT",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p10",
+            "p8"
+          ]
+        ],
+        "coefficient": "10/7",
+        "node": "NAT",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p11",
+            "p3"
+          ]
+        ],
+        "coefficient": "25/14",
+        "node": "NAT",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p11",
+            "p3"
+          ]
+        ],
+        "coefficient": "10/7",
+        "node": "NAT",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p11",
+            "p8"
+          ]
+        ],
+        "coefficient": "25/14",
+        "node": "NAT",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p11",
+            "p8"
+          ]
+        ],
+        "coefficient": "10/7",
+        "node": "NAT",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p11",
+            "p3"
+          ]
+        ],
+        "coefficient": "25/14",
+        "node": "NAT",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p11",
+            "p3"
+          ]
+        ],
+        "coefficient": "10/7",
+        "node": "NAT",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p11",
+            "p7"
+          ]
+        ],
+        "coefficient": "25/14",
+        "node": "NAT",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p11",
+            "p7"
+          ]
+        ],
+        "coefficient": "15/7",
+        "node": "NAT",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p11",
+            "p7"
+          ]
+        ],
+        "coefficient": "25/7",
+        "node": "NAT",
+        "metric": "target_count"
+      },
+      {
+        "dnf": [
+          [
+            "p12",
+            "p4"
+          ]
+        ],
+        "coefficient": "25/14",
+        "node": "NAT",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p12",
+            "p4"
+          ]
+        ],
+        "coefficient": "15/7",
+        "node": "NAT",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p12",
+            "p4"
+          ]
+        ],
+        "coefficient": "25/7",
+        "node": "NAT",
+        "metric": "target_count"
+      },
+      {
+        "dnf": [
+          [
+            "p12",
+            "p7"
+          ]
+        ],
+        "coefficient": "25/14",
+        "node": "NAT",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p12",
+            "p7"
+          ]
+        ],
+        "coefficient": "15/7",
+        "node": "NAT",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p12",
+            "p7"
+          ]
+        ],
+        "coefficient": "25/7",
+        "node": "NAT",
+        "metric": "target_count"
+      },
+      {
+        "dnf": [
+          [
+            "p12",
+            "p4"
+          ]
+        ],
+        "coefficient": "25/14",
+        "node": "NAT",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p12",
+            "p4"
+          ]
+        ],
+        "coefficient": "15/7",
+        "node": "NAT",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p12",
+            "p4"
+          ]
+        ],
+        "coefficient": "25/7",
+        "node": "NAT",
+        "metric": "target_count"
+      },
+      {
+        "dnf": [
+          [
+            "p12",
+            "p6"
+          ]
+        ],
+        "coefficient": "25/14",
+        "node": "NAT",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p12",
+            "p6"
+          ]
+        ],
+        "coefficient": "10/7",
+        "node": "NAT",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p1",
+            "p9"
+          ],
+          [
+            "p1",
+            "p9"
+          ]
+        ],
+        "coefficient": "25/7",
+        "node": "NAT",
+        "metric": "distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p6",
+            "p9"
+          ],
+          [
+            "p12",
+            "p6"
+          ]
+        ],
+        "coefficient": "25/7",
+        "node": "NAT",
+        "metric": "distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p5",
+            "p9"
+          ],
+          [
+            "p10",
+            "p5"
+          ]
+        ],
+        "coefficient": "25/7",
+        "node": "NAT",
+        "metric": "distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p10",
+            "p2"
+          ],
+          [
+            "p10",
+            "p2"
+          ]
+        ],
+        "coefficient": "25/7",
+        "node": "NAT",
+        "metric": "distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p10",
+            "p8"
+          ],
+          [
+            "p11",
+            "p8"
+          ]
+        ],
+        "coefficient": "25/7",
+        "node": "NAT",
+        "metric": "distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p11",
+            "p3"
+          ],
+          [
+            "p11",
+            "p3"
+          ]
+        ],
+        "coefficient": "25/7",
+        "node": "NAT",
+        "metric": "distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p11",
+            "p7"
+          ],
+          [
+            "p12",
+            "p7"
+          ]
+        ],
+        "coefficient": "25/7",
+        "node": "NAT",
+        "metric": "distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p12",
+            "p4"
+          ],
+          [
+            "p12",
+            "p4"
+          ]
+        ],
+        "coefficient": "25/7",
+        "node": "NAT",
+        "metric": "distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p5",
+            "p9"
+          ],
+          [
+            "p10",
+            "p5"
+          ]
+        ],
+        "coefficient": "50/7",
+        "node": "NAT",
+        "metric": "target_distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p10",
+            "p2"
+          ],
+          [
+            "p10",
+            "p2"
+          ]
+        ],
+        "coefficient": "50/7",
+        "node": "NAT",
+        "metric": "target_distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p11",
+            "p7"
+          ],
+          [
+            "p12",
+            "p7"
+          ]
+        ],
+        "coefficient": "50/7",
+        "node": "NAT",
+        "metric": "target_distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p12",
+            "p4"
+          ],
+          [
+            "p12",
+            "p4"
+          ]
+        ],
+        "coefficient": "50/7",
+        "node": "NAT",
+        "metric": "target_distinct_count"
+      }
+    ],
+    "G1_terminal": "35 coordinate scores added; first four coverage, fifth target-share absolute-deviation score",
+    "G2_terminal": "four family scores; 0.5 arithmetic + 0.5 weighted geometric mean"
+  },
+  "J2": {
+    "groundings": [
+      {
+        "id": "J2_s1_1",
+        "clause": [
+          "p1",
+          "p6",
+          "p9"
+        ],
+        "leaf": "A1",
+        "category": "C2",
+        "amount": 3,
+        "business_key": "Y_y2",
+        "branch": "BASIC_RELATION_EVENT"
+      },
+      {
+        "id": "J2_s1_2",
+        "clause": [
+          "p1",
+          "p5",
+          "p9"
+        ],
+        "leaf": "A1",
+        "category": "C1",
+        "amount": 4,
+        "business_key": "Y_y1",
+        "branch": "BASIC_RELATION_EVENT"
+      },
+      {
+        "id": "J2_s2_1",
+        "clause": [
+          "p2",
+          "p5",
+          "p10"
+        ],
+        "leaf": "A2",
+        "category": "C1",
+        "amount": 5,
+        "business_key": "Y_y1",
+        "branch": "BASIC_RELATION_EVENT"
+      },
+      {
+        "id": "J2_s2_2",
+        "clause": [
+          "p2",
+          "p8",
+          "p10"
+        ],
+        "leaf": "A2",
+        "category": "C2",
+        "amount": 4,
+        "business_key": "Y_y4",
+        "branch": "BASIC_RELATION_EVENT"
+      },
+      {
+        "id": "J2_s3_1",
+        "clause": [
+          "p3",
+          "p8",
+          "p11"
+        ],
+        "leaf": "B1",
+        "category": "C2",
+        "amount": 3,
+        "business_key": "Y_y4",
+        "branch": "BASIC_RELATION_EVENT"
+      },
+      {
+        "id": "J2_s3_2",
+        "clause": [
+          "p3",
+          "p7",
+          "p11"
+        ],
+        "leaf": "B1",
+        "category": "C1",
+        "amount": 4,
+        "business_key": "Y_y3",
+        "branch": "BASIC_RELATION_EVENT"
+      },
+      {
+        "id": "J2_s4_1",
+        "clause": [
+          "p4",
+          "p7",
+          "p12"
+        ],
+        "leaf": "B2",
+        "category": "C1",
+        "amount": 5,
+        "business_key": "Y_y3",
+        "branch": "BASIC_RELATION_EVENT"
+      },
+      {
+        "id": "J2_s4_2",
+        "clause": [
+          "p4",
+          "p6",
+          "p12"
+        ],
+        "leaf": "B2",
+        "category": "C2",
+        "amount": 4,
+        "business_key": "Y_y2",
+        "branch": "BASIC_RELATION_EVENT"
+      }
+    ],
+    "G0_components": [
+      {
+        "dnf": [
+          [
+            "p1",
+            "p6",
+            "p9"
+          ]
+        ],
+        "coefficient": "100/7",
+        "node": "A1",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p1",
+            "p6",
+            "p9"
+          ]
+        ],
+        "coefficient": "600/49",
+        "node": "A1",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p1",
+            "p5",
+            "p9"
+          ]
+        ],
+        "coefficient": "100/7",
+        "node": "A1",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p1",
+            "p5",
+            "p9"
+          ]
+        ],
+        "coefficient": "800/49",
+        "node": "A1",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p1",
+            "p5",
+            "p9"
+          ]
+        ],
+        "coefficient": "200/7",
+        "node": "A1",
+        "metric": "target_count"
+      },
+      {
+        "dnf": [
+          [
+            "p1",
+            "p6",
+            "p9"
+          ]
+        ],
+        "coefficient": "100/7",
+        "node": "A1",
+        "metric": "distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p1",
+            "p5",
+            "p9"
+          ]
+        ],
+        "coefficient": "100/7",
+        "node": "A1",
+        "metric": "distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p1",
+            "p5",
+            "p9"
+          ]
+        ],
+        "coefficient": "200/7",
+        "node": "A1",
+        "metric": "target_distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p10",
+            "p2",
+            "p5"
+          ]
+        ],
+        "coefficient": "100/7",
+        "node": "A2",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p10",
+            "p2",
+            "p5"
+          ]
+        ],
+        "coefficient": "1000/63",
+        "node": "A2",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p10",
+            "p2",
+            "p5"
+          ]
+        ],
+        "coefficient": "200/7",
+        "node": "A2",
+        "metric": "target_count"
+      },
+      {
+        "dnf": [
+          [
+            "p10",
+            "p2",
+            "p8"
+          ]
+        ],
+        "coefficient": "100/7",
+        "node": "A2",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p10",
+            "p2",
+            "p8"
+          ]
+        ],
+        "coefficient": "800/63",
+        "node": "A2",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p10",
+            "p2",
+            "p5"
+          ]
+        ],
+        "coefficient": "100/7",
+        "node": "A2",
+        "metric": "distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p10",
+            "p2",
+            "p8"
+          ]
+        ],
+        "coefficient": "100/7",
+        "node": "A2",
+        "metric": "distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p10",
+            "p2",
+            "p5"
+          ]
+        ],
+        "coefficient": "200/7",
+        "node": "A2",
+        "metric": "target_distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p11",
+            "p3",
+            "p8"
+          ]
+        ],
+        "coefficient": "100/7",
+        "node": "B1",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p11",
+            "p3",
+            "p8"
+          ]
+        ],
+        "coefficient": "600/49",
+        "node": "B1",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p11",
+            "p3",
+            "p7"
+          ]
+        ],
+        "coefficient": "100/7",
+        "node": "B1",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p11",
+            "p3",
+            "p7"
+          ]
+        ],
+        "coefficient": "800/49",
+        "node": "B1",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p11",
+            "p3",
+            "p7"
+          ]
+        ],
+        "coefficient": "200/7",
+        "node": "B1",
+        "metric": "target_count"
+      },
+      {
+        "dnf": [
+          [
+            "p11",
+            "p3",
+            "p8"
+          ]
+        ],
+        "coefficient": "100/7",
+        "node": "B1",
+        "metric": "distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p11",
+            "p3",
+            "p7"
+          ]
+        ],
+        "coefficient": "100/7",
+        "node": "B1",
+        "metric": "distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p11",
+            "p3",
+            "p7"
+          ]
+        ],
+        "coefficient": "200/7",
+        "node": "B1",
+        "metric": "target_distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p12",
+            "p4",
+            "p7"
+          ]
+        ],
+        "coefficient": "100/7",
+        "node": "B2",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p12",
+            "p4",
+            "p7"
+          ]
+        ],
+        "coefficient": "1000/63",
+        "node": "B2",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p12",
+            "p4",
+            "p7"
+          ]
+        ],
+        "coefficient": "200/7",
+        "node": "B2",
+        "metric": "target_count"
+      },
+      {
+        "dnf": [
+          [
+            "p12",
+            "p4",
+            "p6"
+          ]
+        ],
+        "coefficient": "100/7",
+        "node": "B2",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p12",
+            "p4",
+            "p6"
+          ]
+        ],
+        "coefficient": "800/63",
+        "node": "B2",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p12",
+            "p4",
+            "p7"
+          ]
+        ],
+        "coefficient": "100/7",
+        "node": "B2",
+        "metric": "distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p12",
+            "p4",
+            "p6"
+          ]
+        ],
+        "coefficient": "100/7",
+        "node": "B2",
+        "metric": "distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p12",
+            "p4",
+            "p7"
+          ]
+        ],
+        "coefficient": "200/7",
+        "node": "B2",
+        "metric": "target_distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p1",
+            "p6",
+            "p9"
+          ]
+        ],
+        "coefficient": "50/7",
+        "node": "PA",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p1",
+            "p6",
+            "p9"
+          ]
+        ],
+        "coefficient": "75/14",
+        "node": "PA",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p1",
+            "p5",
+            "p9"
+          ]
+        ],
+        "coefficient": "50/7",
+        "node": "PA",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p1",
+            "p5",
+            "p9"
+          ]
+        ],
+        "coefficient": "50/7",
+        "node": "PA",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p1",
+            "p5",
+            "p9"
+          ]
+        ],
+        "coefficient": "100/7",
+        "node": "PA",
+        "metric": "target_count"
+      },
+      {
+        "dnf": [
+          [
+            "p10",
+            "p2",
+            "p5"
+          ]
+        ],
+        "coefficient": "50/7",
+        "node": "PA",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p10",
+            "p2",
+            "p5"
+          ]
+        ],
+        "coefficient": "125/14",
+        "node": "PA",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p10",
+            "p2",
+            "p5"
+          ]
+        ],
+        "coefficient": "100/7",
+        "node": "PA",
+        "metric": "target_count"
+      },
+      {
+        "dnf": [
+          [
+            "p10",
+            "p2",
+            "p8"
+          ]
+        ],
+        "coefficient": "50/7",
+        "node": "PA",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p10",
+            "p2",
+            "p8"
+          ]
+        ],
+        "coefficient": "50/7",
+        "node": "PA",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p1",
+            "p6",
+            "p9"
+          ]
+        ],
+        "coefficient": "200/21",
+        "node": "PA",
+        "metric": "distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p1",
+            "p5",
+            "p9"
+          ],
+          [
+            "p10",
+            "p2",
+            "p5"
+          ]
+        ],
+        "coefficient": "200/21",
+        "node": "PA",
+        "metric": "distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p10",
+            "p2",
+            "p8"
+          ]
+        ],
+        "coefficient": "200/21",
+        "node": "PA",
+        "metric": "distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p1",
+            "p5",
+            "p9"
+          ],
+          [
+            "p10",
+            "p2",
+            "p5"
+          ]
+        ],
+        "coefficient": "200/7",
+        "node": "PA",
+        "metric": "target_distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p11",
+            "p3",
+            "p8"
+          ]
+        ],
+        "coefficient": "50/7",
+        "node": "PB",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p11",
+            "p3",
+            "p8"
+          ]
+        ],
+        "coefficient": "75/14",
+        "node": "PB",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p11",
+            "p3",
+            "p7"
+          ]
+        ],
+        "coefficient": "50/7",
+        "node": "PB",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p11",
+            "p3",
+            "p7"
+          ]
+        ],
+        "coefficient": "50/7",
+        "node": "PB",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p11",
+            "p3",
+            "p7"
+          ]
+        ],
+        "coefficient": "100/7",
+        "node": "PB",
+        "metric": "target_count"
+      },
+      {
+        "dnf": [
+          [
+            "p12",
+            "p4",
+            "p7"
+          ]
+        ],
+        "coefficient": "50/7",
+        "node": "PB",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p12",
+            "p4",
+            "p7"
+          ]
+        ],
+        "coefficient": "125/14",
+        "node": "PB",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p12",
+            "p4",
+            "p7"
+          ]
+        ],
+        "coefficient": "100/7",
+        "node": "PB",
+        "metric": "target_count"
+      },
+      {
+        "dnf": [
+          [
+            "p12",
+            "p4",
+            "p6"
+          ]
+        ],
+        "coefficient": "50/7",
+        "node": "PB",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p12",
+            "p4",
+            "p6"
+          ]
+        ],
+        "coefficient": "50/7",
+        "node": "PB",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p11",
+            "p3",
+            "p8"
+          ]
+        ],
+        "coefficient": "200/21",
+        "node": "PB",
+        "metric": "distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p11",
+            "p3",
+            "p7"
+          ],
+          [
+            "p12",
+            "p4",
+            "p7"
+          ]
+        ],
+        "coefficient": "200/21",
+        "node": "PB",
+        "metric": "distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p12",
+            "p4",
+            "p6"
+          ]
+        ],
+        "coefficient": "200/21",
+        "node": "PB",
+        "metric": "distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p11",
+            "p3",
+            "p7"
+          ],
+          [
+            "p12",
+            "p4",
+            "p7"
+          ]
+        ],
+        "coefficient": "200/7",
+        "node": "PB",
+        "metric": "target_distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p1",
+            "p6",
+            "p9"
+          ]
+        ],
+        "coefficient": "25/7",
+        "node": "NAT",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p1",
+            "p6",
+            "p9"
+          ]
+        ],
+        "coefficient": "75/28",
+        "node": "NAT",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p1",
+            "p5",
+            "p9"
+          ]
+        ],
+        "coefficient": "25/7",
+        "node": "NAT",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p1",
+            "p5",
+            "p9"
+          ]
+        ],
+        "coefficient": "25/7",
+        "node": "NAT",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p1",
+            "p5",
+            "p9"
+          ]
+        ],
+        "coefficient": "50/7",
+        "node": "NAT",
+        "metric": "target_count"
+      },
+      {
+        "dnf": [
+          [
+            "p10",
+            "p2",
+            "p5"
+          ]
+        ],
+        "coefficient": "25/7",
+        "node": "NAT",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p10",
+            "p2",
+            "p5"
+          ]
+        ],
+        "coefficient": "125/28",
+        "node": "NAT",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p10",
+            "p2",
+            "p5"
+          ]
+        ],
+        "coefficient": "50/7",
+        "node": "NAT",
+        "metric": "target_count"
+      },
+      {
+        "dnf": [
+          [
+            "p10",
+            "p2",
+            "p8"
+          ]
+        ],
+        "coefficient": "25/7",
+        "node": "NAT",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p10",
+            "p2",
+            "p8"
+          ]
+        ],
+        "coefficient": "25/7",
+        "node": "NAT",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p11",
+            "p3",
+            "p8"
+          ]
+        ],
+        "coefficient": "25/7",
+        "node": "NAT",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p11",
+            "p3",
+            "p8"
+          ]
+        ],
+        "coefficient": "75/28",
+        "node": "NAT",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p11",
+            "p3",
+            "p7"
+          ]
+        ],
+        "coefficient": "25/7",
+        "node": "NAT",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p11",
+            "p3",
+            "p7"
+          ]
+        ],
+        "coefficient": "25/7",
+        "node": "NAT",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p11",
+            "p3",
+            "p7"
+          ]
+        ],
+        "coefficient": "50/7",
+        "node": "NAT",
+        "metric": "target_count"
+      },
+      {
+        "dnf": [
+          [
+            "p12",
+            "p4",
+            "p7"
+          ]
+        ],
+        "coefficient": "25/7",
+        "node": "NAT",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p12",
+            "p4",
+            "p7"
+          ]
+        ],
+        "coefficient": "125/28",
+        "node": "NAT",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p12",
+            "p4",
+            "p7"
+          ]
+        ],
+        "coefficient": "50/7",
+        "node": "NAT",
+        "metric": "target_count"
+      },
+      {
+        "dnf": [
+          [
+            "p12",
+            "p4",
+            "p6"
+          ]
+        ],
+        "coefficient": "25/7",
+        "node": "NAT",
+        "metric": "bag_count"
+      },
+      {
+        "dnf": [
+          [
+            "p12",
+            "p4",
+            "p6"
+          ]
+        ],
+        "coefficient": "25/7",
+        "node": "NAT",
+        "metric": "amount_sum"
+      },
+      {
+        "dnf": [
+          [
+            "p1",
+            "p6",
+            "p9"
+          ],
+          [
+            "p12",
+            "p4",
+            "p6"
+          ]
+        ],
+        "coefficient": "50/7",
+        "node": "NAT",
+        "metric": "distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p1",
+            "p5",
+            "p9"
+          ],
+          [
+            "p10",
+            "p2",
+            "p5"
+          ]
+        ],
+        "coefficient": "50/7",
+        "node": "NAT",
+        "metric": "distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p10",
+            "p2",
+            "p8"
+          ],
+          [
+            "p11",
+            "p3",
+            "p8"
+          ]
+        ],
+        "coefficient": "50/7",
+        "node": "NAT",
+        "metric": "distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p11",
+            "p3",
+            "p7"
+          ],
+          [
+            "p12",
+            "p4",
+            "p7"
+          ]
+        ],
+        "coefficient": "50/7",
+        "node": "NAT",
+        "metric": "distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p1",
+            "p5",
+            "p9"
+          ],
+          [
+            "p10",
+            "p2",
+            "p5"
+          ]
+        ],
+        "coefficient": "100/7",
+        "node": "NAT",
+        "metric": "target_distinct_count"
+      },
+      {
+        "dnf": [
+          [
+            "p11",
+            "p3",
+            "p7"
+          ],
+          [
+            "p12",
+            "p4",
+            "p7"
+          ]
+        ],
+        "coefficient": "100/7",
+        "node": "NAT",
+        "metric": "target_distinct_count"
+      }
+    ],
+    "G1_terminal": "35 coordinate scores added; first four coverage, fifth target-share absolute-deviation score",
+    "G2_terminal": "four family scores; 0.5 arithmetic + 0.5 weighted geometric mean"
+  }
+}

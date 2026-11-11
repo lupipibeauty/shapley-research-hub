@@ -1,0 +1,10 @@
+join_id,repeat,source_and_state_compile_seconds,grounding_rows,scope
+J0,0,0.0007761000306345522,12,Python lineage/state compilation after SQL relations are loaded
+J0,1,0.000604200002271682,12,Python lineage/state compilation after SQL relations are loaded
+J0,2,0.0005716999876312912,12,Python lineage/state compilation after SQL relations are loaded
+J1,0,0.0008648000075481832,16,Python lineage/state compilation after SQL relations are loaded
+J1,1,0.0007241999846883118,16,Python lineage/state compilation after SQL relations are loaded
+J1,2,0.0007189000025391579,16,Python lineage/state compilation after SQL relations are loaded
+J2,0,0.0005313000292517245,8,Python lineage/state compilation after SQL relations are loaded
+J2,1,0.00041820004116743803,8,Python lineage/state compilation after SQL relations are loaded
+J2,2,0.00039900001138448715,8,Python lineage/state compilation after SQL relations are loaded

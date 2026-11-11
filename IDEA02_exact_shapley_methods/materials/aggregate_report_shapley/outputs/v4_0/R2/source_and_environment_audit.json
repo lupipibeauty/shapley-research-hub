@@ -1,0 +1,82 @@
+{
+  "status": "AUDITED",
+  "archive": {
+    "input": "C:/Users/86156/Downloads/Faithful_GSV-main.zip",
+    "sha256": "763C9CAD2689F87B5E7A891CEA4C3707AEFC72D186EDF97AB53BD3EB879E9FB0",
+    "entries": 180,
+    "unsafe_paths": 0,
+    "git_metadata_present": false,
+    "license": "MIT",
+    "official_source_modified": false
+  },
+  "paper": {
+    "input": "C:/Users/86156/Downloads/faithful group shapley value.pdf",
+    "sha256": "a6ca75691e0f4f379894b9a3ca7c76d793c984df3163aac48575288c3944f910",
+    "pages": 53,
+    "encrypted": false,
+    "text_extraction": "Poppler pdftotext 成功",
+    "pdf_library_preflight": "UNAVAILABLE：隔离环境缺少 pypdf；不是 PDF 损坏"
+  },
+  "environment": {
+    "path": "external/fgsv/environment/.venv",
+    "python": "3.11.6",
+    "packages_relevant_to_exp1": {
+      "numpy": "2.2.4",
+      "scipy": "1.15.2",
+      "pandas": "2.2.3",
+      "matplotlib": "3.10.1",
+      "seaborn": "0.13.2",
+      "tqdm": "4.67.1"
+    },
+    "omitted_unneeded_packages": [
+      "torch==2.6+cu124",
+      "peft==0.14.0",
+      "scikit-learn==1.6.1"
+    ],
+    "reason": "exp1_benchmark 的实际导入与执行路径不使用这些包；本轮不伪造 CUDA 环境。"
+  },
+  "source_observations": [
+    {
+      "id": "GROUP_TESTING_SAVE_BUG",
+      "location": "exp1_benchmark/estimators.py:60-67",
+      "finding": "函数计算 s_hat，但保存 sv_hat * Z；sv_hat 未更新，因此保存曲线全零。",
+      "treatment": "R2-0 按官方源码如实运行，不静默修复；单独标注实现缺陷。"
+    },
+    {
+      "id": "PERMUTATION_BUDGET_OVERSHOOT",
+      "location": "exp1_benchmark/estimators.py:11-31",
+      "finding": "实现完成整条排列后才检查 while 条件，因此可能超过 20,000 次；单次 n=64 实测 20,020。",
+      "treatment": "同时报告名义预算与包装器实测调用数。"
+    },
+    {
+      "id": "ONE_FOR_ALL_COUNTER_SCOPE",
+      "location": "exp1_benchmark/estimators.py:111-180",
+      "finding": "内部 num_eval 未计入 2n+2 次确定性调用；n=64 单次实测总调用 20,130。",
+      "treatment": "不把内部计数当作真实总成本。"
+    },
+    {
+      "id": "KERNEL_BOUNDARY_CALLS",
+      "location": "exp1_benchmark/estimators.py:182-341",
+      "finding": "空联盟与全集两次调用未计入内部预算；三个核类方法单次均实测 20,002。",
+      "treatment": "使用包装器统一统计实际调用。"
+    },
+    {
+      "id": "FGSV_NORMALIZATION_MISMATCH",
+      "location": "exp1_benchmark/estimators.py:361-370,395",
+      "finding": "小 s 直接分支相对论文式 (8) 缺少 n/[s(n-s)]；大 s 分支相对论文算法 1 第 9 行缺少 n/(n-1)。",
+      "evidence": "n=2 加性游戏最小反例中，精确值 1，未修改官方函数在全部检查点返回 0.75。",
+      "treatment": "R2-0 与 D1-P 代码派生适配均不静默修复；将其归为实现偏差，并与采样方差分开。"
+    },
+    {
+      "id": "ALGORITHM1_CODE_DIFFERENCE",
+      "location": "exp1_benchmark/estimators.py:343-404",
+      "finding": "论文算法 1 显式遍历 s=1..n-1 并设置 m1/m2；代码在 while 预算循环内随机抽 s，并按被抽次数更新。",
+      "treatment": "把论文伪代码与发布代码视为两个实现层次，不宣称逐行等价。"
+    },
+    {
+      "id": "ALGORITHM2_SCOPE",
+      "finding": "论文附录算法 2 是面向小输入的非信息数据增广；exp1 的 FGSV 函数未实现该增广。",
+      "treatment": "R2-0 只复现发布仓库实际 benchmark 路径；算法 2 记为未由该入口覆盖。"
+    }
+  ]
+}

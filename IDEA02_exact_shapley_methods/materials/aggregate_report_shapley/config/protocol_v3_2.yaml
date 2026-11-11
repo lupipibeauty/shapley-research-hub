@@ -1,0 +1,30 @@
+protocol_version: multisource_report_v3_2
+status: DESIGNED
+current_date: 2026-10-30
+active_game:
+  name: R-game
+  player: logical_record_bundle
+  allocation: standard_record_shapley
+  owner_role: aggregate_record_payments_only
+excluded_first_round:
+  - owner_as_player_game
+  - shapley_levels
+  - owen_levels
+  - jiang_database_adaptation
+  - monte_carlo_sampling
+  - scale_experiments
+data_spec: config/d1p_design.yaml
+report_spec: config/report_spec_v3_2.yaml
+value_spec: config/value_spec_v3_2.yaml
+runtime_limits: config/runtime_limits_v3_2.yaml
+current_data_priority: existing_frozen_config
+fallback_created: false
+stages:
+  S0: NOT_RUN
+  S1: NOT_RUN
+  S2: NOT_RUN
+  S3: NOT_RUN
+  S4: NOT_RUN
+  S5: NOT_RUN
+first_execution_scope_if_authorized: [S0, S1]
+stop_after_first_execution_scope: true

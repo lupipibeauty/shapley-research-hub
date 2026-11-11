@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "per_s_rows": 198,
+  "owner_totals": 18,
+  "ablation_rows": 10800,
+  "max_eq9_reconstruction_residual": "5.70947570947570947555E-79",
+  "max_eq8_identity_residual": "3.7E-96",
+  "budget_accounting": "PASS",
+  "historical_immutability": "PASS"
+}

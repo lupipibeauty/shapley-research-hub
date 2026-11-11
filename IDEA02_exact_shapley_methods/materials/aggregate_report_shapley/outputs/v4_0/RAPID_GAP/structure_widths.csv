@@ -1,0 +1,5 @@
+design,n,players,physical_facts,source_factors,value_factors,grounding_memberships,value_memberships,Wq,Wq_min_fill_upper,Wq_status,Wg,Wg_min_fill_upper,Wg_status,Wjoint,Wjoint_min_fill_upper,Wjoint_status,treewidth_exact_seconds,factor_table_entries,sql_count_error
+ALIGNED,12,12,12,3,3,12,12,3,3,EXACT_SUBSET_DP,3,3,EXACT_SUBSET_DP,3,3,EXACT_SUBSET_DP,0.24236889998428524,96,0
+CROSSED,12,12,12,3,3,12,12,3,3,EXACT_SUBSET_DP,3,3,EXACT_SUBSET_DP,5,5,EXACT_SUBSET_DP,0.40464359999168664,96,0
+ALIGNED,16,16,16,4,4,16,16,3,3,EXACT_SUBSET_DP,3,3,EXACT_SUBSET_DP,3,3,EXACT_SUBSET_DP,5.128970599966124,128,0
+CROSSED,16,16,16,4,4,16,16,3,3,EXACT_SUBSET_DP,3,3,EXACT_SUBSET_DP,9,9,EXACT_SUBSET_DP,10.031305499956943,128,0

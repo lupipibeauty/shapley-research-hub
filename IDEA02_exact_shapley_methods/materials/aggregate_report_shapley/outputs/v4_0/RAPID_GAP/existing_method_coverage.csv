@@ -1,0 +1,9 @@
+problem_class,mathematical_support,software_support,decision,evidence
+Boolean lineage Shapley,"Shapley与模型计数在OR代换封闭类上多项式等价；d-D电路上多项式可解","ProvSQL shapley_all_vars；Abramovich d-tree后端",ELIMINATE_AS_NEW_TOPIC,"Kara 2024; Karmakar 2024; ProvSQL docs"
+COUNT/SUM bag grounding,"Shapley线性性和逐grounding均分闭式","AB-N1/N2/N3与H3-CONTROL B1已验证",ELIMINATE_AS_NEW_TOPIC,"B1 n=12约7.14--7.36us"
+DISTINCT/HAVING Boolean output,"OR/门槛来源可编译为Boolean电路，之后模型计数","ProvSQL支持DISTINCT与HAVING；H3-CONTROL手工DNF后端已验证",ELIMINATE_CURRENT_SMALL_INSTANCES,"ProvSQL aggregation and Shapley docs"
+可加整表评分,"Shapley线性分解，比例坐标可用低维计数DP","AB-N3-L/AB-N4-DP已实现",ELIMINATE_AS_NEW_TOPIC,"H0/H5 history"
+有界联合因子宽度的非线性整表,"sum-product/加权模型计数/经典变量消去为2^O(Wjoint)poly(n)","ProvSQL Boolean接口不直接求任意实值整表；本轮Python VE已执行",ELIMINATE_PROPOSITION_A,"RAPID-GAP exact-width experiment"
+对称计数类型整表,"/生成函数/类型计数DP已是经典方法","H5/H5-SCALE/H5-R已实现",ELIMINATE_PROPOSITION_B,"H5 series"
+动态SQL查询输出,"F-IVM、DBSP可维护join/aggregate查询与环载荷","F-IVM/DBSP有实现，本轮未运行",COVERED_FOR_REPORT_STATISTICS_ONLY,"F-IVM 2024; DBSP 2023/2025"
+动态全记录Shapley向量,"ML数据估值已有近似/效用复用算法；数据库查询下的精确联合更新未在本轮来源中得到直接解法","ProvSQL跟踪DML来源，但文档未承诺增量维护全Shapley向量",PROVISIONAL_GAP_REQUIRES_DEEPER_AUDIT,"Xia 2025; ProvSQL DML docs; F-IVM; DBSP"

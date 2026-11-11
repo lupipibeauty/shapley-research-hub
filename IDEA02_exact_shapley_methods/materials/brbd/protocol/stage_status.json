@@ -1,0 +1,19 @@
+{
+  "protocol_id": "BRBD_v1",
+  "updated_at": "2026-11-06T18:15:00+08:00",
+  "execution_state": "PAUSED_AFTER_CURRENT_SCOPE",
+  "G0": "PASS",
+  "G1_abramovich": "PARTIAL_PASS",
+  "G1_luo": "PARTIAL_PASS_ABLATION_AND_H3_J2_ADDITIVE_R2_COMPLETE_FULL_SCALE_RESOURCE_BLOCKED",
+  "G2": "NOT_STARTED",
+  "G3": "NOT_STARTED",
+  "G4": "NOT_STARTED",
+  "notes": [
+    "Abramovich Academic.zip 正式批量运行与 Figure 4 Q5 数据运行已经完成；IMDB、TPC-H、TPC-Hagg 原始数据与完整基线尚缺。",
+    "Luo cal_sv 已按 Rust 1.75 release 配置成功编译；TPC-H SF=1 在 JOIN 阶段因本机内存不足失败。",
+    "Luo TPC-H SF=0.1 兼容缩小实验的 RDSV 已端到端成功；完整版本、no-horizontal 与 no-hybrid 各完成三次配对重复并通过逐owner正确性核验。",
+    "Luo no-vertical 在首个game阶段发生可复核的内存分配失败；完整消融审计见 reports/03_Luo2024_TPCH_SF01_RDSV官方消融审计.md。",
+    "H3-J2 R2 最小同目标适配已完成：21个可加子游戏经DuckDB JOIN核验，Luo官方RDSV逐子游戏及组合支付与独立精确值一致；J2-DISTINCT控制实验证明官方tuple前端不能按业务key合并OR，但独立DNF入口成功调用Luo原始递归分解后端并与32联盟精确值一致。V1/V2仍未适配。",
+    "IUSV 已按研究判别力主动降级，不作为当前必需复现；尚未启动 R2 高结构同目标适配、H3-JV 正式对照或 DeepSeek 审查。"
+  ]
+}

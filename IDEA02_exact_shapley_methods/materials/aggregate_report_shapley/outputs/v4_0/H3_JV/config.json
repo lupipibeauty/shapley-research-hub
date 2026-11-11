@@ -1,0 +1,29 @@
+{
+  "experiment": "H3-JV",
+  "fixed_seed": 7301,
+  "replicate_seeds": [
+    7301,
+    7302,
+    7303,
+    7304,
+    7305
+  ],
+  "players": [
+    "p1",
+    "p2",
+    "p3",
+    "p4",
+    "p5",
+    "p6",
+    "p7",
+    "p8",
+    "p9",
+    "p10",
+    "p11",
+    "p12"
+  ],
+  "revenue": 1000.0,
+  "lambda": 0.5,
+  "timing_repeats_fixed_instance": 3,
+  "tolerance": 1e-09
+}

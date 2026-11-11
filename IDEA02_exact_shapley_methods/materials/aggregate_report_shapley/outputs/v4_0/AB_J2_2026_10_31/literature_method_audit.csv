@@ -1,0 +1,5 @@
+source,primary_source,scope_relevant_to_AB_J2,what_is_supported,what_is_not_established_by_AB_J2
+Abramovich_et_al_2025,https://www.vldb.org/pvldb/vol18/p3996-abramovich.pdf,"正Boolean DNF、SPJU来源、SUM/COUNT的线性组合与按组处理","手工归约后的Q1可作为DNF列表加系数输入；Q2/Q3的非空DNF也可由Boolean引擎求解","未发现官方COUNT DISTINCT或HAVING SQL编译接口；本实验不能把手工归约称为原生接口支持"
+Livshits_et_al_2020,https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.ICDT.2020.20,"Boolean合取查询及由线性性扩展的SUM/COUNT归因复杂性","支持按输出/grounding线性分解这一理论背景","未给出本实验HAVING门槛到官方输入的通用编译器"
+Standke_and_Kimelfeld_2025,https://arxiv.org/abs/2509.13565,"聚合合取查询Shapley的可解性边界，含COUNT DISTINCT在特定查询结构与局部价值假设下的结果","说明COUNT DISTINCT并非一概不可处理，必须检查查询结构和价值函数条件","本6玩家固定例通过不能外推到任意COUNT DISTINCT或任意JOIN"
+AB_J2_empirical_audit,local_experiment,"6玩家、5个grounding、2个key的完整64联盟普查","Q1直接线性分解；Q2按key做OR；Q3按最小满足证据编译为非空单调DNF，三者均与SQL和精确Shapley完全一致","不提供规模复杂度证明，也不证明官方SQL前端原生支持Q2/Q3"

@@ -1,0 +1,41 @@
+dataset: D1-P
+status: design_only_not_implemented
+synthetic: true
+revenue: 100
+root_node: COUNTRY
+hierarchy:
+  - {leaf_node_id: A1, parent_node_id: A, root_node_id: COUNTRY}
+  - {leaf_node_id: A2, parent_node_id: A, root_node_id: COUNTRY}
+  - {leaf_node_id: B1, parent_node_id: B, root_node_id: COUNTRY}
+  - {leaf_node_id: B2, parent_node_id: B, root_node_id: COUNTRY}
+records:
+  - {record_id: p1,  source: A1, owner_id: p1,  leaf_node_id: A1, category_a_id: E1, attribute_present: true,  category_b_id: manufacturing}
+  - {record_id: p2,  source: A1, owner_id: p2,  leaf_node_id: A1, category_a_id: E2, attribute_present: true,  category_b_id: service}
+  - {record_id: p3,  source: A2, owner_id: p3,  leaf_node_id: A2, category_a_id: E1, attribute_present: true,  category_b_id: manufacturing}
+  - {record_id: p4,  source: A2, owner_id: p4,  leaf_node_id: A2, category_a_id: E2, attribute_present: false, category_b_id: null}
+  - {record_id: p5,  source: B1, owner_id: p5,  leaf_node_id: B1, category_a_id: E1, attribute_present: true,  category_b_id: manufacturing}
+  - {record_id: p6,  source: B1, owner_id: p6,  leaf_node_id: B1, category_a_id: E1, attribute_present: true,  category_b_id: service}
+  - {record_id: p7,  source: B1, owner_id: p7,  leaf_node_id: B1, category_a_id: E2, attribute_present: true,  category_b_id: manufacturing}
+  - {record_id: p8,  source: B1, owner_id: p8,  leaf_node_id: B1, category_a_id: E2, attribute_present: false, category_b_id: null}
+  - {record_id: p9,  source: B2, owner_id: p9,  leaf_node_id: B2, category_a_id: E1, attribute_present: true,  category_b_id: manufacturing}
+  - {record_id: p10, source: B2, owner_id: p10, leaf_node_id: B2, category_a_id: E1, attribute_present: true,  category_b_id: service}
+  - {record_id: p11, source: B2, owner_id: p11, leaf_node_id: B2, category_a_id: E2, attribute_present: true,  category_b_id: manufacturing}
+  - {record_id: p12, source: B2, owner_id: p12, leaf_node_id: B2, category_a_id: E2, attribute_present: true,  category_b_id: service}
+report:
+  nodes: [COUNTRY, A, B, A1, A2, B1, B2]
+  metrics:
+    - record_count
+    - category_a_target_count
+    - category_a_target_share
+    - attribute_present_count
+    - category_b_target_share
+  category_a_target: E2
+  category_b_target: manufacturing
+value_reference:
+  statistic_family_weights: {P: 0.25, E: 0.25, J: 0.25, M: 0.25}
+  hierarchy_level_weights: {root: 0.3333333333333333, parent: 0.3333333333333333, leaf: 0.3333333333333333}
+  interaction_lambda_grid: [0.0, 0.25, 0.5, 1.0]
+owner_mappings_to_test:
+  - one_record_per_owner
+  - one_leaf_node_per_owner
+  - cross_leaf_owner

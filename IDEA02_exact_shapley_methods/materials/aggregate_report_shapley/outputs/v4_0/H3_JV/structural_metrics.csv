@@ -1,0 +1,4 @@
+seed,join_id,players,groundings,distinct_output_keys,dnf_clause_occurrences_all_G0_components,variable_occurrences_all_G0_components,shared_lineage_nodes_definition,shared_lineage_nodes,effective_increment_types,reachable_evidence_states,sql_all_4096_seconds,sql_lineage_max_coordinate_error,g0_source_max_value_error
+7301,J0,12,12,12,144,144,12 player leaves + one AND per grounding + one OR per distinct key,36,12,4096,0.14004760002717376,0,4.547473508864641e-13
+7301,J1,12,16,8,192,384,12 player leaves + one AND per grounding + one OR per distinct key,36,12,4095,0.18646790005732328,0,1.1368683772161603e-13
+7301,J2,12,8,4,96,288,12 player leaves + one AND per grounding + one OR per distinct key,24,8,1280,0.10184159997152165,0,1.1368683772161603e-13

@@ -1,0 +1,6 @@
+grounding_id,distinct_key,left_player,right_player,source_clause,grounding_is_independent_player
+g1,K1,p1,p4,"[""p1"", ""p4""]",False
+g2,K1,p1,p5,"[""p1"", ""p5""]",False
+g3,K1,p2,p4,"[""p2"", ""p4""]",False
+g4,K1,p2,p5,"[""p2"", ""p5""]",False
+g5,K2,p3,p6,"[""p3"", ""p6""]",False

@@ -1,0 +1,7 @@
+historical_or_current,query,free_variables,existential_variables,atom_sets,hierarchical,all_hierarchical,fact_player_assumption,judgment
+H3_JV_HISTORY,"q() :- R(x),S(x,y),T(y)",none,"x,y","x:{R,S}; y:{S,T}",NO,NOT_APPLICABLE_AS_FREE_VAR_NOTION,NO: p9-p12 bundle two S facts,"historical non-hierarchical shape correct, theorem application requires bundle-to-fact reduction"
+CALIBRATION,"q(x) :- R(x),S(x,y),T(y)",x,y,"x:{R,S}; y:{S,T}",NO,NO,requires one fact per player,cannot inherit Boolean q() classification without checking free-variable condition
+CALIBRATION,business-key output x / COUNT DISTINCT x,x,y,"x:{R,S}; y:{S,T}",NO,NO,satisfied in H3-CONTROL,distinct OR lineage; bag closed form invalid
+CALIBRATION,COUNT(*) over q(),aggregate only,"x,y","x:{R,S}; y:{S,T}",NO,not enough alone,satisfied in H3-CONTROL,linear grounding game has closed form despite query shape
+CALIBRATION,GROUP BY x HAVING COUNT(*)>=h then outer COUNT,outer aggregate,"x,y","x:{R,S}; y:{S,T}",nested threshold query,not directly covered by flat CQ label,satisfied in H3-CONTROL,manual minimal-witness compilation; do not claim direct theorem coverage
+H3_CONTROL_H,"q_H() :- R(x),S(x,y),T(x)",none,"x,y","x:{R,S,T}; y:{S}",YES,YES for q_H(x) nesting,YES,paired tractable-structure control

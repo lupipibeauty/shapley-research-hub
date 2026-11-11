@@ -1,0 +1,10 @@
+{
+  "choice": "B",
+  "decision": "STATIC_DIRECTION_LACKS_SUFFICIENT_NOVELTY_PRIORITIZE_DYNAMIC_UPDATE_AUDIT",
+  "static_candidate_A": "ELIMINATED_AS_CLASSIC_VARIABLE_ELIMINATION_WEIGHTED_MODEL_COUNTING",
+  "static_candidate_B": "ELIMINATED_AS_CLASSIC_COUNT_DP_GENERATING_FUNCTION_APPLICATION",
+  "n20_run": false,
+  "dynamic_experiment_started": false,
+  "next_unique_direction": "精确动态数据库报表Shapley：单记录插入/删除后，在有界联合宽度或有界玩家类型下维护标准记录级Shapley的紧致更新复杂度",
+  "novelty_status": "PROVISIONAL_REQUIRES_DEEPER_LITERATURE_AND_LOWER_BOUND_AUDIT"
+}

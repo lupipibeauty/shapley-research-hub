@@ -1,0 +1,76 @@
+{
+  "status": "COMPLETED_R2_4_ONLY",
+  "historical_hashes_before": {
+    "outputs\\v4_0\\R2\\d1p\\raw_runs.csv": "4fb52516cea726145dabf57027252853a5db0f0c090d0d7d85344655c9a992c4",
+    "outputs\\v4_0\\R2_3\\raw_owner_errors.csv": "41d6321b8579a87a7d2ad5810e9201050e9745863a5f8477c08229dd88e211e8",
+    "outputs\\v4_0\\R2_3\\exact_targets.json": "4dfa6adcb8c21793d3b480537fccb69aa5efa100e202431a9550eeeca1f6fc6f"
+  },
+  "historical_hashes_after": {
+    "outputs\\v4_0\\R2\\d1p\\raw_runs.csv": "4fb52516cea726145dabf57027252853a5db0f0c090d0d7d85344655c9a992c4",
+    "outputs\\v4_0\\R2_3\\raw_owner_errors.csv": "41d6321b8579a87a7d2ad5810e9201050e9745863a5f8477c08229dd88e211e8",
+    "outputs\\v4_0\\R2_3\\exact_targets.json": "4dfa6adcb8c21793d3b480537fccb69aa5efa100e202431a9550eeeca1f6fc6f"
+  },
+  "official_source_sha256": "b5f86e99241bc85cdc15d68ed96895575d5f1ad30df280d14ff547fe56baec8f",
+  "formula_identity_max_abs_residual": "3.7E-96",
+  "rows": {
+    "conditional": 732,
+    "per_s": 198,
+    "totals": 18,
+    "ablation": 10800
+  },
+  "methods": [
+    "A0_RELEASE_LOGIC_CAPPED",
+    "A1_ADD_NORMALIZATION",
+    "A2_FLOOR_INDEX",
+    "A3_FIXED_SIZE_FORWARD_DIFFERENCE",
+    "A4_COMPLETE_PAPER_INTERNAL"
+  ],
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29
+  ],
+  "budgets": [
+    500,
+    1000,
+    2000,
+    5000
+  ],
+  "threshold": 10,
+  "sequential_ablation_warning": "A1-A4 are ordered changes, not factorial main effects.",
+  "elapsed_seconds": 505.3023898000247,
+  "environment": {
+    "python": "3.11.6 (tags/v3.11.6:8b6ee5b, Oct  2 2023, 14:57:12) [MSC v.1935 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "numpy": "2.4.6",
+    "pandas": "3.1.0",
+    "scipy": "1.17.1"
+  }
+}

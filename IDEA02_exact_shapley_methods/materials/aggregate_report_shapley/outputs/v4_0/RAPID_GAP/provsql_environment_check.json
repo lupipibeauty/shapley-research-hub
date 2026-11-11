@@ -1,0 +1,15 @@
+{
+  "checked_at": "2026-11-02",
+  "docker_available": false,
+  "psql_available": false,
+  "local_provsql_execution": "NOT_RUN_ENVIRONMENT_UNAVAILABLE",
+  "required_by_documentation": [
+    "PostgreSQL 11-18",
+    "C/C++17 build tools and PostgreSQL development headers",
+    "uuid-ossp",
+    "Boost",
+    "optional d4/c2d-style knowledge compilers"
+  ],
+  "mathematical_audit_performed": true,
+  "software_result_fabricated": false
+}

@@ -1,0 +1,14 @@
+{
+  "schema": "pdf_read_preflight/1",
+  "verdict": "UNAVAILABLE",
+  "file": "C:\\Users\\86156\\Downloads\\faithful group shapley value.pdf",
+  "sha256": "a6ca75691e0f4f379894b9a3ca7c76d793c984df3163aac48575288c3944f910",
+  "declared_page_count": null,
+  "enumerated_page_count": null,
+  "reader_page_count": null,
+  "warnings": [
+    "pypdf-not-installed: preflight cannot parse the document"
+  ],
+  "generated_at": "2026-10-30T03:57:13.569703+00:00",
+  "tool": "pdf_read_preflight/1.0.0"
+}

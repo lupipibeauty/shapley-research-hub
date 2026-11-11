@@ -1,0 +1,4 @@
+game,input_relation_rows,join_groundings,distinct_keys,dnf_components,dnf_clauses,variable_occurrences,serialized_expression_bytes,source_compile_seconds,official_dtree_compile_seconds,official_shapley_solve_seconds,official_untouched_end_to_end_seconds,duckdb_64_alliance_seconds,duckdb_sql_calls
+Q1_COUNT_STAR_BAG,6,5,2,5,5,10,279,6.350001785904169e-05,0.0010945999529212713,0.02523660007864237,0.027462400030344725,0.19378589984262362,64
+Q2_COUNT_DISTINCT_KEY,6,5,2,2,5,10,194,7.180002285167575e-05,0.001771500043105334,0.019516700063832104,0.023730400018393993,0.21464770013699308,64
+Q3_HAVING_COUNT_GE_2,6,5,2,1,4,12,234,0.0008309000404551625,0.002711000037379563,0.02027570002246648,0.02333349996479228,0.23338880005758256,64

@@ -1,0 +1,39 @@
+{
+  "matplotlib": "3.5.2",
+  "python": "3.7.9 (tags/v3.7.9:13c94747c7, Aug 17 2020, 18:58:18) [MSC v.1900 64 bit (AMD64)]",
+  "font": "Microsoft YaHei",
+  "inputs": [
+    "outputs/v4_0/AB_J2_2026_10_31/coalition_value_distribution.csv",
+    "outputs/v4_0/AB_J2_2026_10_31/record_shapley.csv",
+    "outputs/v4_0/AB_J2_2026_10_31/source_expression_stats.csv",
+    "outputs/v4_0/AB_J2_2026_10_31/costs.csv"
+  ],
+  "transformations": [
+    "complete finite-population frequency count",
+    "no smoothing",
+    "no imputation"
+  ],
+  "uncertainty": "none; complete deterministic enumeration and single-run descriptive timings",
+  "missing_data": "none in plotted tables",
+  "outputs": [
+    "outputs\\v4_0\\AB_J2_2026_10_31\\figures\\figure_1_alliance_value_distribution.png",
+    "outputs\\v4_0\\AB_J2_2026_10_31\\figures\\figure_1_alliance_value_distribution.svg",
+    "outputs\\v4_0\\AB_J2_2026_10_31\\figures\\figure_1_alliance_value_distribution.pdf",
+    "outputs\\v4_0\\AB_J2_2026_10_31\\figures\\figure_2_shapley_and_expression_structure.png",
+    "outputs\\v4_0\\AB_J2_2026_10_31\\figures\\figure_2_shapley_and_expression_structure.svg",
+    "outputs\\v4_0\\AB_J2_2026_10_31\\figures\\figure_2_shapley_and_expression_structure.pdf",
+    "outputs\\v4_0\\AB_J2_2026_10_31\\figures\\figure_3_runtime_breakdown.png",
+    "outputs\\v4_0\\AB_J2_2026_10_31\\figures\\figure_3_runtime_breakdown.svg",
+    "outputs\\v4_0\\AB_J2_2026_10_31\\figures\\figure_3_runtime_breakdown.pdf"
+  ],
+  "captions": {
+    "figure_1": "64个联盟的实际DuckDB查询值频数；Q1保留bag multiplicity，Q2按key去重，Q3统计通过HAVING门槛的key。",
+    "figure_2": "左图为逐记录精确Shapley，黑色短线是官方LExaShap在归约DNF上的结果；右图为子句和变量出现次数。",
+    "figure_3": "来源编译、d-tree编译、Shapley求解和64联盟SQL验收的单次描述性成本；纵轴为对数尺度。"
+  },
+  "alt_text": {
+    "figure_1": "分组柱状图显示三类查询在64个联盟中的值分布，Q1范围0到5，Q2范围0到2，Q3范围0到1。",
+    "figure_2": "逐玩家分组柱状图显示Q1中p1、p2、p4、p5各为1，p3、p6各为0.5；Q2中K1四玩家各0.25，K2两玩家各0.5；Q3只有K1四玩家各0.25。",
+    "figure_3": "对数折线图显示三种查询的来源编译最快，64联盟SQL验收最慢；所有计时仅一次运行。"
+  }
+}

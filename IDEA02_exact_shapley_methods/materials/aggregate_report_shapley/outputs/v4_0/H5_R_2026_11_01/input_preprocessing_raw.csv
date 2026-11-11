@@ -1,0 +1,10 @@
+input_target,repeat,compile_seconds,player_count,unique_delta_types,scope
+D1P_V1_V2_SHARED_INPUT,0,0.02674569998634979,12,12,"load/generate frozen input, compile deltas and value evaluator; excludes Shapley solve"
+D1P_V1_V2_SHARED_INPUT,1,0.02529540000250563,12,12,"load/generate frozen input, compile deltas and value evaluator; excludes Shapley solve"
+D1P_V1_V2_SHARED_INPUT,2,0.02535640000132844,12,12,"load/generate frozen input, compile deltas and value evaluator; excludes Shapley solve"
+SCALE_N12_V2,0,0.00023209996288642287,12,10,"load/generate frozen input, compile deltas and value evaluator; excludes Shapley solve"
+SCALE_N12_V2,1,0.00014189997455105186,12,10,"load/generate frozen input, compile deltas and value evaluator; excludes Shapley solve"
+SCALE_N12_V2,2,0.00013320002472028136,12,10,"load/generate frozen input, compile deltas and value evaluator; excludes Shapley solve"
+SCALE_N16_V2,0,0.00015570002142339945,16,12,"load/generate frozen input, compile deltas and value evaluator; excludes Shapley solve"
+SCALE_N16_V2,1,0.00015499995788559318,16,12,"load/generate frozen input, compile deltas and value evaluator; excludes Shapley solve"
+SCALE_N16_V2,2,0.0001509999856352806,16,12,"load/generate frozen input, compile deltas and value evaluator; excludes Shapley solve"

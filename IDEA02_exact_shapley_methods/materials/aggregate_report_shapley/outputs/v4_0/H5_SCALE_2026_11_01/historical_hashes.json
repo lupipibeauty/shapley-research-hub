@@ -1,0 +1,29 @@
+{
+  "before": {
+    "config\\d1p_design.yaml": "ad73a0ff389746f115d9d487d2e713ab88e73cf4777751dc3d58a64789d6309d",
+    "config\\value_spec_v3_2.yaml": "3b3aa3694aa27b60aad7df50351fcea4de17f46413d0b0fe06627f309ed8685b",
+    "src\\aggregate_report_shapley\\d1p.py": "6758b0bbcdfc4f432054049cdf5d4594edf61981fddbdfb6ef7d85704fc7dca3",
+    "src\\aggregate_report_shapley\\d1p_values.py": "a5ac88f8fab0a13d172c4b8b228c4cb8592107fcd5b6a97165964f62a8998ce2",
+    "docs\\H0_模型与实验设计审计.md": "f5e3be5ab1e2725bb0e525df936fd8619e032416c57bce38d50604ea87827801",
+    "docs\\H5_V2数学结构与充分性证明.md": "fd9c6f29ca0ef577607cfd3a445654571ae1bb3e85485ef7228e3251975e6183",
+    "reports\\H5_V2_JOINT_STATE实验审计报告_2026-10-31.md": "a0b8f227e248c086e9397275f703e9d9cdf2acc52e42a2e5a428b7c2b6f21e1c",
+    "experiments\\run_h5_v2_joint_state_2026_10_31.py": "33890fb513133d7defd81afdfc07429176f2c8d5dc37b93ee379d9ae6ae89b85",
+    "outputs\\v4_0\\H5_V2_JOINT_STATE_2026_10_31\\summary.json": "f3057676183c8927638da1f13319ec1341e6f06293c5fe4e5de4ace0ae0d080e",
+    "outputs\\v4_0\\H5_V2_JOINT_STATE_2026_10_31\\record_shapley_comparison.csv": "162a63c5f2f7e6212a7fea15137d1b953ceb67b6cf9fb54ca7e14ff9fbcc987e",
+    "outputs\\v4_0\\H5_V2_JOINT_STATE_2026_10_31\\family_state_growth.csv": "a968c7ba5277d0cb0477d353d9e564226d7db61b5928647dfb0d3003de08b96a"
+  },
+  "after": {
+    "config\\d1p_design.yaml": "ad73a0ff389746f115d9d487d2e713ab88e73cf4777751dc3d58a64789d6309d",
+    "config\\value_spec_v3_2.yaml": "3b3aa3694aa27b60aad7df50351fcea4de17f46413d0b0fe06627f309ed8685b",
+    "src\\aggregate_report_shapley\\d1p.py": "6758b0bbcdfc4f432054049cdf5d4594edf61981fddbdfb6ef7d85704fc7dca3",
+    "src\\aggregate_report_shapley\\d1p_values.py": "a5ac88f8fab0a13d172c4b8b228c4cb8592107fcd5b6a97165964f62a8998ce2",
+    "docs\\H0_模型与实验设计审计.md": "f5e3be5ab1e2725bb0e525df936fd8619e032416c57bce38d50604ea87827801",
+    "docs\\H5_V2数学结构与充分性证明.md": "fd9c6f29ca0ef577607cfd3a445654571ae1bb3e85485ef7228e3251975e6183",
+    "reports\\H5_V2_JOINT_STATE实验审计报告_2026-10-31.md": "a0b8f227e248c086e9397275f703e9d9cdf2acc52e42a2e5a428b7c2b6f21e1c",
+    "experiments\\run_h5_v2_joint_state_2026_10_31.py": "33890fb513133d7defd81afdfc07429176f2c8d5dc37b93ee379d9ae6ae89b85",
+    "outputs\\v4_0\\H5_V2_JOINT_STATE_2026_10_31\\summary.json": "f3057676183c8927638da1f13319ec1341e6f06293c5fe4e5de4ace0ae0d080e",
+    "outputs\\v4_0\\H5_V2_JOINT_STATE_2026_10_31\\record_shapley_comparison.csv": "162a63c5f2f7e6212a7fea15137d1b953ceb67b6cf9fb54ca7e14ff9fbcc987e",
+    "outputs\\v4_0\\H5_V2_JOINT_STATE_2026_10_31\\family_state_growth.csv": "a968c7ba5277d0cb0477d353d9e564226d7db61b5928647dfb0d3003de08b96a"
+  },
+  "unchanged": true
+}

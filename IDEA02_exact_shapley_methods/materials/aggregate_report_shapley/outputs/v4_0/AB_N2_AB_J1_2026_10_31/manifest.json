@@ -1,0 +1,33 @@
+{
+  "status": "COMPLETED_AB_N2_AND_AB_J1_ONLY",
+  "ab_n1_supplement": "AUDITED_EXPLICIT_NULL_TO_ZERO_BOUNDARY_REQUIRED",
+  "ab_n2": "FULL_SAME_GAME_NATIVE_SQL_COUNT_VALIDATED",
+  "ab_j1": "JOIN_BAG_DISTINCT_BOOLEAN_VALIDATED_WITH_INTERFACE_QUALIFICATION",
+  "ab_n4": "IDENTITY_VERIFIED_COMPACT_STATE_DP_PLAUSIBLE_NO_N4_ADAPTATION_RUN",
+  "ab_n3_executed": false,
+  "ab_n4_full_adaptation_executed": false,
+  "ab_n5_executed": false,
+  "historical_ab_n1_hashes_before": {
+    "outputs\\v4_0\\AB_NATIVE_SQL\\ab_n1_minimal_validation.json": "777fbc7738c8b0b9eba23657c99c4a67c8e1535600c8392441b0bc10ad453374",
+    "outputs\\v4_0\\AB_NATIVE_SQL\\ab_n1_source_expression.json": "2d0d74711b3dc25103902a42b17c5c213b882ce9f785f30435fed8e60f1c9a0c",
+    "reports\\Abramovich原生SQL最小适配验证_2026-10-31.md": "2d38e54bab4e999a95a674f0a487403549a2c4f43287727d44c66cdbd5ef5960",
+    "experiments\\AB_native_SQL_experiment_protocol_2026-10-31.md": "3369f1ed0f4604dfbfc2cbbde05d51f7074794fb866f7d439c44143b8f034033"
+  },
+  "historical_ab_n1_hashes_after": {
+    "outputs\\v4_0\\AB_NATIVE_SQL\\ab_n1_minimal_validation.json": "777fbc7738c8b0b9eba23657c99c4a67c8e1535600c8392441b0bc10ad453374",
+    "outputs\\v4_0\\AB_NATIVE_SQL\\ab_n1_source_expression.json": "2d0d74711b3dc25103902a42b17c5c213b882ce9f785f30435fed8e60f1c9a0c",
+    "reports\\Abramovich原生SQL最小适配验证_2026-10-31.md": "2d38e54bab4e999a95a674f0a487403549a2c4f43287727d44c66cdbd5ef5960",
+    "experiments\\AB_native_SQL_experiment_protocol_2026-10-31.md": "3369f1ed0f4604dfbfc2cbbde05d51f7074794fb866f7d439c44143b8f034033"
+  },
+  "total_wall_seconds": 37.953384099993855,
+  "final_python_tracemalloc_current_bytes": 31564985,
+  "final_stage_peak_after_resets_bytes": 31754445,
+  "maximum_observed_stage_python_tracemalloc_peak_bytes": 64824345,
+  "environment": {
+    "python": "3.11.6 (tags/v3.11.6:8b6ee5b, Oct  2 2023, 14:57:12) [MSC v.1935 64 bit (AMD64)]",
+    "duckdb": "1.5.6",
+    "official_shapley_source_sha256": "63855c5b1b7997b79cef9731a63eae9aa81e64f4987a4ae9c731c994f41d68fe",
+    "d1p_design_sha256": "ad73a0ff389746f115d9d487d2e713ab88e73cf4777751dc3d58a64789d6309d",
+    "value_spec_sha256": "3b3aa3694aa27b60aad7df50351fcea4de17f46413d0b0fe06627f309ed8685b"
+  }
+}

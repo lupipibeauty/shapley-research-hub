@@ -1,0 +1,5 @@
+symbol,vertices,edges_or_factors,width_definition,width_status
+Wq,"logical record players","edge iff two players occur in the same SQL/source factor; each scope is completed to a clique","treewidth of source primal graph",exact subset DP for n<=16
+Wg,"logical record players","edge iff two players occur in the same local report-value factor","treewidth of value-factor primal graph",exact subset DP for n<=16
+Wjoint,"logical record players","union of source-factor and value-factor primal edges","treewidth of union primal graph",exact subset DP for n<=16; min-fill also recorded
+H3_CONTROL_width,"logical record players","edge iff players co-occur in one grounding","min-fill elimination width",heuristic upper bound only

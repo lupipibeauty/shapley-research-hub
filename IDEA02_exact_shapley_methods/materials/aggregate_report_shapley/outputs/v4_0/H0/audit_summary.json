@@ -1,0 +1,122 @@
+{
+  "status": "H0_STRUCTURAL_AUDIT_COMPLETED",
+  "historical_files_modified": false,
+  "historical_hashes_unchanged": true,
+  "d1p": {
+    "players": 12,
+    "coalitions": 4096,
+    "raw_report_states": 3840,
+    "symmetry_classes": {
+      "V_count": [
+        [
+          "p1",
+          "p2",
+          "p3",
+          "p4"
+        ],
+        [
+          "p5",
+          "p6",
+          "p7",
+          "p8",
+          "p9",
+          "p10",
+          "p11",
+          "p12"
+        ]
+      ],
+      "V1": [
+        [
+          "p1"
+        ],
+        [
+          "p2"
+        ],
+        [
+          "p3"
+        ],
+        [
+          "p4"
+        ],
+        [
+          "p5"
+        ],
+        [
+          "p6"
+        ],
+        [
+          "p7"
+        ],
+        [
+          "p8"
+        ],
+        [
+          "p9"
+        ],
+        [
+          "p10"
+        ],
+        [
+          "p11"
+        ],
+        [
+          "p12"
+        ]
+      ],
+      "V2_lambda_0_5": [
+        [
+          "p1"
+        ],
+        [
+          "p2"
+        ],
+        [
+          "p3"
+        ],
+        [
+          "p4"
+        ],
+        [
+          "p5"
+        ],
+        [
+          "p6"
+        ],
+        [
+          "p7"
+        ],
+        [
+          "p8"
+        ],
+        [
+          "p9"
+        ],
+        [
+          "p10"
+        ],
+        [
+          "p11"
+        ],
+        [
+          "p12"
+        ]
+      ]
+    },
+    "type_state_counts": {
+      "V_count": 45,
+      "V1": 4096,
+      "V2_lambda_0_5": 4096
+    }
+  },
+  "outputs": [
+    "model_diagnostics.csv",
+    "structural_gap_matrix.csv",
+    "literature_theorem_mapping.csv",
+    "next_experiment_specs.json"
+  ],
+  "not_run": [
+    "new algorithm",
+    "larger data",
+    "H1-H8 experiments"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "before": {
+    "config\\d1p_design.yaml": "ad73a0ff389746f115d9d487d2e713ab88e73cf4777751dc3d58a64789d6309d",
+    "config\\value_spec_v3_2.yaml": "3b3aa3694aa27b60aad7df50351fcea4de17f46413d0b0fe06627f309ed8685b",
+    "src\\aggregate_report_shapley\\d1p.py": "6758b0bbcdfc4f432054049cdf5d4594edf61981fddbdfb6ef7d85704fc7dca3",
+    "src\\aggregate_report_shapley\\d1p_values.py": "a5ac88f8fab0a13d172c4b8b228c4cb8592107fcd5b6a97165964f62a8998ce2",
+    "src\\aggregate_report_shapley\\h5_scale.py": "d76f40575d7d8539d6ba2f6ab613cf6cb61c789c948063c25bac6f89ed0868ac",
+    "experiments\\run_h5_v2_joint_state_2026_10_31.py": "33890fb513133d7defd81afdfc07429176f2c8d5dc37b93ee379d9ae6ae89b85",
+    "experiments\\run_h5_scale_2026_11_01.py": "8e6eea1af33b97c946a6dc024782e15f0ef36a234ec962dbf97e2a778b3e219f",
+    "reports\\H5_V2_JOINT_STATE实验审计报告_2026-10-31.md": "a0b8f227e248c086e9397275f703e9d9cdf2acc52e42a2e5a428b7c2b6f21e1c",
+    "reports\\H5_SCALE联合状态与规模结构审计报告_2026-11-01.md": "cf9c7698621898fdf5a5910718a57acf4d3f6519c52a5c724b6be8565e38a9e2",
+    "outputs\\v4_0\\H5_V2_JOINT_STATE_2026_10_31\\summary.json": "f3057676183c8927638da1f13319ec1341e6f06293c5fe4e5de4ace0ae0d080e",
+    "outputs\\v4_0\\H5_SCALE_2026_11_01\\summary.json": "15aa01de9d37c5ad35b680c3533c814b450d8f3a475efda07fa58bcb1fa46ca6",
+    "outputs\\v4_0\\H5_SCALE_2026_11_01\\performance_summary.csv": "ce2e85211aa1f795765774ebf1cf1a1f1d798d675a400509786ab994c78838ea",
+    "outputs\\v4_0\\H5_SCALE_2026_11_01\\failures.csv": "5796c4564aeb5c742a23dd47ee39195c8b0f9c980b41667f5c97a27d54ea0855",
+    "external\\abramovich\\source\\LExaBan-LExaShap-main\\Advancing_Fact_Attribution_for_Query_Answering.pdf": "d4a035106da8551505860357d622003f1e9afc6e34e7684cbbc6d8b3908e11f0",
+    "external\\abramovich\\source\\LExaBan-LExaShap-main\\Algorithms\\LExaShap\\ShapleyEngine.py": "6d45813c1b89e65e70a71d56a14f65f0f7ba883264d72b2c6dc3d837306d16b2",
+    "outputs\\v4_0\\R2_3\\exact_targets.json": "4dfa6adcb8c21793d3b480537fccb69aa5efa100e202431a9550eeeca1f6fc6f"
+  },
+  "after": {
+    "config\\d1p_design.yaml": "ad73a0ff389746f115d9d487d2e713ab88e73cf4777751dc3d58a64789d6309d",
+    "config\\value_spec_v3_2.yaml": "3b3aa3694aa27b60aad7df50351fcea4de17f46413d0b0fe06627f309ed8685b",
+    "src\\aggregate_report_shapley\\d1p.py": "6758b0bbcdfc4f432054049cdf5d4594edf61981fddbdfb6ef7d85704fc7dca3",
+    "src\\aggregate_report_shapley\\d1p_values.py": "a5ac88f8fab0a13d172c4b8b228c4cb8592107fcd5b6a97165964f62a8998ce2",
+    "src\\aggregate_report_shapley\\h5_scale.py": "d76f40575d7d8539d6ba2f6ab613cf6cb61c789c948063c25bac6f89ed0868ac",
+    "experiments\\run_h5_v2_joint_state_2026_10_31.py": "33890fb513133d7defd81afdfc07429176f2c8d5dc37b93ee379d9ae6ae89b85",
+    "experiments\\run_h5_scale_2026_11_01.py": "8e6eea1af33b97c946a6dc024782e15f0ef36a234ec962dbf97e2a778b3e219f",
+    "reports\\H5_V2_JOINT_STATE实验审计报告_2026-10-31.md": "a0b8f227e248c086e9397275f703e9d9cdf2acc52e42a2e5a428b7c2b6f21e1c",
+    "reports\\H5_SCALE联合状态与规模结构审计报告_2026-11-01.md": "cf9c7698621898fdf5a5910718a57acf4d3f6519c52a5c724b6be8565e38a9e2",
+    "outputs\\v4_0\\H5_V2_JOINT_STATE_2026_10_31\\summary.json": "f3057676183c8927638da1f13319ec1341e6f06293c5fe4e5de4ace0ae0d080e",
+    "outputs\\v4_0\\H5_SCALE_2026_11_01\\summary.json": "15aa01de9d37c5ad35b680c3533c814b450d8f3a475efda07fa58bcb1fa46ca6",
+    "outputs\\v4_0\\H5_SCALE_2026_11_01\\performance_summary.csv": "ce2e85211aa1f795765774ebf1cf1a1f1d798d675a400509786ab994c78838ea",
+    "outputs\\v4_0\\H5_SCALE_2026_11_01\\failures.csv": "5796c4564aeb5c742a23dd47ee39195c8b0f9c980b41667f5c97a27d54ea0855",
+    "external\\abramovich\\source\\LExaBan-LExaShap-main\\Advancing_Fact_Attribution_for_Query_Answering.pdf": "d4a035106da8551505860357d622003f1e9afc6e34e7684cbbc6d8b3908e11f0",
+    "external\\abramovich\\source\\LExaBan-LExaShap-main\\Algorithms\\LExaShap\\ShapleyEngine.py": "6d45813c1b89e65e70a71d56a14f65f0f7ba883264d72b2c6dc3d837306d16b2",
+    "outputs\\v4_0\\R2_3\\exact_targets.json": "4dfa6adcb8c21793d3b480537fccb69aa5efa100e202431a9550eeeca1f6fc6f"
+  },
+  "unchanged": true
+}

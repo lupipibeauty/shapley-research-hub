@@ -1,0 +1,30 @@
+{
+  "record_count": [
+    {
+      "dnf": [
+        [
+          "p1"
+        ]
+      ],
+      "coefficient": "1"
+    },
+    {
+      "dnf": [
+        [
+          "p2"
+        ]
+      ],
+      "coefficient": "1"
+    }
+  ],
+  "category_a_target_sum": [
+    {
+      "dnf": [
+        [
+          "p2"
+        ]
+      ],
+      "coefficient": "1"
+    }
+  ]
+}

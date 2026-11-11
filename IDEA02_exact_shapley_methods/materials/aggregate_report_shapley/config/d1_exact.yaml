@@ -1,0 +1,24 @@
+dataset: D1
+revenue: 100
+threshold_fraction: 0.75
+records:
+  - {record_id: t1, city_id: S1, region_id: S, category_id: X, amount: 10}
+  - {record_id: t2, city_id: S1, region_id: S, category_id: Y, amount: 10}
+  - {record_id: t3, city_id: S2, region_id: S, category_id: X, amount: 20}
+  - {record_id: t4, city_id: S2, region_id: S, category_id: Y, amount: 20}
+  - {record_id: t5, city_id: L1, region_id: L, category_id: X, amount: 10}
+  - {record_id: t6, city_id: L1, region_id: L, category_id: Y, amount: 10}
+  - {record_id: t7, city_id: L1, region_id: L, category_id: X, amount: 20}
+  - {record_id: t8, city_id: L1, region_id: L, category_id: Y, amount: 20}
+  - {record_id: t9, city_id: L2, region_id: L, category_id: X, amount: 10}
+  - {record_id: t10, city_id: L2, region_id: L, category_id: Y, amount: 10}
+  - {record_id: t11, city_id: L2, region_id: L, category_id: X, amount: 20}
+  - {record_id: t12, city_id: L2, region_id: L, category_id: Y, amount: 20}
+
+module_weights:
+  all: 20
+  region: 20
+  city: 20
+  category: 20
+  region_category: 20
+

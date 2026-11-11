@@ -1,0 +1,21 @@
+{
+  "before": {
+    "outputs\\v4_0\\H3_JV\\summary.json": "c0471912d2628fe31992d2d5362d17b266a45d9a64a4e7bca861deb3a3189553",
+    "reports\\H3_JV_跨玩家JOIN与非线性整表价值联合计算审计报告_2026-11-01.md": "312afcdaae4d91b5c46f30ea23ff02cee8cf8a5be94a0741feac03743105538e",
+    "outputs\\v4_0\\H0\\literature_theorem_mapping.csv": "2fe129e749076675944e90e24ec5d63e763f45065fb980253a871788cc0491c2",
+    "outputs\\v4_0\\H5_R_2026_11_01\\summary.json": "22ffe79408db21b67b7b5fb54d57082e85227802e759924300eee1cd4f616d87",
+    "experiments\\run_ab_j2_2026_10_31.py": "6679fb03c0b7672e95bb52061c4a24a737c43d3fab2c9dc3e0645ffde8a143e1",
+    "external\\abramovich\\source\\LExaBan-LExaShap-main\\Algorithms\\LExaShap\\ShapleyCircuit.py": "63855c5b1b7997b79cef9731a63eae9aa81e64f4987a4ae9c731c994f41d68fe",
+    "external\\abramovich\\source\\LExaBan-LExaShap-main\\Algorithms\\LExaShap\\ShapleyEngine.py": "6d45813c1b89e65e70a71d56a14f65f0f7ba883264d72b2c6dc3d837306d16b2"
+  },
+  "after": {
+    "outputs\\v4_0\\H3_JV\\summary.json": "c0471912d2628fe31992d2d5362d17b266a45d9a64a4e7bca861deb3a3189553",
+    "reports\\H3_JV_跨玩家JOIN与非线性整表价值联合计算审计报告_2026-11-01.md": "312afcdaae4d91b5c46f30ea23ff02cee8cf8a5be94a0741feac03743105538e",
+    "outputs\\v4_0\\H0\\literature_theorem_mapping.csv": "2fe129e749076675944e90e24ec5d63e763f45065fb980253a871788cc0491c2",
+    "outputs\\v4_0\\H5_R_2026_11_01\\summary.json": "22ffe79408db21b67b7b5fb54d57082e85227802e759924300eee1cd4f616d87",
+    "experiments\\run_ab_j2_2026_10_31.py": "6679fb03c0b7672e95bb52061c4a24a737c43d3fab2c9dc3e0645ffde8a143e1",
+    "external\\abramovich\\source\\LExaBan-LExaShap-main\\Algorithms\\LExaShap\\ShapleyCircuit.py": "63855c5b1b7997b79cef9731a63eae9aa81e64f4987a4ae9c731c994f41d68fe",
+    "external\\abramovich\\source\\LExaBan-LExaShap-main\\Algorithms\\LExaShap\\ShapleyEngine.py": "6d45813c1b89e65e70a71d56a14f65f0f7ba883264d72b2c6dc3d837306d16b2"
+  },
+  "unchanged": true
+}

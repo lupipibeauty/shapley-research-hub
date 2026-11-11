@@ -1,0 +1,66 @@
+{
+  "stage": "R0",
+  "algorithm": "Luo independent utility",
+  "source": "用户提供的官方 GitHub ZIP",
+  "archive_sha256": "469C9FB8C9F2798A42A14FB56E88CA41D7C2799D4C6C9DC556D2BA1C14D28530",
+  "official_readme_environment": "Ubuntu 20.04 LTS + Rust",
+  "actual_environment": {
+    "os": "Windows 11 CoreCountrySpecific 10.0.26200 64-bit",
+    "rustc": "1.99.1 (58cf8f9c3 2026-10-13)",
+    "cargo": "1.99.1 (5f94df478 2026-08-27)",
+    "host": "x86_64-pc-windows-gnu",
+    "llvm": "23.1.1",
+    "path_strategy": "源码、Cargo 缓存、Rust 工具链和 target 全部使用实体 ASCII 临时路径"
+  },
+  "build": {
+    "command": "cargo build --release --locked --offline",
+    "exit_code": 0,
+    "duration_seconds": 434,
+    "official_source_modified": false,
+    "executable_bytes": 13141740,
+    "executable_sha256": "6D2BF648967580DEC6DB5B52FEF53D07386C91C98101405308973F079617D6CB"
+  },
+  "dataset": {
+    "name": "world",
+    "source": "ZIP 自带的 city/country/countrylanguage CSV、seller/index 元数据和 world-ground-truth.json",
+    "owners": 6,
+    "ground_truth_sum": 30670
+  },
+  "proposed": {
+    "scheme_argument": "proposed",
+    "exit_code": 0,
+    "wall_seconds": 0.2682721,
+    "internal_total_seconds": 0.0611808,
+    "maximum_absolute_error_vs_ground_truth": 1.8189894035458565e-12,
+    "maximum_relative_error_vs_ground_truth": 3.084644919315218e-16,
+    "rerun_maximum_absolute_difference": 9.094947017729282e-13,
+    "verdict": "MATCH_WITH_FLOAT_TOLERANCE",
+    "output_sha256": "C0DD83345EB9E4BFD9DF075F2E4344AFAAF30B83CE5BC4BDE90CD2264A69B261"
+  },
+  "traditional": {
+    "scheme_argument": "trad",
+    "exit_code": 0,
+    "wall_seconds": 0.4783918,
+    "internal_total_seconds": 0.4107949,
+    "maximum_absolute_error_vs_ground_truth": 0.0,
+    "verdict": "EXACT_FLOAT_MATCH",
+    "output_sha256": "8893571B50E41FC120890164195145015EDDC8F9751188D6CC04807F3376872E"
+  },
+  "permutation": {
+    "scheme_argument": "perm",
+    "sample_size": 32,
+    "sample_size_source": "config/config.cfg 的 world.default_sample_size",
+    "exit_code": 0,
+    "wall_seconds": 0.6337485,
+    "internal_total_seconds": 0.5657715,
+    "maximum_absolute_error_vs_ground_truth": 2211.8625,
+    "maximum_relative_error_vs_ground_truth": 0.4733585507308409,
+    "shapley_sum": 30670,
+    "verdict": "STOCHASTIC_APPROXIMATION_RUN_COMPLETED",
+    "note": "源码使用 thread_rng 且 CLI 不提供随机种子；32 个排列的单次误差不视为复现失败。",
+    "output_sha256": "93C2D1928BB49CAD708DD8744486AC71F7A260FBAAAE703874E8BF0EDCDA8E3D"
+  },
+  "code_status": "REPRODUCED_ORIGINAL",
+  "reproducibility_verdict": "REPRODUCIBLE_WITH_NUMERICAL_TOLERANCE",
+  "interpretation": "复现是 Windows GNU 跨平台复现，不是 Ubuntu 20.04 原环境重建。数值证据支持官方 world 案例复现成功。"
+}

@@ -1,0 +1,10 @@
+{
+  "status": "H3_CONTROL_COMPLETED_AND_PAUSED",
+  "main_instances": 90,
+  "main_configs": 18,
+  "instances_per_config": 5,
+  "full_truth_n_max": 16,
+  "all_source_checks_passed": true,
+  "historical_unchanged": true,
+  "new_algorithm_claimed": false
+}

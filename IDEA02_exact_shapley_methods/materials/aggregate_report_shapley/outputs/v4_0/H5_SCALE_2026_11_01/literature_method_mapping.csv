@@ -1,0 +1,6 @@
+实验对象,对照文献,定理或方法,文献前提,本轮对应,审计结论,不得外推的内容,主要来源
+B2充分状态DP,Livshits et al. 2020,Theorem 11; Corollary 15,无自连接hierarchical Boolean CQ的按联盟大小计数；SUM/COUNT的线性组合,按联盟大小和充分统计状态计数,CLASSIC_COUNTING_DP_APPLICATION,不能由此声称文献已给出冻结V2全局几何评分的直接算法,https://doi.org/10.4230/LIPIcs.ICDT.2020.20
+B3叶因子生成函数/ B4类型消元,Standke and Kimelfeld 2025/2026,可组合局部统计的递归组合框架；各聚合函数的层次条件,局部叶状态卷积与类型因子消元,CLASSIC_FACTOR_COMBINATION_NOT_DIRECT_THEOREM,论文的local value function和单AggCQ边界不自动覆盖跨35坐标的V2,https://arxiv.org/abs/2509.13565
+已编译来源的全玩家求导,Abramovich et al. 2025,Theorem 3.6,已给定d-tree；Banzhaf与Shapley按树和变量数求值,本轮未将冻结V2编译成官方d-tree,NOT_A_DIRECT_H5_BASELINE,官方给定编译结果的求解复杂度不包含SQL/全局价值到小d-tree的编译成本,https://doi.org/10.14778/3749646.3749670
+B5共享线性闭式/B6对称性,经典Shapley线性与对称性,玩家边际作用线性且对称,完全共享控制组中可加与几何评分坍缩为同一P族线性游戏,CLASSIC_CLOSED_FORM_CONTROL,不适用于独立四族或部分共享的冻结V2,本轮代数推导与B0交叉验证
+状态增长曲线,本轮实验审计,可达状态计数与类型格上界,16个有限配置和5个种子实例,报告中仅作结构性实验证据,NO_COMPLEXITY_THEOREM,状态多、超过5千门槛或超时均不能直接推出新的困难性定理,outputs/v4_0/H5_SCALE_2026_11_01/

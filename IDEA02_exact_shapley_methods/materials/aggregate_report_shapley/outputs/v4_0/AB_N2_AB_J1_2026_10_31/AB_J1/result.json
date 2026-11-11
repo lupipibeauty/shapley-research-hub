@@ -1,0 +1,70 @@
+{
+  "stage": "AB-J1",
+  "status": "JOIN_BAG_DISTINCT_BOOLEAN_VALIDATED_WITH_INTERFACE_QUALIFICATION",
+  "independent_from_d1p": true,
+  "players": [
+    "p1",
+    "p2",
+    "p3"
+  ],
+  "grounding_sql": "SELECT l.output_key, l.record_id AS left_player, r.record_id AS right_player\n    FROM JLeft l JOIN JRight r USING(join_key)\n    ORDER BY left_player, right_player",
+  "oracle_sql": "WITH masks AS (SELECT range AS mask FROM range(8))\n    SELECT m.mask,\n      (SELECT COUNT(*) FROM JLeft l JOIN JRight r USING(join_key)\n        WHERE ((m.mask >> CASE l.record_id WHEN 'p1' THEN 0 ELSE 1 END)&1)=1\n          AND ((m.mask >> 2)&1)=1) AS count_star,\n      (SELECT COUNT(DISTINCT l.output_key) FROM JLeft l JOIN JRight r USING(join_key)\n        WHERE ((m.mask >> CASE l.record_id WHEN 'p1' THEN 0 ELSE 1 END)&1)=1\n          AND ((m.mask >> 2)&1)=1) AS count_distinct_key,\n      EXISTS(SELECT 1 FROM JLeft l JOIN JRight r USING(join_key)\n        WHERE l.output_key='out'\n          AND ((m.mask >> CASE l.record_id WHEN 'p1' THEN 0 ELSE 1 END)&1)=1\n          AND ((m.mask >> 2)&1)=1) AS boolean_output_tuple\n    FROM masks m ORDER BY m.mask",
+  "grounding_count": 2,
+  "deduplicated_output_keys": 1,
+  "full_coalition_values": {
+    "COUNT_STAR": 2,
+    "COUNT_DISTINCT_KEY": 1,
+    "BOOLEAN_TUPLE": 1
+  },
+  "maximum_payment_error": 0.0,
+  "official_support": {
+    "A_COUNT_STAR_BAG": {
+      "mathematics": "DIRECT_SUM_OF_GROUNDING_DNFS",
+      "released_input": "SUPPORTED_AS_LIST_OF_DNFS_AND_COEFFICIENTS",
+      "sql_compiler": "MANUAL_MINIMAL_COMPILER"
+    },
+    "B_COUNT_DISTINCT_KEY": {
+      "mathematics": "EXACT_REDUCTION_TO_ONE_BOOLEAN_DNF_PER_DISTINCT_KEY_THEN_SUM",
+      "released_input": "NO_EXPLICIT_COUNT_DISTINCT_SQL_INTERFACE; BOOLEAN_DNF_ENGINE_ACCEPTS_REDUCED_INPUT",
+      "sql_compiler": "MANUAL_DEDUPLICATION_AND_OR_MERGE"
+    },
+    "C_BOOLEAN_OUTPUT_TUPLE": {
+      "mathematics": "DIRECT_BOOLEAN_DNF",
+      "released_input": "SUPPORTED",
+      "sql_compiler": "MANUAL_MINIMAL_COMPILER"
+    }
+  },
+  "timings_seconds": {
+    "sql_grounding": 0.002959400007966906,
+    "source_expression_assembly": 0.0002576999831944704,
+    "posthoc_sql_oracle": 0.015344199957326055,
+    "official_by_game": {
+      "A_COUNT_STAR_BAG": {
+        "official_untouched_end_to_end_seconds": 0.007424700015690178,
+        "official_dtree_compile_seconds": 0.00026560004334896803,
+        "official_backward_solve_seconds": 0.0062969999853521585
+      },
+      "B_COUNT_DISTINCT_KEY": {
+        "official_untouched_end_to_end_seconds": 0.008241000003181398,
+        "official_dtree_compile_seconds": 0.0005750999553129077,
+        "official_backward_solve_seconds": 0.006364700035192072
+      },
+      "C_BOOLEAN_OUTPUT_TUPLE": {
+        "official_untouched_end_to_end_seconds": 0.007902399986051023,
+        "official_dtree_compile_seconds": 0.0005853999755345285,
+        "official_backward_solve_seconds": 0.006819400005042553
+      }
+    },
+    "algorithm_end_to_end_excluding_oracle": 0.026785199996083975,
+    "whole_stage_including_csv_and_oracle": 0.14452550001442432
+  },
+  "memory": {
+    "rss_start_bytes": null,
+    "rss_end_bytes": null,
+    "rss_observed_change_bytes": null,
+    "python_tracemalloc_start_bytes": 31530872,
+    "python_tracemalloc_end_bytes": 31589763,
+    "python_tracemalloc_peak_bytes": 31729314
+  },
+  "official_source_modified": false
+}

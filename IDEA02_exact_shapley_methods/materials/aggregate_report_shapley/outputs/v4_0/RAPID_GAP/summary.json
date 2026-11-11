@@ -1,0 +1,13 @@
+{
+  "status": "RAPID_GAP_STATIC_EXPERIMENT_COMPLETED_AND_PAUSED",
+  "instances": 4,
+  "n_values": [
+    12,
+    16
+  ],
+  "expanded_to_n20": false,
+  "all_sql_checks_passed": true,
+  "max_shapley_error": 9.464429240324534e-12,
+  "historical_unchanged": true,
+  "new_algorithm_claimed": false
+}

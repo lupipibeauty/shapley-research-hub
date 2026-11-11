@@ -1,0 +1,11 @@
+date,query,scope
+2026-11-02,"Kara Olteanu Suciu 2024 From Shapley Value to Model Counting and Back paper",static model-counting equivalence
+2026-11-02,"Karmakar Expected Shapley-Like Scores of Boolean Functions 2024 paper",expected Boolean Shapley and d-D circuits
+2026-11-02,"Abramovich Advancing Fact Attribution for Query Answering PVLDB 2025",aggregate attribution
+2026-11-02,"ProvSQL documentation Shapley aggregate provenance semiring knowledge compilation",software semantics and interface
+2026-11-02,"Tractability Frontiers Shapley Aggregate Conjunctive Queries Standke Kimelfeld",aggregate CQ theory
+2026-11-02,"Computing Shapley Values for Dynamic Data",dynamic data valuation
+2026-11-02,"F-IVM factorized incremental view maintenance paper",incremental analytics
+2026-11-02,"DBSP automatic incremental view maintenance for rich query languages paper",general IVM
+2026-11-02,"dynamic Shapley query answering database tuple updates exact",dynamic database gap search
+2026-11-02,"incremental Shapley database query provenance updates",dynamic provenance gap search

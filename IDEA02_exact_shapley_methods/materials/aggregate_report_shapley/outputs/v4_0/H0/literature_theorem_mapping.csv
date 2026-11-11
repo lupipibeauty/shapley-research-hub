@@ -1,0 +1,13 @@
+project_case,paper,theorem,paper_assumptions,project_evidence,mapping_status,conclusion
+D1-P物理LEFT JOIN,Livshits et al. 2020,Theorem 9 / Theorem 11 / Corollary 15,固定Boolean或SUM型CQ；无自连接；hierarchical；事实分内生/外生,物理SQL含LEFT JOIN且Basic/Optional被绑定为一个玩家，Hierarchy固定外生；原SQL不直接是论文CQ,NOT_DIRECT; AFTER_PLAYER_BINDING_REDUCES_TO_UNARY,不能按物理表数套定理；归约后计数来源为单变量，属于易解情形
+D1-P/AB-N2单变量COUNT,Abramovich et al. 2025,Theorem 3.6,给定已编译d-tree；对树中全部变量线性时间求Shapley/Banzhaf,84个来源组件均为单变量单子句DNF,DIRECT_TO_COMPILED_INPUT,求解容易；定理不负责SQL到来源的编译成本
+AB-J1/J2 COUNT(*),Livshits et al. 2020,Corollary 15 (with Theorem 9),SUM over self-join-free hierarchical CQ,"Q(k):-L(a,k),R(b,k)；atoms(a)={L}, atoms(b)={R}, atoms(k)={L,R}，集合嵌套；无自连接",DIRECT_STRUCTURAL_MATCH,现有可处理类别；bag grounding线性求和
+AB-J1/J2 COUNT DISTINCT,Standke and Kimelfeld 2025,Theorem 4.1,无自连接；all-hierarchical CQ；localized value function；CDist,同一Q(k)为all-hierarchical；玩家是两关系中的内生元组；本例按key做OR,STRUCTURAL_MATCH_AFTER_MANUAL_REDUCTION,不是理论困难例；官方前端接口缺失与数学可解性不同
+AB-J2 HAVING COUNT(*)>=2,Standke and Kimelfeld 2025,Theorem 6.1,无自连接；sq-hierarchical；localized value；has-duplicates聚合,底层Q(k)为sq-hierarchical；每key门槛2等价重复存在，但外层再COUNT通过key,INDICATIVE_NOT_DIRECT_NESTED_AGGREGATION,底层结构并不困难；嵌套GROUP BY/HAVING到DNF编译未由该定理直接给出
+未来非hierarchical CQ,Livshits et al. 2020,Theorem 13,固定aggregate-relational query；底层CQ无自连接且非hierarchical,"当前没有R(x),S(x,y),T(y)交叉原子集合",KNOWN_HARD_CLASS_NOT_COVERED,需最小控制实验激活，不能从当前易解查询推断
+未来非∃-hierarchical AggCQ,Standke and Kimelfeld 2025,Theorem 3.1,无自连接；非∃-hierarchical；非平凡AggCQ,当前AB-J变量原子集合均嵌套,KNOWN_HARD_CLASS_NOT_COVERED,当前实验没有碰到该必要困难条件
+Luo对V-count的适配,Luo et al. 2022,Assumption 1; Theorems 1-2; Algorithm 1,结果元组效用非负且相互独立可加；按元组分解；基于最小synthesis,V-count经整数复制成为独立输出单位的加性计数；历史同目标适配已通过,EXACT_REDUCTION_VERIFIED,V-count适用不代表V1/V2适用
+Luo对V1/V2,Luo et al. 2022,Assumption 1 and Theorem 1,总效用等于独立结果元组效用之和,V1比例分母依联盟变化；V2再跨四族做几何平均,ASSUMPTION_VIOLATED_FOR_NATIVE_MAPPING,不能直接使用IUSV；这不是源码错误
+V1比例状态DP,Livshits 2020 / Standke 2025,Theorem 11 counting idea / Figure 2 generic DP (not direct theorem),按联盟大小和可组合充分统计递推,"冻结单坐标只需(a,b,k)，14坐标线性相加",CLASSIC_TECHNIQUE_APPLICATION_NOT_DIRECT_THEOREM,已精确解决当前V1，但不能外推到任意整表评分
+V2几何联合价值,Standke and Kimelfeld 2025,Theorems 4.1/5.1/6.1 do not directly apply,单AggCQ与localized value，按特定聚合函数给边界,V2是35坐标派生的四族全局评分再几何组合,OUTSIDE_DIRECT_SCOPE,已有4096联盟真值不等于已找到高效原生联合状态算法
+AB-J查询自连接,Livshits 2020; Standke 2025,Theorem 9/13; Theorems 3.1/4.1/5.1/6.1,上述精确二分主要要求无自连接,AB-J1/J2每个关系符号仅出现一次,ASSUMPTION_SATISFIED_BUT_SELF_JOIN_GAP_UNTESTED,当前没有覆盖自连接边界

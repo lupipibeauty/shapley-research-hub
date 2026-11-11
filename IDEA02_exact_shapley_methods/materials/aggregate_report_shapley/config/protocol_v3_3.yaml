@@ -1,0 +1,88 @@
+protocol_version: multisource_report_v3_3
+status: DESIGNED
+current_date: 2026-10-30
+language: zh-CN
+active_game:
+  name: R-game
+  player: logical_record_bundle
+  allocation: standard_record_shapley
+  owner_role: aggregate_record_payments_only
+tracks:
+  truth:
+    description: D1-P exact coalition and Shapley ground truth
+    stages:
+      T0: NOT_RUN
+      T1: NOT_RUN
+      T2: NOT_RUN
+      T3: NOT_RUN
+  reproduction:
+    description: reproduce existing algorithms on original targets
+    stages:
+      R0: NOT_RUN
+      R_Abramovich: NOT_RUN
+      R_Luo: NOT_RUN
+      R_Livshits: NOT_RUN
+      R_Standke: NOT_RUN
+  adaptation:
+    description: same-player same-value D1-P adapters
+    stages:
+      A1_single_count: NOT_RUN
+      A2_hierarchical_counts: NOT_RUN
+      A3_linear_multi_metric: NOT_RUN
+      A4_ratio_avg: NOT_RUN
+      A5_nonlinear_full_value: NOT_RUN
+      A6_join_record_bundle: NOT_RUN
+      A7_full_D1P: NOT_RUN
+  boundary:
+    stages:
+      B1_method_comparison: NOT_RUN
+      M1_minimal_counterexample: NOT_RUN
+      N1_new_algorithm_candidate: NOT_RUN
+applicability_states:
+  - DIRECT
+  - REDUCIBLE
+  - THEORY_ONLY
+  - ASSUMPTION_NOT_MET
+  - UNVERIFIED
+reproduction_states:
+  - NOT_STARTED
+  - ENV_READY
+  - ORIGINAL_REPRODUCED
+  - ADAPTER_IMPLEMENTED
+  - D1P_VERIFIED
+  - FULL_REPORT_TESTED
+  - FAILED
+  - CANNOT_VERIFY
+  - NOT_APPLICABLE
+failure_codes:
+  - FETCH_FAILED
+  - INSTALL_FAILED
+  - BUILD_FAILED
+  - ORIGINAL_MISMATCH
+  - INTERFACE_MISMATCH
+  - PLAYER_MISMATCH
+  - ASSUMPTION_MISMATCH
+  - INCORRECT_OUTPUT
+  - TIMEOUT
+  - OOM
+  - NUMERICAL_FAILURE
+  - NOT_IMPLEMENTED
+  - UNKNOWN_FAILURE
+data_spec: config/d1p_design.yaml
+report_spec: config/report_spec_v3_2.yaml
+value_spec: config/value_spec_v3_2.yaml
+runtime_limits: config/runtime_limits_v3_3.yaml
+reproduction_matrix: config/reproduction_matrix_v3_3.yaml
+execution_authorized: false
+first_execution_scope_if_authorized:
+  - T0
+  - T1
+  - T2
+  - T3
+  - R0
+  - R_Abramovich
+  - R_Luo
+  - feasible_A1_to_A7
+stop_before:
+  - million_scale_claims
+  - new_algorithm_design

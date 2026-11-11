@@ -1,0 +1,86 @@
+{
+  "status": "COMPLETED_AB_N3_L_AND_AB_N4_DP_SMALL_SCALE_ONLY",
+  "AB-N3-L": {
+    "status": "FULL_SAME_GAME_LINEAR_21_COORDINATES",
+    "coordinates": 21,
+    "components": 84,
+    "full_coalition_value": "625/1",
+    "maximum_exact_alliance_error": "0/1",
+    "maximum_official_shapley_error_tolerance": "<=1e-10"
+  },
+  "AB-N4-DP": {
+    "status": "EXACT_RATIO_COORDINATE_DP_VALIDATED",
+    "coordinates": 14,
+    "full_coalition_value": "375/1",
+    "maximum_exact_coordinate_error": "0/1",
+    "maximum_exact_record_error": "0/1",
+    "transition_updates": 8632
+  },
+  "V1_combined": {
+    "full_value": "1000/1",
+    "maximum_alliance_error": "0/1",
+    "maximum_record_shapley_error": "0/1"
+  },
+  "construction_controls": {
+    "algorithm_construction_completed_before_truth": true,
+    "truth_loaded_after_algorithm_construction": true,
+    "construction_used_4096_values": false,
+    "construction_used_exact_payments": false
+  },
+  "AB-J2_executed": false,
+  "AB-N3_full_35_via_official_source_executed": false,
+  "AB-N5_executed": false,
+  "historical_hashes_before": {
+    "reports\\Abramovich_AB_N2_AB_J1实验报告_2026-10-31.md": "39b621ba8daa324993b1c29a2ff5339dfb61460316b847383720d5e54b5c38f9",
+    "outputs\\v4_0\\AB_N2_AB_J1_2026_10_31\\AB_N2\\result.json": "038f7f5ccc21a0d89d135ce26e826f5c401fc3041668829c93c5c4659210964d",
+    "outputs\\v4_0\\AB_N2_AB_J1_2026_10_31\\AB_N2\\grounding.csv": "b55510f1f8e214731a38244cca725b3a656ba32227cfe937b90e5339c077772f",
+    "outputs\\v4_0\\AB_N2_AB_J1_2026_10_31\\AB_J1\\result.json": "59c20a2dcb59985bcb8f3bdb724aa76278ebe32833871d8e77e7d14db8b13aee",
+    "outputs\\v4_0\\R2_3\\exact_targets.json": "4dfa6adcb8c21793d3b480537fccb69aa5efa100e202431a9550eeeca1f6fc6f",
+    "config\\d1p_design.yaml": "ad73a0ff389746f115d9d487d2e713ab88e73cf4777751dc3d58a64789d6309d",
+    "config\\value_spec_v3_2.yaml": "3b3aa3694aa27b60aad7df50351fcea4de17f46413d0b0fe06627f309ed8685b"
+  },
+  "historical_hashes_after": {
+    "reports\\Abramovich_AB_N2_AB_J1实验报告_2026-10-31.md": "39b621ba8daa324993b1c29a2ff5339dfb61460316b847383720d5e54b5c38f9",
+    "outputs\\v4_0\\AB_N2_AB_J1_2026_10_31\\AB_N2\\result.json": "038f7f5ccc21a0d89d135ce26e826f5c401fc3041668829c93c5c4659210964d",
+    "outputs\\v4_0\\AB_N2_AB_J1_2026_10_31\\AB_N2\\grounding.csv": "b55510f1f8e214731a38244cca725b3a656ba32227cfe937b90e5339c077772f",
+    "outputs\\v4_0\\AB_N2_AB_J1_2026_10_31\\AB_J1\\result.json": "59c20a2dcb59985bcb8f3bdb724aa76278ebe32833871d8e77e7d14db8b13aee",
+    "outputs\\v4_0\\R2_3\\exact_targets.json": "4dfa6adcb8c21793d3b480537fccb69aa5efa100e202431a9550eeeca1f6fc6f",
+    "config\\d1p_design.yaml": "ad73a0ff389746f115d9d487d2e713ab88e73cf4777751dc3d58a64789d6309d",
+    "config\\value_spec_v3_2.yaml": "3b3aa3694aa27b60aad7df50351fcea4de17f46413d0b0fe06627f309ed8685b"
+  },
+  "costs": {
+    "AB-N3-L": {
+      "sql_grounding_seconds": 0.015306199959013611,
+      "source_expression_assembly_seconds": 0.003945499949622899,
+      "official_dtree_compile_seconds": 0.00454130006255582,
+      "official_backward_solve_seconds": 0.003020200238097459,
+      "official_untouched_end_to_end_seconds": 0.010869199701119214,
+      "algorithm_end_to_end_seconds": 0.05158099997788668,
+      "components": 84
+    },
+    "AB-N4-DP": {
+      "dp_algorithm_seconds": 0.16804890002822503,
+      "representative_dp_runs": 27,
+      "total_transition_updates": 8632,
+      "terminal_state_rows": 1360,
+      "maximum_terminal_states_one_run": 100
+    },
+    "posthoc_oracles": {
+      "all_exact_validation_seconds": 41.6725684000412,
+      "truth_loaded_after_algorithm_construction": true
+    },
+    "memory": {
+      "python_tracemalloc_current_bytes": 66889461,
+      "python_tracemalloc_peak_bytes": 67147020,
+      "scope": "Python allocations only; process RSS unavailable without psutil"
+    }
+  },
+  "environment": {
+    "python": "3.11.6 (tags/v3.11.6:8b6ee5b, Oct  2 2023, 14:57:12) [MSC v.1935 64 bit (AMD64)]",
+    "duckdb": "1.5.6",
+    "official_shapley_source_sha256": "63855c5b1b7997b79cef9731a63eae9aa81e64f4987a4ae9c731c994f41d68fe",
+    "d1p_design_sha256": "ad73a0ff389746f115d9d487d2e713ab88e73cf4777751dc3d58a64789d6309d",
+    "value_spec_sha256": "3b3aa3694aa27b60aad7df50351fcea4de17f46413d0b0fe06627f309ed8685b"
+  },
+  "total_wall_seconds": 46.281123400025535
+}

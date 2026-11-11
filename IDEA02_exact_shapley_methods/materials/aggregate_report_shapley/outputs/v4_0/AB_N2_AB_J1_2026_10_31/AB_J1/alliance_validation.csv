@@ -1,0 +1,9 @@
+mask,coalition,sql_count_star,expression_count_star,sql_count_distinct_key,expression_count_distinct_key,sql_boolean_output_tuple,expression_boolean_output_tuple
+0,[],0,0,0,0,0,0
+1,"[""p1""]",0,0,0,0,0,0
+2,"[""p2""]",0,0,0,0,0,0
+3,"[""p1"", ""p2""]",0,0,0,0,0,0
+4,"[""p3""]",0,0,0,0,0,0
+5,"[""p1"", ""p3""]",1,1,1,1,1,1
+6,"[""p2"", ""p3""]",1,1,1,1,1,1
+7,"[""p1"", ""p2"", ""p3""]",2,2,1,1,1,1
