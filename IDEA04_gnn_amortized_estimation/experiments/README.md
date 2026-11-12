@@ -1,3 +1,3 @@
 # IDEA04 实验导航
 
-实验覆盖分布内、价值条件组合分布外、SF1 规模外推、边与解析锚点消融、结构扰动、哑玩家、种子不确定性、回归基线和 DuckDB 成本。对应小型运行证据已归档至 `materials/results`。
+实验覆盖分布内、价值条件组合分布外、SF1 规模外推、边与解析锚点消融、结构扰动、哑玩家、种子不确定性、回归基线和 DuckDB 成本。对应小型运行证据已归档至 `materials/results`；课程报告、实验状态和测试脚本分别位于 `materials/paper/report_support`、`materials/status` 和 `materials/tests`。
