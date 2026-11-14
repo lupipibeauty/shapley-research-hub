@@ -1,0 +1,11 @@
+﻿player_index,player_id,relation,physical_key
+0,E:E1,E,E1
+1,E:E2,E,E2
+2,B:S1,B,S1
+3,B:S2,B,S2
+4,B:S3,B,S3
+5,B:S4,B,S4
+6,H:S1,H,S1
+7,H:S2,H,S2
+8,H:S3,H,S3
+9,H:S4,H,S4

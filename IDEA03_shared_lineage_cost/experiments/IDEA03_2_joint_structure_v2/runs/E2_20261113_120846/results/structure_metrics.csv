@@ -1,0 +1,3 @@
+﻿pair_id,structure,seed,n,e_count,b_count,h_count,join_witnesses,source_variable_occurrences,cross_province_eid_rate,cross_city_eid_rate,multi_site_enterprises,max_enterprise_regions,mean_player_coordinate_count,max_player_coordinate_count,provenance_overlap_mean_jaccard,provenance_overlap_max_jaccard,local_pair_overlap_variables,cross_pair_overlap_variables,cross_pair_overlap_jaccard,rewiring_operations
+E2_N24_S9241,low,9241,24,4,10,10,10,30,0.0,1.0,4,1,14.5,20,0.2774672717384164,1.0,7,0,0.0,0
+E2_N24_S9241,high,9241,24,4,10,10,10,30,1.0,1.0,4,2,15.25,25,0.29286624398833905,1.0,8,4,0.16666666666666666,2

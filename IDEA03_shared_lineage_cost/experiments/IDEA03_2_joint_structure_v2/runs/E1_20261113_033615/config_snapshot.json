@@ -1,0 +1,92 @@
+{
+  "protocol_id": "IDEA03_2_RQ3_V2",
+  "year": 2025,
+  "revenue": 1000.0,
+  "lambda": 0.5,
+  "tolerance": 1e-09,
+  "state_cap": {
+    "E0": 100000,
+    "E1": 250000,
+    "E2": 300000
+  },
+  "stages": {
+    "E0": [
+      {
+        "n": 10,
+        "e": 2,
+        "b": 4,
+        "h": 4,
+        "seeds": [
+          9101
+        ]
+      },
+      {
+        "n": 16,
+        "e": 4,
+        "b": 6,
+        "h": 6,
+        "seeds": [
+          9161
+        ]
+      }
+    ],
+    "E1": [
+      {
+        "n": 20,
+        "e": 4,
+        "b": 8,
+        "h": 8,
+        "seeds": [
+          9201,
+          9202,
+          9203
+        ]
+      }
+    ],
+    "E2": [
+      {
+        "n": 24,
+        "e": 4,
+        "b": 10,
+        "h": 10,
+        "seeds": [
+          9241,
+          9242,
+          9243,
+          9244,
+          9245,
+          9246
+        ]
+      }
+    ]
+  },
+  "structures": [
+    "low",
+    "high"
+  ],
+  "value_scopes": {
+    "local": [
+      "PA.enterprise_count",
+      "PA.mfg_workers"
+    ],
+    "cross": [
+      "PA.enterprise_count",
+      "PB.enterprise_count"
+    ]
+  },
+  "primary_reference": "paired_common_max_full_report",
+  "supplementary_reference": "structure_own_full_report",
+  "player_order": "E_then_B_then_H",
+  "sql_semantics": "full_E_B_H_join_fixed_D_skeleton_null_share",
+  "timing_repeats": {
+    "E0": 1,
+    "E1": 1,
+    "E2": 1
+  },
+  "resource_policy": {
+    "E0_timeout_seconds": 900,
+    "E1_timeout_seconds": 3600,
+    "E2_timeout_seconds": 3600,
+    "note": "The outer process timeout is enforced by the runner invocation; state caps are enforced in code."
+  }
+}

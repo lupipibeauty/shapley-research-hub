@@ -1,0 +1,7 @@
+{
+  "protocol": "IDEA03_NUMERIC_GATE2_NADD_STABILITY_V1",
+  "diagnostic_alternative_only": true,
+  "correctness_rows": 12,
+  "cost_rows": 15,
+  "author_source_modified": false
+}

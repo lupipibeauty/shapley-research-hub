@@ -1,0 +1,12 @@
+{
+  "run_id": "E1_20261113_033650",
+  "stage": "E1",
+  "status": "VERIFIED",
+  "started_pairs": 3,
+  "planned_pairs": 3,
+  "elapsed_seconds": 256.450394200001,
+  "correctness_failures": 0,
+  "resource_limits": 0,
+  "fatal": null,
+  "note": "E2 deliberately stops after the first frozen pair if the non-enumerative baseline fails its resource/correctness gate."
+}

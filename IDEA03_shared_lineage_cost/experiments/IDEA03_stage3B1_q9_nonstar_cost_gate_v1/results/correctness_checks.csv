@@ -1,0 +1,13 @@
+﻿object_id,players,witnesses,model_count_inclusion_exclusion,lexashap_efficiency_abs_error,lexashap_efficiency_pass,ve_paths_exact,coalition_oracle_used
+Q9_L4_P1,20,4,125055,2.220446049250313e-16,True,True,False
+Q9_L4_P2,12,4,1695,2.220446049250313e-16,True,True,False
+Q9_L8_P1,40,8,246620590335,4.440892098500626e-16,True,True,False
+Q9_L8_P2,24,8,11012415,4.440892098500626e-16,True,True,False
+Q9_L12_P1,60,12,365258720818297215,1480319324.887716,False,True,False
+Q9_L12_P2,36,12,54878189535,2.220446049250313e-16,True,True,False
+Q9_H4_P1,11,4,175,0.0,True,True,False
+Q9_H4_P2,9,4,175,0.0,True,True,False
+Q9_H8_P1,21,8,306607,0.0,True,True,False
+Q9_H8_P2,18,8,141519,0.0,True,True,False
+Q9_H12_P1,31,12,449433487,0.0,True,True,False
+Q9_H12_P2,27,12,94261903,0.0,True,True,False

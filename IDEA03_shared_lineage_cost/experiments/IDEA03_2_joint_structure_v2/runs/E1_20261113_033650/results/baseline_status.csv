@@ -1,0 +1,62 @@
+﻿pair_id,n,method,status,reason,structure,value_name
+E1_N20_S9201,20,P3_MTBDD_HISTORICAL,INPUT_UNSUPPORTED,历史 P3 对象不是本轮冻结 E/B/H 物理玩家与 35 坐标联合价值；本轮未改写作者/历史算法。,,
+E1_N20_S9201,20,LEXASHAP_REDUCTION,INPUT_UNSUPPORTED,尚无对当前双坐标乘积价值的已核验精确归约适配；不得把理论可能性记作已实现。,,
+E1_N20_S9201,20,ABRAMOVICH_AUTHOR_PIPELINE,ENV_BLOCKED,作者流水线未在本轮本地环境形成可执行、同目标适配。,,
+E1_N20_S9201,20,M3_VARIABLE_ORDERING,REPORTED_ONLY,M3 仍是历史设计记录，没有可恢复的 M3 BDD 原始执行证据。,,
+E1_N20_S9201,20,B0_FULL_COALITION_NUMPY,VERIFIED,vectorized exact subset Shapley over full value table,low,local_add
+E1_N20_S9201,20,B0_FULL_COALITION_NUMPY,VERIFIED,vectorized exact subset Shapley over full value table,low,local_joint
+E1_N20_S9201,20,B0_FULL_COALITION_NUMPY,VERIFIED,vectorized exact subset Shapley over full value table,low,cross_add
+E1_N20_S9201,20,B0_FULL_COALITION_NUMPY,VERIFIED,vectorized exact subset Shapley over full value table,low,cross_joint
+E1_N20_S9201,20,B0_FULL_COALITION_NUMPY,VERIFIED,vectorized exact subset Shapley over full value table,high,local_add
+E1_N20_S9201,20,B0_FULL_COALITION_NUMPY,VERIFIED,vectorized exact subset Shapley over full value table,high,local_joint
+E1_N20_S9201,20,B0_FULL_COALITION_NUMPY,VERIFIED,vectorized exact subset Shapley over full value table,high,cross_add
+E1_N20_S9201,20,B0_FULL_COALITION_NUMPY,VERIFIED,vectorized exact subset Shapley over full value table,high,cross_joint
+E1_N20_S9201,20,H3_S6_EVIDENCE_STATE,VERIFIED,,low,local_add
+E1_N20_S9201,20,H3_S6_EVIDENCE_STATE,VERIFIED,,low,local_joint
+E1_N20_S9201,20,H3_S6_EVIDENCE_STATE,VERIFIED,,low,cross_add
+E1_N20_S9201,20,H3_S6_EVIDENCE_STATE,VERIFIED,,low,cross_joint
+E1_N20_S9201,20,H3_S6_EVIDENCE_STATE,VERIFIED,,high,local_add
+E1_N20_S9201,20,H3_S6_EVIDENCE_STATE,VERIFIED,,high,local_joint
+E1_N20_S9201,20,H3_S6_EVIDENCE_STATE,VERIFIED,,high,cross_add
+E1_N20_S9201,20,H3_S6_EVIDENCE_STATE,VERIFIED,,high,cross_joint
+E1_N20_S9201,20,H3_S6_SEPARATE_LINEAR,VERIFIED,cross_f1 and cross_f2 compiled separately; allocations averaged by linearity,high,cross_add
+E1_N20_S9202,20,P3_MTBDD_HISTORICAL,INPUT_UNSUPPORTED,历史 P3 对象不是本轮冻结 E/B/H 物理玩家与 35 坐标联合价值；本轮未改写作者/历史算法。,,
+E1_N20_S9202,20,LEXASHAP_REDUCTION,INPUT_UNSUPPORTED,尚无对当前双坐标乘积价值的已核验精确归约适配；不得把理论可能性记作已实现。,,
+E1_N20_S9202,20,ABRAMOVICH_AUTHOR_PIPELINE,ENV_BLOCKED,作者流水线未在本轮本地环境形成可执行、同目标适配。,,
+E1_N20_S9202,20,M3_VARIABLE_ORDERING,REPORTED_ONLY,M3 仍是历史设计记录，没有可恢复的 M3 BDD 原始执行证据。,,
+E1_N20_S9202,20,B0_FULL_COALITION_NUMPY,VERIFIED,vectorized exact subset Shapley over full value table,low,local_add
+E1_N20_S9202,20,B0_FULL_COALITION_NUMPY,VERIFIED,vectorized exact subset Shapley over full value table,low,local_joint
+E1_N20_S9202,20,B0_FULL_COALITION_NUMPY,VERIFIED,vectorized exact subset Shapley over full value table,low,cross_add
+E1_N20_S9202,20,B0_FULL_COALITION_NUMPY,VERIFIED,vectorized exact subset Shapley over full value table,low,cross_joint
+E1_N20_S9202,20,B0_FULL_COALITION_NUMPY,VERIFIED,vectorized exact subset Shapley over full value table,high,local_add
+E1_N20_S9202,20,B0_FULL_COALITION_NUMPY,VERIFIED,vectorized exact subset Shapley over full value table,high,local_joint
+E1_N20_S9202,20,B0_FULL_COALITION_NUMPY,VERIFIED,vectorized exact subset Shapley over full value table,high,cross_add
+E1_N20_S9202,20,B0_FULL_COALITION_NUMPY,VERIFIED,vectorized exact subset Shapley over full value table,high,cross_joint
+E1_N20_S9202,20,H3_S6_EVIDENCE_STATE,VERIFIED,,low,local_add
+E1_N20_S9202,20,H3_S6_EVIDENCE_STATE,VERIFIED,,low,local_joint
+E1_N20_S9202,20,H3_S6_EVIDENCE_STATE,VERIFIED,,low,cross_add
+E1_N20_S9202,20,H3_S6_EVIDENCE_STATE,VERIFIED,,low,cross_joint
+E1_N20_S9202,20,H3_S6_EVIDENCE_STATE,VERIFIED,,high,local_add
+E1_N20_S9202,20,H3_S6_EVIDENCE_STATE,VERIFIED,,high,local_joint
+E1_N20_S9202,20,H3_S6_EVIDENCE_STATE,VERIFIED,,high,cross_add
+E1_N20_S9202,20,H3_S6_EVIDENCE_STATE,VERIFIED,,high,cross_joint
+E1_N20_S9203,20,P3_MTBDD_HISTORICAL,INPUT_UNSUPPORTED,历史 P3 对象不是本轮冻结 E/B/H 物理玩家与 35 坐标联合价值；本轮未改写作者/历史算法。,,
+E1_N20_S9203,20,LEXASHAP_REDUCTION,INPUT_UNSUPPORTED,尚无对当前双坐标乘积价值的已核验精确归约适配；不得把理论可能性记作已实现。,,
+E1_N20_S9203,20,ABRAMOVICH_AUTHOR_PIPELINE,ENV_BLOCKED,作者流水线未在本轮本地环境形成可执行、同目标适配。,,
+E1_N20_S9203,20,M3_VARIABLE_ORDERING,REPORTED_ONLY,M3 仍是历史设计记录，没有可恢复的 M3 BDD 原始执行证据。,,
+E1_N20_S9203,20,B0_FULL_COALITION_NUMPY,VERIFIED,vectorized exact subset Shapley over full value table,low,local_add
+E1_N20_S9203,20,B0_FULL_COALITION_NUMPY,VERIFIED,vectorized exact subset Shapley over full value table,low,local_joint
+E1_N20_S9203,20,B0_FULL_COALITION_NUMPY,VERIFIED,vectorized exact subset Shapley over full value table,low,cross_add
+E1_N20_S9203,20,B0_FULL_COALITION_NUMPY,VERIFIED,vectorized exact subset Shapley over full value table,low,cross_joint
+E1_N20_S9203,20,B0_FULL_COALITION_NUMPY,VERIFIED,vectorized exact subset Shapley over full value table,high,local_add
+E1_N20_S9203,20,B0_FULL_COALITION_NUMPY,VERIFIED,vectorized exact subset Shapley over full value table,high,local_joint
+E1_N20_S9203,20,B0_FULL_COALITION_NUMPY,VERIFIED,vectorized exact subset Shapley over full value table,high,cross_add
+E1_N20_S9203,20,B0_FULL_COALITION_NUMPY,VERIFIED,vectorized exact subset Shapley over full value table,high,cross_joint
+E1_N20_S9203,20,H3_S6_EVIDENCE_STATE,VERIFIED,,low,local_add
+E1_N20_S9203,20,H3_S6_EVIDENCE_STATE,VERIFIED,,low,local_joint
+E1_N20_S9203,20,H3_S6_EVIDENCE_STATE,VERIFIED,,low,cross_add
+E1_N20_S9203,20,H3_S6_EVIDENCE_STATE,VERIFIED,,low,cross_joint
+E1_N20_S9203,20,H3_S6_EVIDENCE_STATE,VERIFIED,,high,local_add
+E1_N20_S9203,20,H3_S6_EVIDENCE_STATE,VERIFIED,,high,local_joint
+E1_N20_S9203,20,H3_S6_EVIDENCE_STATE,VERIFIED,,high,cross_add
+E1_N20_S9203,20,H3_S6_EVIDENCE_STATE,VERIFIED,,high,cross_joint

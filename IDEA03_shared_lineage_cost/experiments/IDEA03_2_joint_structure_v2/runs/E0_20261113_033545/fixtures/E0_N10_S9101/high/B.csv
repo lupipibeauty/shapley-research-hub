@@ -1,0 +1,5 @@
+﻿sid,eid,city,industry,player_id,player_index
+S1,E2,A1,manufacturing,B:S1,2
+S2,E1,A2,manufacturing,B:S2,3
+S3,E1,B1,manufacturing,B:S3,4
+S4,E2,B2,manufacturing,B:S4,5

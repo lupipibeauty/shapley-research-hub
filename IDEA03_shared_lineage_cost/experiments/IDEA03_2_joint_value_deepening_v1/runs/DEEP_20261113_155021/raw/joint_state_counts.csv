@@ -1,0 +1,6 @@
+﻿game_id,n,joint_statistic_states
+F0_EBH_base,10,16
+F1_SITE_LINK_balanced,16,16
+F1_SITE_LINK_concentrated,16,16
+F2_ENTITY_LINK_balanced,14,16
+F2_ENTITY_LINK_concentrated,14,16

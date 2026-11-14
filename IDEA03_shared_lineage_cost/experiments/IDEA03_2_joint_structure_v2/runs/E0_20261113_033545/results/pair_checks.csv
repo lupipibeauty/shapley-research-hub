@@ -1,0 +1,3 @@
+﻿pair_id,seed,n,invariant_player_rows,invariant_e_rows,invariant_site_keys,invariant_city_industry,invariant_h_rows,invariant_degree,invariant_witness_count,stable_non_enterprise_metrics,city_enterprise_count_stable,national_enterprise_count_stable,PA_enterprise_low,PA_enterprise_high,PB_enterprise_low,PB_enterprise_high,province_enterprise_changed,status
+E0_N10_S9101,9101,10,True,True,True,True,True,True,True,True,True,True,1,2,1,2,True,VERIFIED
+E0_N16_S9161,9161,16,True,True,True,True,True,True,True,True,True,True,2,3,2,3,True,VERIFIED

@@ -1,0 +1,13 @@
+﻿representative_id,fixture_label,player_coordinate_edges,max_player_coordinate_degree,max_enterprise_coordinate_degree,max_witness_coordinate_degree,max_coordinate_witness_degree,unique_coordinate_witness_source_sets,identical_coordinate_source_groups,source_coordinate_components,source_coordinate_min_fill_width_upper_bound
+R01,concentrated,228,30,30,15,6,12,8,2,12
+R02,systematic_representative,229,23,23,15,6,12,8,2,12
+R03,systematic_representative,229,28,28,15,6,12,8,2,12
+R04,systematic_representative,229,20,20,15,6,12,8,2,12
+R05,systematic_representative,229,28,28,15,6,12,8,2,12
+R06,systematic_representative,229,20,20,15,6,12,8,2,12
+R07,balanced,230,25,25,15,6,12,8,2,12
+R08,systematic_representative,230,29,29,15,6,12,8,2,12
+R09,systematic_representative,231,23,23,15,6,12,8,2,12
+R10,systematic_representative,231,27,27,15,6,12,8,2,12
+R11,systematic_representative,231,23,23,15,6,12,8,2,12
+R12,systematic_representative,231,27,27,15,6,12,8,2,12

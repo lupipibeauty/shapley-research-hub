@@ -1,0 +1,14 @@
+{
+  "run_id": "SHARED_20261113_180500",
+  "stages": {
+    "e2": {
+      "games": 3,
+      "benchmark_cells": 60,
+      "timed_controlled_pairs": 1,
+      "untimed_structure_only_pairs": 2,
+      "all_verified": true,
+      "status": "VERIFIED"
+    }
+  },
+  "status": "VERIFIED"
+}

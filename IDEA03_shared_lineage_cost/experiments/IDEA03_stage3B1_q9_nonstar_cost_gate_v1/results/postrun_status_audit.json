@@ -1,0 +1,14 @@
+{
+  "canonical_process_status": "COMPLETED",
+  "canonical_manifest_status_field_meaning": "process completed and outputs were written",
+  "correctness_status": "PARTIAL_NUMERIC_FAILURE",
+  "lexashap_efficiency_passed": 11,
+  "lexashap_efficiency_total": 12,
+  "ve_model_count_passed": 24,
+  "ve_model_count_total": 24,
+  "failed_object": "Q9_L12_P1",
+  "failure_class": "FAILED_NUMERIC_STABILITY",
+  "representation_metrics_available_for_failed_object": true,
+  "final_research_judgment": "REPRESENTATION_DEPENDENT_EFFECT",
+  "stage3b2_admitted": false
+}

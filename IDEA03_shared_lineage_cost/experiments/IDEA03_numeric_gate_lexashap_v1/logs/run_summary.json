@@ -1,0 +1,17 @@
+{
+  "protocol": "IDEA03_NUMERIC_GATE_LEXASHAP_V1",
+  "date": "2026-11-14",
+  "analytic_instances": 20,
+  "float64_first_failure_N": 60,
+  "decimal_precisions": [50, 100],
+  "final_status": "FINITE_PRECISION_FAILURE_SUPPORTED",
+  "early_stop": true,
+  "not_run_after_stop": [
+    "SHARED_HUB",
+    "BALANCED_HIERARCHY",
+    "Q9_LARGE_SCALE",
+    "FULL_REPORT_G",
+    "STAGE_2C",
+    "STAGE_2F"
+  ]
+}

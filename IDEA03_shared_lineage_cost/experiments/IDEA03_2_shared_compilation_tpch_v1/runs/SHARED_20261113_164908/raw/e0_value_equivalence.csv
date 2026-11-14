@@ -1,0 +1,10 @@
+﻿game_id,left,right,equivalent,mismatches,first_mismatch
+E0_F0_K2_N12,GR,GR,True,0,
+E0_F0_K2_N12,GR,GL,False,847,273
+E0_F0_K2_N12,GR,GC,False,959,273
+E0_F0_K2_N12,GL,GR,False,847,273
+E0_F0_K2_N12,GL,GL,True,0,
+E0_F0_K2_N12,GL,GC,False,126,819
+E0_F0_K2_N12,GC,GR,False,959,273
+E0_F0_K2_N12,GC,GL,False,126,819
+E0_F0_K2_N12,GC,GC,True,0,

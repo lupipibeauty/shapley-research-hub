@@ -1,0 +1,3 @@
+﻿m,N,stage,quotient_max_abs_error,quotient_l1_error,quotient_expected_max_abs,root_gradient_max_abs,clause_gradient_observed_max_abs,clause_gradient_expected_max_abs,clause_gradient_max_abs_error,first_bad_quotient_index,manual_vs_scipy_quotient_max_abs_error,max_finite_subtractive_cancellation_ratio,exact_cancellation_updates
+11,55,ROOT_N_ADD_DECONVOLUTION,0.0,0.0,0.08721990504834132,2.308436973392414e+71,2.5975462524904503e+58,2.5975462524904503e+58,0.0,NONE,0.0,201.0,45
+12,60,ROOT_N_ADD_DECONVOLUTION,4.0851436816646824e-08,1.354294085487151e-07,0.08070895323591953,1.3868311854568984e+80,5.698089230460211e+72,5.517822649854297e+65,5.69808923430944e+72,24,0.0,5639.133333333333,56

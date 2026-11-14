@@ -1,0 +1,10 @@
+{
+  "mpmath": "UNAVAILABLE_NOT_INSTALLED",
+  "numpy_longdouble_extra_precision": false,
+  "decimal_precisions": [
+    50,
+    100
+  ],
+  "algorithm_change": "NONE; same convolution/polynomial-division/gradient recurrence",
+  "scope": "HIGH_PRECISION_DIAGNOSTIC_ONLY"
+}

@@ -1,0 +1,11 @@
+{
+  "protocol_id": "IDEA03_NUMERIC_GATE_LEXASHAP_V1",
+  "family": "DISJOINT_EQUAL_CLAUSES",
+  "k": 5,
+  "m_values": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20],
+  "pass_strict": 1e-10,
+  "pass_loose": 1e-7,
+  "numeric_failure": 1e-3,
+  "catastrophic_abs_value": 100,
+  "stop_policy": "EARLIEST_CONFIRMED_CAUSE"
+}

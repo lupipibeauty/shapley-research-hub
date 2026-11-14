@@ -1,0 +1,15 @@
+﻿pair,check,left,right,passed
+strict,same_player_ids,E:E1;E:E2;E:E3;E:E4;B:S1;B:S2;B:S3;B:S4;B:S5;B:S6;H:S1;H:S2;H:S3;H:S4;H:S5;H:S6,E:E1;E:E2;E:E3;E:E4;B:S1;B:S2;B:S3;B:S4;B:S5;B:S6;H:S1;H:S2;H:S3;H:S4;H:S5;H:S6,True
+strict,same_fact_counts,4/6/6,4/6/6,True
+strict,same_join_witnesses,6,6,True
+strict,full_report_differences,0,0,True
+strict,cross_province_E_players,1,1,True
+strict,enterprise_witness_degree_multiset,"[3, 1, 1, 1]","[2, 2, 1, 1]",True
+strict,pre_registered_nonisomorphism_invariant,degree_multiset,different,True
+relaxed,same_player_ids,E:E1;E:E2;E:E3;E:E4;B:S1;B:S2;B:S3;B:S4;B:S5;B:S6;H:S1;H:S2;H:S3;H:S4;H:S5;H:S6,E:E1;E:E2;E:E3;E:E4;B:S1;B:S2;B:S3;B:S4;B:S5;B:S6;H:S1;H:S2;H:S3;H:S4;H:S5;H:S6,True
+relaxed,same_fact_counts,4/6/6,4/6/6,True
+relaxed,same_join_witnesses,6,6,True
+relaxed,full_report_differences,0,1,True
+relaxed,cross_province_E_players,0,1,True
+relaxed,enterprise_witness_degree_multiset,"[2, 2, 1, 1]","[2, 2, 1, 1]",True
+relaxed,pre_registered_nonisomorphism_invariant,region_support_count,different,True

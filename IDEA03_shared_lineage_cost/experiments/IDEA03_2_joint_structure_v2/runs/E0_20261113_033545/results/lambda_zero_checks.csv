@@ -1,0 +1,9 @@
+﻿pair_id,structure,scope,max_abs_error,status
+E0_N10_S9101,low,local,0.0,VERIFIED
+E0_N10_S9101,low,cross,0.0,VERIFIED
+E0_N10_S9101,high,local,0.0,VERIFIED
+E0_N10_S9101,high,cross,0.0,VERIFIED
+E0_N16_S9161,low,local,0.0,VERIFIED
+E0_N16_S9161,low,cross,0.0,VERIFIED
+E0_N16_S9161,high,local,0.0,VERIFIED
+E0_N16_S9161,high,cross,0.0,VERIFIED

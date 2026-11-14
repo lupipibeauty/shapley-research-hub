@@ -1,0 +1,11 @@
+{
+  "run_id": "SHARED_20261113_181253",
+  "stages": {
+    "tpch": {
+      "status": "VERIFIED",
+      "games": 2,
+      "max_n": 16
+    }
+  },
+  "status": "VERIFIED"
+}

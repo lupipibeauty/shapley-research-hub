@@ -1,0 +1,6 @@
+﻿game_id,n,coalitions,positive_ratio_gate_failures,g1_gr_mismatches,first_mismatch,status
+F0_EBH_base,10,1024,0,0,,VERIFIED_EQUIVALENT
+F1_SITE_LINK_balanced,16,65536,0,0,,VERIFIED_EQUIVALENT
+F1_SITE_LINK_concentrated,16,65536,0,0,,VERIFIED_EQUIVALENT
+F2_ENTITY_LINK_balanced,14,16384,0,0,,VERIFIED_EQUIVALENT
+F2_ENTITY_LINK_concentrated,14,16384,0,0,,VERIFIED_EQUIVALENT

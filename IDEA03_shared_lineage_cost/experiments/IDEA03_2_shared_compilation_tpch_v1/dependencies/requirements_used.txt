@@ -1,0 +1,6 @@
+# Existing local environments only; no package was installed for this phase.
+Python 3.11
+duckdb (from course_paper_gnn/.venv-course)
+official LExaShap source (vendored under aggregate_report_shapley/external/abramovich)
+standard library: fractions, csv, json, tracemalloc, hashlib
+

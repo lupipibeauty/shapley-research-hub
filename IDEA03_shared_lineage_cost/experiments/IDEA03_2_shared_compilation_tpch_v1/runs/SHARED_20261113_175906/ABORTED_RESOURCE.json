@@ -1,0 +1,7 @@
+{
+  "run_id": "SHARED_20261113_175906",
+  "status": "RESOURCE_LIMIT",
+  "stopped_stage": "e2",
+  "reason": "Running three rebuild timings for all methods on all six N=16 fixtures exceeded the pilot time budget before producing an atomic result file.",
+  "corrective_action": "Keep all six fixtures in E1 structural and SQL validation, but restrict the first exact performance pilot to the non-degenerate E0 game and the pre-specified first controlled pair."
+}

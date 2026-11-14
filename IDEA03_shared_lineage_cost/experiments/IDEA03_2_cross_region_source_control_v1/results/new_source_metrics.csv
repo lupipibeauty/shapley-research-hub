@@ -1,0 +1,5 @@
+﻿game_id,n,E_rows,B_rows,H_rows,join_witnesses,minimal_witnesses,variable_occurrences,shared_source_players,cross_province_source_players,cross_province_E_players,overlapping_proof_pairs,maximum_proof_overlap,primal_edges,connected_components,min_fill_treewidth_upper_bound,raw_report_dnf_clause_occurrences,unique_report_dnf_clauses,unique_report_component_dnfs,compiled_circuit_nodes,report_states
+STRICT_CONCENTRATED,16,4,6,6,6,6,18,1,1,1,3,1,18,4,2,63,6,8,NOT_MEASURED_NO_ELIGIBLE_DIRECT_COMPILER,64
+STRICT_BALANCED,16,4,6,6,6,6,18,2,1,1,2,1,18,4,2,63,6,8,NOT_MEASURED_NO_ELIGIBLE_DIRECT_COMPILER,64
+RELAXED_NO_CROSS,16,4,6,6,6,6,18,2,0,0,2,1,18,4,2,63,6,8,NOT_MEASURED_NO_ELIGIBLE_DIRECT_COMPILER,64
+RELAXED_ONE_CROSS,16,4,6,6,6,6,18,2,1,1,2,1,18,4,2,63,6,8,NOT_MEASURED_NO_ELIGIBLE_DIRECT_COMPILER,64

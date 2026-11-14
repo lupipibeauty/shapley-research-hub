@@ -1,0 +1,59 @@
+{
+  "E1_N20_S9201": {
+    "paired_common": {
+      "PA.enterprise_count": 4.0,
+      "PB.enterprise_count": 4.0,
+      "PA.mfg_workers": 123.0
+    },
+    "structure_own": {
+      "low": {
+        "PA.enterprise_count": 2.0,
+        "PB.enterprise_count": 2.0,
+        "PA.mfg_workers": 123.0
+      },
+      "high": {
+        "PA.enterprise_count": 4.0,
+        "PB.enterprise_count": 4.0,
+        "PA.mfg_workers": 123.0
+      }
+    }
+  },
+  "E1_N20_S9202": {
+    "paired_common": {
+      "PA.enterprise_count": 4.0,
+      "PB.enterprise_count": 4.0,
+      "PA.mfg_workers": 63.0
+    },
+    "structure_own": {
+      "low": {
+        "PA.enterprise_count": 2.0,
+        "PB.enterprise_count": 2.0,
+        "PA.mfg_workers": 63.0
+      },
+      "high": {
+        "PA.enterprise_count": 4.0,
+        "PB.enterprise_count": 4.0,
+        "PA.mfg_workers": 63.0
+      }
+    }
+  },
+  "E1_N20_S9203": {
+    "paired_common": {
+      "PA.enterprise_count": 4.0,
+      "PB.enterprise_count": 4.0,
+      "PA.mfg_workers": 102.0
+    },
+    "structure_own": {
+      "low": {
+        "PA.enterprise_count": 2.0,
+        "PB.enterprise_count": 2.0,
+        "PA.mfg_workers": 102.0
+      },
+      "high": {
+        "PA.enterprise_count": 4.0,
+        "PB.enterprise_count": 4.0,
+        "PA.mfg_workers": 102.0
+      }
+    }
+  }
+}

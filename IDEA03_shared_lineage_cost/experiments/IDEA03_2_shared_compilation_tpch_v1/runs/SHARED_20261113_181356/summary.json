@@ -1,0 +1,13 @@
+{
+  "run_id": "SHARED_20261113_181356",
+  "stages": {
+    "e0": {
+      "historical_games": 5,
+      "all_historical_equivalent": true,
+      "e0_game": "E0_F0_K2_N12",
+      "e0_sql_masks": 4096,
+      "status": "VERIFIED"
+    }
+  },
+  "status": "VERIFIED"
+}

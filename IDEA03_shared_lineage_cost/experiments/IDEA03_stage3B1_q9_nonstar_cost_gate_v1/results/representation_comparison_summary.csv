@@ -1,0 +1,7 @@
+boundary,m,lex_L_dag_nodes,lex_H_dag_nodes,lex_H_over_L,ve_local_L_player_max_cells,ve_local_H_player_max_cells,ve_H_over_L,ve_local_L_generated_cells,ve_local_H_generated_cells,generated_H_over_L
+P1,4,25,18,0.7200,64,128,2,790,958,1.2127
+P1,8,49,37,0.7551,64,512,8,2254,3910,1.7347
+P1,12,73,54,0.7397,64,8192,128,14518,27742,1.9109
+P2,4,17,15,0.8824,16,32,2,214,238,1.1121
+P2,8,33,31,0.9394,16,128,8,1102,1258,1.1416
+P2,12,49,46,0.9388,16,128,8,12790,12958,1.0131

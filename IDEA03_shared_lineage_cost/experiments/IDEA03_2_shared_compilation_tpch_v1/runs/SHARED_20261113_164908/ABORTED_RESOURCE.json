@@ -1,0 +1,8 @@
+{
+  "run_id": "SHARED_20261113_164908",
+  "status": "RESOURCE_LIMIT_ORCHESTRATION_ABORTED",
+  "completed_stage": "e0",
+  "stopped_stage": "e1",
+  "reason": "The first implementation expanded each DNF by direct inclusion-exclusion, whose cost is exponential in the number of clauses. The wrapper was interrupted without changing historical inputs. Some E1/E2 raw files appeared later from the detached child process, but the run has no atomic summary/environment manifest and is not canonical evidence.",
+  "corrective_action": "Replaced metric-only DNF expansion with the exact O(n*2^n) Boolean-lattice Mobius transform for the frozen N<=16 fixtures and reran every stage into separate atomic successful runs."
+}

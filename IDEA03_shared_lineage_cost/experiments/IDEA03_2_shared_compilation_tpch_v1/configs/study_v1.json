@@ -1,0 +1,10 @@
+{
+  "historical_run": "../IDEA03_2_joint_value_deepening_v1/runs/DEEP_20261113_155744",
+  "threshold_fixture": {"query_version": "F0_EBH", "n": 12, "thresholds": [2, 2]},
+  "controlled_fixture": {"query_version": "F2_ENTITY_LINK", "n": 16, "pairs": 3},
+  "timing_repeats": 3,
+  "tpch_database": "../../../../tmp/researchlab_v2/workspace/BRBD_v1/runs/R1_luo/tpch_sf01/tpch_sf01.duckdb",
+  "tpch_scale": "SF0.1",
+  "large_scale_disabled": true
+}
+

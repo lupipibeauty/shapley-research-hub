@@ -1,0 +1,4 @@
+{"timestamp": "2026-11-13T22:27:57+0800", "step": "experiment1", "event": "start", "historical_pair": 1}
+{"timestamp": "2026-11-13T22:31:43+0800", "step": "experiment1", "event": "complete", "status": "VERIFIED", "pairs_evaluated": 1}
+{"timestamp": "2026-11-13T22:34:04+0800", "step": "experiment2", "event": "start"}
+{"timestamp": "2026-11-13T22:44:20+0800", "step": "experiment2_3", "event": "complete", "status": "VERIFIED", "strict_pair": "VERIFIED", "relaxed_pair": "LOCAL_OBSERVATION"}

@@ -1,0 +1,31 @@
+{
+  "protocol_version": "IDEA03_STAGE2A_MATURE_SOURCE_COMPILATION_V1",
+  "date": "2026-11-13",
+  "scope": "stage2A_only",
+  "fixtures": [
+    "STRICT_CONCENTRATED",
+    "STRICT_BALANCED"
+  ],
+  "frozen_values": [
+    "v_fid_main",
+    "v_gap_PA_PB_mfg_share"
+  ],
+  "mature_compiler": {
+    "name": "official_LExaShap_DNFCircuit",
+    "input": "positive_DNF_lineage",
+    "source": "aggregate_report_shapley/external/abramovich/source/LExaBan-LExaShap-main",
+    "allowed_adapter": "source_to_DNF_and_exact_linear_combination_only"
+  },
+  "variable_orders": {
+    "physical": "stage1_player_index_ascending",
+    "structural": "deterministic_min_fill_fill_degree_player_index",
+    "author_interface_note": "DNFCircuit does not expose an external variable-order parameter; ordered OBDD/SDD comparison is INPUT_UNSUPPORTED, not silently approximated."
+  },
+  "correctness": {
+    "algorithm_input_may_read_full_coalition_table": false,
+    "oracle_may_be_read_after_solver_output": true,
+    "boolean_component_check": "independent_exact_enumeration_after_compilation",
+    "tolerance": 1e-12
+  },
+  "stopping_rule": "Stop after the two strict fixtures and the mature-method coverage/representation gate; do not enter stage2B or stage3."
+}

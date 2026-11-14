@@ -1,0 +1,11 @@
+{
+  "protocol": "IDEA03_NUMERIC_GATE2_NADD_STABILITY_V1",
+  "date": "2026-11-14",
+  "correctness_units": 12,
+  "cost_units": 15,
+  "failure_case": "N60_DISJOINT_5_LITERAL_CLAUSES",
+  "stable_alternatives": ["PREFIX_SUFFIX", "PRODUCT_TREE"],
+  "final_status": "LOCAL_IMPLEMENTATION_CHOICE_ONLY",
+  "author_source_modified": false,
+  "git_actions": false
+}

@@ -1,0 +1,44 @@
+{
+  "protocol_id": "IDEA03_STAGE2B0_ORDERED_STRUCTURE_GATE_V1",
+  "frozen_at": "2026-11-14T00:00:00+08:00",
+  "implementation_status": "REFERENCE_DIAGNOSTIC_IMPLEMENTATION",
+  "players": {
+    "E": ["E1", "E2", "E3", "E4"],
+    "B": ["B_S1", "B_S2", "B_S3", "B_S4", "B_S5", "B_S6"],
+    "H": ["H_S1", "H_S2", "H_S3", "H_S4", "H_S5", "H_S6"]
+  },
+  "sites": [
+    {"sid": "S1", "city": "A1", "province": "PA", "industry": "mfg", "workers": 8},
+    {"sid": "S2", "city": "A1", "province": "PA", "industry": "service", "workers": 12},
+    {"sid": "S3", "city": "A2", "province": "PA", "industry": "mfg", "workers": 7},
+    {"sid": "S4", "city": "B1", "province": "PB", "industry": "mfg", "workers": 15},
+    {"sid": "S5", "city": "B1", "province": "PB", "industry": "service", "workers": 5},
+    {"sid": "S6", "city": "B2", "province": "PB", "industry": "service", "workers": 11}
+  ],
+  "required_full_report_enterprise_counts": {
+    "NAT": 4,
+    "PA": 2,
+    "PB": 3,
+    "A1": 2,
+    "A2": 1,
+    "B1": 2,
+    "B2": 1
+  },
+  "strict_instances": {
+    "concentrated": [0, 1, 0, 0, 2, 3],
+    "balanced": [0, 1, 1, 0, 2, 3]
+  },
+  "orders": [
+    "PHYSICAL_E_B_H",
+    "MIN_FILL_SOURCE",
+    "ENTERPRISE_COMPONENT_GROUPED"
+  ],
+  "order_rules": {
+    "PHYSICAL_E_B_H": "E1..E4, B_S1..B_S6, H_S1..H_S6",
+    "MIN_FILL_SOURCE": "deterministic min-fill on the player primal graph; tie=(fill_edges,current_degree,player_index)",
+    "ENTERPRISE_COMPONENT_GROUPED": "enterprise components by enterprise index; within component B_s,H_s by site; eliminate E last"
+  },
+  "fixed_query_and_value": "Reuse the frozen 35-coordinate full report and G from Stage 1/2A; this diagnostic compiles only the common global OR-of-JOIN-witness source factor.",
+  "timing_repetitions": 1,
+  "selection_rule": "Enumerate all 4^6 labelled B.eid assignments; retain exactly those matching all frozen full-report enterprise counts; quotient only by enterprise-label permutation before any compilation result is observed."
+}

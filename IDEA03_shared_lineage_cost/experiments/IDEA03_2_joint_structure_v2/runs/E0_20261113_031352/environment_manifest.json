@@ -1,0 +1,12 @@
+{
+  "python": "3.11.6 (tags/v3.11.6:8b6ee5b, Oct  2 2023, 14:57:12) [MSC v.1935 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "processor": "AMD64 Family 25 Model 80 Stepping 0, AuthenticAMD",
+  "duckdb": "1.5.6",
+  "numpy": "2.4.6",
+  "pandas": "3.1.0",
+  "scipy": "1.17.1",
+  "pid": 2296,
+  "historical_h5_shared": "D:\\python项目\\shapley\\aggregate_report_shapley\\src\\aggregate_report_shapley\\h5_shared.py",
+  "historical_h5_shared_sha256": "f98c50833a10a0921c6ec064d305410c79160ee33afeebb8602262d03caa6646"
+}

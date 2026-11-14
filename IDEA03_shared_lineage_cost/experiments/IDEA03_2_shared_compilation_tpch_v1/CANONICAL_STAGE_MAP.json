@@ -1,0 +1,13 @@
+{
+  "status": "VERIFIED_WITH_RECORDED_RESOURCE_LIMITS",
+  "e0": "runs/SHARED_20261113_181356",
+  "e1": "runs/SHARED_20261113_175706",
+  "e2": "runs/SHARED_20261113_180500",
+  "tpch": "runs/SHARED_20261113_181253",
+  "resource_limit_runs": [
+    "runs/SHARED_20261113_164908",
+    "runs/SHARED_20261113_175906"
+  ],
+  "note": "The canonical evidence is stage-wise because each successful stage was written atomically after two bounded resource corrections."
+}
+

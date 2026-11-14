@@ -1,0 +1,15 @@
+{
+  "run_id": "SHARED_20261113_175706",
+  "stages": {
+    "e1": {
+      "paired_instances": 3,
+      "games": 6,
+      "all_n": [
+        16
+      ],
+      "sql_checks": 390,
+      "status": "VERIFIED"
+    }
+  },
+  "status": "VERIFIED"
+}

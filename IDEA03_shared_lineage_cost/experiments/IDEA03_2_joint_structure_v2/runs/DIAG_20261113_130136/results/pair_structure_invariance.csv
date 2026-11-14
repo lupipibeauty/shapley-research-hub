@@ -1,0 +1,10 @@
+﻿pair_id,n,degree_signature_equal,incidence_treewidth_equal,primal_treewidth_equal,conserved_degree_total_equal,h3_layer_sizes_equal,low_local_or_terms,high_local_or_terms,low_cross_same_entity_terms,high_cross_same_entity_terms,low_cross_shared_enterprises,high_cross_shared_enterprises
+E0_N10_S9101,10,True,True,True,True,,6,4,0,2,0,2
+E0_N16_S9161,16,True,True,True,True,,8,6,0,2,0,2
+E1_N20_S9201,20,True,True,True,True,False,12,8,0,4,0,4
+E1_N20_S9202,20,True,True,True,True,,12,8,0,4,0,4
+E1_N20_S9203,20,True,True,True,True,,12,8,0,4,0,4
+E2_N24_S9241,24,True,True,True,True,False,20,12,0,8,0,4
+DIAG_N32_S9321,32,True,True,True,True,,16,12,0,4,0,4
+DIAG_N40_S9401,40,True,True,True,True,,24,16,0,8,0,8
+DIAG_N64_S9641,64,True,True,True,True,,44,28,0,16,0,12

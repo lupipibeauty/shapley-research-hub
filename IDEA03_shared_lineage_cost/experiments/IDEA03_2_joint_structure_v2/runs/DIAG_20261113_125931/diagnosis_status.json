@@ -1,0 +1,17 @@
+{
+  "run_id": "DIAG_20261113_125931",
+  "status": "VERIFIED",
+  "scales": 9,
+  "fixtures": 18,
+  "value_validations": 72,
+  "baseline_cells": 144,
+  "correctness_failures": 0,
+  "fatal": null,
+  "elapsed_seconds": 21.527784300007625,
+  "material_passport": {
+    "artifact_id": "IDEA03-2-PREVIOUS-EXPLORATION-DIAGNOSIS-V1",
+    "artifact_type": "structural diagnosis and exact baseline experiment",
+    "origin_mode": "academic-research-suite/experiment-agent run+validate",
+    "evidence_scope": "local frozen fixtures and local official LExaShap source"
+  }
+}

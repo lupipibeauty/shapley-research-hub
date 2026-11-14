@@ -1,0 +1,7 @@
+﻿game_id,pair_id,mode,n,threshold_A,threshold_B,E_rows,B_rows,H_rows,R_rows
+E1_PAIR1_CONCENTRATED,1,concentrated,16,1,1,2,4,4,6
+E1_PAIR1_DISPERSED,1,dispersed,16,1,1,2,4,4,6
+E1_PAIR2_CONCENTRATED,2,concentrated,16,1,1,2,4,4,6
+E1_PAIR2_DISPERSED,2,dispersed,16,1,1,2,4,4,6
+E1_PAIR3_CONCENTRATED,3,concentrated,16,1,1,2,4,4,6
+E1_PAIR3_DISPERSED,3,dispersed,16,1,1,2,4,4,6

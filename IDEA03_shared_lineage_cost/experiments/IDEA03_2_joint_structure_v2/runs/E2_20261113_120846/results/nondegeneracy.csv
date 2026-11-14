@@ -1,0 +1,5 @@
+﻿pair_id,structure,n,scope,f1,f2,f1_unique,f2_unique,reachable_pairs,interaction_residual_unique,interaction_residual_range,source_overlap_variables,both_inputs_vary,nonadditive_effect,not_single_metric,mechanism_eligible,status,eligibility_status
+E2_N24_S9241,low,24,local,PA.enterprise_count,PA.mfg_workers,3,8,16,10,187.5,7,True,True,True,True,VERIFIED,VERIFIED
+E2_N24_S9241,low,24,cross,PA.enterprise_count,PB.enterprise_count,3,3,9,4,125.0,0,True,True,True,True,VERIFIED,VERIFIED
+E2_N24_S9241,high,24,local,PA.enterprise_count,PA.mfg_workers,5,8,24,11,171.56862745098044,8,True,True,True,True,VERIFIED,VERIFIED
+E2_N24_S9241,high,24,cross,PA.enterprise_count,PB.enterprise_count,5,5,25,7,250.0,4,True,True,True,True,VERIFIED,VERIFIED

@@ -1,0 +1,4 @@
+﻿metric,expected,observed,match
+witnesses,402,402,True
+distinct_part_supplier_pairs,52,52,True
+max_witnesses_per_pair,14,14,True

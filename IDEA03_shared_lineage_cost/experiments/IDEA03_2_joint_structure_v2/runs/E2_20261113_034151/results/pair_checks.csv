@@ -1,0 +1,2 @@
+﻿pair_id,seed,n,invariant_player_rows,invariant_e_rows,invariant_site_keys,invariant_city_industry,invariant_h_rows,invariant_degree,invariant_witness_count,stable_non_enterprise_metrics,city_enterprise_count_stable,national_enterprise_count_stable,PA_enterprise_low,PA_enterprise_high,PB_enterprise_low,PB_enterprise_high,province_enterprise_changed,status
+E2_N24_S9241,9241,24,True,True,True,True,True,True,True,True,True,True,2,4,2,4,True,VERIFIED

@@ -1,0 +1,5 @@
+﻿example,mask,players,rA,rB,TA,TB,GR,GL,GC
+positive_ratio_but_C_lt_2,273,E:EA1;B:SA1;H:SA1,1,0,0,0,1/2,0,0
+positive_ratio_and_C_ge_2,819,E:EA1;E:EA2;B:SA1;B:SA2;H:SA1;H:SA2,2/5,0,1,0,1/5,1/5,0
+TA_true_TB_false,819,E:EA1;E:EA2;B:SA1;B:SA2;H:SA1;H:SA2,2/5,0,1,0,1/5,1/5,0
+both_thresholds_true,4095,E:EA1;E:EA2;E:EB1;E:EB2;B:SA1;B:SA2;B:SB1;B:SB2;H:SA1;H:SA2;H:SB1;H:SB2,2/5,3/4,1,1,23/40,23/40,23/40

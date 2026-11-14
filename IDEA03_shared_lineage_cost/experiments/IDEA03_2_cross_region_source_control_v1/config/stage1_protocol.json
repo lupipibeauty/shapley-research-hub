@@ -1,0 +1,79 @@
+{
+  "protocol_version": "IDEA03_STAGE1_CROSS_REGION_V1",
+  "frozen_before_observing_results": true,
+  "history_reuse": {
+    "old_e1_canonical": "SHARED_20261113_175706",
+    "old_solver_canonical": "SHARED_20261113_180500",
+    "old_e0_canonical": "SHARED_20261113_181356",
+    "tpch_canonical": "SHARED_20261113_181253",
+    "stage0_value_config": "../IDEA03_stage0_fidelity_freeze_20261113/config/frozen_value_function.json"
+  },
+  "experiment1": {
+    "pair_order": [1, 2, 3],
+    "maximum_pairs": 3,
+    "initial_pair_only": true,
+    "fixtures": ["E1_PAIR1_CONCENTRATED", "E1_PAIR1_DISPERSED"],
+    "values": ["v_fid_main", "v_gap_PA_PB_mfg_share"],
+    "no_old_sql_rerun": true,
+    "stop_rule": "Stop after pair 1 if the full-coordinate fidelity difference and the province-only gap equivalence can be determined exactly."
+  },
+  "physical_records": {
+    "E": ["E1", "E2", "E3", "E4"],
+    "B_H": [
+      {"sid": "S1", "city": "A1", "industry": "manufacturing", "workers": 8},
+      {"sid": "S2", "city": "A1", "industry": "service", "workers": 12},
+      {"sid": "S3", "city": "A2", "industry": "manufacturing", "workers": 7},
+      {"sid": "S4", "city": "B1", "industry": "manufacturing", "workers": 15},
+      {"sid": "S5", "city": "B1", "industry": "service", "workers": 5},
+      {"sid": "S6", "city": "B2", "industry": "service", "workers": 11}
+    ],
+    "D": {"A1": "PA", "A2": "PA", "B1": "PB", "B2": "PB"}
+  },
+  "strict_pair": {
+    "purpose": "Keep all 35 full-report coordinates, scales, player ids, fact counts, and six witnesses fixed while changing the concentration of enterprise reuse.",
+    "strict_concentrated": {"S1": "E1", "S2": "E2", "S3": "E1", "S4": "E1", "S5": "E3", "S6": "E4"},
+    "strict_balanced": {"S1": "E1", "S2": "E2", "S3": "E2", "S4": "E1", "S5": "E3", "S6": "E4"},
+    "expected_controls": {
+      "players": 16,
+      "E_rows": 4,
+      "B_rows": 6,
+      "H_rows": 6,
+      "join_witnesses": 6,
+      "province_enterprise_counts": {"PA": 2, "PB": 3},
+      "national_enterprise_count": 4,
+      "cross_province_enterprises": 1,
+      "full_report_equal": true
+    },
+    "pre_result_nonisomorphism_invariant": "Enterprise witness-degree multiset differs: [3,1,1,1] versus [2,2,1,1]."
+  },
+  "relaxed_pair": {
+    "purpose": "Vary cross-province enterprise count once, while fixing player ids, fact counts, site attributes, SQL, total witnesses, national enterprise count, and city-level full report.",
+    "relaxed_no_cross": {"S1": "E1", "S2": "E2", "S3": "E2", "S4": "E3", "S5": "E4", "S6": "E3"},
+    "relaxed_one_cross": {"S1": "E1", "S2": "E2", "S3": "E2", "S4": "E1", "S5": "E3", "S6": "E4"},
+    "expected_relaxation": "PB enterprise_count changes from 2 to 3; all other full-report coordinates remain fixed.",
+    "pre_result_nonisomorphism_invariant": "The number of E players whose witnesses occur in both PA and PB changes from 0 to 1 under region-preserving isomorphism."
+  },
+  "sql_validation_rules": [
+    "empty",
+    "full",
+    "all_singletons",
+    "all_leave_one_out",
+    "relation_only_E",
+    "relation_only_B",
+    "relation_only_H",
+    "all_E_B_without_H",
+    "all_E_H_without_B",
+    "each_complete_site_witness",
+    "each_site_witness_missing_E_B_or_H",
+    "all_PA_witnesses",
+    "all_PB_witnesses",
+    "all_without_each_cross_region_E"
+  ],
+  "stage2_gate": {
+    "requires_valid_strict_pair": true,
+    "requires_sql_python_agreement": true,
+    "requires_nonisomorphic_source_invariant": true,
+    "does_not_require_harsanyi_growth": true,
+    "performance_ranking_forbidden": true
+  }
+}

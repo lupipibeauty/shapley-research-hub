@@ -1,0 +1,9 @@
+﻿{
+    "correctness_rows":  12,
+    "cost_rows":  15,
+    "nonfailure_strict_failures":  0,
+    "n60_current_failed":  1,
+    "n60_alternatives_passed":  2,
+    "n60_alternative_efficiency_max_error":  0,
+    "n60_alternative_symmetry_max":  0
+}

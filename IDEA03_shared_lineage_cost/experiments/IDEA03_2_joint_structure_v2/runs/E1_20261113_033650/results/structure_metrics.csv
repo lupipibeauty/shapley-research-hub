@@ -1,0 +1,7 @@
+﻿pair_id,structure,seed,n,e_count,b_count,h_count,join_witnesses,source_variable_occurrences,cross_province_eid_rate,cross_city_eid_rate,multi_site_enterprises,max_enterprise_regions,mean_player_coordinate_count,max_player_coordinate_count,provenance_overlap_mean_jaccard,provenance_overlap_max_jaccard,local_pair_overlap_variables,cross_pair_overlap_variables,cross_pair_overlap_jaccard,rewiring_operations
+E1_N20_S9201,low,9201,20,4,8,8,8,24,0.0,1.0,4,1,14.4,20,0.27656970480499765,1.0,5,0,0.0,0
+E1_N20_S9201,high,9201,20,4,8,8,8,24,1.0,1.0,4,2,15.4,23,0.29697842773472966,1.0,6,4,0.2,2
+E1_N20_S9202,low,9202,20,4,8,8,8,24,0.0,1.0,4,1,14.4,20,0.27656970480499765,1.0,5,0,0.0,0
+E1_N20_S9202,high,9202,20,4,8,8,8,24,1.0,1.0,4,2,15.3,25,0.2956689808790643,1.0,6,4,0.2,2
+E1_N20_S9203,low,9203,20,4,8,8,8,24,0.0,1.0,4,1,14.4,20,0.27656970480499765,1.0,5,0,0.0,0
+E1_N20_S9203,high,9203,20,4,8,8,8,24,1.0,1.0,4,2,15.4,23,0.29697842773472966,1.0,6,4,0.2,2

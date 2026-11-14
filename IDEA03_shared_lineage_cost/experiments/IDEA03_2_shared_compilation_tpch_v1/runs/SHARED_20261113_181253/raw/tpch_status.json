@@ -1,0 +1,10 @@
+{
+  "status": "VERIFIED",
+  "database": "D:\\python项目\\shapley\\tmp\\researchlab_v2\\workspace\\BRBD_v1\\runs\\R1_luo\\tpch_sf01\\tpch_sf01.duckdb",
+  "database_sha256": "8a11caa72d66f2f95a8258aa6859266dfe3e8a0b7288cddee0904c13f9187b8e",
+  "samples": [
+    "TPCH_NATURAL_SF01",
+    "TPCH_PRESSURE_SUPPLIER74_SF01"
+  ],
+  "large_scale_performance": "NOT_RUN_BY_PROTOCOL"
+}

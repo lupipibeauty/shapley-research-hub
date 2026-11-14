@@ -1,0 +1,2 @@
+﻿part_nodes,supplier_nodes,total_nodes,edges,connected_components,largest_component_nodes,largest_component_edges,max_degree,degree_distribution,has_cycle,cycle_basis_size,min_fill_width_upper_bound,min_fill_order_sha256
+13,51,64,52,12,9,8,4,"{""1"":50,""2"":1,""4"":13}",False,0,1,163b7e5e741dba0b70382c1a6ebf4a9545df167be75504076ce15fa2c43054ad

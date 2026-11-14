@@ -1,0 +1,16 @@
+{
+  "query_versions": ["F0_EBH", "F1_SITE_LINK", "F2_ENTITY_LINK"],
+  "proof_distributions": ["balanced", "concentrated"],
+  "value_functions": ["G0", "G1", "G2"],
+  "thresholds": {"k_A": 1, "k_B": 1},
+  "zero_denominator_scoring_rule": "ratio_is_zero",
+  "revenue_mapping": 1000,
+  "oracle_max_n": 16,
+  "sql_validation": {"all_versions": "65_unique_deterministic_boundary_and_sample_masks"},
+  "algorithms": [
+    "B0_FULL_COALITION_ORACLE",
+    "SPARSE_HARSANYI_FROM_PROVENANCE",
+    "OFFICIAL_LEXASHAP_BOOLEAN_COMPONENTS",
+    "LOCAL_ROADD_DIAGNOSTIC_ADAPTER"
+  ]
+}

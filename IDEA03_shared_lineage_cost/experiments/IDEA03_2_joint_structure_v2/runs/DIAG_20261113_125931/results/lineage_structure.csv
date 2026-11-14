@@ -1,0 +1,19 @@
+﻿pair_id,structure,n,enterprise_components,witnesses,enterprise_degree_signature,maximum_enterprise_degree,incidence_nodes,incidence_edges,incidence_cycle_rank,incidence_is_forest,incidence_treewidth_exact,primal_treewidth_exact,same_entity_witness_pairs,different_entity_witness_pairs,same_entity_pair_shared_players,different_entity_pair_shared_players,structural_reason
+E0_N10_S9101,low,10,2,4,2;2,2,14,12,0,True,1,2,2,4,1,0,enterprise-centered 3-uniform hyperedge stars; triangles glued at E variables
+E0_N10_S9101,high,10,2,4,2;2,2,14,12,0,True,1,2,2,4,1,0,enterprise-centered 3-uniform hyperedge stars; triangles glued at E variables
+E0_N16_S9161,low,16,4,6,1;1;2;2,2,22,18,0,True,1,2,2,13,1,0,enterprise-centered 3-uniform hyperedge stars; triangles glued at E variables
+E0_N16_S9161,high,16,4,6,1;1;2;2,2,22,18,0,True,1,2,2,13,1,0,enterprise-centered 3-uniform hyperedge stars; triangles glued at E variables
+E1_N20_S9201,low,20,4,8,2;2;2;2,2,28,24,0,True,1,2,4,24,1,0,enterprise-centered 3-uniform hyperedge stars; triangles glued at E variables
+E1_N20_S9201,high,20,4,8,2;2;2;2,2,28,24,0,True,1,2,4,24,1,0,enterprise-centered 3-uniform hyperedge stars; triangles glued at E variables
+E1_N20_S9202,low,20,4,8,2;2;2;2,2,28,24,0,True,1,2,4,24,1,0,enterprise-centered 3-uniform hyperedge stars; triangles glued at E variables
+E1_N20_S9202,high,20,4,8,2;2;2;2,2,28,24,0,True,1,2,4,24,1,0,enterprise-centered 3-uniform hyperedge stars; triangles glued at E variables
+E1_N20_S9203,low,20,4,8,2;2;2;2,2,28,24,0,True,1,2,4,24,1,0,enterprise-centered 3-uniform hyperedge stars; triangles glued at E variables
+E1_N20_S9203,high,20,4,8,2;2;2;2,2,28,24,0,True,1,2,4,24,1,0,enterprise-centered 3-uniform hyperedge stars; triangles glued at E variables
+E2_N24_S9241,low,24,4,10,2;2;3;3,3,34,30,0,True,1,2,8,37,1,0,enterprise-centered 3-uniform hyperedge stars; triangles glued at E variables
+E2_N24_S9241,high,24,4,10,2;2;3;3,3,34,30,0,True,1,2,8,37,1,0,enterprise-centered 3-uniform hyperedge stars; triangles glued at E variables
+DIAG_N32_S9321,low,32,8,12,1;1;1;1;2;2;2;2,2,44,36,0,True,1,2,4,62,1,0,enterprise-centered 3-uniform hyperedge stars; triangles glued at E variables
+DIAG_N32_S9321,high,32,8,12,1;1;1;1;2;2;2;2,2,44,36,0,True,1,2,4,62,1,0,enterprise-centered 3-uniform hyperedge stars; triangles glued at E variables
+DIAG_N40_S9401,low,40,8,16,2;2;2;2;2;2;2;2,2,56,48,0,True,1,2,8,112,1,0,enterprise-centered 3-uniform hyperedge stars; triangles glued at E variables
+DIAG_N40_S9401,high,40,8,16,2;2;2;2;2;2;2;2,2,56,48,0,True,1,2,8,112,1,0,enterprise-centered 3-uniform hyperedge stars; triangles glued at E variables
+DIAG_N64_S9641,low,64,12,26,2;2;2;2;2;2;2;2;2;2;3;3,3,90,78,0,True,1,2,16,309,1,0,enterprise-centered 3-uniform hyperedge stars; triangles glued at E variables
+DIAG_N64_S9641,high,64,12,26,2;2;2;2;2;2;2;2;2;2;3;3,3,90,78,0,True,1,2,16,309,1,0,enterprise-centered 3-uniform hyperedge stars; triangles glued at E variables

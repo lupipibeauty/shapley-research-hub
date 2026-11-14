@@ -1,0 +1,5 @@
+﻿value,v_empty,v_full,distinct_values,nonzero_coalitions,full_only_nonzero,negative_marginals,negative_shapley_players,cross_region_nonzero_mixed_differences,harsanyi_terms,maximum_harsanyi_degree,efficiency_error,empty_to_target_loss,target_gap
+v_fid_main,0,35/36,16,1695,False,0,0,2304,15,12,0,35/36,
+v_fid_level_emphasis,0,71/72,16,1695,False,0,0,2304,15,12,0,71/72,
+v_fid_content_emphasis,0,23/24,16,1695,False,0,0,2304,15,12,0,23/24,
+v_gap_PA_PB_mfg_share,0,1,9,225,False,63,0,2286,9,12,0,1,-7/20

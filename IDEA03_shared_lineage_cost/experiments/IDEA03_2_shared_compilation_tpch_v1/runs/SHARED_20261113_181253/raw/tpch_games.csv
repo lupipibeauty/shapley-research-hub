@@ -1,0 +1,3 @@
+﻿game_id,source,n,geography,players,dimensions_exogenous,precision,status
+TPCH_NATURAL_SF01,TPC-H SF0.1 native PK/FK,16,customer nation,Order;Lineitem;Supplier;Part,Customer;Nation;Region,integer discounted cents,VERIFIED
+TPCH_PRESSURE_SUPPLIER74_SF01,TPC-H SF0.1 native PK/FK,13,customer nation,Order;Lineitem;Supplier;Part,Customer;Nation;Region,integer discounted cents,VERIFIED

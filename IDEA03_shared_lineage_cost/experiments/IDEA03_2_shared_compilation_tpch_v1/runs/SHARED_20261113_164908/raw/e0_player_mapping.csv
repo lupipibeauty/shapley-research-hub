@@ -1,0 +1,13 @@
+﻿player_index,player_id,relation,key
+0,E:EA1,E,EA1
+1,E:EA2,E,EA2
+2,E:EB1,E,EB1
+3,E:EB2,E,EB2
+4,B:SA1,B,SA1
+5,B:SA2,B,SA2
+6,B:SB1,B,SB1
+7,B:SB2,B,SB2
+8,H:SA1,H,SA1
+9,H:SA2,H,SA2
+10,H:SB1,H,SB1
+11,H:SB2,H,SB2

@@ -1,0 +1,16 @@
+﻿game_id,value,raw_boolean_components,raw_dnf_clauses,maximum_component_variables,harsanyi_terms,max_harsanyi_degree,roadd_nodes
+F0_EBH_base,G0,8,10,5,6,5,65
+F0_EBH_base,G1,6,6,5,4,5,39
+F0_EBH_base,G2,6,12,10,8,10,43
+F1_SITE_LINK_balanced,G0,8,18,8,14,8,
+F1_SITE_LINK_balanced,G1,6,12,8,12,8,
+F1_SITE_LINK_balanced,G2,6,36,16,48,16,
+F1_SITE_LINK_concentrated,G0,8,18,9,18,9,
+F1_SITE_LINK_concentrated,G1,6,12,9,16,9,
+F1_SITE_LINK_concentrated,G2,6,30,16,44,16,
+F2_ENTITY_LINK_balanced,G0,8,20,7,18,7,113
+F2_ENTITY_LINK_balanced,G1,6,12,7,12,7,63
+F2_ENTITY_LINK_balanced,G2,6,48,14,72,14,71
+F2_ENTITY_LINK_concentrated,G0,8,20,8,24,8,113
+F2_ENTITY_LINK_concentrated,G1,6,12,8,16,8,63
+F2_ENTITY_LINK_concentrated,G2,6,36,14,56,14,71

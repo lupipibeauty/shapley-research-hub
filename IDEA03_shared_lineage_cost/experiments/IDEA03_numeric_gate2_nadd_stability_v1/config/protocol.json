@@ -1,0 +1,10 @@
+{
+  "protocol_id": "IDEA03_NUMERIC_GATE2_NADD_STABILITY_V1",
+  "correctness_cases": [{"m": 2, "k": 5}, {"m": 6, "k": 5}, {"m": 11, "k": 5}, {"m": 12, "k": 5}],
+  "methods": ["CURRENT_DECONVOLUTION", "PREFIX_SUFFIX", "PRODUCT_TREE"],
+  "strict_tolerance": 1e-10,
+  "cost_total_degree": 64,
+  "cost_child_counts": [2, 4, 8, 16, 32],
+  "oracle": "DECIMAL_100",
+  "replacement_status": "DIAGNOSTIC_ALTERNATIVE_ONLY"
+}

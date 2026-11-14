@@ -1,0 +1,4 @@
+﻿game_id,value,coalitions,nonzero_value_coalitions,full_value,effective_threshold_events,cross_region_mixed_differences,negative_marginals,negative_shapley_players,boolean_components,raw_dnf_clauses,harsanyi_terms,max_harsanyi_degree,status
+E0_F0_K2_N12,GR,4096,960,23/40,128,0,384,6,6,6,4,6,VERIFIED
+E0_F0_K2_N12,GL,4096,127,23/40,128,0,0,0,6,6,2,6,VERIFIED
+E0_F0_K2_N12,GC,4096,1,23/40,128,36,0,0,6,6,1,12,VERIFIED

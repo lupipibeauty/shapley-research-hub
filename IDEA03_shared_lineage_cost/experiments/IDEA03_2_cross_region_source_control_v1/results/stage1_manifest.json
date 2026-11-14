@@ -1,0 +1,49 @@
+{
+  "status": "STAGE1_COMPLETED_STAGE2_NOT_STARTED",
+  "protocol_version": "IDEA03_STAGE1_CROSS_REGION_V1",
+  "historical_canonical_reused": {
+    "old_e1_canonical": "SHARED_20261113_175706",
+    "old_solver_canonical": "SHARED_20261113_180500",
+    "old_e0_canonical": "SHARED_20261113_181356",
+    "tpch_canonical": "SHARED_20261113_181253",
+    "stage0_value_config": "../IDEA03_stage0_fidelity_freeze_20261113/config/frozen_value_function.json"
+  },
+  "history_experiments_rerun": false,
+  "old_e1_sql_rerun": false,
+  "new_games": [
+    "STRICT_CONCENTRATED",
+    "STRICT_BALANCED",
+    "RELAXED_NO_CROSS",
+    "RELAXED_ONE_CROSS"
+  ],
+  "oracle_truth_table_used_as_structured_algorithm_input": false,
+  "performance_ranking_performed": false,
+  "python": "3.11.6 (tags/v3.11.6:8b6ee5b, Oct  2 2023, 14:57:12) [MSC v.1935 64 bit (AMD64)]",
+  "duckdb": "1.5.6",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "hashes": {
+    "IDEA03_shared_lineage_cost\\experiments\\IDEA03_2_cross_region_source_control_v1\\config\\stage1_protocol.json": "f1b7cfdf37b62d9c2b9c3d397f0af97b9733b898c4f21fd9adfc9b4686fec96d",
+    "IDEA03_shared_lineage_cost\\experiments\\IDEA03_stage0_fidelity_freeze_20261113\\config\\frozen_value_function.json": "e05c7a9fc5a53a9b9f1493a556a48f21b3bebae0a78bf4bd792f6bf76708f591",
+    "IDEA03_shared_lineage_cost\\experiments\\IDEA03_2_cross_region_source_control_v1\\sql\\report_f0_frozen.sql": "1485777960222b6c5a57b16626af498e1cf9bb7fee1b5eea404573690feef069",
+    "IDEA03_shared_lineage_cost\\experiments\\IDEA03_2_cross_region_source_control_v1\\src\\run_stage1.py": "01ab883b35d5ec3ef9e56940bdd69febbaa658cb49feec88c3ab7033ff7f0c8f",
+    "IDEA03_shared_lineage_cost\\experiments\\IDEA03_2_cross_region_source_control_v1\\results\\equivalence_checks_experiment1.csv": "d44fd46cb8835133723c3c055461ab64bdade3e8272a60dbf030f9d46c87b840",
+    "IDEA03_shared_lineage_cost\\experiments\\IDEA03_2_cross_region_source_control_v1\\results\\new_fixture_records.csv": "f6eadf9f79cd76161d993ca37e71beaea05fc13b7ac950fd6fb69e5c9dcb9a4a",
+    "IDEA03_shared_lineage_cost\\experiments\\IDEA03_2_cross_region_source_control_v1\\results\\new_full_reports.csv": "9a711078e5b474505aa39fe0ee200e8cab918133b3a39c61769bfa4cb55c905b",
+    "IDEA03_shared_lineage_cost\\experiments\\IDEA03_2_cross_region_source_control_v1\\results\\new_pair_comparisons.csv": "3f8a8732abccd784cfaa22ba011765111c7ad618518ba8bd0ff69d04926c322b",
+    "IDEA03_shared_lineage_cost\\experiments\\IDEA03_2_cross_region_source_control_v1\\results\\new_player_mapping.csv": "03a9637a607e697be6a324469f540af36b27ade829dbb31d5dc79663b0d7515a",
+    "IDEA03_shared_lineage_cost\\experiments\\IDEA03_2_cross_region_source_control_v1\\results\\new_shapley.csv": "4f66aa51ac13cb5171f413d220c1fdf99c9ef115e3046271ca33900564744c37",
+    "IDEA03_shared_lineage_cost\\experiments\\IDEA03_2_cross_region_source_control_v1\\results\\new_shapley_pair_differences.csv": "ce469bcc22f2c5f657e94e2825310ca9e4bd3dcd960566949f66a27fdd7a4cdb",
+    "IDEA03_shared_lineage_cost\\experiments\\IDEA03_2_cross_region_source_control_v1\\results\\new_source_coordinate_differences.csv": "694a253549b9cce4e1632fc928e7e01b3670d1136d5ac6e6f5504c1846c0e702",
+    "IDEA03_shared_lineage_cost\\experiments\\IDEA03_2_cross_region_source_control_v1\\results\\new_source_metrics.csv": "56febb9260727430957d6975dc70aeb9848c980e1b3e8831e7b0bc851aec39a4",
+    "IDEA03_shared_lineage_cost\\experiments\\IDEA03_2_cross_region_source_control_v1\\results\\new_source_object_differences.csv": "6fde4cfc8744d2972c78d935331832f27b64c15c4e4af24e06d0a535876ba8ef",
+    "IDEA03_shared_lineage_cost\\experiments\\IDEA03_2_cross_region_source_control_v1\\results\\new_source_objects.csv": "c314da3db6cea7d958bbf5b76eb30e2bf3f0d7d65b494b3b5db2b2bc6ab918f7",
+    "IDEA03_shared_lineage_cost\\experiments\\IDEA03_2_cross_region_source_control_v1\\results\\new_value_metrics.csv": "504de4f6b8a72b7adfff6b2e358b7beff56fa9b7ae4ddcb34e3b4e6153f10e19",
+    "IDEA03_shared_lineage_cost\\experiments\\IDEA03_2_cross_region_source_control_v1\\results\\old_e1_coordinate_comparison.csv": "91d83442d5e453a185f1d8802a15d2d3a16473af262c458799d90e5a26a64d74",
+    "IDEA03_shared_lineage_cost\\experiments\\IDEA03_2_cross_region_source_control_v1\\results\\old_e1_full_reports.csv": "44f57a358eab52647e2bf048507e38d932db9339daf7f0c449168f58fd54908a",
+    "IDEA03_shared_lineage_cost\\experiments\\IDEA03_2_cross_region_source_control_v1\\results\\old_e1_shapley.csv": "db6d75c9dad1c2bc64a0ef025dcc67f6a2d98f758bd34889da55166d0206f544",
+    "IDEA03_shared_lineage_cost\\experiments\\IDEA03_2_cross_region_source_control_v1\\results\\old_e1_shapley_differences.csv": "d76f306212eb47cec6bb81f1889514b1545de06186748614a68bd77188ad9a96",
+    "IDEA03_shared_lineage_cost\\experiments\\IDEA03_2_cross_region_source_control_v1\\results\\old_e1_value_metrics.csv": "65552bf03627b3a4cc9f6f92004ca580c934760eaec089a9fd328870d0db6911",
+    "IDEA03_shared_lineage_cost\\experiments\\IDEA03_2_cross_region_source_control_v1\\results\\pair_control_checks.csv": "5007c8185e4fe56dd24df4e59905f4a6816797a95329558e679e1d150dd4bdf5",
+    "IDEA03_shared_lineage_cost\\experiments\\IDEA03_2_cross_region_source_control_v1\\results\\sql_python_validation.csv": "69283cde18d61c9a0d4fc467f6085d079c0bc543f1ef84b0b3b91740117394ee"
+  }
+}

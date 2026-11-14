@@ -1,0 +1,22 @@
+{
+  "protocol": "IDEA03_NUMERIC_GATE_LEXASHAP_V1",
+  "runs": 20,
+  "boundary": {
+    "last_strict_N": 55,
+    "first_loose_failure_N": 60,
+    "first_drift_N": "NONE",
+    "first_catastrophic_N": 60
+  },
+  "platform_precision": {
+    "float64": {
+      "eps": "2.220446049250313e-16",
+      "max": "1.7976931348623157e+308",
+      "nmant": 52
+    },
+    "longdouble": {
+      "eps": "2.220446049250313e-16",
+      "max": "1.7976931348623157e+308",
+      "nmant": 52
+    }
+  }
+}

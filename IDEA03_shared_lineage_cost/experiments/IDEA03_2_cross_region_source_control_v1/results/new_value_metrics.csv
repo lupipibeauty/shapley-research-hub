@@ -1,0 +1,9 @@
+﻿game_id,value,n,coalitions,report_states,value_states,nonzero_coalitions,v_empty,v_full,harsanyi_terms,max_harsanyi_degree,efficiency_error,negative_shapley_players,status
+STRICT_CONCENTRATED,v_fid_main,16,65536,64,64,34323,0,71/72,63,16,0,0,VERIFIED
+STRICT_CONCENTRATED,v_gap_PA_PB_mfg_share,16,65536,64,25,8045,0,1,49,16,0,0,VERIFIED
+STRICT_BALANCED,v_fid_main,16,65536,64,64,34911,0,71/72,63,16,0,0,VERIFIED
+STRICT_BALANCED,v_gap_PA_PB_mfg_share,16,65536,64,25,7457,0,1,49,16,0,0,VERIFIED
+RELAXED_NO_CROSS,v_fid_main,16,65536,64,64,34911,0,71/72,63,16,0,0,VERIFIED
+RELAXED_NO_CROSS,v_gap_PA_PB_mfg_share,16,65536,64,25,6561,0,1,49,16,0,0,VERIFIED
+RELAXED_ONE_CROSS,v_fid_main,16,65536,64,64,34911,0,71/72,63,16,0,0,VERIFIED
+RELAXED_ONE_CROSS,v_gap_PA_PB_mfg_share,16,65536,64,25,7457,0,1,49,16,0,0,VERIFIED

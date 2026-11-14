@@ -1,0 +1,40 @@
+{
+  "pair_id": "E2_N24_S9241",
+  "structure": "high",
+  "seed": 9241,
+  "n": 24,
+  "year": 2025,
+  "player_definition": "one physical E/B/H row per player; D exogenous",
+  "sql_semantics": "full E-B-H join",
+  "hashes": {
+    "E.csv": "6e8aecabbf5ffbc9a4ec6927ac0a4dc66caff0df13731c4eba5470a3b7c5ad49",
+    "B.csv": "2d2f9a4e722c3c7e0f31dd19d48d8c744b9852c8d8aec73839f8eaf7270145a5",
+    "H.csv": "ad9972cb59c7f39e26f08416328032b43146a2514f636c15d49f694ecf482e7a",
+    "D.csv": "36ca921f5cf88bd31bf189af80544f9ab341941b1f59909a45b21a6467ed82a4",
+    "players.csv": "e688c40cc108c008ffe3fd8f60e0693114a7335b8e2b293e9dc4ab9627fa13b8",
+    "rewiring_log.csv": "cf232d264fa29a95e8c823cb088dc13d129627627b1e67da82b537c93427c101"
+  },
+  "structure_metrics": {
+    "pair_id": "E2_N24_S9241",
+    "structure": "high",
+    "seed": 9241,
+    "n": 24,
+    "e_count": 4,
+    "b_count": 10,
+    "h_count": 10,
+    "join_witnesses": 10,
+    "source_variable_occurrences": 30,
+    "cross_province_eid_rate": 1.0,
+    "cross_city_eid_rate": 1.0,
+    "multi_site_enterprises": 4,
+    "max_enterprise_regions": 2,
+    "mean_player_coordinate_count": 15.25,
+    "max_player_coordinate_count": 25,
+    "provenance_overlap_mean_jaccard": 0.29286624398833905,
+    "provenance_overlap_max_jaccard": 1.0,
+    "local_pair_overlap_variables": 8,
+    "cross_pair_overlap_variables": 4,
+    "cross_pair_overlap_jaccard": 0.16666666666666666,
+    "rewiring_operations": 2
+  }
+}

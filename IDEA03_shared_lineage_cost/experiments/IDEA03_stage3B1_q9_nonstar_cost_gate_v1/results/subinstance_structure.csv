@@ -1,0 +1,13 @@
+﻿object_id,family,m,boundary,players,witnesses,witness_size,literal_occurrences,max_player_witness_degree,max_witness_overlap,overlap_ge_2_pairs,connected_components,largest_primal_component_players,incidence_cycle_rank,incidence_min_fill_width_upper_bound,primal_min_fill_width_upper_bound,primal_clique_lower_bound
+Q9_L4_P1,Q9_L,4,P1,20,4,5,20,1,0,0,4,5,0,1,4,4
+Q9_L4_P2,Q9_L,4,P2,12,4,3,12,1,0,0,4,3,0,1,2,2
+Q9_L8_P1,Q9_L,8,P1,40,8,5,40,1,0,0,8,5,0,1,4,4
+Q9_L8_P2,Q9_L,8,P2,24,8,3,24,1,0,0,8,3,0,1,2,2
+Q9_L12_P1,Q9_L,12,P1,60,12,5,60,1,0,0,12,5,0,1,4,4
+Q9_L12_P2,Q9_L,12,P2,36,12,3,36,1,0,0,12,3,0,1,2,2
+Q9_H4_P1,Q9_H,4,P1,11,4,5,20,4,3,6,1,11,6,3,4,4
+Q9_H4_P2,Q9_H,4,P2,9,4,3,12,4,1,0,1,9,0,1,2,2
+Q9_H8_P1,Q9_H,8,P1,21,8,5,40,8,3,16,1,21,12,3,4,4
+Q9_H8_P2,Q9_H,8,P2,18,8,3,24,6,1,0,2,13,0,1,2,2
+Q9_H12_P1,Q9_H,12,P1,31,12,5,60,12,3,21,1,31,18,3,4,4
+Q9_H12_P2,Q9_H,12,P2,27,12,3,36,6,1,0,3,13,0,1,2,2

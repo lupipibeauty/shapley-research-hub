@@ -1,0 +1,13 @@
+﻿pair_id,structure,scope,max_abs_error,status
+E1_N20_S9201,low,local,0.0,VERIFIED
+E1_N20_S9201,low,cross,0.0,VERIFIED
+E1_N20_S9201,high,local,0.0,VERIFIED
+E1_N20_S9201,high,cross,0.0,VERIFIED
+E1_N20_S9202,low,local,0.0,VERIFIED
+E1_N20_S9202,low,cross,0.0,VERIFIED
+E1_N20_S9202,high,local,0.0,VERIFIED
+E1_N20_S9202,high,cross,0.0,VERIFIED
+E1_N20_S9203,low,local,0.0,VERIFIED
+E1_N20_S9203,low,cross,0.0,VERIFIED
+E1_N20_S9203,high,local,0.0,VERIFIED
+E1_N20_S9203,high,cross,0.0,VERIFIED

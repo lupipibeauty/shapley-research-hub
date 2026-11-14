@@ -1,0 +1,21 @@
+{
+  "E2_N24_S9241": {
+    "paired_common": {
+      "PA.enterprise_count": 4.0,
+      "PB.enterprise_count": 4.0,
+      "PA.mfg_workers": 102.0
+    },
+    "structure_own": {
+      "low": {
+        "PA.enterprise_count": 2.0,
+        "PB.enterprise_count": 2.0,
+        "PA.mfg_workers": 102.0
+      },
+      "high": {
+        "PA.enterprise_count": 4.0,
+        "PB.enterprise_count": 4.0,
+        "PA.mfg_workers": 102.0
+      }
+    }
+  }
+}

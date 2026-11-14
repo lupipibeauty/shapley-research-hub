@@ -1,0 +1,47 @@
+{
+  "status": "FROZEN_STAGE0",
+  "freeze_date": "2026-11-13",
+  "game_id": "FID_F0_N12",
+  "source_fixture": "E0_F0_K2_N12",
+  "query_version": "F0_EBH",
+  "player_definition": "Each physical row of E, B, and H is one Shapley player; D and report skeleton are exogenous.",
+  "revenue": 1000,
+  "main_value": {
+    "name": "v_fid_main",
+    "loss": "weighted absolute reconstruction error against Q(D_N)",
+    "hierarchy_weights": {"national": "1/3", "province": "1/3", "city": "1/3"},
+    "node_weights_within_level": "equal",
+    "family_weights": {"counts": "1/3", "sums": "1/3", "ratio": "1/3"},
+    "metric_weights_within_family": "equal",
+    "scales": {
+      "COUNT_and_COUNT_DISTINCT": "max(1, abs(full-coalition target))",
+      "SUM": "max(1, abs(full-coalition target))",
+      "ratio": 1,
+      "AVG_future_rule": "externally frozen valid-domain range; not inferred after Shapley or timing"
+    },
+    "null_rule": {
+      "both_null": 0,
+      "exactly_one_null": 1,
+      "numeric_zero": "numeric, not NULL",
+      "both_numeric": "abs(candidate-target)/fixed_scale"
+    }
+  },
+  "sensitivity_values": {
+    "v_fid_level_emphasis": {
+      "hierarchy_weights": {"national": "1/2", "province": "1/3", "city": "1/6"},
+      "family_weights": {"counts": "1/3", "sums": "1/3", "ratio": "1/3"}
+    },
+    "v_fid_content_emphasis": {
+      "hierarchy_weights": {"national": "1/3", "province": "1/3", "city": "1/3"},
+      "family_weights": {"counts": "1/4", "sums": "1/2", "ratio": "1/4"}
+    }
+  },
+  "supplementary_joint_value": {
+    "name": "v_gap_PA_PB_mfg_share",
+    "statistic": "mfg_share(PA)-mfg_share(PB)",
+    "scale": 2,
+    "missing_candidate_loss": 1,
+    "target_requirement": "both full-coalition province shares are defined"
+  },
+  "change_control": "Any later change creates a new version and cannot overwrite this file or historical canonical runs."
+}

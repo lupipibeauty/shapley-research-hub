@@ -1,0 +1,9 @@
+﻿pair_id,structure,n,scope,f1,f2,f1_unique,f2_unique,reachable_pairs,interaction_residual_unique,interaction_residual_range,source_overlap_variables,both_inputs_vary,nonadditive_effect,not_single_metric,mechanism_eligible,status,eligibility_status
+E0_N10_S9101,low,10,local,PA.enterprise_count,PA.mfg_workers,2,4,4,2,125.0,5,True,True,False,False,VERIFIED,INPUT_UNSUPPORTED
+E0_N10_S9101,low,10,cross,PA.enterprise_count,PB.enterprise_count,2,2,4,2,125.0,0,True,True,True,True,VERIFIED,VERIFIED
+E0_N10_S9101,high,10,local,PA.enterprise_count,PA.mfg_workers,3,4,4,2,125.0,6,True,True,False,False,VERIFIED,INPUT_UNSUPPORTED
+E0_N10_S9101,high,10,cross,PA.enterprise_count,PB.enterprise_count,3,3,9,3,250.0,2,True,True,True,True,VERIFIED,VERIFIED
+E0_N16_S9161,low,16,local,PA.enterprise_count,PA.mfg_workers,3,4,8,5,166.66666666666663,5,True,True,True,True,VERIFIED,VERIFIED
+E0_N16_S9161,low,16,cross,PA.enterprise_count,PB.enterprise_count,3,3,9,5,166.66666666666666,0,True,True,True,True,VERIFIED,VERIFIED
+E0_N16_S9161,high,16,local,PA.enterprise_count,PA.mfg_workers,4,4,8,4,156.04575163398695,6,True,True,True,True,VERIFIED,VERIFIED
+E0_N16_S9161,high,16,cross,PA.enterprise_count,PB.enterprise_count,4,4,16,6,250.0,2,True,True,True,True,VERIFIED,VERIFIED

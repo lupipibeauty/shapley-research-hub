@@ -22,7 +22,7 @@ confirmed_archive_facts:
 ideas:
   IDEA01: candidate_ledger
   IDEA02: evidence_backed_method_coverage
-  IDEA03: candidate_controlled_2x2_validation
+  IDEA03: stage3B1_representation_dependent_effect_verified_candidates_refocused
   IDEA04: course_experiment_with_known_graph_limitations
   IDEA05: candidate_ledger
-next_gate: user_review_then_optional_github_private_remote_and_issue_design
+next_gate: IDEA03_review_2A_2F_registry_then_select_multioutput_multig_or_representation_branch

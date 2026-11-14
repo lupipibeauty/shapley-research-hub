@@ -1,0 +1,24 @@
+{
+  "protocol_id": "IDEA03_STAGE3B1_Q9_NONSTAR_COST_GATE_V1",
+  "frozen_at": "2026-11-14T00:00:00+08:00",
+  "source_stage": "IDEA03_stage3A_q9_nonstar_gate_v1",
+  "families": ["Q9_L", "Q9_H"],
+  "prefix_witness_counts": [4, 8, 12],
+  "boundaries": ["P1", "P2"],
+  "value": "BOOLEAN_ANY_COMPLETE_WITNESS",
+  "lexashap": {
+    "implementation": "OFFICIAL_DNFCIRCUIT",
+    "cache_policy": "CLEAR_VALUE_CACHE_BEFORE_EACH_OBJECT",
+    "timeout_seconds": 3600
+  },
+  "ve": {
+    "implementation": "REFERENCE_DIAGNOSTIC_IMPLEMENTATION",
+    "orders": ["MIN_FILL_SOURCE", "SOURCE_COMPONENT_LEAF_FIRST"],
+    "source_component_leaf_first_rule": "Connected components ordered by smallest player id; within component eliminate LINEITEM, ORDERS, PARTSUPP, SUPPLIER, PART in that fixed priority, then auxiliary witness variables.",
+    "auxiliary_or": "One deterministic Y per witness plus a final OR factor over all Y variables. Report player-phase metrics separately because the common OR factor can mask differences."
+  },
+  "correctness": ["DNF_INCLUSION_EXCLUSION_MODEL_COUNT", "LEXASHAP_BOOLEAN_EFFICIENCY", "VE_MODEL_COUNT_MATCH"],
+  "ordered_compiler_gate": "NO_ELIGIBLE_ORDERED_COMPILER_LOCAL",
+  "no_coalition_enumeration": true,
+  "no_shapley_oracle_table": true
+}

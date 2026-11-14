@@ -1,0 +1,29 @@
+{
+  "protocol_id": "IDEA03_STAGE3A_Q9_NONSTAR_GATE_V1",
+  "frozen_at": "2026-11-14T00:00:00+08:00",
+  "database": "tmp/researchlab_v2/workspace/BRBD_v1/runs/R1_luo/tpch_sf01/tpch_sf01.duckdb",
+  "source_q9": "aggregate_report_shapley/external/abramovich/source/LExaBan-LExaShap-main/Queries/TPC-H/9.sql",
+  "player_boundaries": {
+    "P1": {
+      "endogenous": ["PART", "SUPPLIER", "PARTSUPP", "LINEITEM", "ORDERS"],
+      "exogenous": ["NATION"]
+    },
+    "P2": {
+      "endogenous": ["PARTSUPP", "LINEITEM", "ORDERS"],
+      "exogenous": ["PART", "SUPPLIER", "NATION"]
+    }
+  },
+  "expected_precheck": {
+    "witnesses": 402,
+    "distinct_part_supplier_pairs": 52,
+    "max_witnesses_per_pair": 14
+  },
+  "subinstance_selection": {
+    "target_witnesses": 12,
+    "Q9_L": "Greedy deterministic selection minimizing, in order, maximum P1 overlap with selected witnesses, total P1 overlap, repeated pair, shared part/supplier, shared order, then physical tuple key.",
+    "Q9_H": "Choose part-supplier component by cyclomatic number, edge count and witness count; seed with highest-multiplicity pair, take at most six witnesses from it, then take witnesses from adjacent distinct pairs sharing part or supplier, then fill by maximum P1 overlap; physical tuple keys break ties."
+  },
+  "no_shapley": true,
+  "no_coalition_enumeration": true,
+  "no_foreign_key_mutation": true
+}

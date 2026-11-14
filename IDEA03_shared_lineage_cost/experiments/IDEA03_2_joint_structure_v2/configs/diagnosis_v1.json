@@ -1,0 +1,26 @@
+{
+  "protocol_id": "IDEA03_2_PREVIOUS_EXPLORATION_DIAGNOSIS_V1",
+  "year": 2025,
+  "revenue": 1000.0,
+  "lambda": 0.5,
+  "tolerance": 1e-9,
+  "random_value_masks": 256,
+  "h3_state_cap": 300000,
+  "scales": [
+    {"pair_id": "E0_N10_S9101", "n": 10, "e": 2, "b": 4, "h": 4, "seed": 9101, "oracle": true},
+    {"pair_id": "E0_N16_S9161", "n": 16, "e": 4, "b": 6, "h": 6, "seed": 9161, "oracle": true},
+    {"pair_id": "E1_N20_S9201", "n": 20, "e": 4, "b": 8, "h": 8, "seed": 9201, "oracle": true},
+    {"pair_id": "E1_N20_S9202", "n": 20, "e": 4, "b": 8, "h": 8, "seed": 9202, "oracle": true},
+    {"pair_id": "E1_N20_S9203", "n": 20, "e": 4, "b": 8, "h": 8, "seed": 9203, "oracle": true},
+    {"pair_id": "E2_N24_S9241", "n": 24, "e": 4, "b": 10, "h": 10, "seed": 9241, "oracle": false},
+    {"pair_id": "DIAG_N32_S9321", "n": 32, "e": 8, "b": 12, "h": 12, "seed": 9321, "oracle": false},
+    {"pair_id": "DIAG_N40_S9401", "n": 40, "e": 8, "b": 16, "h": 16, "seed": 9401, "oracle": false},
+    {"pair_id": "DIAG_N64_S9641", "n": 64, "e": 12, "b": 26, "h": 26, "seed": 9641, "oracle": false}
+  ],
+  "h3_profiles": ["E1_N20_S9201", "E2_N24_S9241"],
+  "methods": [
+    "SPARSE_HARSANYI_PROVENANCE",
+    "OFFICIAL_LEXASHAP_BOOLEAN_COMPONENTS"
+  ],
+  "note": "This is a discriminating structural diagnosis, not a continuation of the original seed expansion."
+}

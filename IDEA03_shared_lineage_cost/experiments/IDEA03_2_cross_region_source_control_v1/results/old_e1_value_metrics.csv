@@ -1,0 +1,5 @@
+﻿game_id,value,n,coalitions,report_states,value_states,nonzero_coalitions,v_empty,v_full,harsanyi_terms,max_harsanyi_degree,efficiency_error,negative_shapley_players,status
+E1_PAIR1_CONCENTRATED,v_fid_main,16,65536,16,16,22687,0,5/6,483,16,0,0,VERIFIED
+E1_PAIR1_CONCENTRATED,v_gap_PA_PB_mfg_share,16,65536,16,9,2401,0,1,441,16,0,0,VERIFIED
+E1_PAIR1_DISPERSED,v_fid_main,16,65536,100,49,22687,0,1,483,16,0,0,VERIFIED
+E1_PAIR1_DISPERSED,v_gap_PA_PB_mfg_share,16,65536,100,9,2401,0,1,441,16,0,0,VERIFIED

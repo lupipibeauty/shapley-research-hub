@@ -1,0 +1,5 @@
+﻿pair_id,structure,scope,max_abs_error,status
+E2_N24_S9241,low,local,0.0,VERIFIED
+E2_N24_S9241,low,cross,0.0,VERIFIED
+E2_N24_S9241,high,local,0.0,VERIFIED
+E2_N24_S9241,high,cross,0.0,VERIFIED

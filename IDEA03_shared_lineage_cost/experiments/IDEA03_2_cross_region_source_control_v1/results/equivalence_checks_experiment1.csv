@@ -1,0 +1,3 @@
+﻿scope,left,right,value,value_tables_equal_by_player_id,different_coalitions,shapley_vectors_equal_by_player_id,sorted_shapley_multisets_equal,status
+old_e1_pair1,E1_PAIR1_CONCENTRATED,E1_PAIR1_DISPERSED,v_fid_main,False,22687,False,False,VERIFIED_DIFFERENCE
+old_e1_pair1,E1_PAIR1_CONCENTRATED,E1_PAIR1_DISPERSED,v_gap_PA_PB_mfg_share,True,0,True,True,NEGATIVE_CONTROL

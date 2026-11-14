@@ -1,0 +1,43 @@
+{
+  "run_id": "STAGE2A_20261113_CANONICAL",
+  "status": "VERIFIED",
+  "stage": "2A_ONLY",
+  "fixtures": [
+    "STRICT_CONCENTRATED",
+    "STRICT_BALANCED"
+  ],
+  "algorithm_input_used_full_player_coalition_table": false,
+  "algorithm_input_used_harsanyi_oracle": false,
+  "oracle_used_after_solver_output_for_validation_only": true,
+  "mature_compiler": "official LExaShap DNFCircuit/d-tree",
+  "ordered_compiler_comparison": "INPUT_UNSUPPORTED_AUTHOR_INTERFACE",
+  "partial_subexpression_cross_output_reuse": "NOT_SUPPORTED_BY_AUTHOR_INTERFACE",
+  "elapsed_seconds": 18.56741452217102,
+  "python": "3.11.6 (tags/v3.11.6:8b6ee5b, Oct  2 2023, 14:57:12) [MSC v.1935 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "pythonhashseed": "0 required by canonical command",
+  "process_memory_at_end": {
+    "working_set_bytes": 101928960,
+    "peak_working_set_bytes": 101928960
+  },
+  "input_hashes": {
+    "IDEA03_shared_lineage_cost\\experiments\\IDEA03_stage2A_mature_source_compilation_20261113\\config\\stage2a_protocol.json": "67d786f905e25ce16215f1560e53d702e05c41eb204a1422da02cb82238b3286",
+    "IDEA03_shared_lineage_cost\\experiments\\IDEA03_stage2A_mature_source_compilation_20261113\\src\\run_stage2a.py": "ced0cbdd5b3e9a453d9d70db4c005c2779ef3c8ca04871cea33a32f99753a234",
+    "IDEA03_shared_lineage_cost\\experiments\\IDEA03_2_cross_region_source_control_v1\\config\\stage1_protocol.json": "f1b7cfdf37b62d9c2b9c3d397f0af97b9733b898c4f21fd9adfc9b4686fec96d",
+    "IDEA03_shared_lineage_cost\\experiments\\IDEA03_stage0_fidelity_freeze_20261113\\config\\frozen_value_function.json": "e05c7a9fc5a53a9b9f1493a556a48f21b3bebae0a78bf4bd792f6bf76708f591",
+    "IDEA03_shared_lineage_cost\\experiments\\IDEA03_2_cross_region_source_control_v1\\results\\new_fixture_records.csv": "f6eadf9f79cd76161d993ca37e71beaea05fc13b7ac950fd6fb69e5c9dcb9a4a",
+    "IDEA03_shared_lineage_cost\\experiments\\IDEA03_2_cross_region_source_control_v1\\results\\new_player_mapping.csv": "03a9637a607e697be6a324469f540af36b27ade829dbb31d5dc79663b0d7515a",
+    "IDEA03_shared_lineage_cost\\experiments\\IDEA03_2_cross_region_source_control_v1\\results\\new_shapley.csv": "4f66aa51ac13cb5171f413d220c1fdf99c9ef115e3046271ca33900564744c37",
+    "aggregate_report_shapley\\external\\abramovich\\source\\LExaBan-LExaShap-main\\README.md": "4759a12e69f07a789fe45d606a3a7f73d3d1f3efa68007ce6121c6bbbc43254c",
+    "aggregate_report_shapley\\external\\abramovich\\source\\LExaBan-LExaShap-main\\Algorithms\\LExaShap\\ShapleyCircuit.py": "63855c5b1b7997b79cef9731a63eae9aa81e64f4987a4ae9c731c994f41d68fe",
+    "aggregate_report_shapley\\external\\abramovich\\source\\LExaBan-LExaShap-main\\Algorithms\\LExaShap\\ShapleyEngine.py": "6d45813c1b89e65e70a71d56a14f65f0f7ba883264d72b2c6dc3d837306d16b2"
+  },
+  "output_hashes": {
+    "results\\component_boolean_exactness.csv": "f0bb5158550dd81f161d71c7035214cb0ca3c656e8ebb3fb6acde1e5b3faabef",
+    "results\\exact_shapley_comparison.csv": "d642d2dd45680edcfea2cc81f57373b45d215b442732252cd2e12881b4b7ff42",
+    "results\\multioutput_reuse_metrics.csv": "8399abe42fae7b5b73ae4af465debef09321141b24efaa123b1efc7b83885d57",
+    "results\\source_compilation_metrics.csv": "4d9274788f1c0ec471a120e790f2883800b8c0143b6c8510b0715434d233bc72",
+    "results\\value_components.csv": "11c752f1b1079cfefe3c23af5519524fbc8f00430b4edfbe049a50b476172bf7",
+    "results\\variable_orders.csv": "652c9d894be74d7082b7b2ae679017cb57331ddd63ab2f6023c56b9e3341f87f"
+  }
+}

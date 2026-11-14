@@ -25,3 +25,12 @@ runs/
 data/
 external/
 sources/
+
+# IDEA-03 contains small frozen evidence bundles. Track their logs and run
+# outputs so conclusions remain auditable, while continuing to exclude caches.
+!IDEA03_shared_lineage_cost/experiments/**/logs/
+!IDEA03_shared_lineage_cost/experiments/**/logs/**
+!IDEA03_shared_lineage_cost/experiments/**/runs/
+!IDEA03_shared_lineage_cost/experiments/**/runs/**
+IDEA03_shared_lineage_cost/experiments/**/__pycache__/
+IDEA03_shared_lineage_cost/experiments/**/*.pyc

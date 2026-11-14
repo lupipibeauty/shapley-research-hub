@@ -1,0 +1,6 @@
+﻿game_id,query_version,n,logical_site_city_objects,join_witnesses,source_variable_occurrences,maximum_variable_occurrences,overlapping_proof_pairs,maximum_proof_overlap,mean_proof_overlap
+F0_EBH_base,F0_EBH,10,4,4,12,2,2,1,0.3333333333333333
+F1_SITE_LINK_balanced,F1_SITE_LINK,16,4,6,24,3,6,3,0.6666666666666666
+F1_SITE_LINK_concentrated,F1_SITE_LINK,16,4,6,24,4,7,3,0.8666666666666667
+F2_ENTITY_LINK_balanced,F2_ENTITY_LINK,14,4,8,32,4,12,3,0.8571428571428571
+F2_ENTITY_LINK_concentrated,F2_ENTITY_LINK,14,4,8,32,6,16,3,1.1428571428571428

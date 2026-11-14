@@ -1,0 +1,7 @@
+﻿game_id,query_version,n,join_witnesses,minimal_proof_count,variable_occurrences,player_reuse_mean,player_reuse_max,overlapping_proof_pairs,mean_pair_overlap,primal_edges,connected_components,min_fill_treewidth_upper_bound,joint_statistic_states,g_coordinates,finite_threshold_components,harsanyi_terms,max_harsanyi_degree,total_boolean_dnf_clauses,unique_dnf_clauses,unique_component_dnfs,actual_shared_subexpressions
+E1_PAIR1_CONCENTRATED,F2_ENTITY_LINK,16,12,12,48,3.0,6,30,0.9090909090909091,42,2,5,16,6,6,392,16,108,63,4,45
+E1_PAIR1_DISPERSED,F2_ENTITY_LINK,16,12,12,48,3.0,6,30,0.9090909090909091,42,2,5,49,6,6,392,16,108,63,4,45
+E1_PAIR2_CONCENTRATED,F2_ENTITY_LINK,16,12,12,48,3.0,6,30,0.9090909090909091,42,2,5,16,6,6,392,16,108,63,4,45
+E1_PAIR2_DISPERSED,F2_ENTITY_LINK,16,12,12,48,3.0,6,30,0.9090909090909091,42,2,5,49,6,6,392,16,108,63,4,45
+E1_PAIR3_CONCENTRATED,F2_ENTITY_LINK,16,12,12,48,3.0,6,30,0.9090909090909091,42,2,5,16,6,6,392,16,108,63,4,45
+E1_PAIR3_DISPERSED,F2_ENTITY_LINK,16,12,12,48,3.0,6,30,0.9090909090909091,42,2,5,49,6,6,392,16,108,63,4,45

@@ -1,0 +1,24 @@
+{"timestamp": "2026-11-13T03:35:47.172100+08:00", "event": "run_started", "run_id": "E0_20261113_033545", "stage": "E0"}
+{"timestamp": "2026-11-13T03:35:47.172100+08:00", "event": "fixtures_generated", "pair_id": "E0_N10_S9101", "pair_check_status": "VERIFIED"}
+{"timestamp": "2026-11-13T03:35:47.379279+08:00", "event": "sql_validation", "pair_id": "E0_N10_S9101", "structure": "low", "status": "VERIFIED", "masks": 1024}
+{"timestamp": "2026-11-13T03:35:47.505306+08:00", "event": "sql_validation", "pair_id": "E0_N10_S9101", "structure": "high", "status": "VERIFIED", "masks": 1024}
+{"timestamp": "2026-11-13T03:35:47.553587+08:00", "event": "baseline", "pair_id": "E0_N10_S9101", "structure": "low", "value_name": "local_add", "method": "H3_S6_EVIDENCE_STATE", "status": "VERIFIED"}
+{"timestamp": "2026-11-13T03:35:47.569573+08:00", "event": "baseline", "pair_id": "E0_N10_S9101", "structure": "low", "value_name": "local_joint", "method": "H3_S6_EVIDENCE_STATE", "status": "VERIFIED"}
+{"timestamp": "2026-11-13T03:35:47.584796+08:00", "event": "baseline", "pair_id": "E0_N10_S9101", "structure": "low", "value_name": "cross_add", "method": "H3_S6_EVIDENCE_STATE", "status": "VERIFIED"}
+{"timestamp": "2026-11-13T03:35:47.600492+08:00", "event": "baseline", "pair_id": "E0_N10_S9101", "structure": "low", "value_name": "cross_joint", "method": "H3_S6_EVIDENCE_STATE", "status": "VERIFIED"}
+{"timestamp": "2026-11-13T03:35:47.616172+08:00", "event": "baseline", "pair_id": "E0_N10_S9101", "structure": "high", "value_name": "local_add", "method": "H3_S6_EVIDENCE_STATE", "status": "VERIFIED"}
+{"timestamp": "2026-11-13T03:35:47.631909+08:00", "event": "baseline", "pair_id": "E0_N10_S9101", "structure": "high", "value_name": "local_joint", "method": "H3_S6_EVIDENCE_STATE", "status": "VERIFIED"}
+{"timestamp": "2026-11-13T03:35:47.647576+08:00", "event": "baseline", "pair_id": "E0_N10_S9101", "structure": "high", "value_name": "cross_add", "method": "H3_S6_EVIDENCE_STATE", "status": "VERIFIED"}
+{"timestamp": "2026-11-13T03:35:47.663672+08:00", "event": "baseline", "pair_id": "E0_N10_S9101", "structure": "high", "value_name": "cross_joint", "method": "H3_S6_EVIDENCE_STATE", "status": "VERIFIED"}
+{"timestamp": "2026-11-13T03:35:47.663672+08:00", "event": "fixtures_generated", "pair_id": "E0_N16_S9161", "pair_check_status": "VERIFIED"}
+{"timestamp": "2026-11-13T03:35:53.776105+08:00", "event": "sql_validation", "pair_id": "E0_N16_S9161", "structure": "low", "status": "VERIFIED", "masks": 65536}
+{"timestamp": "2026-11-13T03:35:59.634710+08:00", "event": "sql_validation", "pair_id": "E0_N16_S9161", "structure": "high", "status": "VERIFIED", "masks": 65536}
+{"timestamp": "2026-11-13T03:36:00.748889+08:00", "event": "baseline", "pair_id": "E0_N16_S9161", "structure": "low", "value_name": "local_add", "method": "H3_S6_EVIDENCE_STATE", "status": "VERIFIED"}
+{"timestamp": "2026-11-13T03:36:01.193298+08:00", "event": "baseline", "pair_id": "E0_N16_S9161", "structure": "low", "value_name": "local_joint", "method": "H3_S6_EVIDENCE_STATE", "status": "VERIFIED"}
+{"timestamp": "2026-11-13T03:36:01.739353+08:00", "event": "baseline", "pair_id": "E0_N16_S9161", "structure": "low", "value_name": "cross_add", "method": "H3_S6_EVIDENCE_STATE", "status": "VERIFIED"}
+{"timestamp": "2026-11-13T03:36:02.187691+08:00", "event": "baseline", "pair_id": "E0_N16_S9161", "structure": "low", "value_name": "cross_joint", "method": "H3_S6_EVIDENCE_STATE", "status": "VERIFIED"}
+{"timestamp": "2026-11-13T03:36:02.617318+08:00", "event": "baseline", "pair_id": "E0_N16_S9161", "structure": "high", "value_name": "local_add", "method": "H3_S6_EVIDENCE_STATE", "status": "VERIFIED"}
+{"timestamp": "2026-11-13T03:36:03.036672+08:00", "event": "baseline", "pair_id": "E0_N16_S9161", "structure": "high", "value_name": "local_joint", "method": "H3_S6_EVIDENCE_STATE", "status": "VERIFIED"}
+{"timestamp": "2026-11-13T03:36:03.491326+08:00", "event": "baseline", "pair_id": "E0_N16_S9161", "structure": "high", "value_name": "cross_add", "method": "H3_S6_EVIDENCE_STATE", "status": "VERIFIED"}
+{"timestamp": "2026-11-13T03:36:03.967757+08:00", "event": "baseline", "pair_id": "E0_N16_S9161", "structure": "high", "value_name": "cross_joint", "method": "H3_S6_EVIDENCE_STATE", "status": "VERIFIED"}
+{"timestamp": "2026-11-13T03:36:03.999807+08:00", "event": "run_finished", "run_id": "E0_20261113_033545", "stage": "E0", "status": "VERIFIED", "started_pairs": 2, "planned_pairs": 2, "elapsed_seconds": 16.831357299990486, "correctness_failures": 0, "resource_limits": 0, "fatal": null, "note": "E2 deliberately stops after the first frozen pair if the non-enumerative baseline fails its resource/correctness gate."}

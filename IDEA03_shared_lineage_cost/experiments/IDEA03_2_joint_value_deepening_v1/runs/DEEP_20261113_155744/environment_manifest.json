@@ -1,0 +1,21 @@
+{
+  "run_id": "DEEP_20261113_155744",
+  "status": "VERIFIED",
+  "python": "3.11.6 (tags/v3.11.6:8b6ee5b, Oct  2 2023, 14:57:12) [MSC v.1935 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "duckdb": "1.5.6",
+  "games": [
+    "F0_EBH_base",
+    "F1_SITE_LINK_balanced",
+    "F1_SITE_LINK_concentrated",
+    "F2_ENTITY_LINK_balanced",
+    "F2_ENTITY_LINK_concentrated"
+  ],
+  "official_lexashap_source": "D:\\python项目\\shapley\\aggregate_report_shapley\\external\\abramovich\\source\\LExaBan-LExaShap-main\\Algorithms\\LExaShap\\ShapleyCircuit.py",
+  "official_lexashap_sha256": "63855c5b1b7997b79cef9731a63eae9aa81e64f4987a4ae9c731c994f41d68fe",
+  "notes": [
+    "N<=16 only; no large grid.",
+    "Each Q version uses 65 unique deterministic boundary/sample masks for SQL/Python equality; exact Shapley remains exhaustive in Python at N<=16.",
+    "LOCAL_ROADD_DIAGNOSTIC_ADAPTER is not presented as an official or optimized ADD family benchmark."
+  ]
+}

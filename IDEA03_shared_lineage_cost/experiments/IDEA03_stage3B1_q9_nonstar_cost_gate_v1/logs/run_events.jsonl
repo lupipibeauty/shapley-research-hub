@@ -1,0 +1,74 @@
+{"event": "canonical_run_start", "time": 1794624224.320288, "protocol": "IDEA03_STAGE3B1_Q9_NONSTAR_COST_GATE_V1"}
+{"event": "lexashap_start", "time": 1794624224.360674, "object_id": "Q9_L4_P1"}
+{"event": "lexashap_complete", "time": 1794624224.414339, "object_id": "Q9_L4_P1", "arithmetic_dag_nodes": 25}
+{"event": "ve_start", "time": 1794624224.4153428, "object_id": "Q9_L4_P1", "order": "MIN_FILL_SOURCE"}
+{"event": "ve_complete", "time": 1794624224.426732, "object_id": "Q9_L4_P1", "order": "MIN_FILL_SOURCE", "exact_match": true}
+{"event": "ve_start", "time": 1794624224.4272928, "object_id": "Q9_L4_P1", "order": "SOURCE_COMPONENT_LEAF_FIRST"}
+{"event": "ve_complete", "time": 1794624224.438868, "object_id": "Q9_L4_P1", "order": "SOURCE_COMPONENT_LEAF_FIRST", "exact_match": true}
+{"event": "lexashap_start", "time": 1794624224.438868, "object_id": "Q9_L4_P2"}
+{"event": "lexashap_complete", "time": 1794624224.4606998, "object_id": "Q9_L4_P2", "arithmetic_dag_nodes": 17}
+{"event": "ve_start", "time": 1794624224.4606998, "object_id": "Q9_L4_P2", "order": "MIN_FILL_SOURCE"}
+{"event": "ve_complete", "time": 1794624224.4606998, "object_id": "Q9_L4_P2", "order": "MIN_FILL_SOURCE", "exact_match": true}
+{"event": "ve_start", "time": 1794624224.4606998, "object_id": "Q9_L4_P2", "order": "SOURCE_COMPONENT_LEAF_FIRST"}
+{"event": "ve_complete", "time": 1794624224.478752, "object_id": "Q9_L4_P2", "order": "SOURCE_COMPONENT_LEAF_FIRST", "exact_match": true}
+{"event": "lexashap_start", "time": 1794624224.4797573, "object_id": "Q9_L8_P1"}
+{"event": "lexashap_complete", "time": 1794624224.560564, "object_id": "Q9_L8_P1", "arithmetic_dag_nodes": 49}
+{"event": "ve_start", "time": 1794624224.560564, "object_id": "Q9_L8_P1", "order": "MIN_FILL_SOURCE"}
+{"event": "ve_complete", "time": 1794624224.5944448, "object_id": "Q9_L8_P1", "order": "MIN_FILL_SOURCE", "exact_match": true}
+{"event": "ve_start", "time": 1794624224.5944448, "object_id": "Q9_L8_P1", "order": "SOURCE_COMPONENT_LEAF_FIRST"}
+{"event": "ve_complete", "time": 1794624224.6273253, "object_id": "Q9_L8_P1", "order": "SOURCE_COMPONENT_LEAF_FIRST", "exact_match": true}
+{"event": "lexashap_start", "time": 1794624224.6273253, "object_id": "Q9_L8_P2"}
+{"event": "lexashap_complete", "time": 1794624224.6822844, "object_id": "Q9_L8_P2", "arithmetic_dag_nodes": 33}
+{"event": "ve_start", "time": 1794624224.6843038, "object_id": "Q9_L8_P2", "order": "MIN_FILL_SOURCE"}
+{"event": "ve_complete", "time": 1794624224.6998534, "object_id": "Q9_L8_P2", "order": "MIN_FILL_SOURCE", "exact_match": true}
+{"event": "ve_start", "time": 1794624224.7008538, "object_id": "Q9_L8_P2", "order": "SOURCE_COMPONENT_LEAF_FIRST"}
+{"event": "ve_complete", "time": 1794624224.71679, "object_id": "Q9_L8_P2", "order": "SOURCE_COMPONENT_LEAF_FIRST", "exact_match": true}
+{"event": "lexashap_start", "time": 1794624224.7272763, "object_id": "Q9_L12_P1"}
+{"event": "lexashap_complete", "time": 1794624224.8641167, "object_id": "Q9_L12_P1", "arithmetic_dag_nodes": 73}
+{"event": "ve_start", "time": 1794624224.8641167, "object_id": "Q9_L12_P1", "order": "MIN_FILL_SOURCE"}
+{"event": "ve_complete", "time": 1794624225.1612573, "object_id": "Q9_L12_P1", "order": "MIN_FILL_SOURCE", "exact_match": true}
+{"event": "ve_start", "time": 1794624225.1612573, "object_id": "Q9_L12_P1", "order": "SOURCE_COMPONENT_LEAF_FIRST"}
+{"event": "ve_complete", "time": 1794624225.4274595, "object_id": "Q9_L12_P1", "order": "SOURCE_COMPONENT_LEAF_FIRST", "exact_match": true}
+{"event": "lexashap_start", "time": 1794624225.4558904, "object_id": "Q9_L12_P2"}
+{"event": "lexashap_complete", "time": 1794624225.5332155, "object_id": "Q9_L12_P2", "arithmetic_dag_nodes": 49}
+{"event": "ve_start", "time": 1794624225.5332155, "object_id": "Q9_L12_P2", "order": "MIN_FILL_SOURCE"}
+{"event": "ve_complete", "time": 1794624225.7949126, "object_id": "Q9_L12_P2", "order": "MIN_FILL_SOURCE", "exact_match": true}
+{"event": "ve_start", "time": 1794624225.7949126, "object_id": "Q9_L12_P2", "order": "SOURCE_COMPONENT_LEAF_FIRST"}
+{"event": "ve_complete", "time": 1794624226.0543306, "object_id": "Q9_L12_P2", "order": "SOURCE_COMPONENT_LEAF_FIRST", "exact_match": true}
+{"event": "lexashap_start", "time": 1794624226.0607123, "object_id": "Q9_H4_P1"}
+{"event": "lexashap_complete", "time": 1794624226.0948553, "object_id": "Q9_H4_P1", "arithmetic_dag_nodes": 18}
+{"event": "ve_start", "time": 1794624226.096863, "object_id": "Q9_H4_P1", "order": "MIN_FILL_SOURCE"}
+{"event": "ve_complete", "time": 1794624226.1102448, "object_id": "Q9_H4_P1", "order": "MIN_FILL_SOURCE", "exact_match": true}
+{"event": "ve_start", "time": 1794624226.1112716, "object_id": "Q9_H4_P1", "order": "SOURCE_COMPONENT_LEAF_FIRST"}
+{"event": "ve_complete", "time": 1794624226.1236317, "object_id": "Q9_H4_P1", "order": "SOURCE_COMPONENT_LEAF_FIRST", "exact_match": true}
+{"event": "lexashap_start", "time": 1794624226.1257102, "object_id": "Q9_H4_P2"}
+{"event": "lexashap_complete", "time": 1794624226.15213, "object_id": "Q9_H4_P2", "arithmetic_dag_nodes": 15}
+{"event": "ve_start", "time": 1794624226.153188, "object_id": "Q9_H4_P2", "order": "MIN_FILL_SOURCE"}
+{"event": "ve_complete", "time": 1794624226.1568115, "object_id": "Q9_H4_P2", "order": "MIN_FILL_SOURCE", "exact_match": true}
+{"event": "ve_start", "time": 1794624226.1588194, "object_id": "Q9_H4_P2", "order": "SOURCE_COMPONENT_LEAF_FIRST"}
+{"event": "ve_complete", "time": 1794624226.1611338, "object_id": "Q9_H4_P2", "order": "SOURCE_COMPONENT_LEAF_FIRST", "exact_match": true}
+{"event": "lexashap_start", "time": 1794624226.1611338, "object_id": "Q9_H8_P1"}
+{"event": "lexashap_complete", "time": 1794624226.2441814, "object_id": "Q9_H8_P1", "arithmetic_dag_nodes": 37}
+{"event": "ve_start", "time": 1794624226.245718, "object_id": "Q9_H8_P1", "order": "MIN_FILL_SOURCE"}
+{"event": "ve_complete", "time": 1794624226.3866153, "object_id": "Q9_H8_P1", "order": "MIN_FILL_SOURCE", "exact_match": true}
+{"event": "ve_start", "time": 1794624226.3876417, "object_id": "Q9_H8_P1", "order": "SOURCE_COMPONENT_LEAF_FIRST"}
+{"event": "ve_complete", "time": 1794624226.4440465, "object_id": "Q9_H8_P1", "order": "SOURCE_COMPONENT_LEAF_FIRST", "exact_match": true}
+{"event": "lexashap_start", "time": 1794624226.446054, "object_id": "Q9_H8_P2"}
+{"event": "lexashap_complete", "time": 1794624226.4950554, "object_id": "Q9_H8_P2", "arithmetic_dag_nodes": 31}
+{"event": "ve_start", "time": 1794624226.4950554, "object_id": "Q9_H8_P2", "order": "MIN_FILL_SOURCE"}
+{"event": "ve_complete", "time": 1794624226.5248554, "object_id": "Q9_H8_P2", "order": "MIN_FILL_SOURCE", "exact_match": true}
+{"event": "ve_start", "time": 1794624226.5267804, "object_id": "Q9_H8_P2", "order": "SOURCE_COMPONENT_LEAF_FIRST"}
+{"event": "ve_complete", "time": 1794624226.5438771, "object_id": "Q9_H8_P2", "order": "SOURCE_COMPONENT_LEAF_FIRST", "exact_match": true}
+{"event": "lexashap_start", "time": 1794624226.560082, "object_id": "Q9_H12_P1"}
+{"event": "lexashap_complete", "time": 1794624226.681395, "object_id": "Q9_H12_P1", "arithmetic_dag_nodes": 54}
+{"event": "ve_start", "time": 1794624226.6834505, "object_id": "Q9_H12_P1", "order": "MIN_FILL_SOURCE"}
+{"event": "ve_complete", "time": 1794624229.4973972, "object_id": "Q9_H12_P1", "order": "MIN_FILL_SOURCE", "exact_match": true}
+{"event": "ve_start", "time": 1794624229.4973972, "object_id": "Q9_H12_P1", "order": "SOURCE_COMPONENT_LEAF_FIRST"}
+{"event": "ve_complete", "time": 1794624230.1100247, "object_id": "Q9_H12_P1", "order": "SOURCE_COMPONENT_LEAF_FIRST", "exact_match": true}
+{"event": "lexashap_start", "time": 1794624230.1240928, "object_id": "Q9_H12_P2"}
+{"event": "lexashap_complete", "time": 1794624230.2145507, "object_id": "Q9_H12_P2", "arithmetic_dag_nodes": 46}
+{"event": "ve_start", "time": 1794624230.2155776, "object_id": "Q9_H12_P2", "order": "MIN_FILL_SOURCE"}
+{"event": "ve_complete", "time": 1794624230.4606323, "object_id": "Q9_H12_P2", "order": "MIN_FILL_SOURCE", "exact_match": true}
+{"event": "ve_start", "time": 1794624230.4606323, "object_id": "Q9_H12_P2", "order": "SOURCE_COMPONENT_LEAF_FIRST"}
+{"event": "ve_complete", "time": 1794624230.720728, "object_id": "Q9_H12_P2", "order": "SOURCE_COMPONENT_LEAF_FIRST", "exact_match": true}
+{"event": "canonical_run_complete", "time": 1794624230.789506, "status": "VERIFIED", "protocol_id": "IDEA03_STAGE3B1_Q9_NONSTAR_COST_GATE_V1", "python": "3.11.6 (tags/v3.11.6:8b6ee5b, Oct  2 2023, 14:57:12) [MSC v.1935 64 bit (AMD64)]", "platform": "Windows-10-10.0.26200-SP0", "official_source": "D:\\python项目\\shapley\\aggregate_report_shapley\\external\\abramovich\\source\\LExaBan-LExaShap-main", "objects": 12, "lexashap_runs": 12, "ve_runs": 24, "correctness_all_pass": false, "ordered_compiler_gate": "NO_ELIGIBLE_ORDERED_COMPILER_LOCAL", "coalition_enumeration": false, "complete_report_g": false, "config_sha256": "e4f6e9bafc7bd652f3c9702dc64af1e63430fb802bad3f85aacfc826dea5118b", "stage3a_q9_l_sha256": "dc29831c3454b0aff0e3c7b9b28691acbc8bb3dbb2f1d52a7dfc112b053df27e", "stage3a_q9_h_sha256": "c8a6e79d66a8149e2a30677b488879f5754c76a08902121769671209e71fea9d", "official_shapley_circuit_sha256": "63855c5b1b7997b79cef9731a63eae9aa81e64f4987a4ae9c731c994f41d68fe"}
