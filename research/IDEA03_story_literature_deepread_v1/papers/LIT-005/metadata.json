@@ -1,0 +1,14 @@
+{
+  "paper_id": "LIT-005",
+  "title": "Dynamic Shapley Computation",
+  "authors": ["Xuan Yang", "Hsi-Wen Chen", "Ming-Syan Chen", "Jian Pei"],
+  "year": 2026,
+  "venue": "arXiv:2605.20620v1",
+  "doi": "10.48550/arXiv.2605.20620",
+  "source": "<USER_HOME>/Zotero/storage/EJGMZF2P/Yang et al. - 2026 - Dynamic Shapley Computation.pdf",
+  "sha256": "37d6b1ac7d1285b38af63ab29606e47a4cf2ccc11e72b0cc63f097bb2f213da5",
+  "pages": 27,
+  "evidence_level": "FULLTEXT_THEOREM_VERIFIED",
+  "reused_dossier": "tmp/researchlab_v2/workspace/deepread/DynamicShapley_Yang2026/",
+  "story_ids": ["B1", "B2", "D2"]
+}

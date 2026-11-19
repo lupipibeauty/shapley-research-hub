@@ -1,0 +1,27 @@
+id,paper,evidence_type,idea_layer,inspiration_or_question,source_locator,linked_story,required_next_evidence
+TI-001,Owen 1977,ORIGINAL_EXPLICIT,cooperative_game,preexisting affinities motivate modifying the usual value,official abstract,R4,lawful fulltext
+TI-002,Owen 1977,INFERENCE,player_boundary,compare record-sum owner-game and a-priori-union allocation,secondary standard model,R4,original definition plus symbolic conditions
+TI-003,Owen 1977,NEW_IDEA,cooperative_game,model overlapping control when ownership is not a partition,project extension,R4,literature search and contracts
+TI-004,Owen 1977,NEW_IDEA,exact_computation,two-level exact allocation with an equivalence certificate,project extension,R2;R4,formal theorem then exact tests
+TI-005,Owen 1977,NEW_IDEA,business_evidence,build a supply-control matrix before selecting players,project extension,R4,real contracts and withdrawal rights
+TI-006,Comparisons of Signals,ORIGINAL_EXPLICIT,value_theory,information rankings can flip in the presence of correlated extra information,pp1-2,R1,buyer background information
+TI-007,Comparisons of Signals,ORIGINAL_EXPLICIT,value_theory,strong Blackwell equals reveal-or-refine,Theorem1 pp8-9,R1;R3,report-to-signal embedding
+TI-008,Comparisons of Signals,INFERENCE,value_theory,separate output equivalence task equivalence and context-robust equivalence,Theorem1,R1,formal hierarchy and counterexamples
+TI-009,Comparisons of Signals,NEW_IDEA,value_theory,define report sufficiency on a restricted real decision domain,Theorem1prime pp16-17,R1;R3,official decision rule
+TI-010,Comparisons of Signals,NEW_IDEA,exact_computation,use certified redundant-output removal before contribution solving,project extension,R1;R2,coalitionwise preservation proof
+TI-011,MC-nets,ORIGINAL_EXPLICIT,representation,local marginal rules can compactly encode interaction,Secs1-3,R3,SQL compiler analysis
+TI-012,MC-nets,ORIGINAL_EXPLICIT,exact_computation,Shapley is additive across rules,Proposition5 p4,R2;R3,exact rule representation
+TI-013,MC-nets,INFERENCE,exact_computation,total cost must include SQL-G-to-rule compilation,Prop1 and Prop5,R3,representation-size bounds
+TI-014,MC-nets,NEW_IDEA,exact_computation,share a rule support basis across multiple G functions,project extension,R2,common-basis theorem and counterexample
+TI-015,MC-nets,NEW_IDEA,representation,use symmetry classes while preserving physical-player identities,discussion p8,R2;R3,automorphism certificate
+TI-016,Bounded dependency,ORIGINAL_EXPLICIT,exact_computation,Shapley is FPT in semantic dependency degree,Theorem8 p1067,R3,known dependency sets
+TI-017,Bounded dependency,ORIGINAL_EXPLICIT,representation,dependency graph discovery from black-box values can require exponential queries,Theorem13 pp1069-1070,R1;R3,SQL structural certificates
+TI-018,Bounded dependency,INFERENCE,representation,provenance overlap and semantic dependency are distinct graphs,definitions and Theorem8,R1;R3,necessary and sufficient mappings
+TI-019,Bounded dependency,NEW_IDEA,exact_computation,total pipeline includes candidate generation certification and local solve,project extension,R3,complexity theorem
+TI-020,Bounded dependency,NEW_IDEA,dynamic,incrementally maintain dependency neighborhoods under database updates,project extension,R5,affected-region proof
+TI-021,Markets for Information,ORIGINAL_EXPLICIT,value_theory,information products include predictions ratings advice and access,pp1-4,R3,product contract
+TI-022,Markets for Information,ORIGINAL_EXPLICIT,economics,source compensation buyer benefit and intermediary profit differ,pp7-8,R3;R4,transaction and cost data
+TI-023,Markets for Information,ORIGINAL_EXPLICIT,economics,greater precision need not increase intermediary profit,p8,R3,market-specific mechanism
+TI-024,Markets for Information,INFERENCE,value_theory,multiple buyer tasks provide an economic family of G functions,integrated model,R2;R3,observable actions and losses
+TI-025,Markets for Information,NEW_IDEA,economics,three-ledger accounting for source contribution buyer value and intermediary value added,project extension,R3;R4,contracts prices and processing costs
+

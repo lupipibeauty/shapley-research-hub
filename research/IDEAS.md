@@ -36,6 +36,7 @@
 - 阶段0证据入口：`IDEA03_shared_lineage_cost/experiments/IDEA03_stage0_fidelity_freeze_20261113/`。
 - 历史诊断入口：`IDEA03_shared_lineage_cost/experiments/IDEA03_2_joint_structure_v2/PREVIOUS_EXPLORATION_DIAGNOSIS.md`。
 - IDEA-03-2A～2F 的统一谱系与状态入口：`IDEA03_shared_lineage_cost/IDEA03_2A_2F_BRANCH_REGISTRY.md`。这些编号是研究子方向，不等于已经创建六条 Git branch。
+- 2026-11-19 最新进展入口：`IDEA03_shared_lineage_cost/IDEA03_2A_2F_LATEST_PROGRESS_20261119.md`。新增分支竞争审计、理论精读和57项原文范围矩阵后，2C/2F 保持优先但需强基线准入；2B/2D 收缩为表示选择问题；2E 与 IDEA-01 的真实价值/支付证据联动。
 - 后续候选谱系（尚未自动立项）：2C 承接为 IDEA-03-3-1 部分子 DAG 共享、03-3-2 数值状态复用、03-3-3 多输出 all-player 梯度复用；2F 承接为 03-3-4 多 G 复用及 03-6-1/03-6-2 摊销与增量归因；2B/2D 承接为 03-4-1 表示选择和 03-4-2 混合表示；玩家边界继续拆分为 03-5-1～03-5-3。以上均须通过冻结对象、竞争文献与同目标基线准入后再建实验分支。
 
 ## IDEA-04 GNN 学习式贡献估算

@@ -1,0 +1,10 @@
+{
+  "paper_id": "LIT-008",
+  "claims": [
+    {"id":"C1","claim":"distributional Shapley 是包含点 z 的随机数据集上 Data Shapley 的期望。","locator":"Definition 2.2, main pp.2-3","status":"VERIFIED"},
+    {"id":"C2","claim":"Theorem 2.3 给出按随机集合规模抽样的期望边际贡献等价表示，支持无偏估计。","locator":"Theorem 2.3, main p.3; supplement proof","status":"VERIFIED"},
+    {"id":"C3","claim":"在 potential 稳定条件下，点或数据分布扰动导致的 distributional value 变化有界。","locator":"Theorems 2.7-2.8, main pp.4-5","status":"VERIFIED"},
+    {"id":"C4","claim":"Algorithm 1 在样本数达到对 epsilon^-2 和 log(|Z|/delta) 的量级时给出统一高概率误差界。","locator":"Theorem 3.1, main p.6","status":"VERIFIED"},
+    {"id":"C5","claim":"潜在函数 U、任务和算法仍固定；论文并未解决 SQL 记录来源或外生固定收入。","locator":"Sec.5 limitations, main p.10","status":"VERIFIED"}
+  ]
+}

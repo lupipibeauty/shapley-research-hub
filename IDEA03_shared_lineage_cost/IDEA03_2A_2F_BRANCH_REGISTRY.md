@@ -1,6 +1,6 @@
 # IDEA-03-2A～2F 研究子方向谱系
 
-更新日期：2026-11-14
+更新日期：2026-11-19
 
 本文件中的“分支”指研究子方向，不表示已经创建同名 Git branch。当前仓库以主线保存共同证据，待某个子方向通过准入门槛并进入独立实现时，再建立实验分支。
 
@@ -77,6 +77,16 @@
   - `experiments/IDEA03_2_shared_compilation_tpch_v1/`
 - 当前状态：`DESIGN_FROZEN / PARTIAL_CACHE_EVIDENCE / STANDALONE_EXPERIMENT_NOT_COMPLETED`。
 - 后续拆分：IDEA-03-3-4 多 G 共享变换与求解；IDEA-03-6-1 重复报表归因的摊销计算；IDEA-03-6-2 数据或报表变化下的增量 Shapley。
+
+## 2026-11-19 文献与理论审计更新
+
+- 六个方向的最新状态统一见 `IDEA03_2A_2F_LATEST_PROGRESS_20261119.md`。
+- 2A/2E 新增价值、信息市场和收益机制原文证据，进一步确认“联盟价值—记录贡献—最终支付”必须分层。
+- 2B/2D 新增 MC-net、bounded dependency、knowledge compilation 和 aggregate-CQ 证据，支持把后续问题收缩为表示选择及参数化条件。
+- 2C/2F 新增 DBSP、F-IVM、LMFAO、provenance 与模型计数竞争审计；成熟方法已能共享查询/统计中间量，但是否能同目标恢复全部玩家 Shapley 仍需正式归约和实验。
+- 新证据目录为 `../research/IDEA03_3_branch_audit_20261114/`、`../research/IDEA03_story_literature_deepread_v1/`、`../research/IDEA03_theory_extension_deepread_v2/` 和 `../research/IDEA03_literature_limitation_atlas_v1/`。
+
+以上更新不改变历史 canonical runs，也不把文献相似性直接判作覆盖或创新。
 
 ## Git 分支准入规则
 

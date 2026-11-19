@@ -1,0 +1,12 @@
+story_id,buyer_or_user,provider,platform,value_observation,revenue_status,allocation_target,main_mechanism_risk,evidence_gap
+A1,buyer decision maker,record contributors,data product platform,change in expected decision payoff,external fixed R,records,"arbitrary G; utility-price conflation","no observed buyer task"
+A2,report user,record contributors,report publisher,decision-equivalent information,external fixed R,records,"double weighting recoverable coordinates","multi-signal/full-report evidence"
+A3,buyer using multiple indicators,multi-table contributors,platform,joint decision loss/payoff,external fixed R,records,"artificial non-additivity","real task supporting interaction"
+B1,heterogeneous buyers,same contributors,platform,buyer-specific G_k,separate external R_k,records per transaction,"ranking difference presented as novelty","identified tasks and comparability"
+B2,repeated buyers/tasks,same contributors,platform,known sequence of G_k,separate R_k,records,"unbounded arbitrary task family","task-family structure and amortization bound"
+C1,buyer,record/owner suppliers,platform,fixed V under alternative player boundary,external fixed R,records/bundles/owners,"player boundary chosen for convenience","control and delivery facts"
+C2,buyer,external contributors + platform public data,platform,fixed V under endogeneity boundary,total revenue vs distributable pool,participant players,"platform property issue mistaken for valuation theorem","institutional rule for pool R"
+D1,buyer fixed,record contributors,platform,fixed G,external fixed R,records,"engineering cache mistaken for theory","internal operation/representation bounds"
+D2,buyer over versions,changing contributors,platform,V_t and aligned players,version-specific R_t,aligned records,"SQL-local change mistaken for Shapley-local change","real update event and exactness target"
+E1,buyer,records/bundles/owners,platform,task-grounded G,external R with platform retention separated,justified players,"three mature layers merely concatenated","cross-layer theorem or mechanism"
+

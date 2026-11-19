@@ -22,7 +22,7 @@ confirmed_archive_facts:
 ideas:
   IDEA01: candidate_ledger
   IDEA02: evidence_backed_method_coverage
-  IDEA03: stage3B1_representation_dependent_effect_verified_candidates_refocused
+  IDEA03: six_subdirections_updated_20261119_literature_and_representation_audit
   IDEA04: course_experiment_with_known_graph_limitations
   IDEA05: candidate_ledger
-next_gate: IDEA03_review_2A_2F_registry_then_select_multioutput_multig_or_representation_branch
+next_gate: IDEA03_select_2C_2F_shared_computation_or_2B_2D_representation_gate_after_20261119_review

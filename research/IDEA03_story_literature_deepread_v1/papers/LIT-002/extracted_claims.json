@@ -1,0 +1,8 @@
+{
+  "paper_id": "LIT-002",
+  "claims": [
+    {"id":"C1","claim":"一个实验至少与另一个实验一样有信息，当它在所有决策问题中能达到不差的风险/效用表现。","locator":"pp.265-270, comparison of experiments","status":"VERIFIED_MODEL"},
+    {"id":"C2","claim":"在经典条件下，该决策序与由随机化/garbling 生成另一个实验的结构序等价。","locator":"main equivalence result, pp.267-270","status":"VERIFIED_MODEL"},
+    {"id":"C3","claim":"Blackwell 等价不自动推出两个数据库报表对每个联盟具有相同标量价值，更不自动推出 Shapley 不变。","locator":"inference from model boundary","status":"CODEX_INFERENCE"}
+  ]
+}

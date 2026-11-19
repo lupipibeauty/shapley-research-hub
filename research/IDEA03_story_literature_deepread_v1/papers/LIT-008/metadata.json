@@ -1,0 +1,12 @@
+{
+  "paper_id": "LIT-008",
+  "title": "A Distributional Framework for Data Valuation",
+  "authors": ["Amirata Ghorbani", "Michael P. Kim", "James Zou"],
+  "year": 2020,
+  "venue": "ICML 2020, PMLR 119:3535-3544",
+  "official_pdf": "https://proceedings.mlr.press/v119/ghorbani20a/ghorbani20a.pdf",
+  "supplement": "https://proceedings.mlr.press/v119/ghorbani20a/ghorbani20a-supp.pdf",
+  "evidence_level": "FULLTEXT_THEOREM_VERIFIED",
+  "dedup_note": "Not the same paper as Kwon, Rivas and Zou (2021).",
+  "story_ids": ["A1", "B1", "E1"]
+}

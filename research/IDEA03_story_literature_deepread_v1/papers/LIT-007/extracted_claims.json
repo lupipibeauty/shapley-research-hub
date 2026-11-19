@@ -1,0 +1,10 @@
+{
+  "paper_id": "LIT-007",
+  "claims": [
+    {"id":"C1","claim":"Data Shapley 固定训练数据、学习算法和性能指标，以训练样本为玩家。","locator":"Introduction and preliminaries, pp.1-2","status":"VERIFIED"},
+    {"id":"C2","claim":"论文公平性公理唯一确定标准 Shapley 形式（差一个缩放常数）。","locator":"Properties 1-3 and Proposition 2.1, pp.2-3","status":"VERIFIED"},
+    {"id":"C3","claim":"TMC-Shapley 是排列 Monte Carlo，并在边际性能接近全数据性能时截断。","locator":"Algorithm 1, p.4","status":"VERIFIED"},
+    {"id":"C4","claim":"Gradient Shapley 依赖可微学习过程，不能直接用于 SQL 报表价值。","locator":"Algorithm 2, p.4","status":"VERIFIED"},
+    {"id":"C5","claim":"论文没有定义数据成交价，也没有完整层次统计报表或关系表物理记录。","locator":"scope throughout","status":"VERIFIED"}
+  ]
+}

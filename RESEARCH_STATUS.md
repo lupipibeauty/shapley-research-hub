@@ -30,9 +30,11 @@
 - IDEA-03 Stage 3A/3B-1：TPC-H SF0.1 Q9 的完整物理玩家边界形成真实非星形来源，固定 PART/SUPPLIER 后又退化。官方 LExaShap 与 VE 对高重叠结构给出相反成本方向，支持 `REPRESENTATION_DEPENDENT_EFFECT`，不能用单一表示概括结构难度。
 - IDEA-03 Numerical Gate：LExaShap 的 N_add 异常定位为浮点反卷积误差被阶乘梯度放大；prefix/suffix 与 product-tree sibling product 在 float64 下直接修复 N=60。该问题定性为局部实现选择，不扩展为独立研究主线。
 - IDEA-03-2A～2F 均已登记在 `IDEA03_shared_lineage_cost/IDEA03_2A_2F_BRANCH_REGISTRY.md`。2D 在当前星形族并入2B，2F仍是已冻结设计但未完成独立实验，不得误记为六个已执行 Git 分支。
+- IDEA-03-2A～2F 的 2026-11-19 最新进展已汇总到 `IDEA03_shared_lineage_cost/IDEA03_2A_2F_LATEST_PROGRESS_20261119.md`：2A 为价值准入门；2B/2D 转入表示选择；2C/2F 保留为多输出/多 G 共享计算候选；2E 是尚未开始正式支付模型的规范层问题。
+- 文献侧已建立57项原文范围矩阵，并对31篇已有全文审计论文回查作者局限：29篇定位到作者明确陈述，2篇完成检索但未发现独立局限段。该结果用于提出质疑和准入条件，不用于自动宣布创新或关闭方向。
 
 ## 证据使用规则
 
 证据等级与研究状态必须分开记录。报告文本不自动等价于 A 级证据；“环境阻塞”“用户暂停”“仅设计”也不得记为失败。无法回到代码、配置、CSV、JSON 或日志的判断保持待核实。
 
-详细证据参见 `evidence/round1/`、`evidence/round2/`、`research/EXPERIMENT_INDEX_CURRENT.csv`、`IDEA03_shared_lineage_cost/IDEA03_2A_2F_BRANCH_REGISTRY.md` 及其链接的各阶段实验目录。
+详细证据参见 `evidence/round1/`、`evidence/round2/`、`research/EXPERIMENT_INDEX_CURRENT.csv`、`IDEA03_shared_lineage_cost/IDEA03_2A_2F_BRANCH_REGISTRY.md`、`IDEA03_shared_lineage_cost/IDEA03_2A_2F_LATEST_PROGRESS_20261119.md`、`research/IDEA03_3_branch_audit_20261114/`、`research/IDEA03_story_literature_deepread_v1/`、`research/IDEA03_theory_extension_deepread_v2/` 与 `research/IDEA03_literature_limitation_atlas_v1/`。

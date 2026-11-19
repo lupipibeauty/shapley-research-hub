@@ -1,0 +1,11 @@
+{
+  "paper_id": "LIT-004",
+  "title": "2D-Shapley: A Framework for Fragmented Data Valuation",
+  "authors": ["Zhihong Liu", "Hoang Anh Just", "Xiangyu Chang", "Xi Chen", "Ruoxi Jia"],
+  "year": 2023,
+  "venue": "ICML 2023, PMLR 202:21730-21755",
+  "official_pdf": "https://proceedings.mlr.press/v202/liu23s/liu23s.pdf",
+  "pages": 26,
+  "evidence_level": "FULLTEXT_THEOREM_VERIFIED",
+  "story_ids": ["C1", "C2", "E1"]
+}

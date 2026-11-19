@@ -1,0 +1,14 @@
+{
+  "paper_id": "LIT-006",
+  "title": "Toward Replication-Robust Analytics Markets",
+  "authors": ["Thomas Falconer", "Jalal Kazempour", "Pierre Pinson"],
+  "year_online": 2025,
+  "year_issue": 2026,
+  "venue": "INFORMS Journal on Data Science 5(2):155-170",
+  "doi": "10.1287/ijds.2025.0075",
+  "arxiv": "2310.06000",
+  "fulltext_evidence": "Falconer PhD thesis, Paper B, pp.117ff",
+  "evidence_level": "FULLTEXT_THEOREM_VERIFIED",
+  "version_note": "Preprint uses 'Towards'; final title uses 'Toward'.",
+  "story_ids": ["A2", "C1", "C2"]
+}

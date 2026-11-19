@@ -1,0 +1,17 @@
+paper_id,scenario,decision_maker,player,value_function,monetary,structure,output,exactness,direct_gap
+LIT-001,information across decision problems,decision maker,information experiment,"BPI/CEI/EUI",no,statistical signals,information ordering,theory exact,"no record allocation or SQL"
+LIT-002,comparison of experiments,decision maker,experiment/signal,"risk over all decision rules",no,stochastic experiment,partial order,theory exact,"no payment or record players"
+LIT-003,group ML data valuation,data providers,individual data point then group,"ML utility",not necessary,fixed dataset partition,group value,approx algorithm + exact definition,"does not choose owner-level game"
+LIT-004,fragmented ML data valuation,model user,sample-feature block,"ML performance h(S,F)",no,rectangular matrix,cell/block value,exact definition + approximate algorithms,"not multi-relation tuples"
+LIT-005,dynamic ML valuation,model user,training point across tasks,"task model performance",no,player-task matrix,updated Shapley matrix,mostly approximate/local,"not exact SQL multi-G"
+LIT-006,analytics market,central/support agents,features/feature owners,"predictive lift",yes,causal regression graph,revenue rewards,exact proposition + empirical,"not report-coordinate redundancy"
+LIT-007,supervised ML valuation,model developer,training point,"test performance",no,dataset + learner,point Shapley,approximate,"not sale price/SQL"
+LIT-008,distributional ML valuation,broker/buyers,data point in distribution,"fixed potential U",pricing case only,underlying distribution,expected point value,approx with bounds,"not fixed database game"
+LIT-014,query provenance,database user,tuple token,"query annotation",no,semiring expression,provenance,exact algebra,"not Shapley payment"
+LIT-015,aggregate provenance,database user,tuple token,"aggregate semimodule",no,aggregate provenance,value+source expression,exact algebra,"not overall G"
+LIT-016,query answer attribution,database user,endogenous tuple,"Boolean/aggregate query result",no,CQ lineage,tuple Shapley,exact/approx frontiers,"not complete report economic G"
+LIT-017,aggregate CQ attribution,database user,endogenous tuple,"local aggregate function",no,CQ+aggregate,tuple Shapley,exact complexity,"not multi-coordinate whole G"
+LIT-018,fact attribution,database user,lineage variable,"SPJUA aggregate",no,d-tree,all-player values,exact if compilable,"whole-report reduction needed"
+LIT-019,Boolean game/model counting,none,lineage variable,"Boolean circuit",no,d-DNNF/OBDD,all-variable Shapley,exact if compiled,"numeric report G reduction needed"
+PROJECT,IDEA-03 target,buyer/platform/record owners,physical records or justified bundles,"G(Q(D_S))",yes fixed R,multi-relation hierarchical report,record/owner payments,exact preferred,"bridge value-player-computation"
+

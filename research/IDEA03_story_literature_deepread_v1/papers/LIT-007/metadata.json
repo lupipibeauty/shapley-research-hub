@@ -1,0 +1,12 @@
+{
+  "paper_id": "LIT-007",
+  "title": "Data Shapley: Equitable Valuation of Data for Machine Learning",
+  "authors": ["Amirata Ghorbani", "James Zou"],
+  "year": 2019,
+  "venue": "ICML 2019, PMLR 97:2242-2251",
+  "official_pdf": "https://proceedings.mlr.press/v97/ghorbani19c/ghorbani19c.pdf",
+  "legacy_source": "<USER_HOME>/Zotero/storage/3NPRP26G/Ghorbani et al. - 2019 - Data Shapley.no_watermark.zh-CN.mono.pdf",
+  "legacy_sha256": "4ade9c19bcb1ad76171f46d22d1bcfa2ef97f9a9a50b0850daffda69ddeee1b7",
+  "evidence_level": "FULLTEXT_MODEL_VERIFIED",
+  "story_ids": ["A1", "A3", "B1"]
+}

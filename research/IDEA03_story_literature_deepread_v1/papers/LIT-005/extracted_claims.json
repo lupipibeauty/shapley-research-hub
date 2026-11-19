@@ -1,0 +1,9 @@
+{
+  "paper_id": "LIT-005",
+  "claims": [
+    {"id":"C1","claim":"把贡献表示为 player-by-task 矩阵，并分别处理新任务和新玩家。","locator":"Secs.2-3, pp.3-6","status":"VERIFIED"},
+    {"id":"C2","claim":"新任务通过任务距离和 utility Lipschitz 条件做结构插值，属于带界近似。","locator":"Assumption 1, Proposition 1, Theorem 1, pp.4-5","status":"VERIFIED"},
+    {"id":"C3","claim":"新玩家更新只在能够证明的局部 support/coalition block 内重算。","locator":"Theorem 2 and Corollary 1, p.6; Appendix B","status":"VERIFIED"},
+    {"id":"C4","claim":"论文不提供对任意 SQL 报表多个非可加 G 的精确跨任务复用定理。","locator":"model boundary, Secs.2-3","status":"VERIFIED"}
+  ]
+}

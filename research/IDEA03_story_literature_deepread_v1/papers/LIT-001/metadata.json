@@ -1,0 +1,14 @@
+{
+  "paper_id": "LIT-001",
+  "title": "On the Value of Information Across Decision Problems",
+  "authors": ["Ali E. Abbas", "Gordon B. Hazen"],
+  "year": 2025,
+  "venue": "Decision Analysis 22(1)",
+  "doi": "10.1287/deca.2024.0187",
+  "source": "<USER_HOME>/Zotero/storage/DBXFV6ED/Abbas and Hazen - 2025 - On the Value of Information Across Decision Problems.pdf",
+  "sha256": "708f46f4b8edf1d52a7428ed1ffde74365d3743fba0822aa1383ae0825da22e9",
+  "pages": 14,
+  "evidence_level": "FULLTEXT_THEOREM_VERIFIED",
+  "reused_dossier": "tmp/researchlab_v2/workspace/deepread/AbbasHazen2025_ValueInformation/",
+  "story_ids": ["A1", "A3", "B1", "E1"]
+}

@@ -1,0 +1,16 @@
+{
+  "lit_id": "LIT-024",
+  "title": "Markets for Information: An Introduction",
+  "authors": ["Dirk Bergemann", "Alessandro Bonatti"],
+  "venue": "Annual Review of Economics 11",
+  "year": 2019,
+  "published_pages": "85-107",
+  "author_pdf_pages": 23,
+  "doi": "10.1146/annurev-economics-080315-015439",
+  "fulltext_url": "https://bpb-us-w2.wpmucdn.com/campuspress.yale.edu/dist/3/352/files/2010/11/EC11_Bonatti_Cleanup-22t9w2n.pdf",
+  "local_pdf": "<SOURCE_WORKSPACE>/research/IDEA03_theory_extension_deepread_v2/sources/markets_for_information_2019_author.pdf",
+  "physical_pages": 23,
+  "sha256": "A5B3F0833F565B91E586C9AD797DE2B37AF283427E73F9BE152B796984F9ED5A",
+  "accessed": "2026-11-18",
+  "status": ["FULLTEXT_MODEL_VERIFIED", "FLASH_SCAN_COMPLETE_DRAFT", "SURVEY_NO_SELF_NUMBERED_MAIN_THEOREM", "CODE_NOT_APPLICABLE"]
+}

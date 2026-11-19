@@ -1,0 +1,7 @@
+component,paper_evidence,status,project_validation
+signal_model,Sections_2_3,FULLTEXT_VERIFIED,define state prior report observation
+strong_blackwell,Theorem_1_pp8_9,FULLTEXT_VERIFIED,construct report-level counterexample only after embedding
+restricted_domain,Theorem_1prime_pp16_17,FULLTEXT_VERIFIED,define real task class
+relation_collapse,Theorem_2_Corollary_1_p17,FULLTEXT_VERIFIED,do not transfer without assumptions
+empirical_data,none,NOT_APPLICABLE,collect buyer task evidence
+code,none_found,CODE_UNVERIFIED,no implementation this round

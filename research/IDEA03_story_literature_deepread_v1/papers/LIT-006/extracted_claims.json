@@ -1,0 +1,10 @@
+{
+  "paper_id": "LIT-006",
+  "claims": [
+    {"id":"C1","claim":"analytics market 中支持代理贡献 feature，收入按相对 Shapley 奖励分配。","locator":"Introduction and market model, pp.1-4","status":"VERIFIED"},
+    {"id":"C2","claim":"观测型 lift 会把间接相关性计入贡献，复制者可通过多个伪身份提高总收益并压低他人收益。","locator":"Def.4.1 and replication example, pp.10-11","status":"VERIFIED"},
+    {"id":"C3","claim":"严格复制鲁棒要求复制前后所有原支持代理奖励恒等。","locator":"Def.4.4, p.12","status":"VERIFIED"},
+    {"id":"C4","claim":"在论文回归市场与 Shapley 收入分配中，interventional lift 严格复制鲁棒。","locator":"Proposition 4.5 and proof, pp.12-13","status":"VERIFIED"},
+    {"id":"C5","claim":"该结果依赖因果直接/间接效应结构，并非任意复制 SQL 记录的通用 Shapley 不变性。","locator":"Prop.4.5 proof assumptions","status":"VERIFIED"}
+  ]
+}

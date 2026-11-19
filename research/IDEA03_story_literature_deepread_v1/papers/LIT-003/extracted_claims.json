@@ -1,0 +1,9 @@
+{
+  "paper_id": "LIT-003",
+  "claims": [
+    {"id":"C1","claim":"满足 null、symmetry、linearity、efficiency 和 faithfulness 的唯一组值是组内个体标准 Shapley 之和。","locator":"Definition 1-2 and Theorem 1, printed p.3; Appendix A.2","status":"VERIFIED"},
+    {"id":"C2","claim":"faithfulness 要求一个组的价值不受其他组如何划分的影响，针对 shell-company/group-splitting attack。","locator":"definitions and motivation, pp.2-3","status":"VERIFIED"},
+    {"id":"C3","claim":"论文的快速算法是近似计算 FGSV，在稳定性/交叉差分条件下给出误差和 utility-call bounds。","locator":"Theorems 2-3, Algorithm 1, pp.4-5; Appendix A.4-A.5","status":"VERIFIED"},
+    {"id":"C4","claim":"FGSV 不等于把 owner 直接当原子玩家重新定义联盟游戏；它先计算个体 Shapley 后按给定组求和。","locator":"Eq.(5), Theorem 1","status":"VERIFIED"}
+  ]
+}

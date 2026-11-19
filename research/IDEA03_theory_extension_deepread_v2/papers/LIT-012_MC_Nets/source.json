@@ -1,0 +1,15 @@
+{
+  "lit_id": "LIT-012",
+  "title": "Marginal Contribution Nets: A Compact Representation Scheme for Coalitional Games",
+  "authors": ["Samuel Ieong", "Yoav Shoham"],
+  "venue": "EC'05",
+  "year": 2005,
+  "pages": "193-202",
+  "doi": "10.1145/1064009.1064030",
+  "fulltext_url": "https://www.microsoft.com/en-us/research/wp-content/uploads/2005/01/ieong05mcnet.pdf",
+  "local_pdf": "<SOURCE_WORKSPACE>/research/IDEA03_theory_extension_deepread_v2/sources/marginal_contribution_nets_ec2005.pdf",
+  "physical_pages": 10,
+  "sha256": "5F99DC15A03D3D7DE9F49DC54AAD4A3B426B26CD0B4FB8E4CC17F2C407734C54",
+  "accessed": "2026-11-18",
+  "status": ["FULLTEXT_THEOREM_VERIFIED", "FLASH_SCAN_COMPLETE_DRAFT", "CODE_UNVERIFIED"]
+}

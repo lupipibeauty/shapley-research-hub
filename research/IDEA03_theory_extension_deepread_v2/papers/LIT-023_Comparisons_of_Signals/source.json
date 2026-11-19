@@ -1,0 +1,15 @@
+{
+  "lit_id": "LIT-023",
+  "title": "Comparisons of Signals",
+  "authors": ["Benjamin Brooks", "Alexander Frankel", "Emir Kamenica"],
+  "frozen_version": "Author manuscript, March 2024, 33 pages",
+  "published_version": "American Economic Review 114(9), 2024, 2981-3006",
+  "doi": "10.1257/aer.20230430",
+  "fulltext_url": "https://benjaminbrooks.net/downloads/bfk_comparisons.pdf",
+  "publisher_url": "https://pubs.aeaweb.org/doi/10.1257/aer.20230430",
+  "local_pdf": "<SOURCE_WORKSPACE>/research/IDEA03_theory_extension_deepread_v2/sources/comparisons_of_signals_2024_author.pdf",
+  "physical_pages": 33,
+  "sha256": "EAA23F6D31DE1C63CE22CA4299B67FBDF14E0480CCCA4B06B926D5389324EFC8",
+  "accessed": "2026-11-18",
+  "status": ["FULLTEXT_THEOREM_VERIFIED", "FLASH_SCAN_COMPLETE_DRAFT", "FLASH_CHUNK_19_21_STRUCTURE_PARSE_FAILED", "CODE_UNVERIFIED", "VISUAL_PENDING"]
+}

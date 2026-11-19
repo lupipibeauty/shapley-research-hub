@@ -1,0 +1,10 @@
+{
+  "paper_id": "LIT-004",
+  "claims": [
+    {"id":"C1","claim":"玩家结构是样本集合 N 与特征集合 M 的二维笛卡尔块，而非多关系 SQL 的物理 tuple 集合。","locator":"Sec.3.3, pp.3-4","status":"VERIFIED"},
+    {"id":"C2","claim":"块 (i,j) 的边际由四项二维差分 h(S+i,F+j)+h(S,F)-h(S+i,F)-h(S,F+j) 定义。","locator":"Eq.(2), PDF pp.3-4","status":"VERIFIED"},
+    {"id":"C3","claim":"2D-Shapley 是满足四条二维公理的唯一值，并具有 Theorem 3.3 的加权二维差分表示。","locator":"Def.3.2 and Theorem 3.3, PDF pp.4-5","status":"VERIFIED"},
+    {"id":"C4","claim":"沿行或列求和恢复相应的一维样本/特征 Shapley。","locator":"Corollary 3.4, PDF p.5","status":"VERIFIED"},
+    {"id":"C5","claim":"论文的可扩展算法主要是 Monte Carlo 或 KNN surrogate 近似，不是关系数据库 record-level exact solver。","locator":"Sec.3.3.4 and Appendix E, pp.5,19-21","status":"VERIFIED"}
+  ]
+}

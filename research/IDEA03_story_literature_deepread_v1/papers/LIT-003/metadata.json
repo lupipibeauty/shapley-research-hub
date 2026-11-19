@@ -1,0 +1,15 @@
+{
+  "paper_id": "LIT-003",
+  "title": "Faithful Group Shapley Value",
+  "authors": ["Kiljae Lee", "Ziqi Liu", "Weijing Tang", "Yuan Zhang"],
+  "year": 2025,
+  "venue": "Advances in Neural Information Processing Systems 38, Main Conference",
+  "doi": "10.52202/085713-5437",
+  "arxiv": "2505.19013",
+  "official_url": "https://proceedings.nips.cc/paper_files/paper/2025/hash/ee5acc38c2185587ed31de407e1722ad-Abstract-Conference.html",
+  "legacy_dossier": "tmp/researchlab_v2/workspace/deepread/FaithfulGSV_Lee2026/",
+  "code_path": "aggregate_report_shapley/external/fgsv/source/Faithful_GSV-main/",
+  "evidence_level": "FULLTEXT_THEOREM_VERIFIED",
+  "source_conflict": "Legacy dossier records year 2026 and a bilingual arXiv-derived PDF; official publication is NeurIPS 2025.",
+  "story_ids": ["C1", "C2", "E1"]
+}
